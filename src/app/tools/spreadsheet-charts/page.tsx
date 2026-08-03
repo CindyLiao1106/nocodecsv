@@ -5,11 +5,34 @@ import { Card, CardContent } from "@/components/ui/card";
 import { BarChart3, Upload, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "AI Chart Generator from Spreadsheet — Instant Bar, Line, Pie Charts | DataAnalyzer AI",
-  description: "Upload CSV or Excel, describe the chart you want, and AI generates it instantly. Bar charts, line graphs, pie charts, scatter plots — no design skills needed. Free to start.",
+  title: "AI Chart Generator — Instant Bar, Line & Pie Charts",
+  description: "Upload CSV or Excel and AI generates the chart you describe instantly — bar, line, pie, scatter. No design skills needed. Free to start.",
   keywords: ["AI chart generator from CSV", "AI chart maker", "auto chart from spreadsheet", "AI graph generator", "free chart maker from Excel", "data visualization AI"],
-  openGraph: { title: "AI Chart Generator from Spreadsheet — Instant Charts", description: "Upload data, describe the chart. AI creates it in seconds." },
   alternates: { canonical: "https://nocodecsv.com/tools/spreadsheet-charts" },
+  openGraph: {
+    title: "AI Chart Generator — Instant Bar, Line & Pie Charts",
+    description: "Upload data, describe the chart. AI creates it in seconds.",
+    type: "website",
+    url: "https://nocodecsv.com/tools/spreadsheet-charts",
+    siteName: "NoCodeCSV",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI Chart Generator — Instant Bar, Line & Pie Charts",
+    description: "Upload data, describe the chart. AI creates it in seconds.",
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "AI Chart Generator",
+  url: "https://nocodecsv.com/tools/spreadsheet-charts",
+  applicationCategory: "BusinessApplication",
+  operatingSystem: "Web",
+  description: "Upload CSV or Excel and AI generates the chart you describe instantly — bar, line, pie, scatter.",
+  offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
 };
 
 const chartTypes = [
@@ -22,6 +45,10 @@ const chartTypes = [
 export default function SpreadsheetChartsPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <section className="bg-gradient-to-b from-blue-50 to-white py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 text-center">
           <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-zinc-900 leading-tight">
@@ -68,6 +95,18 @@ export default function SpreadsheetChartsPage() {
                 <ArrowRight className="h-4 w-4" />
               </Button>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Related tools & guides */}
+      <section className="py-16 bg-white">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 text-center">
+          <h2 className="text-2xl font-bold mb-6">More free AI data tools</h2>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link href="/tools/csv-analyzer"><Button variant="outline">Analyze CSV Files</Button></Link>
+            <Link href="/tools/excel-data-analysis"><Button variant="outline">Analyze Excel Files</Button></Link>
+            <Link href="/blog/ai-data-visualization-guide"><Button variant="outline">Data Viz Guide</Button></Link>
           </div>
         </div>
       </section>

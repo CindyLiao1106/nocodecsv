@@ -5,11 +5,34 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Upload, MessageSquare, BarChart3, ArrowRight, Check } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Free AI CSV Analyzer — Chat with Your CSV Files | DataAnalyzer AI",
-  description: "Upload any CSV file and analyze it with AI in plain English. No SQL, no Python, no coding. Get instant charts, insights, and data summaries. Free to start.",
+  title: "Free AI CSV Analyzer — Chat With Your CSV Files",
+  description: "Upload any CSV file and analyze it with AI in plain English. No SQL, no Python, no coding. Get instant charts and insights. Free to start.",
   keywords: ["free AI CSV analyzer", "CSV data analysis AI", "analyze CSV online free", "AI CSV tool", "chat with CSV", "CSV insights generator"],
-  openGraph: { title: "Free AI CSV Analyzer — Chat with Your CSV Files", description: "Upload CSV, ask questions, get charts. No coding required." },
   alternates: { canonical: "https://nocodecsv.com/tools/csv-analyzer" },
+  openGraph: {
+    title: "Free AI CSV Analyzer — Chat With Your CSV Files",
+    description: "Upload CSV, ask questions, get charts. No coding required.",
+    type: "website",
+    url: "https://nocodecsv.com/tools/csv-analyzer",
+    siteName: "NoCodeCSV",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Free AI CSV Analyzer — Chat With Your CSV Files",
+    description: "Upload CSV, ask questions, get charts. No coding required.",
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "Free AI CSV Analyzer",
+  url: "https://nocodecsv.com/tools/csv-analyzer",
+  applicationCategory: "BusinessApplication",
+  operatingSystem: "Web",
+  description: "Upload any CSV file and analyze it with AI in plain English. Get instant charts and insights.",
+  offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
 };
 
 const steps = [
@@ -30,6 +53,10 @@ const features = [
 export default function CsvAnalyzerPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Hero */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 text-center">
@@ -107,6 +134,18 @@ export default function CsvAnalyzerPage() {
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related tools & guides */}
+      <section className="py-16 bg-zinc-50 border-t border-zinc-100">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 text-center">
+          <h2 className="text-2xl font-bold mb-6">More free AI data tools</h2>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link href="/tools/excel-data-analysis"><Button variant="outline">Analyze Excel Files</Button></Link>
+            <Link href="/tools/spreadsheet-charts"><Button variant="outline">Generate Charts</Button></Link>
+            <Link href="/blog/how-to-analyze-csv-with-ai-free"><Button variant="outline">CSV Analysis Guide</Button></Link>
           </div>
         </div>
       </section>

@@ -3,6 +3,20 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy Policy — NoCodeCSV",
   description: "How NoCodeCSV handles your data: files processed in memory, never stored, no third-party sharing.",
+  alternates: { canonical: "https://nocodecsv.com/privacy" },
+  openGraph: {
+    title: "Privacy Policy — NoCodeCSV",
+    description: "How NoCodeCSV handles your data: files processed in memory, never stored, no third-party sharing.",
+    type: "website",
+    url: "https://nocodecsv.com/privacy",
+    siteName: "NoCodeCSV",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy — NoCodeCSV",
+    description: "How NoCodeCSV handles your data: files processed in memory, never stored.",
+  },
 };
 
 export default function PrivacyPage() {

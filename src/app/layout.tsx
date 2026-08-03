@@ -7,7 +7,8 @@ import { Footer } from "@/components/layout/footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "NoCodeCSV — Chat with your CSV & Excel files with AI",
+  metadataBase: new URL("https://nocodecsv.com"),
+  title: "NoCodeCSV — Chat with Your CSV & Excel Files Using AI",
   description:
     "Upload any CSV or Excel file and ask questions in plain English. Get instant charts, insights, and data summaries. Free to start — no coding needed.",
   keywords: [
@@ -15,10 +16,21 @@ export const metadata: Metadata = {
     "free CSV analysis", "AI data insights", "chat with CSV",
     "nocode csv", "no code data analysis",
   ],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "NoCodeCSV — AI Data Analysis, No Coding",
     description: "Upload CSV/Excel and ask questions in plain English. Free to start.",
     type: "website",
+    url: "https://nocodecsv.com/",
+    siteName: "NoCodeCSV",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "NoCodeCSV — AI Data Analysis, No Coding",
+    description: "Upload CSV/Excel and ask questions in plain English. Free to start.",
   },
 };
 

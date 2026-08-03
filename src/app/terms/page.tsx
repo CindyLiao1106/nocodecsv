@@ -3,6 +3,20 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Terms of Service — NoCodeCSV",
   description: "Terms of Service for NoCodeCSV: usage limits, payments, refunds, and acceptable use policy.",
+  alternates: { canonical: "https://nocodecsv.com/terms" },
+  openGraph: {
+    title: "Terms of Service — NoCodeCSV",
+    description: "Terms of Service for NoCodeCSV: usage limits, payments, refunds, and acceptable use policy.",
+    type: "website",
+    url: "https://nocodecsv.com/terms",
+    siteName: "NoCodeCSV",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms of Service — NoCodeCSV",
+    description: "Terms of Service for NoCodeCSV: usage limits, payments, refunds, and acceptable use policy.",
+  },
 };
 
 export default function TermsPage() {

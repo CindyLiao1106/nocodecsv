@@ -5,11 +5,34 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Upload, Check, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "AI Excel Data Analysis Tool — Ask Questions, Get Charts | DataAnalyzer AI",
-  description: "Upload .xlsx or .xls files and analyze data with AI in plain English. No formulas, no pivot tables. Get instant charts, statistics, and insights. Free to start.",
+  title: "AI Excel Data Analysis Tool — Ask Questions, Get Charts",
+  description: "Upload .xlsx or .xls files and analyze data with AI in plain English. No formulas, no pivot tables. Get instant charts and insights. Free to start.",
   keywords: ["AI data analysis tool for Excel", "AI Excel analyzer", "analyze Excel file online", "AI spreadsheet analysis", "Excel data insights AI", "free Excel data analysis"],
-  openGraph: { title: "AI Excel Data Analysis Tool — Ask Questions, Get Charts", description: "Upload Excel, ask questions, get answers. No formulas needed." },
   alternates: { canonical: "https://nocodecsv.com/tools/excel-data-analysis" },
+  openGraph: {
+    title: "AI Excel Data Analysis Tool — Ask Questions, Get Charts",
+    description: "Upload Excel, ask questions, get answers. No formulas needed.",
+    type: "website",
+    url: "https://nocodecsv.com/tools/excel-data-analysis",
+    siteName: "NoCodeCSV",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI Excel Data Analysis Tool — Ask Questions, Get Charts",
+    description: "Upload Excel, ask questions, get answers. No formulas needed.",
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "AI Excel Data Analysis Tool",
+  url: "https://nocodecsv.com/tools/excel-data-analysis",
+  applicationCategory: "BusinessApplication",
+  operatingSystem: "Web",
+  description: "Upload .xlsx or .xls files and analyze data with AI in plain English. Get instant charts and insights.",
+  offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
 };
 
 const useCases = [
@@ -24,6 +47,10 @@ const useCases = [
 export default function ExcelAnalysisPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <section className="bg-gradient-to-b from-blue-50 to-white py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 text-center">
           <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-zinc-900 leading-tight">
@@ -86,6 +113,18 @@ export default function ExcelAnalysisPage() {
                 <Link href="/dashboard"><Button size="sm" className="gap-1">Try Now <ArrowRight className="h-3 w-3" /></Button></Link>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related tools & guides */}
+      <section className="py-16 bg-zinc-50 border-t border-zinc-100">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 text-center">
+          <h2 className="text-2xl font-bold mb-6">More free AI data tools</h2>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link href="/tools/csv-analyzer"><Button variant="outline">Analyze CSV Files</Button></Link>
+            <Link href="/tools/spreadsheet-charts"><Button variant="outline">Generate Charts</Button></Link>
+            <Link href="/blog/best-ai-tools-for-excel-analysis"><Button variant="outline">Best AI Excel Tools</Button></Link>
           </div>
         </div>
       </section>

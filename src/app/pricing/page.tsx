@@ -10,6 +10,20 @@ import { PayPalButton } from "@/components/paypal-button";
 export const metadata: Metadata = {
   title: "Pricing — Free AI CSV Analysis, Pro $15/mo | NoCodeCSV",
   description: "Start free with 3 analyses per day. Upgrade to Pro ($15/mo) for unlimited use, or Business ($49/mo) for teams. Cancel anytime.",
+  alternates: { canonical: "https://nocodecsv.com/pricing" },
+  openGraph: {
+    title: "Pricing — Free AI CSV Analysis, Pro $15/mo | NoCodeCSV",
+    description: "Start free with 3 analyses per day. Upgrade to Pro or Business for unlimited AI data analysis.",
+    type: "website",
+    url: "https://nocodecsv.com/pricing",
+    siteName: "NoCodeCSV",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pricing — Free AI CSV Analysis, Pro $15/mo | NoCodeCSV",
+    description: "Start free with 3 analyses per day. Upgrade to Pro or Business for unlimited AI data analysis.",
+  },
 };
 
 const plans = [
