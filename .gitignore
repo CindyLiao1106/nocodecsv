@@ -38,4 +38,15 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# seo nightly runtime logs
+scripts/seo/logs/
+
+# test data files
+demo-ecommerce-sales.csv
+test-sales.csv
+test-sales.xlsx
 next-env.d.ts
+
+.vercel
+.env*

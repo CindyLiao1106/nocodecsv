@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DataAnalyzer AI
 
-## Getting Started
+Chat with your CSV & Excel files in plain English. Upload any spreadsheet, ask questions, and get instant charts and insights — powered by DeepSeek AI.
 
-First, run the development server:
+## Quick Start
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Create `.env.local`:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+DEEPSEEK_API_KEY=sk-your-deepseek-key
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+pnpm dev
+```
 
-## Learn More
+Open [http://localhost:3000](http://localhost:3000).
 
-To learn more about Next.js, take a look at the following resources:
+## Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Framework**: Next.js 16 (App Router, Turbopack)
+- **Styling**: Tailwind CSS v4 + shadcn/ui
+- **AI**: Vercel AI SDK + DeepSeek API
+- **Charts**: Recharts
+- **File Parsing**: PapaParse (CSV/TSV) + SheetJS (Excel)
+- **Deploy**: Vercel (one-click)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Features
 
-## Deploy on Vercel
+- 📂 Drag-and-drop CSV, Excel, TSV files (up to 25MB)
+- 💬 Natural language queries — "Show me revenue by region"
+- 📊 Auto-generated charts (bar, line, pie, scatter)
+- 📋 In-browser data preview
+- 🔒 Files processed in memory, never stored
+- 💰 Free tier: 3 analyses per day
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Pricing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Free | Pro ($15/mo) | Business ($49/mo) |
+|------|-------------|-------------------|
+| 3/day | Unlimited | Everything in Pro |
+
+See `/pricing` for full details.
