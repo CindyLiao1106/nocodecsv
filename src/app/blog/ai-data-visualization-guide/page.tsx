@@ -14,6 +14,9 @@ export const metadata: Metadata = {
     url: "https://nocodecsv.com/blog/ai-data-visualization-guide",
     siteName: "NoCodeCSV",
     locale: "en_US",
+    publishedTime: "2026-08-02",
+    modifiedTime: "2026-08-02",
+    authors: ["NoCodeCSV Team"],
   },
   twitter: {
     card: "summary_large_image",

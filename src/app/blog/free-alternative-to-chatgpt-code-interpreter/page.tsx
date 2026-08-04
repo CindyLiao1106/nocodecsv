@@ -14,6 +14,9 @@ export const metadata: Metadata = {
     url: "https://nocodecsv.com/blog/free-alternative-to-chatgpt-code-interpreter",
     siteName: "NoCodeCSV",
     locale: "en_US",
+    publishedTime: "2026-08-03",
+    modifiedTime: "2026-08-03",
+    authors: ["NoCodeCSV Team"],
   },
   twitter: {
     card: "summary_large_image",

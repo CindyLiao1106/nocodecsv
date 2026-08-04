@@ -14,6 +14,9 @@ export const metadata: Metadata = {
     url: "https://nocodecsv.com/blog/best-ai-tools-for-excel-analysis",
     siteName: "NoCodeCSV",
     locale: "en_US",
+    publishedTime: "2026-08-01",
+    modifiedTime: "2026-08-01",
+    authors: ["NoCodeCSV Team"],
   },
   twitter: {
     card: "summary_large_image",
