@@ -44,10 +44,18 @@ $body = @{
     urlList     = $urls
 } | ConvertTo-Json -Compress
 
-$resp = & curl.exe -s -o NUL -w "%{http_code}" --max-time 60 -X POST `
-    -H "Content-Type: application/json; charset=utf-8" `
-    -d $body `
-    "https://api.indexnow.org/indexnow"
+# 注意: 不能直接把 $body 传给 curl.exe -d —— PowerShell 调原生 exe 时会剥掉 JSON 的双引号，
+# 导致 IndexNow 收到无效 body 返回 400。改用临时文件 + --data-binary @file 绕开命令行传参。
+$tmpBody = Join-Path $env:TEMP "indexnow-body-$([guid]::NewGuid().ToString('N')).json"
+$body | Out-File -FilePath $tmpBody -Encoding utf8 -NoNewline
+try {
+    $resp = & curl.exe -s -o NUL -w "%{http_code}" --max-time 60 -X POST `
+        -H "Content-Type: application/json; charset=utf-8" `
+        --data-binary "@$tmpBody" `
+        "https://api.indexnow.org/indexnow"
+} finally {
+    Remove-Item -Path $tmpBody -Force -ErrorAction SilentlyContinue
+}
 $resp = $resp.Trim()
 
 if ($resp -eq "200" -or $resp -eq "202") {
