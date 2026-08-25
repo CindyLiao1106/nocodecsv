@@ -10,7 +10,7 @@ import { CTA } from "@/components/landing/cta";
 export const metadata: Metadata = {
   title: "NoCodeCSV — Chat with Your CSV & Excel Files Using AI",
   description:
-    "Upload a CSV or Excel file and ask questions in plain English. AI generates charts, finds patterns, and summarizes your data. Free to start — no coding.",
+    "Upload a CSV or Excel file and ask questions in plain English. AI generates charts, finds patterns, and summarizes your data. Free to start.",
   alternates: { canonical: "https://nocodecsv.com/" },
   openGraph: {
     title: "NoCodeCSV — Chat with Your CSV & Excel Files Using AI",

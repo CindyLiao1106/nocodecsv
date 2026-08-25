@@ -28,6 +28,7 @@ export function Footer() {
               <Link href="/blog/best-ai-tools-for-excel-analysis" className="block hover:text-zinc-700">Best AI Excel Tools</Link>
               <Link href="/blog/ai-data-visualization-guide" className="block hover:text-zinc-700">AI Chart Guide</Link>
               <Link href="/blog/spreadsheet-automation-with-ai" className="block hover:text-zinc-700">Spreadsheet Automation</Link>
+              <Link href="/blog/free-alternative-to-chatgpt-code-interpreter" className="block hover:text-zinc-700">ChatGPT Alternative</Link>
             </div>
           </div>
           <div>
