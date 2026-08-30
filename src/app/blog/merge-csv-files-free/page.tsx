@@ -40,6 +40,7 @@ const jsonLd = {
 };
 
 export default function BlogPost() {
+  // v2: triggered git deploy
   return (
     <>
       <script
