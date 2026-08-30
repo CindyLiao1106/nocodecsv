@@ -9,7 +9,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     { url: BASE_URL, lastModified: homeLastModified, changeFrequency: "weekly" as const, priority: 1 },
-    { url: `${BASE_URL}/dashboard`, lastModified: seoLastModified, changeFrequency: "weekly" as const, priority: 0.9 },
     { url: `${BASE_URL}/pricing`, lastModified: seoLastModified, changeFrequency: "monthly" as const, priority: 0.8 },
 
     // SEO 工具页
@@ -23,6 +22,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/ai-data-visualization-guide`, lastModified: "2026-08-02", changeFrequency: "monthly" as const, priority: 0.7 },
     { url: `${BASE_URL}/blog/spreadsheet-automation-with-ai`, lastModified: "2026-08-02", changeFrequency: "monthly" as const, priority: 0.7 },
     { url: `${BASE_URL}/blog/free-alternative-to-chatgpt-code-interpreter`, lastModified: "2026-08-03", changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: `${BASE_URL}/blog/merge-csv-files-free`, lastModified: "2026-08-30", changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: `${BASE_URL}/blog/csv-to-json-free-online`, lastModified: "2026-08-30", changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: `${BASE_URL}/blog/excel-formula-generator-ai`, lastModified: "2026-08-30", changeFrequency: "monthly" as const, priority: 0.7 },
 
     // 法律页面
     { url: `${BASE_URL}/privacy`, lastModified: "2026-08-01", changeFrequency: "yearly" as const, priority: 0.3 },
