@@ -25,6 +25,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/merge-csv-files-free`, lastModified: "2026-08-30", changeFrequency: "monthly" as const, priority: 0.7 },
     { url: `${BASE_URL}/blog/csv-to-json-free-online`, lastModified: "2026-08-30", changeFrequency: "monthly" as const, priority: 0.7 },
     { url: `${BASE_URL}/blog/excel-formula-generator-ai`, lastModified: "2026-08-30", changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: `${BASE_URL}/blog/how-to-clean-dirty-csv-data`, lastModified: "2026-08-31", changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: `${BASE_URL}/blog/free-csv-viewer-online`, lastModified: "2026-08-31", changeFrequency: "monthly" as const, priority: 0.7 },
 
     // 法律页面
     { url: `${BASE_URL}/privacy`, lastModified: "2026-08-01", changeFrequency: "yearly" as const, priority: 0.3 },
