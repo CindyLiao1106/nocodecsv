@@ -27,6 +27,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/excel-formula-generator-ai`, lastModified: "2026-08-30", changeFrequency: "monthly" as const, priority: 0.7 },
     { url: `${BASE_URL}/blog/how-to-clean-dirty-csv-data`, lastModified: "2026-08-31", changeFrequency: "monthly" as const, priority: 0.7 },
     { url: `${BASE_URL}/blog/free-csv-viewer-online`, lastModified: "2026-08-31", changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: `${BASE_URL}/blog/how-to-clean-dirty-csv-data`, lastModified: "2026-08-31", changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: `${BASE_URL}/blog/free-csv-viewer-online`, lastModified: "2026-08-31", changeFrequency: "monthly" as const, priority: 0.7 },
 
     { url: `${BASE_URL}/blog/analyze-survey-data-csv-with-ai`, lastModified: "2026-09-01", changeFrequency: "monthly" as const, priority: 0.7 },
     { url: `${BASE_URL}/blog/import-csv-to-sqlite-free`, lastModified: "2026-09-01", changeFrequency: "monthly" as const, priority: 0.7 },
