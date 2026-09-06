@@ -27,8 +27,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/excel-formula-generator-ai`, lastModified: "2026-08-30", changeFrequency: "monthly" as const, priority: 0.7 },
     { url: `${BASE_URL}/blog/how-to-clean-dirty-csv-data`, lastModified: "2026-08-31", changeFrequency: "monthly" as const, priority: 0.7 },
     { url: `${BASE_URL}/blog/free-csv-viewer-online`, lastModified: "2026-08-31", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/how-to-clean-dirty-csv-data`, lastModified: "2026-08-31", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/free-csv-viewer-online`, lastModified: "2026-08-31", changeFrequency: "monthly" as const, priority: 0.7 },
 
     { url: `${BASE_URL}/blog/analyze-survey-data-csv-with-ai`, lastModified: "2026-09-01", changeFrequency: "monthly" as const, priority: 0.7 },
     { url: `${BASE_URL}/blog/import-csv-to-sqlite-free`, lastModified: "2026-09-01", changeFrequency: "monthly" as const, priority: 0.7 },
@@ -42,6 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/extract-data-from-pdf-to-csv-ai`, lastModified: "2026-09-05", changeFrequency: "monthly" as const, priority: 0.7 },
     { url: `${BASE_URL}/blog/convert-excel-to-csv-free-online`, lastModified: "2026-09-06", changeFrequency: "monthly" as const, priority: 0.7 },
     { url: `${BASE_URL}/blog/fix-garbled-csv-in-excel`, lastModified: "2026-09-06", changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: `${BASE_URL}/blog/ask-csv`, lastModified: "2026-09-06", changeFrequency: "monthly" as const, priority: 0.8 },
     // 法律页面
     { url: `${BASE_URL}/privacy`, lastModified: "2026-08-01", changeFrequency: "yearly" as const, priority: 0.3 },
     { url: `${BASE_URL}/terms`, lastModified: "2026-08-01", changeFrequency: "yearly" as const, priority: 0.3 },
