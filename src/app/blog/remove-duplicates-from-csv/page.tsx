@@ -116,6 +116,27 @@ export default function BlogPost() {
       <p>No. Excel, Google Sheets, and online tools all treat the header row separately and keep it. If you use a script, make sure your logic skips row 1.</p>
       <h3>What should I do after removing duplicates?</h3>
       <p>Verify your counts, then check for duplicates that appeared across file boundaries if you split the work. If you cleaned several chunk files, you can <Link href="/blog/merge-csv-files-free">merge CSV files</Link> back into one master list — then dedupe once more on the merged result.</p>
+      {/* ===== Affiliate tools recommendation ===== */}
+      <div className="my-10 rounded-xl border border-slate-200 bg-slate-50 p-6">
+        <h2 className="text-xl font-bold mb-2">Go further with AI data tools</h2>
+        <p className="text-slate-600 mb-4">NoCodeCSV handles the basics for free. When your data work grows, these tools pair well with it:</p>
+        <ul className="space-y-3">
+          <li>
+            <strong>Stack AI</strong> — build AI workflows that process your CSVs automatically, end to end.{' '}
+            <a href="https://www.stack-ai.com/partnership" target="_blank" rel="nofollow sponsored noopener" className="text-blue-600 underline">Try Stack AI</a>
+          </li>
+          <li>
+            <strong>Softr</strong> — turn your cleaned data into customer-facing apps and portals without code.{' '}
+            <a href="https://www.softr.io" target="_blank" rel="nofollow sponsored noopener" className="text-blue-600 underline">Try Softr</a>
+          </li>
+          <li>
+            <strong>Toggl Track</strong> — track time spent on data projects and client work.{' '}
+            <a href="https://toggl.com" target="_blank" rel="nofollow sponsored noopener" className="text-blue-600 underline">Try Toggl</a>
+          </li>
+        </ul>
+        <p className="text-xs text-slate-400 mt-3">Some links above are affiliate links — if you buy through them we may earn a commission at no extra cost to you.</p>
+      </div>
+
 
       <div className="not-prose my-10 rounded-2xl bg-blue-600 p-8 text-center text-white">
         <h2 className="text-2xl font-bold mb-3">Check Your Cleaned CSV With AI — Free</h2>

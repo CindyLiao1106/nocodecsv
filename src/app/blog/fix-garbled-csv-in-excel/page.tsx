@@ -108,6 +108,27 @@ export default function BlogPost() {
       <p>Yes. Google Sheets auto-detects UTF-8 and displays Chinese, accented characters, and emoji correctly — no BOM needed. That&apos;s why the Sheets round-trip is a reliable fix when Excel keeps mangling a file.</p>
       <h3>My CSV opened fine yesterday but is garbled after re-saving in Excel — why?</h3>
       <p>Excel re-saved your file as ANSI/Windows-1252. When you edit and save a CSV, Excel silently changes the encoding. Solution: after editing, use <strong>File &rarr; Save As &rarr; CSV UTF-8 (Comma delimited)</strong>, or do your editing in a tool that preserves UTF-8. For data analysis, you can also skip round-tripping entirely and chat with the file in <Link href="/">DataAnalyzer AI</Link>.</p>
+      {/* ===== Affiliate tools recommendation ===== */}
+      <div className="my-10 rounded-xl border border-slate-200 bg-slate-50 p-6">
+        <h2 className="text-xl font-bold mb-2">Go further with AI data tools</h2>
+        <p className="text-slate-600 mb-4">NoCodeCSV handles the basics for free. When your data work grows, these tools pair well with it:</p>
+        <ul className="space-y-3">
+          <li>
+            <strong>Stack AI</strong> — build AI workflows that process your CSVs automatically, end to end.{' '}
+            <a href="https://www.stack-ai.com/partnership" target="_blank" rel="nofollow sponsored noopener" className="text-blue-600 underline">Try Stack AI</a>
+          </li>
+          <li>
+            <strong>Softr</strong> — turn your cleaned data into customer-facing apps and portals without code.{' '}
+            <a href="https://www.softr.io" target="_blank" rel="nofollow sponsored noopener" className="text-blue-600 underline">Try Softr</a>
+          </li>
+          <li>
+            <strong>Toggl Track</strong> — track time spent on data projects and client work.{' '}
+            <a href="https://toggl.com" target="_blank" rel="nofollow sponsored noopener" className="text-blue-600 underline">Try Toggl</a>
+          </li>
+        </ul>
+        <p className="text-xs text-slate-400 mt-3">Some links above are affiliate links — if you buy through them we may earn a commission at no extra cost to you.</p>
+      </div>
+
 
       <div className="not-prose my-10 rounded-2xl bg-blue-600 p-8 text-center text-white">
         <h2 className="text-2xl font-bold mb-3">Encoding Headache Over? Analyze the Data</h2>

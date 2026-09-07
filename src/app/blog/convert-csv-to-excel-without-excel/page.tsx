@@ -104,6 +104,27 @@ export default function BlogPost() {
       <p>Open each CSV in Google Sheets or LibreOffice Calc, then copy the sheets into one workbook — each CSV becomes its own tab. Save the combined file as .xlsx.</p>
       <h3>What if my CSV data is messy before I convert it?</h3>
       <p>Convert after cleaning, not before. Remove duplicate rows and fix broken fields first — our step-by-step guide to <Link href="/blog/how-to-clean-dirty-csv-data">cleaning dirty CSV data</Link> walks you through it, and you can do the cleanup directly in the same free tool.</p>
+      {/* ===== Affiliate tools recommendation ===== */}
+      <div className="my-10 rounded-xl border border-slate-200 bg-slate-50 p-6">
+        <h2 className="text-xl font-bold mb-2">Go further with AI data tools</h2>
+        <p className="text-slate-600 mb-4">NoCodeCSV handles the basics for free. When your data work grows, these tools pair well with it:</p>
+        <ul className="space-y-3">
+          <li>
+            <strong>Stack AI</strong> — build AI workflows that process your CSVs automatically, end to end.{' '}
+            <a href="https://www.stack-ai.com/partnership" target="_blank" rel="nofollow sponsored noopener" className="text-blue-600 underline">Try Stack AI</a>
+          </li>
+          <li>
+            <strong>Softr</strong> — turn your cleaned data into customer-facing apps and portals without code.{' '}
+            <a href="https://www.softr.io" target="_blank" rel="nofollow sponsored noopener" className="text-blue-600 underline">Try Softr</a>
+          </li>
+          <li>
+            <strong>Toggl Track</strong> — track time spent on data projects and client work.{' '}
+            <a href="https://toggl.com" target="_blank" rel="nofollow sponsored noopener" className="text-blue-600 underline">Try Toggl</a>
+          </li>
+        </ul>
+        <p className="text-xs text-slate-400 mt-3">Some links above are affiliate links — if you buy through them we may earn a commission at no extra cost to you.</p>
+      </div>
+
 
       <div className="not-prose my-10 rounded-2xl bg-blue-600 p-8 text-center text-white">
         <h2 className="text-2xl font-bold mb-3">Convert CSV to Excel — Free</h2>

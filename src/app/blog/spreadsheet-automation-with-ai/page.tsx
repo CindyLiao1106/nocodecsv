@@ -65,6 +65,27 @@ export default function BlogPost() {
 
       <h2>Getting Started Today</h2>
       <p>You don&apos;t need to install anything or learn a new platform. Open a free AI spreadsheet tool, <Link href="/tools/csv-analyzer">upload your next CSV or Excel file</Link>, and ask your first question. That one query might save you an hour of manual work — and once you experience that, you won&apos;t go back.</p>
+      {/* ===== Affiliate tools recommendation ===== */}
+      <div className="my-10 rounded-xl border border-slate-200 bg-slate-50 p-6">
+        <h2 className="text-xl font-bold mb-2">Go further with AI data tools</h2>
+        <p className="text-slate-600 mb-4">NoCodeCSV handles the basics for free. When your data work grows, these tools pair well with it:</p>
+        <ul className="space-y-3">
+          <li>
+            <strong>Stack AI</strong> — build AI workflows that process your CSVs automatically, end to end.{' '}
+            <a href="https://www.stack-ai.com/partnership" target="_blank" rel="nofollow sponsored noopener" className="text-blue-600 underline">Try Stack AI</a>
+          </li>
+          <li>
+            <strong>Softr</strong> — turn your cleaned data into customer-facing apps and portals without code.{' '}
+            <a href="https://www.softr.io" target="_blank" rel="nofollow sponsored noopener" className="text-blue-600 underline">Try Softr</a>
+          </li>
+          <li>
+            <strong>Toggl Track</strong> — track time spent on data projects and client work.{' '}
+            <a href="https://toggl.com" target="_blank" rel="nofollow sponsored noopener" className="text-blue-600 underline">Try Toggl</a>
+          </li>
+        </ul>
+        <p className="text-xs text-slate-400 mt-3">Some links above are affiliate links — if you buy through them we may earn a commission at no extra cost to you.</p>
+      </div>
+
 
       <div className="not-prose my-10 rounded-2xl bg-blue-600 p-8 text-center text-white">
         <h2 className="text-2xl font-bold mb-3">Automate Your First Analysis</h2>
