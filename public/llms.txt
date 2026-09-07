@@ -1,0 +1,51 @@
+# NoCodeCSV
+
+> Chat with your CSV and Excel files using AI. Upload a spreadsheet, ask questions in plain English, and get charts, patterns, and answers — no SQL or coding required.
+
+## Docs
+
+- [Homepage](https://nocodecsv.com): Free AI tool that lets users upload CSV/Excel files and analyze them through natural-language chat. Core features: AI-generated charts, pattern detection, plain-English answers.
+- [Pricing](https://nocodecsv.com/pricing): Three-tier pricing — Free (3 analyses per day), Pro ($15/month, unlimited use and advanced features). Compares features across tiers.
+- [Free AI CSV Analyzer](https://nocodecsv.com/tools/csv-analyzer): Free browser tool to upload a CSV file and analyze it with AI in plain English without SQL, Python, or Excel skills.
+- [Excel Data Analysis with AI](https://nocodecsv.com/tools/excel-data-analysis): Free tool for analyzing Excel files (.xlsx) using AI conversation — suitable for business users without technical background.
+- [Spreadsheet Charts with AI](https://nocodecsv.com/tools/spreadsheet-charts): Generates charts and visualizations from spreadsheet data using AI, supporting CSV and Excel inputs.
+
+## Blog
+
+- [How to Analyze CSV Files With AI](https://nocodecsv.com/blog/how-to-analyze-csv-with-ai-free): Step-by-step guide to analyzing CSV data with AI in three steps — no SQL, Python, or Excel expertise needed.
+- [Best AI Tools for Excel Analysis](https://nocodecsv.com/blog/best-ai-tools-for-excel-analysis): Comparison of the top AI tools for analyzing Excel spreadsheets in 2026.
+- [AI Data Visualization Guide](https://nocodecsv.com/blog/ai-data-visualization-guide): How to create charts and dashboards from raw data using AI tools.
+- [Spreadsheet Automation With AI](https://nocodecsv.com/blog/spreadsheet-automation-with-ai): Automating repetitive spreadsheet work (cleaning, formulas, reporting) with AI.
+- [Free Alternative to ChatGPT Code Interpreter](https://nocodecsv.com/blog/free-alternative-to-chatgpt-code-interpreter): Using NoCodeCSV as a free alternative for conversational data analysis.
+- [Merge CSV Files Free](https://nocodecsv.com/blog/merge-csv-files-free): How to combine multiple CSV files without coding or paid software.
+- [CSV to JSON Free Online](https://nocodecsv.com/blog/csv-to-json-free-online): Convert CSV data to JSON format in the browser — free and private.
+- [Excel Formula Generator AI](https://nocodecsv.com/blog/excel-formula-generator-ai): Generate Excel formulas from plain-English descriptions using AI.
+- [How to Clean Dirty CSV Data](https://nocodecsv.com/blog/how-to-clean-dirty-csv-data): Practical techniques for fixing messy CSV files: duplicates, garbled text, inconsistent delimiters.
+- [Free CSV Viewer Online](https://nocodecsv.com/blog/free-csv-viewer-online): View large CSV files in the browser without Excel or paid tools.
+- [Analyze Survey Data CSV With AI](https://nocodecsv.com/blog/analyze-survey-data-csv-with-ai): Using AI to analyze survey responses exported as CSV — coding not required.
+- [Import CSV to SQLite Free](https://nocodecsv.com/blog/import-csv-to-sqlite-free): Getting CSV data into a SQLite database without paid software.
+- [Visualize Sales Data CSV](https://nocodecsv.com/blog/visualize-sales-data-csv): Creating charts and insights from sales data in CSV format.
+- [Convert CSV to Excel Without Excel](https://nocodecsv.com/blog/convert-csv-to-excel-without-excel): Free methods for CSV-to-Excel conversion on any device.
+- [Split Large CSV File Online](https://nocodecsv.com/blog/split-large-csv-file-online): Breaking huge CSV files into manageable parts online.
+- [Remove Duplicates From CSV](https://nocodecsv.com/blog/remove-duplicates-from-csv): Cleaning duplicate rows from CSV data — free online approach.
+- [Chat With Spreadsheet AI Free](https://nocodecsv.com/blog/chat-with-spreadsheet-ai-free): Conversational analysis of spreadsheets with free AI tools.
+- [Summarize Excel Data With AI](https://nocodecsv.com/blog/summarize-excel-data-with-ai): Generating concise summaries of large Excel datasets using AI.
+- [Compare Two CSV Files Online](https://nocodecsv.com/blog/compare-two-csv-files-online): Finding differences between two CSV files without coding.
+- [Extract Data From PDF to CSV AI](https://nocodecsv.com/blog/extract-data-from-pdf-to-csv-ai): Converting PDF tables into analyzable CSV data using AI.
+- [Convert Excel to CSV Free Online](https://nocodecsv.com/blog/convert-excel-to-csv-free-online): Quick Excel (.xlsx) to CSV conversion in the browser.
+- [Fix Garbled CSV in Excel](https://nocodecsv.com/blog/fix-garbled-csv-in-excel): Solving mojibake/encoding issues when opening CSV in Excel (UTF-8, GBK).
+- [Ask CSV](https://nocodecsv.com/blog/ask-csv): Product overview — asking questions about your CSV data conversationally.
+
+## Key Facts
+
+- NoCodeCSV is a free web application for AI-powered spreadsheet analysis
+- Primary tools: CSV analyzer, Excel analyzer, spreadsheet charts — all browser-based, no install required
+- Free tier: 3 analyses per day; Pro tier: $15/month for unlimited use
+- Target users: business analysts, marketers, researchers, and non-technical spreadsheet users
+- Competes with ChatGPT Code Interpreter as a free, focused alternative for data analysis
+
+## Contact
+
+- Website: https://nocodecsv.com
+- Privacy Policy: https://nocodecsv.com/privacy
+- Terms of Service: https://nocodecsv.com/terms

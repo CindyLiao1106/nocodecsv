@@ -53,6 +53,59 @@ const jsonLd = {
       ],
       author: { "@type": "Organization", name: "NoCodeCSV" },
     },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is NoCodeCSV?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "NoCodeCSV is a free AI-powered tool that lets you chat with your CSV and Excel files. Upload a spreadsheet, ask questions in plain English, and get instant charts, patterns, and summaries — no SQL, Python, or coding required.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is NoCodeCSV free to use?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. NoCodeCSV offers a free tier with 3 analyses per day. A Pro plan at $15/month unlocks unlimited analyses and advanced features.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do I analyze a CSV file with AI?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Upload your CSV file to the free analyzer, then type questions about your data in plain English. The AI generates charts, finds patterns, and summarizes the results for you.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do I need to know SQL or Python to use NoCodeCSV?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. NoCodeCSV is designed for non-technical users. You ask questions in natural language and the AI handles the analysis, charting, and data exploration for you.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What file types does NoCodeCSV support?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "NoCodeCSV supports CSV and Excel (.xlsx) files. You can upload, analyze, and export your data entirely in the browser.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is my data private when I upload it?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Files are parsed in your browser and analysis is processed per request without being stored. NoCodeCSV does not keep your uploaded data on its servers.",
+          },
+        },
+      ],
+    },
   ],
 };
 

@@ -26,11 +26,20 @@ export const metadata: Metadata = {
     url: "https://nocodecsv.com/",
     siteName: "NoCodeCSV",
     locale: "en_US",
+    images: [
+      {
+        url: "https://nocodecsv.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "NoCodeCSV — Chat with your CSV & Excel files using AI",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "NoCodeCSV — AI Data Analysis, No Coding",
     description: "Upload CSV/Excel and ask questions in plain English. Free to start.",
+    images: ["https://nocodecsv.com/og-image.png"],
   },
 };
 
