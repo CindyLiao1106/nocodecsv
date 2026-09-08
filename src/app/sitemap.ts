@@ -45,6 +45,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/csv-to-chart-online-free`, lastModified: "2026-09-07", changeFrequency: "monthly" as const, priority: 0.7 },
     { url: `${BASE_URL}/blog/csv-to-html-table`, lastModified: "2026-09-07", changeFrequency: "monthly" as const, priority: 0.7 },
     { url: `${BASE_URL}/blog/import-csv-into-google-sheets`, lastModified: "2026-09-07", changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: `${BASE_URL}/blog/convert-tsv-to-csv`, lastModified: "2026-09-08", changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: `${BASE_URL}/blog/sort-csv-by-column`, lastModified: "2026-09-08", changeFrequency: "monthly" as const, priority: 0.7 },
     // 法律页面
     { url: `${BASE_URL}/privacy`, lastModified: "2026-08-01", changeFrequency: "yearly" as const, priority: 0.3 },
     { url: `${BASE_URL}/terms`, lastModified: "2026-08-01", changeFrequency: "yearly" as const, priority: 0.3 },
