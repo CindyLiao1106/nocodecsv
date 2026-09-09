@@ -26,13 +26,46 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  name: "AI Excel Data Analysis Tool",
-  url: "https://nocodecsv.com/tools/excel-data-analysis",
-  applicationCategory: "BusinessApplication",
-  operatingSystem: "Web",
-  description: "Upload .xlsx or .xls files and analyze data with AI in plain English. Get instant charts and insights.",
-  offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      name: "AI Excel Data Analysis Tool",
+      url: "https://nocodecsv.com/tools/excel-data-analysis",
+      applicationCategory: "BusinessApplication",
+      operatingSystem: "Web",
+      description: "Upload .xlsx or .xls files and analyze data with AI in plain English. Get instant charts and insights.",
+      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is AI Excel analysis?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "AI Excel analysis lets you upload a spreadsheet and ask questions about it in plain English — for example, \"what are total sales by month?\" — instead of writing formulas or pivot tables. The AI computes answers and generates charts automatically.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do I need to know Excel formulas to use this?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. NoCodeCSV is designed for people who want insights without the learning curve. Type your question in natural language and the AI handles the formula work, data cleaning, and charting for you.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What Excel file types are supported?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "NoCodeCSV supports .xlsx and .xls files as well as CSV and TSV. Upload files up to 25MB and start asking questions immediately — nothing to install.",
+          },
+        },
+      ],
+    },
+  ],
 };
 
 const useCases = [
@@ -113,6 +146,47 @@ export default function ExcelAnalysisPage() {
                 <Link href="/dashboard"><Button size="sm" className="gap-1">Try Now <ArrowRight className="h-3 w-3" /></Button></Link>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ section */}
+      <section className="py-16 bg-white border-t border-zinc-100">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-10">Frequently Asked Questions</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="font-semibold text-lg mb-2">What is AI Excel analysis?</h3>
+              <p className="text-zinc-600">
+                AI Excel analysis lets you upload a spreadsheet and ask
+                questions about it in plain English — for example, "what are
+                total sales by month?" — instead of writing formulas or pivot
+                tables. The AI computes answers and generates charts
+                automatically.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg mb-2">Do I need to know Excel formulas to use this?</h3>
+              <p className="text-zinc-600">
+                No. NoCodeCSV is designed for people who want insights without
+                the learning curve. Type your question in natural language and
+                the AI handles the formula work, data cleaning, and charting
+                for you.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg mb-2">What Excel file types are supported?</h3>
+              <p className="text-zinc-600">
+                NoCodeCSV supports .xlsx and .xls files as well as CSV and
+                TSV. Upload files up to 25MB and start asking questions
+                immediately — nothing to install.
+              </p>
+            </div>
+          </div>
+          <div className="mt-10 text-center">
+            <Link href="/blog/how-to-analyze-csv-with-ai-free" className="text-blue-600 underline">
+              Learn how AI data analysis works →
+            </Link>
           </div>
         </div>
       </section>

@@ -26,13 +26,46 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  name: "AI Chart Generator",
-  url: "https://nocodecsv.com/tools/spreadsheet-charts",
-  applicationCategory: "BusinessApplication",
-  operatingSystem: "Web",
-  description: "Upload CSV or Excel and AI generates the chart you describe instantly — bar, line, pie, scatter.",
-  offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      name: "AI Chart Generator",
+      url: "https://nocodecsv.com/tools/spreadsheet-charts",
+      applicationCategory: "BusinessApplication",
+      operatingSystem: "Web",
+      description: "Upload CSV or Excel and AI generates the chart you describe instantly — bar, line, pie, scatter.",
+      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "How do I make a chart from a CSV or Excel file?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Upload your spreadsheet to NoCodeCSV and describe the chart you want in plain English — for example, \"show sales by product as a bar chart\". The AI generates the chart instantly, ready to download as PNG.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What chart types can NoCodeCSV generate?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "NoCodeCSV generates bar charts, line charts, pie charts, and scatter plots. You can ask for any of them in natural language and the AI picks the right data series for you.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is the AI chart generator free?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes — NoCodeCSV offers 3 free analyses every day, including chart generation, with no credit card required. Pro plans are available for unlimited use.",
+          },
+        },
+      ],
+    },
+  ],
 };
 
 const chartTypes = [
@@ -94,6 +127,45 @@ export default function SpreadsheetChartsPage() {
                 <Upload className="h-5 w-5" /> Upload & Chart — Free
                 <ArrowRight className="h-4 w-4" />
               </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ section */}
+      <section className="py-16 bg-white border-t border-zinc-100">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-10">Frequently Asked Questions</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="font-semibold text-lg mb-2">How do I make a chart from a CSV or Excel file?</h3>
+              <p className="text-zinc-600">
+                Upload your spreadsheet to NoCodeCSV and describe the chart you
+                want in plain English — for example, "show sales by product as
+                a bar chart". The AI generates the chart instantly, ready to
+                download as PNG.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg mb-2">What chart types can NoCodeCSV generate?</h3>
+              <p className="text-zinc-600">
+                NoCodeCSV generates bar charts, line charts, pie charts, and
+                scatter plots. You can ask for any of them in natural language
+                and the AI picks the right data series for you.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg mb-2">Is the AI chart generator free?</h3>
+              <p className="text-zinc-600">
+                Yes — NoCodeCSV offers 3 free analyses every day, including
+                chart generation, with no credit card required. Pro plans are
+                available for unlimited use.
+              </p>
+            </div>
+          </div>
+          <div className="mt-10 text-center">
+            <Link href="/blog/ai-data-visualization-guide" className="text-blue-600 underline">
+              Read the AI data visualization guide →
             </Link>
           </div>
         </div>

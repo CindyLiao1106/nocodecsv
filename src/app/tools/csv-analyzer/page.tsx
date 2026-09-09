@@ -26,13 +26,46 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  name: "Free AI CSV Analyzer",
-  url: "https://nocodecsv.com/tools/csv-analyzer",
-  applicationCategory: "BusinessApplication",
-  operatingSystem: "Web",
-  description: "Upload any CSV file and analyze it with AI in plain English. Get instant charts and insights.",
-  offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      name: "Free AI CSV Analyzer",
+      url: "https://nocodecsv.com/tools/csv-analyzer",
+      applicationCategory: "BusinessApplication",
+      operatingSystem: "Web",
+      description: "Upload any CSV file and analyze it with AI in plain English. Get instant charts and insights.",
+      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is a CSV file?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A CSV (comma-separated values) file stores tabular data — like a spreadsheet — as plain text, with each row on its own line and values separated by commas. It is the most common format for exporting data from databases, payment platforms, and business tools.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do I analyze a CSV file for free?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Upload your CSV file to a free AI analyzer like NoCodeCSV, then ask questions in plain English — for example, \"what are total sales by region?\". The AI computes the answer and generates charts, no SQL or Python required.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can NoCodeCSV handle large CSV files?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes — NoCodeCSV accepts CSV files up to 25MB, covering tens of thousands of rows. Files are processed and discarded, so your data stays private.",
+          },
+        },
+      ],
+    },
+  ],
 };
 
 const steps = [
@@ -134,6 +167,47 @@ export default function CsvAnalyzerPage() {
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ section */}
+      <section className="py-16 bg-white border-t border-zinc-100">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-10">Frequently Asked Questions</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="font-semibold text-lg mb-2">What is a CSV file?</h3>
+              <p className="text-zinc-600">
+                A CSV (comma-separated values) file stores tabular data — like
+                a spreadsheet — as plain text, with each row on its own line
+                and values separated by commas. It is the most common format
+                for exporting data from databases, payment platforms, and
+                business tools.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg mb-2">How do I analyze a CSV file for free?</h3>
+              <p className="text-zinc-600">
+                Upload your CSV file to a free AI analyzer like NoCodeCSV,
+                then ask questions in plain English — for example, "what are
+                total sales by region?". The AI computes the answer and
+                generates charts, no SQL or Python required.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg mb-2">Can NoCodeCSV handle large CSV files?</h3>
+              <p className="text-zinc-600">
+                Yes — NoCodeCSV accepts CSV files up to 25MB, covering tens of
+                thousands of rows. Files are processed and discarded, so your
+                data stays private.
+              </p>
+            </div>
+          </div>
+          <div className="mt-10 text-center">
+            <Link href="/blog/how-to-analyze-csv-with-ai-free" className="text-blue-600 underline">
+              Read the full guide: How to analyze CSV files with AI →
+            </Link>
           </div>
         </div>
       </section>
