@@ -34,9 +34,11 @@ export function Footer() {
           <div>
             <h4 className="font-semibold text-sm mb-3">Company</h4>
             <div className="space-y-2 text-sm text-zinc-500">
+              <Link href="/about" className="block hover:text-zinc-700">About</Link>
               <Link href="/pricing" className="block hover:text-zinc-700">Pricing</Link>
               <Link href="/privacy" className="block hover:text-zinc-700">Privacy</Link>
               <Link href="/terms" className="block hover:text-zinc-700">Terms</Link>
+              <a href="mailto:contact@nocodecsv.com" className="block hover:text-zinc-700">Contact</a>
             </div>
           </div>
         </div>

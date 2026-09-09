@@ -108,6 +108,15 @@ export default function BlogPost() {
       <p>Yes. Google Sheets auto-detects UTF-8 and displays Chinese, accented characters, and emoji correctly — no BOM needed. That&apos;s why the Sheets round-trip is a reliable fix when Excel keeps mangling a file.</p>
       <h3>My CSV opened fine yesterday but is garbled after re-saving in Excel — why?</h3>
       <p>Excel re-saved your file as ANSI/Windows-1252. When you edit and save a CSV, Excel silently changes the encoding. Solution: after editing, use <strong>File &rarr; Save As &rarr; CSV UTF-8 (Comma delimited)</strong>, or do your editing in a tool that preserves UTF-8. For data analysis, you can also skip round-tripping entirely and chat with the file in <Link href="/">DataAnalyzer AI</Link>.</p>
+      {/* ===== Author byline ===== */}
+      <div className="mt-8 flex items-center gap-3 border-t border-zinc-200 pt-6 text-sm text-zinc-500">
+        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 font-bold text-white">NC</div>
+        <div>
+          <p className="font-semibold text-zinc-700">NoCodeCSV Team</p>
+          <p>Updated September 06, 2026 · Practical guides by the NoCodeCSV team.</p>
+        </div>
+      </div>
+
       {/* ===== Affiliate tools recommendation ===== */}
       <div className="my-10 rounded-xl border border-slate-200 bg-slate-50 p-6">
         <h2 className="text-xl font-bold mb-2">Go further with AI data tools</h2>

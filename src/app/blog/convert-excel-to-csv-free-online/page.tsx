@@ -105,6 +105,15 @@ export default function BlogPost() {
       <p>CSV has no formatting. A date like <em>01/02/2026</em> becomes plain text and Excel may re-interpret it on open. A common trick: keep a leading apostrophe or reformat to ISO (2026-01-02) before export if the target system is picky.</p>
       <h3>Is converting Excel to CSV free?</h3>
       <p>Completely. Excel&apos;s Save As, Google Sheets, and most reputable online converters are free. And if your next step is understanding the data, <Link href="/">DataAnalyzer AI</Link> gives you <strong>3 free analyses per day</strong> — no credit card required.</p>
+      {/* ===== Author byline ===== */}
+      <div className="mt-8 flex items-center gap-3 border-t border-zinc-200 pt-6 text-sm text-zinc-500">
+        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 font-bold text-white">NC</div>
+        <div>
+          <p className="font-semibold text-zinc-700">NoCodeCSV Team</p>
+          <p>Updated September 06, 2026 · Practical guides by the NoCodeCSV team.</p>
+        </div>
+      </div>
+
       {/* ===== Affiliate tools recommendation ===== */}
       <div className="my-10 rounded-xl border border-slate-200 bg-slate-50 p-6">
         <h2 className="text-xl font-bold mb-2">Go further with AI data tools</h2>

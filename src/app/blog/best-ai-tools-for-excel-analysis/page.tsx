@@ -85,6 +85,15 @@ export default function BlogPost() {
 
       <h2>Our Pick for Most People</h2>
       <p>If you need a free, no-signup tool that handles both CSV and Excel with auto-generated charts, <Link href="/">DataAnalyzer AI</Link> is the best starting point — test it on our <Link href="/tools/excel-data-analysis">AI Excel analysis tool</Link> page, especially given its DeepSeek-powered pricing advantage. For heavy Python users, ChatGPT Code Interpreter is worth the $20/month. For teams with live database connections, Coefficient makes sense at the enterprise tier.</p>
+      {/* ===== Author byline ===== */}
+      <div className="mt-8 flex items-center gap-3 border-t border-zinc-200 pt-6 text-sm text-zinc-500">
+        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 font-bold text-white">NC</div>
+        <div>
+          <p className="font-semibold text-zinc-700">NoCodeCSV Team</p>
+          <p>Updated August 01, 2026 · Practical guides by the NoCodeCSV team.</p>
+        </div>
+      </div>
+
       {/* ===== Affiliate tools recommendation ===== */}
       <div className="my-10 rounded-xl border border-slate-200 bg-slate-50 p-6">
         <h2 className="text-xl font-bold mb-2">Go further with AI data tools</h2>

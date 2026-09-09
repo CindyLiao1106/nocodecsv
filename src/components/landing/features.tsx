@@ -39,12 +39,14 @@ export function Features() {
     <section id="features" className="mx-auto max-w-6xl px-4 sm:px-6 py-20">
       <div className="text-center mb-12">
         <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
-          Everything you need to analyze data
+          What can you do with NoCodeCSV?
           <br />
-          <span className="text-blue-600">without the learning curve</span>
+          <span className="text-blue-600">analyze any spreadsheet — instantly</span>
         </h2>
         <p className="mt-4 text-lg text-zinc-500 max-w-xl mx-auto">
-          No formulas, no pivot tables, no waiting for the data team.
+          NoCodeCSV answers questions about your data, creates charts,
+          cleans messy files, and summarizes large datasets — in plain
+          English, with no learning curve.
         </p>
       </div>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

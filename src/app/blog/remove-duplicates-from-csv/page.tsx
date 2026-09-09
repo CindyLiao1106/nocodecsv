@@ -116,6 +116,15 @@ export default function BlogPost() {
       <p>No. Excel, Google Sheets, and online tools all treat the header row separately and keep it. If you use a script, make sure your logic skips row 1.</p>
       <h3>What should I do after removing duplicates?</h3>
       <p>Verify your counts, then check for duplicates that appeared across file boundaries if you split the work. If you cleaned several chunk files, you can <Link href="/blog/merge-csv-files-free">merge CSV files</Link> back into one master list — then dedupe once more on the merged result.</p>
+      {/* ===== Author byline ===== */}
+      <div className="mt-8 flex items-center gap-3 border-t border-zinc-200 pt-6 text-sm text-zinc-500">
+        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 font-bold text-white">NC</div>
+        <div>
+          <p className="font-semibold text-zinc-700">NoCodeCSV Team</p>
+          <p>Updated September 03, 2026 · Practical guides by the NoCodeCSV team.</p>
+        </div>
+      </div>
+
       {/* ===== Affiliate tools recommendation ===== */}
       <div className="my-10 rounded-xl border border-slate-200 bg-slate-50 p-6">
         <h2 className="text-xl font-bold mb-2">Go further with AI data tools</h2>

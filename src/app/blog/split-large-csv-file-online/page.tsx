@@ -114,6 +114,15 @@ sed -n &apos;1000002,2000001p&apos; data.csv &gt; part_2.csv</code></pre>
       <p>Excel&apos;s limit is 1,048,576 rows per worksheet. If your CSV has more rows than that, split it into chunks below the limit — 500,000 rows per chunk is a safe target — and each part will open normally.</p>
       <h3>Is it safe to upload my CSV to an online splitter?</h3>
       <p>For non-sensitive data, yes — choose a reputable service that states it deletes uploads after processing. For customer data or financial records, check the privacy policy first, or use the command-line method so the file never leaves your machine. NoCodeCSV&apos;s <Link href="/dashboard">data tools</Link> process files with privacy in mind.</p>
+      {/* ===== Author byline ===== */}
+      <div className="mt-8 flex items-center gap-3 border-t border-zinc-200 pt-6 text-sm text-zinc-500">
+        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 font-bold text-white">NC</div>
+        <div>
+          <p className="font-semibold text-zinc-700">NoCodeCSV Team</p>
+          <p>Updated September 03, 2026 · Practical guides by the NoCodeCSV team.</p>
+        </div>
+      </div>
+
       {/* ===== Affiliate tools recommendation ===== */}
       <div className="my-10 rounded-xl border border-slate-200 bg-slate-50 p-6">
         <h2 className="text-xl font-bold mb-2">Go further with AI data tools</h2>

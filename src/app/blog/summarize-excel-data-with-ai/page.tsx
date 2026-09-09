@@ -116,6 +116,15 @@ export default function BlogPost() {
       <p>AI summaries are accurate when the source data is clean and the question is specific. Always spot-check headline numbers against the raw file, especially for anything that goes into a financial or client-facing report. Treat the summary as a brilliant first draft, not the final audit.</p>
       <h3>Can it summarize data that contains personal or financial information?</h3>
       <p>Technically yes, but check the tool&apos;s privacy policy first and only upload data you are permitted to share. Anonymize customer names and identifiers whenever possible — you can summarize patterns without exposing individuals.</p>
+      {/* ===== Author byline ===== */}
+      <div className="mt-8 flex items-center gap-3 border-t border-zinc-200 pt-6 text-sm text-zinc-500">
+        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 font-bold text-white">NC</div>
+        <div>
+          <p className="font-semibold text-zinc-700">NoCodeCSV Team</p>
+          <p>Updated September 04, 2026 · Practical guides by the NoCodeCSV team.</p>
+        </div>
+      </div>
+
       {/* ===== Affiliate tools recommendation ===== */}
       <div className="my-10 rounded-xl border border-slate-200 bg-slate-50 p-6">
         <h2 className="text-xl font-bold mb-2">Go further with AI data tools</h2>

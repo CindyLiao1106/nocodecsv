@@ -44,6 +44,16 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const orgJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "NoCodeCSV",
+    url: "https://nocodecsv.com/",
+    logo: "https://nocodecsv.com/og-image.png",
+    description:
+      "NoCodeCSV is a free AI-powered platform for analyzing CSV and Excel files through natural-language chat.",
+    email: "contact@nocodecsv.com",
+  };
   return (
     <ClerkProvider
       signInUrl="/sign-in"
@@ -58,6 +68,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <main className="flex-1">{children}</main>
             <Footer />
             <Toaster position="top-center" richColors />
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+            />
           </TooltipProvider>
         </body>
       </html>

@@ -4,8 +4,13 @@ export function HowItWorks() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
-            Three steps to your first insight
+            How do you analyze CSV files without coding?
           </h2>
+          <p className="mt-4 text-lg text-zinc-500 max-w-2xl mx-auto">
+            Upload your CSV or Excel file, type a question in plain English,
+            and the AI generates charts, finds patterns, and summarizes the
+            results — no SQL, Python, or formulas needed.
+          </p>
         </div>
         <div className="grid gap-8 sm:grid-cols-3">
           {[
