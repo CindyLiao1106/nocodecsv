@@ -3,11 +3,12 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Excel Formula Generator AI: Write Any Formula From Plain English (Free)",
+  title: "Excel Formula Generator AI: Plain English to Formula",
   description: "Generate Excel formulas from plain English with a free AI formula generator. Step-by-step prompts and examples for VLOOKUP, IF, SUMIFS and more.",
   keywords: ["excel formula generator ai", "AI excel formula generator free", "generate excel formulas from text", "write vlookup with ai", "excel formula from description"],
   alternates: { canonical: "https://nocodecsv.com/blog/excel-formula-generator-ai" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "Excel Formula Generator AI: Write Any Formula From Plain English (Free)",
     description: "Generate Excel formulas from plain English with a free AI formula generator. Prompts and examples for VLOOKUP, IF, SUMIFS and more.",
     type: "article",

@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   keywords: ["merge csv files free", "combine csv files", "merge multiple csv online", "csv merge tool free", "join csv files without excel"],
   alternates: { canonical: "https://nocodecsv.com/blog/merge-csv-files-free" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "How to Merge CSV Files for Free (No Excel, No Coding)",
     description: "Merge multiple CSV files into one in 3 simple ways — all free.",
     type: "article",

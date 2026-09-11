@@ -4,9 +4,10 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About NoCodeCSV — AI Data Analysis for Everyone",
   description:
-    "NoCodeCSV helps non-technical users analyze CSV and Excel files with AI. Learn about our mission, tools, and how we keep data analysis free and accessible.",
+    "NoCodeCSV helps non-technical users analyze CSV and Excel files with AI. Learn our mission and how we keep data analysis free and accessible.",
   alternates: { canonical: "https://nocodecsv.com/about" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "About NoCodeCSV — AI Data Analysis for Everyone",
     description:
       "We build free AI tools that let anyone chat with their spreadsheets — no SQL, no Python, no coding.",

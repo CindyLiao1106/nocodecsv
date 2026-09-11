@@ -3,11 +3,12 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "How to Summarize Excel Data With AI — Free, No Pivot Tables Needed",
-  description: "Summarize Excel data with AI for free: get totals, trends, outliers, and plain-English summaries of large spreadsheets in seconds. No pivot tables or formulas.",
+  title: "Summarize Excel Data With AI — Free, No Pivot Tables",
+  description: "Summarize Excel data with AI for free: get totals, trends, outliers, and plain-English summaries of large spreadsheets in seconds.",
   keywords: ["summarize excel data with ai", "AI spreadsheet summary", "summarize csv with ai", "Excel data analysis AI", "automatic data summary"],
   alternates: { canonical: "https://nocodecsv.com/blog/summarize-excel-data-with-ai" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "How to Summarize Excel Data With AI — Free, No Pivot Tables Needed",
     description: "Summarize Excel data with AI for free: get totals, trends, outliers, and plain-English summaries of large spreadsheets in seconds.",
     type: "article",

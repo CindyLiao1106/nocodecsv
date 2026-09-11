@@ -3,11 +3,12 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Fix Garbled CSV in Excel: UTF-8, BOM & Encoding Issues Explained",
-  description: "CSV opens in Excel with weird characters like Ã© or ä¸æ–‡? Fix garbled CSV fast: import as UTF-8, add a BOM, or re-encode the file. Step-by-step guide.",
+  title: "Fix Garbled CSV in Excel: UTF-8 & BOM Encoding",
+  description: "CSV opens in Excel with weird characters? Fix garbled CSV fast: import as UTF-8, add a BOM, or re-encode the file. Step-by-step guide.",
   keywords: ["fix garbled csv in excel", "csv shows weird characters excel", "utf8 bom csv excel", "csv encoding problem excel", "excel csv garbled text fix"],
   alternates: { canonical: "https://nocodecsv.com/blog/fix-garbled-csv-in-excel" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "Fix Garbled CSV in Excel: UTF-8, BOM & Encoding Issues Explained",
     description: "CSV opens in Excel with weird characters? Fix garbled CSV fast: import as UTF-8, add a BOM, or re-encode the file.",
     type: "article",
@@ -29,7 +30,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: "Fix Garbled CSV in Excel: UTF-8, BOM & Encoding Issues Explained",
-  description: "CSV opens in Excel with weird characters like Ã© or ä¸æ–‡? Fix garbled CSV fast: import as UTF-8, add a BOM, or re-encode the file. Step-by-step guide.",
+  description: "CSV opens in Excel with weird characters? Fix garbled CSV fast: import as UTF-8, add a BOM, or re-encode the file. Step-by-step guide.",
   url: "https://nocodecsv.com/blog/fix-garbled-csv-in-excel",
   datePublished: "2026-09-06",
   dateModified: "2026-09-06",

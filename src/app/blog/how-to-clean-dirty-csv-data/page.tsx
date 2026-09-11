@@ -4,10 +4,11 @@ import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: "How to Clean Dirty CSV Data: A Step-by-Step Guide (Free)",
-  description: "Fix messy CSV data fast: duplicates, missing values, inconsistent formats, extra spaces. Step-by-step cleaning guide with free AI tools — no coding or Excel skills required.",
+  description: "Fix messy CSV data fast: duplicates, missing values, inconsistent formats, extra spaces. Step-by-step guide with free AI tools — no coding needed.",
   keywords: ["how to clean dirty csv data", "clean csv data free", "remove duplicates from csv", "fix missing values csv", "data cleaning tutorial"],
   alternates: { canonical: "https://nocodecsv.com/blog/how-to-clean-dirty-csv-data" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "How to Clean Dirty CSV Data: A Step-by-Step Guide (Free)",
     description: "Fix messy CSV data fast: duplicates, missing values, inconsistent formats, extra spaces. Step-by-step cleaning guide with free AI tools — no coding required.",
     type: "article",

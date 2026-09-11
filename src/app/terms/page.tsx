@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   description: "Terms of Service for NoCodeCSV: usage limits, payments, refunds, and acceptable use policy.",
   alternates: { canonical: "https://nocodecsv.com/terms" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "Terms of Service — NoCodeCSV",
     description: "Terms of Service for NoCodeCSV: usage limits, payments, refunds, and acceptable use policy.",
     type: "website",

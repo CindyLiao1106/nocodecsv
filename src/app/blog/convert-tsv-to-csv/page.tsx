@@ -3,11 +3,12 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Convert TSV to CSV Free: Tab-Separated to Comma (2026) | NoCodeCSV",
-  description: "Convert TSV to CSV free in four ways: Google Sheets, Excel text import, the terminal, or Python. Plus the quoting traps that break naive tab-to-comma swaps.",
+  title: "Convert TSV to CSV Free: Tab to Comma in Seconds",
+  description: "Convert TSV to CSV free in four ways: Google Sheets, Excel text import, the terminal, or Python. Plus the quoting traps that break naive swaps.",
   keywords: ["convert tsv to csv", "tsv to csv converter", "tsv vs csv", "open tab separated file", "tsv to csv excel", "tsv to csv google sheets"],
   alternates: { canonical: "https://nocodecsv.com/blog/convert-tsv-to-csv" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "Convert TSV to CSV Free: Tab-Separated to Comma (2026) | NoCodeCSV",
     description: "Convert TSV to CSV free: Google Sheets, Excel, the terminal, or Python. Plus the quoting traps that break naive tab-to-comma swaps.",
     type: "article",

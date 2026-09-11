@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   keywords: ["split large csv file online", "split CSV file by rows", "free CSV splitter", "CSV too large for Excel", "divide CSV into multiple files"],
   alternates: { canonical: "https://nocodecsv.com/blog/split-large-csv-file-online" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "How to Split a Large CSV File Online — Free, No Software",
     description: "Split a large CSV file online for free: by rows, by column, or by size. Step-by-step methods for files too big for Excel.",
     type: "article",

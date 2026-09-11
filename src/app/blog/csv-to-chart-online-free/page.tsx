@@ -3,11 +3,12 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "CSV to Chart Online Free — No Excel, No Code (2026) | NoCodeCSV",
-  description: "Turn a CSV into a chart online free in under a minute. Compare chart makers, pick the right graph type, and fix common date and scaling problems. No Excel needed.",
+  title: "CSV to Chart Online Free — No Excel, No Code",
+  description: "Turn a CSV into a chart online free in under a minute. Compare chart makers, pick the right graph type, and fix common date and scaling problems.",
   keywords: ["csv to chart online free", "create chart from csv", "csv to graph converter", "make chart from csv without excel", "free online chart maker from spreadsheet data"],
   alternates: { canonical: "https://nocodecsv.com/blog/csv-to-chart-online-free" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "CSV to Chart Online Free — No Excel, No Code (2026) | NoCodeCSV",
     description: "Turn a CSV into a chart online free in under a minute. Compare chart makers, pick the right graph type, and fix common date and scaling problems.",
     type: "article",

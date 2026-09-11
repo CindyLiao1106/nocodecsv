@@ -3,11 +3,12 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "How to Remove Blank Rows From a CSV: 4 Free Methods (2026) | NoCodeCSV",
-  description: "Blank rows break sorts, formulas, and imports. Here is how to find and delete empty rows in Excel, Google Sheets, the terminal, and Python, including the rows that only look empty.",
+  title: "Remove Blank Rows From CSV: 4 Free Methods",
+  description: "Blank rows break sorts, formulas, and imports. How to find and delete empty rows in Excel, Google Sheets, the terminal, and Python.",
   keywords: ["remove blank rows from csv", "delete empty rows csv", "remove blank rows in excel csv", "how to delete blank rows in csv file", "remove empty rows from csv online", "csv has blank rows", "clean blank rows csv"],
   alternates: { canonical: "https://nocodecsv.com/blog/remove-blank-rows-from-csv" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "How to Remove Blank Rows From a CSV: 4 Free Methods (2026) | NoCodeCSV",
     description: "Empty rows ruin sorts, break formulas, and crash imports. Four free ways to find and delete them, plus the rows that are blank only to the eye.",
     type: "article",

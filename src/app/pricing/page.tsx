@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description: "Start free with 3 analyses per day. Upgrade to Pro ($15/mo) for unlimited use, or Business ($49/mo) for teams. Cancel anytime.",
   alternates: { canonical: "https://nocodecsv.com/pricing" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "Pricing — Free AI CSV Analysis, Pro $15/mo | NoCodeCSV",
     description: "Start free with 3 analyses per day. Upgrade to Pro or Business for unlimited AI data analysis.",
     type: "website",
@@ -125,7 +126,7 @@ export default function PricingPage() {
             <div className="flex items-start gap-3">
               <Banknote className="h-6 w-6 text-amber-600 mt-1 shrink-0" />
               <div>
-                <h3 className="font-semibold text-lg mb-2">Enterprise / Wire Transfer</h3>
+                <h2 className="font-semibold text-lg mb-2">Enterprise / Wire Transfer</h2>
                 <p className="text-sm text-zinc-600 mb-3">{XTRANSFER.note}</p>
                 <p className="text-sm text-zinc-600 mb-1">
                   <strong>Accepted via XTransfer:</strong> USD wire transfer, supporting US/UK/EU/Southeast Asia bank accounts.

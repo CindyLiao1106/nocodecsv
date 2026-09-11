@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   keywords: ["how to analyze CSV with AI free", "AI CSV analysis tutorial", "free CSV data analysis tool", "analyze CSV without coding"],
   alternates: { canonical: "https://nocodecsv.com/blog/how-to-analyze-csv-with-ai-free" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "How to Analyze CSV Files With AI (Free, No Coding)",
     description: "Learn how to analyze CSV data using AI in 3 simple steps. No SQL, Python, or Excel skills needed.",
     type: "article",

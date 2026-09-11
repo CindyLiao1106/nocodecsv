@@ -3,11 +3,12 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "CSV vs Excel: What's the Difference and When to Use Which (2026) | NoCodeCSV",
-  description: "CSV is plain text with no formatting; Excel (.xlsx) is a compressed workbook with formulas and sheets. See the difference table and when each one wins.",
+  title: "CSV vs Excel: What's the Difference & When to Use",
+  description: "CSV is plain text with no formatting; Excel (.xlsx) is a compressed workbook with formulas and sheets. See the difference and when each wins.",
   keywords: ["csv vs excel", "difference between csv and excel", "csv vs xlsx", "what is a csv file", "is csv an excel file", "csv or excel for data", "excel file limit"],
   alternates: { canonical: "https://nocodecsv.com/blog/csv-vs-excel" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "CSV vs Excel: What's the Difference and When to Use Which (2026) | NoCodeCSV",
     description: "CSV is plain text with no formatting; Excel (.xlsx) is a compressed workbook with formulas and sheets. Difference table included.",
     type: "article",

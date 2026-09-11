@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Compare Two CSV Files Online: Find Differences in Minutes (Free)",
+  title: "Compare Two CSV Files Online: Find Differences Free",
   description:
     "Learn how to compare two CSV files online for free. Spot new rows, changed values, and missing records fast with AI, Excel, or a diff tool.",
   keywords: [
@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     canonical: "https://nocodecsv.com/blog/compare-two-csv-files-online",
   },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "Compare Two CSV Files Online: Find Differences in Minutes (Free)",
     description:
       "Learn how to compare two CSV files online for free — AI, Excel, and diff tool methods with step-by-step instructions.",

@@ -3,11 +3,12 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Convert CSV to PDF: 5 Free Ways to Get a Clean Printable File (2026) | NoCodeCSV",
-  description: "A CSV carries no layout, so turning it into a PDF means importing and formatting first. Five free ways to produce a readable PDF, plus the wide-table traps that catch everyone.",
+  title: "Convert CSV to PDF: 5 Free Ways (Clean & Printable)",
+  description: "A CSV carries no layout, so turning it into a PDF means importing and formatting first. Five free ways to produce a readable PDF, plus the traps.",
   keywords: ["convert csv to pdf", "csv to pdf converter", "csv to pdf free", "how to convert csv file to pdf", "print csv to pdf", "csv to pdf without excel", "save csv as pdf"],
   alternates: { canonical: "https://nocodecsv.com/blog/convert-csv-to-pdf" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "Convert CSV to PDF: 5 Free Ways to Get a Clean Printable File (2026) | NoCodeCSV",
     description: "Excel, Google Sheets, LibreOffice, an online converter, or a short script. Five ways to turn a raw CSV into a PDF that does not split mid-column.",
     type: "article",

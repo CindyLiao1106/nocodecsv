@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   keywords: ["AI data visualization", "AI chart generator", "data visualization AI tool", "turn spreadsheet into chart AI", "AI graph maker", "data viz without coding"],
   alternates: { canonical: "https://nocodecsv.com/blog/ai-data-visualization-guide" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "AI Data Visualization Guide — Turn Spreadsheets Into Charts",
     description: "Learn how AI transforms raw spreadsheet data into beautiful charts. A guide for non-designers — no coding.",
     type: "article",

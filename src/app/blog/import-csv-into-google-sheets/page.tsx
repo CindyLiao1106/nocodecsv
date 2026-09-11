@@ -3,11 +3,12 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "How to Import CSV Into Google Sheets (2026): 4 Ways | NoCodeCSV",
-  description: "Import a CSV into Google Sheets four ways: upload, paste, IMPORTDATA from a URL, or a scheduled script. Plus the delimiter and encoding fixes that stop imports breaking.",
+  title: "How to Import CSV Into Google Sheets: 4 Ways",
+  description: "Import a CSV into Google Sheets four ways: upload, paste, IMPORTDATA from a URL, or a scheduled script. Plus delimiter and encoding fixes.",
   keywords: ["import csv into google sheets", "open csv in google sheets", "import csv from url google sheets", "csv to google sheets", "google sheets import csv semicolon"],
   alternates: { canonical: "https://nocodecsv.com/blog/import-csv-into-google-sheets" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "How to Import CSV Into Google Sheets (2026): 4 Ways | NoCodeCSV",
     description: "Import a CSV into Google Sheets four ways: upload, paste, IMPORTDATA from a URL, or a scheduled script. Plus the fixes that stop imports breaking.",
     type: "article",

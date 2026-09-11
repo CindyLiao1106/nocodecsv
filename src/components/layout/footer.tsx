@@ -6,7 +6,7 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 py-12">
         <div className="grid gap-8 sm:grid-cols-4">
           <div>
-            <h4 className="font-semibold text-sm mb-3">Product</h4>
+            <p className="font-semibold text-sm mb-3">Product</p>
             <div className="space-y-2 text-sm text-zinc-500">
               <Link href="/dashboard" className="block hover:text-zinc-700">Dashboard</Link>
               <Link href="/pricing" className="block hover:text-zinc-700">Pricing</Link>
@@ -14,7 +14,7 @@ export function Footer() {
             </div>
           </div>
           <div>
-            <h4 className="font-semibold text-sm mb-3">Tools</h4>
+            <p className="font-semibold text-sm mb-3">Tools</p>
             <div className="space-y-2 text-sm text-zinc-500">
               <Link href="/tools/csv-analyzer" className="block hover:text-zinc-700">CSV Analyzer</Link>
               <Link href="/tools/excel-data-analysis" className="block hover:text-zinc-700">Excel Analysis</Link>
@@ -22,7 +22,7 @@ export function Footer() {
             </div>
           </div>
           <div>
-            <h4 className="font-semibold text-sm mb-3">Blog</h4>
+            <p className="font-semibold text-sm mb-3">Blog</p>
             <div className="space-y-2 text-sm text-zinc-500">
               <Link href="/blog/how-to-analyze-csv-with-ai-free" className="block hover:text-zinc-700">Analyze CSV With AI</Link>
               <Link href="/blog/best-ai-tools-for-excel-analysis" className="block hover:text-zinc-700">Best AI Excel Tools</Link>
@@ -32,7 +32,7 @@ export function Footer() {
             </div>
           </div>
           <div>
-            <h4 className="font-semibold text-sm mb-3">Company</h4>
+            <p className="font-semibold text-sm mb-3">Company</p>
             <div className="space-y-2 text-sm text-zinc-500">
               <Link href="/about" className="block hover:text-zinc-700">About</Link>
               <Link href="/pricing" className="block hover:text-zinc-700">Pricing</Link>

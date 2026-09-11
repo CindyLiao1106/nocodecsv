@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   keywords: ["AI data analysis tool for Excel", "AI Excel analyzer", "analyze Excel file online", "AI spreadsheet analysis", "Excel data insights AI", "free Excel data analysis"],
   alternates: { canonical: "https://nocodecsv.com/tools/excel-data-analysis" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "AI Excel Data Analysis Tool — Ask Questions, Get Charts",
     description: "Upload Excel, ask questions, get answers. No formulas needed.",
     type: "website",

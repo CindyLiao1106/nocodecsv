@@ -16,6 +16,14 @@ export const metadata: Metadata = {
     "free CSV analysis", "AI data insights", "chat with CSV",
     "nocode csv", "no code data analysis",
   ],
+  // C16: 摘要/预览控制 —— 允许完整摘要与大幅图片预览
+  robots: {
+    index: true,
+    follow: true,
+    "max-snippet": -1,
+    "max-image-preview": "large",
+    "max-video-preview": -1,
+  },
   alternates: {
     canonical: "/",
   },
@@ -53,6 +61,17 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     description:
       "NoCodeCSV is a free AI-powered platform for analyzing CSV and Excel files through natural-language chat.",
     email: "contact@nocodecsv.com",
+    // TODO(sameAs): 补真实社交/权威主页（X、LinkedIn、Product Hunt 等）
+    // 没有账号前不填，避免写入不实信息
+  };
+  // C12: 站点级 WebSite 实体（所有页面共享）
+  const webSiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "NoCodeCSV",
+    url: "https://nocodecsv.com/",
+    inLanguage: "en",
+    publisher: { "@type": "Organization", name: "NoCodeCSV" },
   };
   return (
     <ClerkProvider
@@ -71,6 +90,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <script
               type="application/ld+json"
               dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+            />
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteJsonLd) }}
             />
           </TooltipProvider>
         </body>

@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     "Upload a CSV or Excel file and ask questions in plain English. AI generates charts, finds patterns, and summarizes your data. Free to start.",
   alternates: { canonical: "https://nocodecsv.com/" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "NoCodeCSV — Chat with Your CSV & Excel Files Using AI",
     description:
       "Upload a CSV or Excel file and ask questions in plain English. AI generates charts, finds patterns, and summarizes your data.",

@@ -3,11 +3,12 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Chat With Spreadsheet AI Free: Ask Questions, Get Instant Answers",
+  title: "Chat With Spreadsheet AI Free: Ask & Get Answers",
   description: "Chat with spreadsheet AI free: upload your CSV or Excel file, ask questions in plain English, and get answers, charts, and insights in seconds.",
   keywords: ["chat with spreadsheet ai free", "chat with excel file", "AI spreadsheet assistant", "ask questions about your data", "natural language data analysis"],
   alternates: { canonical: "https://nocodecsv.com/blog/chat-with-spreadsheet-ai-free" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "Chat With Spreadsheet AI Free: Ask Questions, Get Instant Answers",
     description: "Chat with spreadsheet AI free: upload your CSV or Excel file, ask questions in plain English, and get answers in seconds.",
     type: "article",

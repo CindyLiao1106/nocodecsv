@@ -3,11 +3,12 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "CSV to HTML Table Converter: Free, Fast, No Code (2026) | NoCodeCSV",
-  description: "Turn a CSV into a clean HTML table in minutes. Compare free converters, learn when to script or hand-code it, and dodge the encoding traps that break tables.",
+  title: "CSV to HTML Table Converter: Free & Fast, No Code",
+  description: "Turn a CSV into a clean HTML table in minutes. Compare free converters, learn when to script or hand-code it, and dodge encoding traps.",
   keywords: ["csv to html table", "convert csv to html table free", "csv to table generator", "html table from csv", "csv to html code"],
   alternates: { canonical: "https://nocodecsv.com/blog/csv-to-html-table" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "CSV to HTML Table Converter: Free, Fast, No Code (2026) | NoCodeCSV",
     description: "Turn a CSV into a clean HTML table in minutes. Compare free converters, learn when to script or hand-code it, and dodge the encoding traps that break tables.",
     type: "article",

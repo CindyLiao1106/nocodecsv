@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   keywords: ["spreadsheet automation AI", "automate Excel analysis", "AI data processing", "automatic spreadsheet analysis", "AI report generator from spreadsheet"],
   alternates: { canonical: "https://nocodecsv.com/blog/spreadsheet-automation-with-ai" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "Spreadsheet Automation With AI — Stop Manual Data Work",
     description: "How AI is automating spreadsheet analysis in 2026. From automated data cleaning to AI-generated reports.",
     type: "article",

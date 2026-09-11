@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   keywords: ["convert csv to excel without excel", "csv to xlsx free online", "open csv without microsoft office", "convert csv to xlsx no install", "csv to excel converter free"],
   alternates: { canonical: "https://nocodecsv.com/blog/convert-csv-to-excel-without-excel" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "How to Convert CSV to Excel Without Excel — Free & Easy",
     description: "Free online converter, Google Sheets, or LibreOffice: convert your CSV to a real .xlsx file without Microsoft Office.",
     type: "article",

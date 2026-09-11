@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   description: "How NoCodeCSV handles your data: files processed in memory, never stored, no third-party sharing.",
   alternates: { canonical: "https://nocodecsv.com/privacy" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "Privacy Policy — NoCodeCSV",
     description: "How NoCodeCSV handles your data: files processed in memory, never stored, no third-party sharing.",
     type: "website",

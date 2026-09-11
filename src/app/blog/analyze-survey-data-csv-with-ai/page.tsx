@@ -4,10 +4,11 @@ import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: "How to Analyze Survey Data CSV With AI (Free, No Coding)",
-  description: "Analyze survey data CSV with AI in 3 steps: export your survey, upload it, ask questions in plain English. Free, no coding, works for Google Forms and more.",
+  description: "Analyze survey data CSV with AI in 3 steps: export your survey, upload it, ask questions in plain English. Free, no coding, works for Google Forms.",
   keywords: ["analyze survey data csv with ai", "survey data analysis", "Google Forms CSV analysis AI", "free survey data analyzer", "open-ended survey responses AI"],
   alternates: { canonical: "https://nocodecsv.com/blog/analyze-survey-data-csv-with-ai" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "How to Analyze Survey Data CSV With AI (Free, No Coding)",
     description: "Analyze survey data CSV with AI in 3 steps. Free, no coding, works for Google Forms, Typeform and SurveyMonkey exports.",
     type: "article",

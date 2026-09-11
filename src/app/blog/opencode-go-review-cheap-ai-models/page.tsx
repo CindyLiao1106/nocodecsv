@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "OpenCode Go Review 2026: $10/Month for DeepSeek V4 Flash, GPT 5.6 Luna & GLM — Is It Worth It?",
-  description: "Hands-on OpenCode Go review: $10/month, ~158K requests, DeepSeek V4 Flash, GPT 5.6 Luna, GLM-5.3, Kimi and more. Real usage data, the 402/403 gotchas, and who it's actually for.",
+  title: "OpenCode Go Review 2026: $10/Month Cheap AI Models",
+  description: "Hands-on OpenCode Go review: $10/month, ~158K requests, DeepSeek V4 Flash, GPT 5.6 Luna, GLM-5.3. Real usage data plus the 402/403 gotchas.",
   keywords: ["OpenCode Go review", "cheap AI models subscription", "DeepSeek V4 Flash API", "GPT 5.6 Luna cheap", "affordable AI coding models", "OpenCode Go pricing"],
   alternates: { canonical: "https://nocodecsv.com/blog/opencode-go-review-cheap-ai-models" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "OpenCode Go Review 2026 — $10/Month All-You-Can-Use AI Models",
     description: "I tested OpenCode Go for a month. Here's the real picture: price, limit math, which models work, and the 402/403 traps.",
     type: "article",

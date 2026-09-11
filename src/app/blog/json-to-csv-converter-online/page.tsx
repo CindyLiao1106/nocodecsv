@@ -3,11 +3,12 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "JSON to CSV Converter Online: Free, No Code (2026) | NoCodeCSV",
+  title: "JSON to CSV Converter Online: Free, No Code",
   description: "Convert JSON to CSV free online. Flatten nested objects, keep your data types, and open the result in Excel or Google Sheets. No signup, no code.",
   keywords: ["json to csv converter online", "convert json to csv free", "json to excel converter", "flatten nested json to csv", "json to spreadsheet"],
   alternates: { canonical: "https://nocodecsv.com/blog/json-to-csv-converter-online" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "JSON to CSV Converter Online: Free, No Code (2026) | NoCodeCSV",
     description: "Convert JSON to CSV free online. Flatten nested objects, keep your data types, and open the result in Excel or Google Sheets.",
     type: "article",

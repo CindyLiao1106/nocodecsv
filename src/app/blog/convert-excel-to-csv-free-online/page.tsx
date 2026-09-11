@@ -3,11 +3,12 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "How to Convert Excel to CSV Free Online — No Data Loss, No Signup",
+  title: "Convert Excel to CSV Free Online — No Data Loss",
   description: "Convert Excel to CSV free online or with Excel's built-in Save As. Keep UTF-8 encoding, avoid garbled text, and learn which sheet gets exported.",
   keywords: ["convert excel to csv free online", "xlsx to csv converter", "excel to csv without data loss", "export excel as csv utf8", "xlsx to csv free"],
   alternates: { canonical: "https://nocodecsv.com/blog/convert-excel-to-csv-free-online" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "How to Convert Excel to CSV Free Online — No Data Loss, No Signup",
     description: "Convert Excel to CSV free online or with Excel's built-in Save As. Keep UTF-8 encoding and avoid garbled text.",
     type: "article",

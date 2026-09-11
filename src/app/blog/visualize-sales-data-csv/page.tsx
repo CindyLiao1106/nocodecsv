@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   keywords: ["visualize sales data csv", "sales data visualization free", "turn csv into charts", "sales chart generator", "analyze sales export csv"],
   alternates: { canonical: "https://nocodecsv.com/blog/visualize-sales-data-csv" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "How to Visualize Sales Data CSV — Free, Fast, No Coding",
     description: "Turn raw sales exports into clear charts with AI. No Excel, SQL, or coding needed.",
     type: "article",

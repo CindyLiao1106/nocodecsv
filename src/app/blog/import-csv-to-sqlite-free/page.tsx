@@ -3,11 +3,12 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "How to Import CSV to SQLite for Free: 5 Methods That Actually Work",
-  description: "Import CSV to SQLite for free with CLI, DB Browser, or Python. Step-by-step methods plus fixes for encoding, type, and header errors. No paid tools needed.",
+  title: "How to Import CSV to SQLite Free: 5 Working Methods",
+  description: "Import CSV to SQLite for free with CLI, DB Browser, or Python. Step-by-step methods plus fixes for encoding, type, and header errors.",
   keywords: ["import csv to sqlite free", "CSV to SQLite", "sqlite3 import csv", "DB Browser for SQLite import csv", "bulk load csv sqlite"],
   alternates: { canonical: "https://nocodecsv.com/blog/import-csv-to-sqlite-free" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "How to Import CSV to SQLite for Free: 5 Methods That Actually Work",
     description: "Import CSV to SQLite for free with CLI, DB Browser, or Python. Step-by-step methods plus fixes for encoding, type, and header errors.",
     type: "article",

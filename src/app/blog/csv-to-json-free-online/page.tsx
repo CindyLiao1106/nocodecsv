@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   keywords: ["csv to json free online", "convert csv to json", "csv to json converter", "csv to json without signup", "csv to json developer tool"],
   alternates: { canonical: "https://nocodecsv.com/blog/csv-to-json-free-online" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "CSV to JSON Converter Free Online: Fast, Accurate, No Signup",
     description: "Convert CSV to JSON free online in seconds. Handle headers, custom delimiters, and nested data. No signup, no install.",
     type: "article",

@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   keywords: ["remove duplicates from csv", "dedupe csv file", "delete duplicate rows csv", "remove duplicates csv online free", "deduplicate csv data"],
   alternates: { canonical: "https://nocodecsv.com/blog/remove-duplicates-from-csv" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "How to Remove Duplicates From CSV Files — Free and Easy",
     description: "Remove duplicate rows from a CSV file for free: in Excel, Google Sheets, or online. Step-by-step methods, plus how to dedupe by one column only.",
     type: "article",

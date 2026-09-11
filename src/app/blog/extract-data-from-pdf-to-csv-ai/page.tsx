@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     canonical: "https://nocodecsv.com/blog/extract-data-from-pdf-to-csv-ai",
   },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "Extract Data From PDF to CSV With AI: Free, No Manual Typing",
     description:
       "Learn how to extract data from PDF to CSV with AI for free — text PDFs, scanned docs with OCR, cleanup, and analysis.",

@@ -3,11 +3,12 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "How to Change a CSV Delimiter: Semicolon to Comma and Back (2026) | NoCodeCSV",
-  description: "CSV opens as one column? The file uses a different delimiter, usually semicolons. Fix it in Excel's import wizard, Google Sheets, LibreOffice, or the terminal.",
+  title: "How to Change a CSV Delimiter (Semicolon to Comma)",
+  description: "CSV opens as one column? The file uses a different delimiter, usually semicolons. Fix it in Excel, Google Sheets, LibreOffice, or the terminal.",
   keywords: ["change csv delimiter", "csv semicolon to comma", "open semicolon csv in excel", "csv delimiter not working", "semicolon separated values", "change delimiter in excel csv", "csv opens in one column"],
   alternates: { canonical: "https://nocodecsv.com/blog/change-csv-delimiter" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "How to Change a CSV Delimiter: Semicolon to Comma and Back (2026) | NoCodeCSV",
     description: "CSV opens as one column? The file uses a different delimiter, usually semicolons from a European locale. Four free fixes, no data loss.",
     type: "article",

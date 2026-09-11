@@ -3,11 +3,12 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Free CSV Viewer Online: Open Large CSV Files Instantly in Your Browser",
-  description: "Open and inspect CSV files free online — no Excel, no installs. View large CSVs instantly, check columns and values, and analyze data with AI. No signup needed.",
+  title: "Free CSV Viewer Online: Open Large CSV Files Instantly",
+  description: "Open and inspect CSV files free online — no Excel, no installs. View large CSVs instantly, check columns and values, and analyze data with AI.",
   keywords: ["free csv viewer online", "view csv file online free", "open large csv file", "csv viewer without excel", "inspect csv file browser"],
   alternates: { canonical: "https://nocodecsv.com/blog/free-csv-viewer-online" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "Free CSV Viewer Online: Open Large CSV Files Instantly in Your Browser",
     description: "Open and inspect CSV files free online — no Excel, no installs. View large CSVs instantly, check columns and values, and analyze data with AI.",
     type: "article",

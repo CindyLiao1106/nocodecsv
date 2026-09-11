@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   keywords: ["best AI tools for Excel analysis", "AI Excel tools comparison", "best AI spreadsheet tool 2026", "Excel AI assistant", "AI data analysis tools"],
   alternates: { canonical: "https://nocodecsv.com/blog/best-ai-tools-for-excel-analysis" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "Best AI Tools for Excel Analysis in 2026 (Free & Paid)",
     description: "Compare top AI tools for Excel and spreadsheet analysis: ChatGPT Code Interpreter, Julius AI, DataAnalyzer AI, and more.",
     type: "article",

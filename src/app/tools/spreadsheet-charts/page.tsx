@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   keywords: ["AI chart generator from CSV", "AI chart maker", "auto chart from spreadsheet", "AI graph generator", "free chart maker from Excel", "data visualization AI"],
   alternates: { canonical: "https://nocodecsv.com/tools/spreadsheet-charts" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "AI Chart Generator — Instant Bar, Line & Pie Charts",
     description: "Upload data, describe the chart. AI creates it in seconds.",
     type: "website",

@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Ask CSV: Ask Questions About Your CSV Data with AI (Free, No Code)",
-  description: "Upload a CSV and ask questions in plain English — get answers, summaries, and charts instantly. Free AI way to ask your CSV file anything, no Excel or coding.",
+  title: "Ask CSV: AI Answers About Your CSV Data (Free)",
+  description: "Upload a CSV and ask questions in plain English — get answers, summaries, and charts instantly. Free AI way to ask your CSV anything, no Excel.",
   keywords: ["ask csv", "ask csv questions", "chat with csv", "ai for csv", "ask questions about csv data", "chat with your data"],
   alternates: { canonical: "https://nocodecsv.com/blog/ask-csv" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "Ask CSV: Ask Questions About Your CSV Data with AI (Free)",
     description: "Upload a CSV and ask questions in plain English — get answers instantly. Free, no code.",
     type: "article",

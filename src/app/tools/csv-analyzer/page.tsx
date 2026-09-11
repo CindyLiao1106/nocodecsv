@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   keywords: ["free AI CSV analyzer", "CSV data analysis AI", "analyze CSV online free", "AI CSV tool", "chat with CSV", "CSV insights generator"],
   alternates: { canonical: "https://nocodecsv.com/tools/csv-analyzer" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "Free AI CSV Analyzer — Chat With Your CSV Files",
     description: "Upload CSV, ask questions, get charts. No coding required.",
     type: "website",

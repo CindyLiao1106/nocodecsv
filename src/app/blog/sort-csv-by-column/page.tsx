@@ -3,11 +3,12 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "How to Sort a CSV File by Column: 4 Free Ways (2026) | NoCodeCSV",
+  title: "How to Sort a CSV File by Column: 4 Free Ways",
   description: "Sort a CSV by column free in Google Sheets, Excel, the terminal, or Python. Headers stay on top, numbers sort correctly, million-row files covered.",
   keywords: ["sort csv by column", "how to sort a csv file", "sort csv online", "sort csv alphabetically", "sort large csv file", "sort csv in excel"],
   alternates: { canonical: "https://nocodecsv.com/blog/sort-csv-by-column" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "How to Sort a CSV File by Column: 4 Free Ways (2026) | NoCodeCSV",
     description: "Sort a CSV by column free: Google Sheets, Excel, the terminal, or Python. Headers on top, numbers correct, big files covered.",
     type: "article",

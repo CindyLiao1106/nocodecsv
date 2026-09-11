@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   keywords: ["free alternative to ChatGPT code interpreter", "ChatGPT data analysis alternative", "DeepSeek data analysis", "free AI data analysis tool", "ChatGPT code interpreter vs"],
   alternates: { canonical: "https://nocodecsv.com/blog/free-alternative-to-chatgpt-code-interpreter" },
   openGraph: {
+    images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
     title: "Free ChatGPT Code Interpreter Alternative for Data Analysis",
     description: "Looking for a free ChatGPT Code Interpreter alternative? Compare features, pricing, and privacy.",
     type: "article",
