@@ -11,6 +11,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: BASE_URL, lastModified: homeLastModified, changeFrequency: "weekly" as const, priority: 1 },
     { url: `${BASE_URL}/pricing`, lastModified: seoLastModified, changeFrequency: "monthly" as const, priority: 0.8 },
 
+    // 博客枢纽页（所有文章的入口，被抓取的必经节点）
+    { url: `${BASE_URL}/blog`, lastModified: "2026-09-12T00:00:00.000Z", changeFrequency: "weekly" as const, priority: 0.8 },
+
     // SEO 工具页
     { url: `${BASE_URL}/tools/csv-analyzer`, lastModified: seoLastModified, changeFrequency: "monthly" as const, priority: 0.8 },
     { url: `${BASE_URL}/tools/excel-data-analysis`, lastModified: seoLastModified, changeFrequency: "monthly" as const, priority: 0.8 },
@@ -54,6 +57,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/opencode-go-review-cheap-ai-models`, lastModified: "2026-09-10T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.8 },
     { url: `${BASE_URL}/blog/csv-to-markdown-table`, lastModified: "2026-09-11T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
     { url: `${BASE_URL}/blog/keep-leading-zeros-in-csv`, lastModified: "2026-09-11T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: `${BASE_URL}/blog/transpose-csv-file`, lastModified: "2026-09-12T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: `${BASE_URL}/blog/extract-email-addresses-from-csv`, lastModified: "2026-09-12T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
     // 法律页面
     { url: `${BASE_URL}/privacy`, lastModified: "2026-08-01T00:00:00.000Z", changeFrequency: "yearly" as const, priority: 0.3 },
     { url: `${BASE_URL}/terms`, lastModified: "2026-08-01T00:00:00.000Z", changeFrequency: "yearly" as const, priority: 0.3 },
