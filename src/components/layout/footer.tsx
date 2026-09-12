@@ -24,6 +24,7 @@ export function Footer() {
           <div>
             <p className="font-semibold text-sm mb-3">Blog</p>
             <div className="space-y-2 text-sm text-zinc-500">
+              <Link href="/blog" className="block hover:text-zinc-700 font-medium">All Guides</Link>
               <Link href="/blog/how-to-analyze-csv-with-ai-free" className="block hover:text-zinc-700">Analyze CSV With AI</Link>
               <Link href="/blog/best-ai-tools-for-excel-analysis" className="block hover:text-zinc-700">Best AI Excel Tools</Link>
               <Link href="/blog/ai-data-visualization-guide" className="block hover:text-zinc-700">AI Chart Guide</Link>
