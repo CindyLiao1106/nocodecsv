@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "Free CSV Viewer Online: Open Large CSV Files Instantly",
@@ -136,6 +137,7 @@ export default function BlogPost() {
         <p className="text-blue-100 mb-5">Upload your first CSV and ask a question. No signup needed.</p>
         <Link href="/dashboard"><Button size="lg" variant="secondary" className="text-base px-8">View Your CSV Free</Button></Link>
       </div>
+      <RelatedPosts slug="free-csv-viewer-online" />
     </article>
     </>
   );

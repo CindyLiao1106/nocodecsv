@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "Best AI Tools for Excel Analysis in 2026 (Free & Paid)",
@@ -122,6 +123,7 @@ export default function BlogPost() {
         <p className="text-blue-100 mb-5">3 free analyses per day. No credit card. No signup.</p>
         <Link href="/dashboard"><Button size="lg" variant="secondary" className="text-base px-8">Start Analyzing Free</Button></Link>
       </div>
+      <RelatedPosts slug="best-ai-tools-for-excel-analysis" />
     </article>
     </>
   );

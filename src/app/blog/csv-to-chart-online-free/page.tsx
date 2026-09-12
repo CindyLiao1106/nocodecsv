@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "CSV to Chart Online Free — No Excel, No Code",
@@ -231,6 +232,7 @@ export default function BlogPost() {
         <p className="text-blue-100 mb-5">Upload your CSV and get a clean chart in minutes. No signup needed.</p>
         <Link href="/tools/spreadsheet-charts"><Button size="lg" variant="secondary" className="text-base px-8">Create Your Chart Free</Button></Link>
       </div>
+      <RelatedPosts slug="csv-to-chart-online-free" />
     </article>
     </>
   );

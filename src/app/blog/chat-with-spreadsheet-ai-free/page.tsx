@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "Chat With Spreadsheet AI Free: Ask & Get Answers",
@@ -140,6 +141,7 @@ export default function BlogPost() {
         <p className="text-blue-100 mb-5">Upload your CSV or Excel file and ask your first question in plain English. No signup needed.</p>
         <Link href="/dashboard"><Button size="lg" variant="secondary" className="text-base px-8">Analyze Your Spreadsheet Free</Button></Link>
       </div>
+      <RelatedPosts slug="chat-with-spreadsheet-ai-free" />
     </article>
     </>
   );

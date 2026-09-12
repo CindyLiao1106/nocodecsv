@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "Free ChatGPT Code Interpreter Alternative for Data Analysis",
@@ -112,6 +113,7 @@ export default function BlogPost() {
         <Link href="/dashboard"><Button size="lg" variant="secondary" className="text-base px-8">Start Free Analysis</Button></Link>
       </div>
       <p className="text-center text-sm text-zinc-500">New to AI data analysis? Start with our <Link href="/blog/how-to-analyze-csv-with-ai-free">step-by-step CSV guide</Link>.</p>
+      <RelatedPosts slug="free-alternative-to-chatgpt-code-interpreter" />
     </article>
     </>
   );

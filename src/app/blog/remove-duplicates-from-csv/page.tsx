@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "How to Remove Duplicates From CSV Files — Free and Easy",
@@ -153,6 +154,7 @@ export default function BlogPost() {
         <p className="text-blue-100 mb-5">Upload your deduplicated file and ask &quot;how many unique records do I have?&quot; No signup needed.</p>
         <Link href="/dashboard"><Button size="lg" variant="secondary" className="text-base px-8">Analyze Your CSV Free</Button></Link>
       </div>
+      <RelatedPosts slug="remove-duplicates-from-csv" />
     </article>
     </>
   );

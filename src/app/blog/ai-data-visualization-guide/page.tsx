@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "AI Data Visualization Guide — Turn Spreadsheets Into Charts",
@@ -108,6 +109,7 @@ export default function BlogPost() {
         <p className="text-blue-100 mb-5">Upload a spreadsheet, describe your chart. Done in seconds.</p>
         <Link href="/dashboard"><Button size="lg" variant="secondary" className="text-base px-8">Generate Free Chart</Button></Link>
       </div>
+      <RelatedPosts slug="ai-data-visualization-guide" />
     </article>
     </>
   );

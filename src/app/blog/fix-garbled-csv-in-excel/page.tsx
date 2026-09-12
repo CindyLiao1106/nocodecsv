@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "Fix Garbled CSV in Excel: UTF-8 & BOM Encoding",
@@ -145,6 +146,7 @@ export default function BlogPost() {
         <p className="text-blue-100 mb-5">Our AI reads UTF-8 CSV files perfectly — upload, ask, get answers and charts.</p>
         <Link href="/dashboard"><Button size="lg" variant="secondary" className="text-base px-8">Analyze Your CSV Free</Button></Link>
       </div>
+      <RelatedPosts slug="fix-garbled-csv-in-excel" />
     </article>
     </>
   );

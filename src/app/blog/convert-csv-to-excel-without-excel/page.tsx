@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "How to Convert CSV to Excel Without Excel — Free & Easy",
@@ -141,6 +142,7 @@ export default function BlogPost() {
         <p className="text-blue-100 mb-5">Upload your CSV and download a clean .xlsx file in seconds. No signup needed.</p>
         <Link href="/dashboard"><Button size="lg" variant="secondary" className="text-base px-8">Convert My CSV Free</Button></Link>
       </div>
+      <RelatedPosts slug="convert-csv-to-excel-without-excel" />
     </article>
     </>
   );

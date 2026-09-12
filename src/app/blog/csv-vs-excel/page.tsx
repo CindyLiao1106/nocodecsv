@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "CSV vs Excel: What's the Difference & When to Use",
@@ -198,6 +199,7 @@ export default function BlogPost() {
         <p className="text-blue-100 mb-5">Run it through the free CSV analyzer to see its structure, delimiter, and issues before you pick a format.</p>
         <Link href="/tools/csv-analyzer"><Button size="lg" variant="secondary" className="text-base px-8">Analyze Your CSV Free</Button></Link>
       </div>
+      <RelatedPosts slug="csv-vs-excel" />
     </article>
     </>
   );

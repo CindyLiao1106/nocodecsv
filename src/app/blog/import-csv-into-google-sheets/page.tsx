@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "How to Import CSV Into Google Sheets: 4 Ways",
@@ -223,6 +224,7 @@ export default function BlogPost() {
         <p className="text-blue-100 mb-5">Upload your CSV and let the AI analyzer flag duplicates, stray delimiters, and missing values before they reach Sheets.</p>
         <Link href="/tools/csv-analyzer"><Button size="lg" variant="secondary" className="text-base px-8">Analyze Your CSV Free</Button></Link>
       </div>
+      <RelatedPosts slug="import-csv-into-google-sheets" />
     </article>
     </>
   );

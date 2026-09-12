@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "CSV to JSON Converter Free Online: Fast, Accurate, No Signup",
@@ -155,6 +156,7 @@ JSON:
         <p className="text-blue-100 mb-5">Upload any CSV and get clean JSON in seconds. No signup needed.</p>
         <Link href="/dashboard"><Button size="lg" variant="secondary" className="text-base px-8">Convert CSV to JSON Free</Button></Link>
       </div>
+      <RelatedPosts slug="csv-to-json-free-online" />
     </article>
     </>
   );

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "Spreadsheet Automation With AI — Stop Manual Data Work",
@@ -102,6 +103,7 @@ export default function BlogPost() {
         <p className="text-blue-100 mb-5">Free. No signup. 3 analyses per day.</p>
         <Link href="/dashboard"><Button size="lg" variant="secondary" className="text-base px-8">Try Free Automation</Button></Link>
       </div>
+      <RelatedPosts slug="spreadsheet-automation-with-ai" />
     </article>
     </>
   );

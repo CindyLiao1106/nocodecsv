@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "Compare Two CSV Files Online: Find Differences Free",
@@ -272,6 +273,7 @@ export default function BlogPost() {
             </Button>
           </Link>
         </div>
+        <RelatedPosts slug="compare-two-csv-files-online" />
       </article>
     </>
   );

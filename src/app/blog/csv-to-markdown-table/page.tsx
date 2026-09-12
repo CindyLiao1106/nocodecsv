@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "CSV to Markdown Table: Convert Any CSV in Seconds (Free, 2026) | NoCodeCSV",
@@ -223,6 +224,7 @@ print(df.to_markdown(index=False))`}</code></pre>
         <p className="text-blue-100 mb-5">Run the free CSV analyzer to see the delimiter, quoting and column types, so you know whether a pipe or a quoted comma is waiting to break your table.</p>
         <Link href="/tools/csv-analyzer"><Button size="lg" variant="secondary" className="text-base px-8">Analyze Your CSV Free</Button></Link>
       </div>
+      <RelatedPosts slug="csv-to-markdown-table" />
     </article>
     </>
   );

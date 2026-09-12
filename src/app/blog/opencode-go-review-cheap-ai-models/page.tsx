@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "OpenCode Go Review 2026: $10/Month Cheap AI Models",
@@ -134,6 +135,7 @@ export default function OpenCodeGoReview() {
       <p className="text-sm text-zinc-500">
         <em>We tested OpenCode Go hands-on before writing this. It is a genuine recommendation for budget-conscious AI users. This post contains affiliate links — see our disclosure above.</em>
       </p>
+      <RelatedPosts slug="opencode-go-review-cheap-ai-models" />
     </article>
   );
 }

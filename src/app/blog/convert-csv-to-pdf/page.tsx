@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "Convert CSV to PDF: 5 Free Ways (Clean & Printable)",
@@ -225,6 +226,7 @@ with pd.ExcelWriter("report.xlsx") as writer:
         <p className="text-blue-100 mb-5">Run the free CSV analyzer first. It flags delimiter and encoding problems that would otherwise show up as a broken PDF.</p>
         <Link href="/tools/csv-analyzer"><Button size="lg" variant="secondary" className="text-base px-8">Analyze Your CSV Free</Button></Link>
       </div>
+      <RelatedPosts slug="convert-csv-to-pdf" />
     </article>
     </>
   );

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "How to Keep Leading Zeros in CSV Files: Excel, Sheets and Python (2026) | NoCodeCSV",
@@ -236,6 +237,7 @@ print(df["postcode"].head())`}</code></pre>
         <p className="text-blue-100 mb-5">Run the free CSV analyzer to inspect the columns and types without changing a single value, so you can spot an identifier column before Excel does.</p>
         <Link href="/tools/csv-analyzer"><Button size="lg" variant="secondary" className="text-base px-8">Analyze Your CSV Free</Button></Link>
       </div>
+      <RelatedPosts slug="keep-leading-zeros-in-csv" />
     </article>
     </>
   );

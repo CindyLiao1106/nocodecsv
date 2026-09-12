@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "CSV to HTML Table Converter: Free & Fast, No Code",
@@ -207,6 +208,7 @@ print(df.to_html(index=False, border=0, classes="prices"))`}</code></pre>
         <p className="text-blue-100 mb-5">Upload the CSV and ask the AI analyzer to spot misaligned rows, missing values, and duplicates in plain English.</p>
         <Link href="/tools/csv-analyzer"><Button size="lg" variant="secondary" className="text-base px-8">Analyze Your CSV Free</Button></Link>
       </div>
+      <RelatedPosts slug="csv-to-html-table" />
     </article>
     </>
   );

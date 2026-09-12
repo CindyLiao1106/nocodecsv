@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "How to Analyze Survey Data CSV With AI (Free, No Coding)",
@@ -148,6 +149,7 @@ export default function BlogPost() {
         <p className="text-blue-100 mb-5">Upload your survey CSV and ask your first question. No signup needed.</p>
         <Link href="/dashboard"><Button size="lg" variant="secondary" className="text-base px-8">Analyze Your Survey Free</Button></Link>
       </div>
+      <RelatedPosts slug="analyze-survey-data-csv-with-ai" />
     </article>
     </>
   );

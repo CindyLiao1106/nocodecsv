@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "Excel Formula Generator AI: Plain English to Formula",
@@ -146,6 +147,7 @@ export default function BlogPost() {
         <p className="text-blue-100 mb-5">Skip the formula debugging. Upload your file and ask questions in plain English.</p>
         <Link href="/dashboard"><Button size="lg" variant="secondary" className="text-base px-8">Analyze Your Spreadsheet Free</Button></Link>
       </div>
+      <RelatedPosts slug="excel-formula-generator-ai" />
     </article>
     </>
   );

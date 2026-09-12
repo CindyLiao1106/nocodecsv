@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "Convert Excel to CSV Free Online — No Data Loss",
@@ -142,6 +143,7 @@ export default function BlogPost() {
         <p className="text-blue-100 mb-5">Upload your converted file and ask questions in plain English. No signup needed for your first analysis.</p>
         <Link href="/dashboard"><Button size="lg" variant="secondary" className="text-base px-8">Analyze Your CSV Free</Button></Link>
       </div>
+      <RelatedPosts slug="convert-excel-to-csv-free-online" />
     </article>
     </>
   );

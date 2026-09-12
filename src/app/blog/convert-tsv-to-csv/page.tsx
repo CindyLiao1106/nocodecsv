@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "Convert TSV to CSV Free: Tab to Comma in Seconds",
@@ -213,6 +214,7 @@ csv.writer(sys.stdout).writerows(rows)
         <p className="text-blue-100 mb-5">Upload your CSV and let the AI analyzer flag column mismatches, duplicates, and stray delimiters before you use it.</p>
         <Link href="/tools/csv-analyzer"><Button size="lg" variant="secondary" className="text-base px-8">Analyze Your CSV Free</Button></Link>
       </div>
+      <RelatedPosts slug="convert-tsv-to-csv" />
     </article>
     </>
   );

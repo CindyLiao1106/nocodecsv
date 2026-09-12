@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "How to Merge CSV Files for Free (No Excel, No Coding)",
@@ -117,6 +118,8 @@ export default function BlogPost() {
         </ul>
         <p className="text-xs text-slate-400 mt-3">Some links above are affiliate links — if you buy through them we may earn a commission at no extra cost to you.</p>
       </div>
+
+        <RelatedPosts slug="merge-csv-files-free" />
 
       </article>
     </>

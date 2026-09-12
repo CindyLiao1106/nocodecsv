@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "How to Import CSV to SQLite Free: 5 Working Methods",
@@ -157,6 +158,7 @@ print("Imported!")</code></pre>
         <p className="text-blue-100 mb-5">Upload your CSV and get answers without SQL, Python, or setup.</p>
         <Link href="/dashboard"><Button size="lg" variant="secondary" className="text-base px-8">Analyze Your CSV Free</Button></Link>
       </div>
+      <RelatedPosts slug="import-csv-to-sqlite-free" />
     </article>
     </>
   );

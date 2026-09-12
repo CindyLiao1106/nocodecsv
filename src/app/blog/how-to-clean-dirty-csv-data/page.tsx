@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "How to Clean Dirty CSV Data: A Step-by-Step Guide (Free)",
@@ -145,6 +146,7 @@ export default function BlogPost() {
         <p className="text-blue-100 mb-5">Upload a messy CSV and let AI clean, dedupe, and standardize it. No signup needed.</p>
         <Link href="/dashboard"><Button size="lg" variant="secondary" className="text-base px-8">Start Cleaning Free</Button></Link>
       </div>
+      <RelatedPosts slug="how-to-clean-dirty-csv-data" />
     </article>
     </>
   );

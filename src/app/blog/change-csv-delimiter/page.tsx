@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "How to Change a CSV Delimiter (Semicolon to Comma)",
@@ -226,6 +227,7 @@ with open("customers_fixed.csv", "w", newline="", encoding="utf-8") as f:
         <p className="text-blue-100 mb-5">Run it through the free CSV analyzer, which flags stray delimiters and mixed formats before they cost you an afternoon.</p>
         <Link href="/tools/csv-analyzer"><Button size="lg" variant="secondary" className="text-base px-8">Analyze Your CSV Free</Button></Link>
       </div>
+      <RelatedPosts slug="change-csv-delimiter" />
     </article>
     </>
   );

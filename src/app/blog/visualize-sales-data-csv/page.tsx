@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "How to Visualize Sales Data CSV — Free, Fast, No Coding",
@@ -138,6 +139,7 @@ export default function BlogPost() {
         <p className="text-blue-100 mb-5">Upload your sales export and get your first chart in seconds. No signup needed.</p>
         <Link href="/dashboard"><Button size="lg" variant="secondary" className="text-base px-8">Chart My Sales Data Free</Button></Link>
       </div>
+      <RelatedPosts slug="visualize-sales-data-csv" />
     </article>
     </>
   );

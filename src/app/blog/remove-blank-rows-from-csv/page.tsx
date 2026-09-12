@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "Remove Blank Rows From CSV: 4 Free Methods",
@@ -234,6 +235,7 @@ df.to_csv("customers_clean.csv", index=False)`}</code></pre>
         <p className="text-blue-100 mb-5">Run the free CSV analyzer to see empty rows, mixed formats, and delimiter problems in one pass, before you start editing by hand.</p>
         <Link href="/tools/csv-analyzer"><Button size="lg" variant="secondary" className="text-base px-8">Analyze Your CSV Free</Button></Link>
       </div>
+      <RelatedPosts slug="remove-blank-rows-from-csv" />
     </article>
     </>
   );

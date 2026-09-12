@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "How to Sort a CSV File by Column: 4 Free Ways",
@@ -227,6 +228,7 @@ with open("sorted.csv", "w", newline="", encoding="utf-8") as f:
         <p className="text-blue-100 mb-5">Run your CSV through the free analyzer to flag duplicates, stray delimiters, and missing values before sorting hides them.</p>
         <Link href="/tools/csv-analyzer"><Button size="lg" variant="secondary" className="text-base px-8">Analyze Your CSV Free</Button></Link>
       </div>
+      <RelatedPosts slug="sort-csv-by-column" />
     </article>
     </>
   );

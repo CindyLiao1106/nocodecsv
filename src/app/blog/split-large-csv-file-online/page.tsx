@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "How to Split a Large CSV File Online — Free, No Software",
@@ -151,6 +152,7 @@ sed -n &apos;1000002,2000001p&apos; data.csv &gt; part_2.csv</code></pre>
         <p className="text-blue-100 mb-5">Upload a chunk and ask a question in plain English. No signup needed.</p>
         <Link href="/dashboard"><Button size="lg" variant="secondary" className="text-base px-8">Analyze Your CSV Free</Button></Link>
       </div>
+      <RelatedPosts slug="split-large-csv-file-online" />
     </article>
     </>
   );

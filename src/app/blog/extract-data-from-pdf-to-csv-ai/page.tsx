@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title: "Extract Data From PDF to CSV With AI: Free, No Manual Typing",
@@ -300,6 +301,7 @@ export default function BlogPost() {
             </Button>
           </Link>
         </div>
+        <RelatedPosts slug="extract-data-from-pdf-to-csv-ai" />
       </article>
     </>
   );
