@@ -37,8 +37,89 @@ const jsonLd = {
   dateModified: "2026-09-06",
   inLanguage: "en",
   author: { "@type": "Organization", name: "NoCodeCSV Team" },
-  publisher: { "@type": "Organization", name: "NoCodeCSV" },
+  publisher: {
+    "@type": "Organization",
+    name: "NoCodeCSV",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://nocodecsv.com/og-image.png",
+      width: 1200,
+      height: 630,
+    },
+  },
   mainEntityOfPage: "https://nocodecsv.com/blog/convert-excel-to-csv-free-online",
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://nocodecsv.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://nocodecsv.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Convert Excel to CSV Free Online",
+      "item": "https://nocodecsv.com/blog/convert-excel-to-csv-free-online"
+    }
+  ]
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does converting Excel to CSV keep my formulas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — CSV stores values only . If a cell contains =A1*1.2 , the CSV contains the calculated result (if Excel has computed it), not the formula. CSV is data transport, not a workbook format."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does Excel only export one sheet to CSV?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because CSV is a single-table format with no concept of sheets or workbooks. Excel deliberately exports only the active sheet. Export each sheet separately, or use a tool like Google Sheets to convert tab by tab."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between CSV UTF-8 and CSV UTF-8 (BOM)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Both encode text as UTF-8. The BOM version prepends a small marker (EF BB BF) that tells old Excel versions \"this file is UTF-8\". If your CSV opens as garbled text in Excel, choose the BOM version — it's the safest for sharing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will dates and phone numbers lose formatting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CSV has no formatting. A date like 01/02/2026 becomes plain text and Excel may re-interpret it on open. A common trick: keep a leading apostrophe or reformat to ISO (2026-01-02) before export if the target system is picky."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is converting Excel to CSV free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Completely. Excel's Save As, Google Sheets, and most reputable online converters are free. And if your next step is understanding the data, DataAnalyzer AI gives you 3 free analyses per day — no credit card required."
+      }
+    }
+  ]
 };
 
 export default function BlogPost() {
@@ -47,6 +128,14 @@ export default function BlogPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12 prose prose-zinc prose-lg">
       <p className="text-blue-600 font-medium">📊 Tutorial · 7 min read</p>

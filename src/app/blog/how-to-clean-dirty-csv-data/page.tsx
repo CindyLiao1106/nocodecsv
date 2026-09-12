@@ -37,8 +37,89 @@ const jsonLd = {
   dateModified: "2026-08-31",
   inLanguage: "en",
   author: { "@type": "Organization", name: "NoCodeCSV Team" },
-  publisher: { "@type": "Organization", name: "NoCodeCSV" },
+  publisher: {
+    "@type": "Organization",
+    name: "NoCodeCSV",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://nocodecsv.com/og-image.png",
+      width: 1200,
+      height: 630,
+    },
+  },
   mainEntityOfPage: "https://nocodecsv.com/blog/how-to-clean-dirty-csv-data",
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://nocodecsv.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://nocodecsv.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "How to Clean Dirty CSV Data",
+      "item": "https://nocodecsv.com/blog/how-to-clean-dirty-csv-data"
+    }
+  ]
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need Python or SQL to clean CSV data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Free AI tools understand plain-English instructions like \"remove duplicates and trim spaces\", so you can clean data without writing a single line of code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I remove duplicates from a large CSV without Excel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Upload the file to an AI data tool and ask it to dedupe by specific columns. This works even on files with hundreds of thousands of rows that Excel would choke on."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do with empty cells in my CSV?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Decide per column: delete the row if the field is essential, fill with a default like 0 or N/A, or estimate from surrounding values for analysis. Consistency matters more than any single choice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does cleaning a messy CSV take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With AI, most files take under 10 minutes. Manual cleaning of the same file can take hours — especially with thousands of rows and mixed formats."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can AI clean data without changing my numbers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, if you give precise instructions and validate after. Check a few rows before and after, and confirm totals match your expectations before using the cleaned file in reports."
+      }
+    }
+  ]
 };
 
 export default function BlogPost() {
@@ -47,6 +128,14 @@ export default function BlogPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12 prose prose-zinc prose-lg">
       <p className="text-blue-600 font-medium">🧹 Tutorial · 6 min read</p>

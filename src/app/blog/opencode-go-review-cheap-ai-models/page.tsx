@@ -36,15 +36,100 @@ const jsonLd = {
   dateModified: "2026-09-10",
   inLanguage: "en",
   author: { "@type": "Organization", name: "NoCodeCSV Team" },
-  publisher: { "@type": "Organization", name: "NoCodeCSV" },
+  publisher: {
+    "@type": "Organization",
+    name: "NoCodeCSV",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://nocodecsv.com/og-image.png",
+      width: 1200,
+      height: 630,
+    },
+  },
   mainEntityOfPage: "https://nocodecsv.com/blog/opencode-go-review-cheap-ai-models",
 };
 
 const GO_LINK = "https://opencode.ai/go?ref=64V3FDAF5T";
 
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://nocodecsv.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://nocodecsv.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "OpenCode Go Review",
+      "item": "https://nocodecsv.com/blog/opencode-go-review-cheap-ai-models"
+    }
+  ]
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is OpenCode Go really $10/month?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes for the standard plan — a flat monthly fee with generous request limits. Promotions may discount the first month. Check the current price on the official page."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does DeepSeek V4 Flash work on OpenCode Go?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes (after a one-time \"China hosting\" opt-in). We routed real requests through DeepSeek V4 Flash successfully."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use it with my own tools?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It's OpenAI-compatible, so it works with any client that speaks that API — tools, scripts, and AI agents included. We connected it to our own workflow."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the 402 / 403 errors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "402 = monthly quota used up (you're capped for the period). 403 = permission/data-policy. Switching to another model in the pool usually restores access for quota-related cases."
+      }
+    }
+  ]
+};
+
 export default function OpenCodeGoReview() {
   return (
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12 prose prose-zinc">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <h1>OpenCode Go Review 2026: $10/Month for DeepSeek V4 Flash, GPT 5.6 Luna &amp; GLM — Is It Worth It?</h1>
       <p className="text-zinc-500">Last updated: September 10, 2026 · By the <strong>NoCodeCSV Team</strong></p>
 

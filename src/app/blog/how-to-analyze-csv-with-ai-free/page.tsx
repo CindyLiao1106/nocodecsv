@@ -37,8 +37,81 @@ const jsonLd = {
   dateModified: "2026-08-01",
   inLanguage: "en",
   author: { "@type": "Organization", name: "NoCodeCSV Team" },
-  publisher: { "@type": "Organization", name: "NoCodeCSV" },
+  publisher: {
+    "@type": "Organization",
+    name: "NoCodeCSV",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://nocodecsv.com/og-image.png",
+      width: 1200,
+      height: 630,
+    },
+  },
   mainEntityOfPage: "https://nocodecsv.com/blog/how-to-analyze-csv-with-ai-free",
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://nocodecsv.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://nocodecsv.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Analyze CSV with AI (Free)",
+      "item": "https://nocodecsv.com/blog/how-to-analyze-csv-with-ai-free"
+    }
+  ]
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "How do I analyze a CSV file with AI for free?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Export your data as CSV, upload the file to a free AI CSV analyzer, then ask your question in plain English. The tool reads the columns and shows a preview so you can confirm it parsed correctly.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do I need SQL or Python to analyze a CSV file?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No. You type a question and the AI computes the answer directly from the data, so no SQL, Python or formula knowledge is needed.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can AI build the charts for me?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. The AI picks the right chart type — a bar chart for comparisons, a line chart for trends, a pie chart for proportions — and generates it automatically so you can download it as a PNG and drop it into your report.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is it really free?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. DataAnalyzer AI offers 3 free analyses per day with no credit card required, and unlimited use on Pro is $15 per month.",
+      },
+    },
+  ],
 };
 
 export default function BlogPost() {
@@ -48,6 +121,14 @@ export default function BlogPost() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12 prose prose-zinc prose-lg">
       <p className="text-blue-600 font-medium">📊 Tutorial · 5 min read</p>
       <h1>How to Analyze CSV Files With AI — Completely Free, No Coding</h1>
@@ -55,12 +136,15 @@ export default function BlogPost() {
       <p><strong>Here&apos;s the good news:</strong> AI tools can now analyze CSV files for you. You upload the file, ask a question in plain English, and get answers — plus charts — in seconds.</p>
 
       <h2>Step 1: Export Your Data as CSV</h2>
+      <h3>Platforms That Export CSV</h3>
       <p>Every platform exports CSV: Shopify, Google Analytics, Salesforce, Stripe, Airtable. Hit &quot;Export&quot; &rarr; choose CSV format &rarr; save the file. That&apos;s it.</p>
 
       <h2>Step 2: Upload to an AI CSV Analyzer</h2>
+      <h3>Check the Preview Before You Ask</h3>
       <p>Open a free tool like <Link href="/">DataAnalyzer AI</Link>. Drag your CSV file onto the upload area of our <Link href="/tools/csv-analyzer">free AI CSV analyzer</Link>. The tool reads the columns and shows you a preview so you know it parsed correctly.</p>
 
       <h2>Step 3: Ask Questions in Plain English</h2>
+      <h3>Example Questions to Try</h3>
       <p>This is where AI shines. Instead of writing formulas, you just type:</p>
       <ul>
         <li>&quot;What are total sales by product category?&quot;</li>
@@ -70,6 +154,7 @@ export default function BlogPost() {
       </ul>
 
       <h2>Step 4: Get Charts Instantly</h2>
+      <h3>Charts Are Chosen For You</h3>
       <p>The AI doesn&apos;t just answer — it picks the right <Link href="/blog/ai-data-visualization-guide">chart type</Link> and generates it automatically. Bar chart for comparisons, line chart for trends, pie chart for proportions. Download as PNG, drop it into your report. Done.</p>
 
       <h2>Why Use AI Instead of Excel?</h2>
@@ -86,6 +171,16 @@ export default function BlogPost() {
 
       <h2>Is It Really Free?</h2>
       <p>Yes. DataAnalyzer AI offers <strong>3 free analyses per day</strong> — no credit card required. For unlimited use, Pro is $15/month. That&apos;s less than what most people spend on coffee in a week.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>How do I analyze a CSV file with AI for free?</h3>
+      <p>Export your data as CSV, upload the file to a free AI CSV analyzer, then ask your question in plain English. The tool reads the columns and shows a preview so you can confirm it parsed correctly.</p>
+      <h3>Do I need SQL or Python to analyze a CSV file?</h3>
+      <p>No. You type a question and the AI computes the answer directly from the data, so no SQL, Python or formula knowledge is needed.</p>
+      <h3>Can AI build the charts for me?</h3>
+      <p>Yes. The AI picks the right chart type — a bar chart for comparisons, a line chart for trends, a pie chart for proportions — and generates it automatically so you can download it as a PNG and drop it into your report.</p>
+      <h3>Is it really free?</h3>
+      <p>Yes. DataAnalyzer AI offers 3 free analyses per day with no credit card required, and unlimited use on Pro is $15 per month.</p>
+
       {/* ===== Author byline ===== */}
       <div className="mt-8 flex items-center gap-3 border-t border-zinc-200 pt-6 text-sm text-zinc-500">
         <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 font-bold text-white">NC</div>

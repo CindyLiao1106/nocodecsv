@@ -51,7 +51,7 @@ const jsonLd = {
     name: "NoCodeCSV",
     logo: {
       "@type": "ImageObject",
-      url: "https://nocodecsv.com/icon.png",
+      url: "https://nocodecsv.com/og-image.png",
     },
   },
   mainEntityOfPage: "https://nocodecsv.com/blog/extract-email-addresses-from-csv",

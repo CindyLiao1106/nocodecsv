@@ -37,7 +37,16 @@ const jsonLd = {
   dateModified: "2026-09-07",
   inLanguage: "en",
   author: { "@type": "Organization", name: "NoCodeCSV Team" },
-  publisher: { "@type": "Organization", name: "NoCodeCSV" },
+  publisher: {
+    "@type": "Organization",
+    name: "NoCodeCSV",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://nocodecsv.com/og-image.png",
+      width: 1200,
+      height: 630,
+    },
+  },
   mainEntityOfPage: "https://nocodecsv.com/blog/json-to-csv-converter-online",
 };
 
@@ -104,12 +113,41 @@ const faqJsonLd = {
   ],
 };
 
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://nocodecsv.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://nocodecsv.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "JSON to CSV Converter",
+      "item": "https://nocodecsv.com/blog/json-to-csv-converter-online"
+    }
+  ]
+};
+
 export default function BlogPost() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <script
         type="application/ld+json"

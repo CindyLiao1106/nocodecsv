@@ -50,8 +50,81 @@ const jsonLd = {
   dateModified: "2026-09-05",
   inLanguage: "en",
   author: { "@type": "Organization", name: "NoCodeCSV Team" },
-  publisher: { "@type": "Organization", name: "NoCodeCSV" },
+  publisher: {
+    "@type": "Organization",
+    name: "NoCodeCSV",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://nocodecsv.com/og-image.png",
+      width: 1200,
+      height: 630,
+    },
+  },
   mainEntityOfPage: "https://nocodecsv.com/blog/compare-two-csv-files-online",
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://nocodecsv.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://nocodecsv.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Compare Two CSV Files Online",
+      "item": "https://nocodecsv.com/blog/compare-two-csv-files-online"
+    }
+  ]
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can I compare two CSV files online for free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. AI tools like DataAnalyzer AI compare two uploaded CSV files for free, and several free online CSV diff utilities exist for row-level comparison. There is no need to install software."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does the tool show differences when the data looks the same?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usually formatting: extra spaces, different date formats, or row order. Normalize both files (see Step 1 above) and re-run the comparison before trusting the result."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I compare CSV files where the rows are in a different order?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Never rely on line position. Sort both files by the same key column first, or use an AI/join method that matches rows by a key (like an email or product ID) instead of by row number."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I compare very large CSV files online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Upload size limits vary by tool. For files over roughly 100 MB, use a desktop diff tool or the command line, or split the file first with a large CSV splitter and compare piece by piece."
+      }
+    }
+  ]
 };
 
 export default function BlogPost() {
@@ -60,6 +133,14 @@ export default function BlogPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12 prose prose-zinc prose-lg">
         <p className="text-blue-600 font-medium">📊 Tutorial · 6 min read</p>

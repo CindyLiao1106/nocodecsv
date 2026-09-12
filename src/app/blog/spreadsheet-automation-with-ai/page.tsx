@@ -37,8 +37,81 @@ const jsonLd = {
   dateModified: "2026-08-02",
   inLanguage: "en",
   author: { "@type": "Organization", name: "NoCodeCSV Team" },
-  publisher: { "@type": "Organization", name: "NoCodeCSV" },
+  publisher: {
+    "@type": "Organization",
+    name: "NoCodeCSV",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://nocodecsv.com/og-image.png",
+      width: 1200,
+      height: 630,
+    },
+  },
   mainEntityOfPage: "https://nocodecsv.com/blog/spreadsheet-automation-with-ai",
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://nocodecsv.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://nocodecsv.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Spreadsheet Automation with AI",
+      "item": "https://nocodecsv.com/blog/spreadsheet-automation-with-ai"
+    }
+  ]
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Can AI clean a messy CSV export automatically?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. AI tools detect duplicate rows, inconsistent date formats, missing values and trailing spaces, and identify those quality issues before analysis begins.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do I need to learn formulas or install anything?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No. You ask in plain English — for example, summing a column where the country is US and the amount is over 1000 — and the AI translates the question into the computation. Nothing needs installing.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What can an AI-generated report include?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Key metrics, trends versus the previous week, top and bottom performers, and recommended actions, formatted in markdown so it can be pasted straight into Slack or email.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does AI pick the chart type for me?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. It matches the visualization to the question — a line chart for trends, a bar chart for comparing categories, a pie chart for proportions — and the chart can be downloaded as a PNG.",
+      },
+    },
+  ],
 };
 
 export default function BlogPost() {
@@ -48,25 +121,47 @@ export default function BlogPost() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12 prose prose-zinc prose-lg">
       <p className="text-blue-600 font-medium">🤖 Guide · 5 min read</p>
       <h1>Spreadsheet Automation With AI — Stop Doing Manual Data Work in 2026</h1>
       <p>The average knowledge worker spends <strong>4 hours per week</strong> on manual spreadsheet work — copy-pasting, formatting, building the same charts over and over. AI can now handle most of this. Here&apos;s what&apos;s possible today.</p>
 
       <h2>1. Automated Data Cleaning</h2>
+      <h3>Quality Issues AI Fixes</h3>
       <p>CSV exports are messy. Duplicate rows, inconsistent date formats, missing values, trailing spaces. AI tools can now detect and fix these automatically — upload the file, and the AI identifies quality issues before analysis even begins.</p>
 
       <h2>2. Natural Language Queries</h2>
+      <h3>From Formula to Plain English</h3>
       <p>Instead of writing <code>=SUMIFS(D:D, A:A, &quot;US&quot;, C:C, &quot;&gt;1000&quot;)</code>, you type: <em>&quot;Sum column D where country is US and amount &gt; 1000&quot;</em>. The AI translates your question into computation. No formula memorization needed.</p>
 
       <h2>3. Auto-Generated Reports</h2>
+      <h3>What the Summary Contains</h3>
       <p>Upload weekly sales data. Ask &quot;Generate a weekly performance summary.&quot; The AI gives you: key metrics, trends vs. last week, top/bottom performers, and recommended actions — all formatted in markdown, ready to paste into Slack or email.</p>
 
       <h2>4. Chart Automation</h2>
+      <h3>The Chart Follows the Question</h3>
       <p>AI picks the right <Link href="/blog/ai-data-visualization-guide">visualization</Link> for your question. Asking about trends? Line chart. Comparing categories? Bar chart. Proportions? Pie chart. The <Link href="/tools/spreadsheet-charts">chart</Link> is generated alongside the answer — download as PNG and drop into your presentation.</p>
 
       <h2>Getting Started Today</h2>
       <p>You don&apos;t need to install anything or learn a new platform. Open a free AI spreadsheet tool, <Link href="/tools/csv-analyzer">upload your next CSV or Excel file</Link>, and ask your first question. That one query might save you an hour of manual work — and once you experience that, you won&apos;t go back.</p>
+      <h2>Frequently Asked Questions</h2>
+      <h3>Can AI clean a messy CSV export automatically?</h3>
+      <p>Yes. AI tools detect duplicate rows, inconsistent date formats, missing values and trailing spaces, and identify those quality issues before analysis begins.</p>
+      <h3>Do I need to learn formulas or install anything?</h3>
+      <p>No. You ask in plain English — for example, summing a column where the country is US and the amount is over 1000 — and the AI translates the question into the computation. Nothing needs installing.</p>
+      <h3>What can an AI-generated report include?</h3>
+      <p>Key metrics, trends versus the previous week, top and bottom performers, and recommended actions, formatted in markdown so it can be pasted straight into Slack or email.</p>
+      <h3>Does AI pick the chart type for me?</h3>
+      <p>Yes. It matches the visualization to the question — a line chart for trends, a bar chart for comparing categories, a pie chart for proportions — and the chart can be downloaded as a PNG.</p>
+
       {/* ===== Author byline ===== */}
       <div className="mt-8 flex items-center gap-3 border-t border-zinc-200 pt-6 text-sm text-zinc-500">
         <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 font-bold text-white">NC</div>

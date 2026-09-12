@@ -37,8 +37,89 @@ const jsonLd = {
   dateModified: "2026-09-02",
   inLanguage: "en",
   author: { "@type": "Organization", name: "NoCodeCSV Team" },
-  publisher: { "@type": "Organization", name: "NoCodeCSV" },
+  publisher: {
+    "@type": "Organization",
+    name: "NoCodeCSV",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://nocodecsv.com/og-image.png",
+      width: 1200,
+      height: 630,
+    },
+  },
   mainEntityOfPage: "https://nocodecsv.com/blog/visualize-sales-data-csv",
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://nocodecsv.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://nocodecsv.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Visualize Sales Data from CSV",
+      "item": "https://nocodecsv.com/blog/visualize-sales-data-csv"
+    }
+  ]
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can I visualize sales data from a CSV without Excel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. AI tools like DataAnalyzer AI run entirely in your browser — there is nothing to install and no spreadsheet skills required. Upload the file, ask a question, and download the chart."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it really free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "DataAnalyzer AI gives you 3 free analyses per day with no credit card. That's plenty for a weekly sales review. Pro plans start at $15/month for unlimited use."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will it handle a huge CSV with 100,000+ rows?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Modern AI CSV analyzers process large files in the cloud, so your laptop doesn't freeze the way Excel does with big datasets. If a file is unusually large, split it first or filter to the period you care about."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if my sales data has missing or messy values?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Clean the obvious issues first — remove duplicate orders and decide how to treat blank cells. Charts computed by AI are only as good as the file you upload, so a quick cleanup pass saves you from misleading visuals."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I download the charts for reports?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — export your charts as PNG images and drop them into slide decks, client reports, or weekly dashboards. You can also export the underlying summary as CSV."
+      }
+    }
+  ]
 };
 
 export default function BlogPost() {
@@ -47,6 +128,14 @@ export default function BlogPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12 prose prose-zinc prose-lg">
       <p className="text-blue-600 font-medium">📊 Tutorial · 6 min read</p>

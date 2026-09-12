@@ -37,8 +37,89 @@ const jsonLd = {
   dateModified: "2026-09-01",
   inLanguage: "en",
   author: { "@type": "Organization", name: "NoCodeCSV Team" },
-  publisher: { "@type": "Organization", name: "NoCodeCSV" },
+  publisher: {
+    "@type": "Organization",
+    name: "NoCodeCSV",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://nocodecsv.com/og-image.png",
+      width: 1200,
+      height: 630,
+    },
+  },
   mainEntityOfPage: "https://nocodecsv.com/blog/analyze-survey-data-csv-with-ai",
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://nocodecsv.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://nocodecsv.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Analyze Survey Data CSV with AI",
+      "item": "https://nocodecsv.com/blog/analyze-survey-data-csv-with-ai"
+    }
+  ]
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can AI analyze Google Forms survey data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Export the Google Forms responses as CSV and upload the file to DataAnalyzer AI . The AI reads all columns, including checkbox matrices and open-ended text."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it really free to analyze survey data with AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "DataAnalyzer AI offers 3 free analyses per day with no credit card required. That's usually enough to explore a survey. Unlimited use is $15/month."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to know statistics or SQL?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. You ask questions in plain English and the AI computes the answers. It handles counts, percentages, averages, cross-tabs, and correlations for you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "My survey has 5,000+ rows. Will it work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. AI analysis handles large datasets comfortably — far better than Excel, which tends to slow down or crash on big survey exports."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can AI handle Likert scale questions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. Ask for the distribution per scale point, or group them into \"agree vs. disagree\" buckets for executive reports."
+      }
+    }
+  ]
 };
 
 export default function BlogPost() {
@@ -47,6 +128,14 @@ export default function BlogPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12 prose prose-zinc prose-lg">
       <p className="text-blue-600 font-medium">📊 Tutorial · 6 min read</p>

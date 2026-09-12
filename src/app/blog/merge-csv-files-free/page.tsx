@@ -37,8 +37,73 @@ const jsonLd = {
   dateModified: "2026-08-30",
   inLanguage: "en",
   author: { "@type": "Organization", name: "NoCodeCSV Team" },
-  publisher: { "@type": "Organization", name: "NoCodeCSV" },
+  publisher: {
+    "@type": "Organization",
+    name: "NoCodeCSV",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://nocodecsv.com/og-image.png",
+      width: 1200,
+      height: 630,
+    },
+  },
   mainEntityOfPage: "https://nocodecsv.com/blog/merge-csv-files-free",
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://nocodecsv.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://nocodecsv.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Merge CSV Files",
+      "item": "https://nocodecsv.com/blog/merge-csv-files-free"
+    }
+  ]
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can I merge CSV files for free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Online tools, Google Sheets, and LibreOffice all merge CSV files at no cost."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I merge CSV files without Excel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. Google Sheets, LibreOffice Calc, and free online mergers all work without Microsoft Excel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between merging and joining CSV files?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Merging stacks files with the same columns (rows get longer). Joining combines files on a shared key column (columns get wider). Most free tools do merging; a dedicated database or a tool like our analyzer handles joins."
+      }
+    }
+  ]
 };
 
 export default function BlogPost() {
@@ -48,6 +113,14 @@ export default function BlogPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12 prose prose-zinc prose-lg">
       <p className="text-blue-600 font-medium">📊 Tutorial · 4 min read</p>

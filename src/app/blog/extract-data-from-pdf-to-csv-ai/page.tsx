@@ -50,8 +50,89 @@ const jsonLd = {
   dateModified: "2026-09-05",
   inLanguage: "en",
   author: { "@type": "Organization", name: "NoCodeCSV Team" },
-  publisher: { "@type": "Organization", name: "NoCodeCSV" },
+  publisher: {
+    "@type": "Organization",
+    name: "NoCodeCSV",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://nocodecsv.com/og-image.png",
+      width: 1200,
+      height: 630,
+    },
+  },
   mainEntityOfPage: "https://nocodecsv.com/blog/extract-data-from-pdf-to-csv-ai",
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://nocodecsv.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://nocodecsv.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Extract Data from PDF to CSV with AI",
+      "item": "https://nocodecsv.com/blog/extract-data-from-pdf-to-csv-ai"
+    }
+  ]
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can AI extract data from a PDF into CSV?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. AI tools with OCR can extract tables from both text and scanned PDFs into CSV format. They understand layout better than classic converters, so complex tables and multi-column invoices extract more reliably."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the best free way to convert a scanned PDF to CSV?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use an AI OCR tool with a free tier, or Google Drive's built-in OCR (upload the scan, open with Google Docs, then copy the table into Sheets and download as CSV). For a single clean table, Google's route costs nothing and needs no account beyond a Google login."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my PDF table come out as one long line of text?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The tool did not detect the table structure — common with copy-paste or simple converters. Try a converter that reports detected tables, or an AI OCR tool, and always clean the result before analysis."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it safe to upload financial PDFs to free converters?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Treat anything with account numbers or personal data as sensitive. Prefer tools with clear privacy policies, redact what you can, and avoid uploading statements that contain information you could not afford to expose."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do after extracting my CSV?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Clean it (Step 3), then analyze it — upload the CSV to DataAnalyzer AI to summarize, chart, and export insights. You can also convert it to other formats with our free CSV to JSON converter if your next tool needs JSON."
+      }
+    }
+  ]
 };
 
 export default function BlogPost() {
@@ -60,6 +141,14 @@ export default function BlogPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12 prose prose-zinc prose-lg">
         <p className="text-blue-600 font-medium">📊 Tutorial · 7 min read</p>

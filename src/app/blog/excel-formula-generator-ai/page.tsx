@@ -37,8 +37,89 @@ const jsonLd = {
   dateModified: "2026-08-30",
   inLanguage: "en",
   author: { "@type": "Organization", name: "NoCodeCSV Team" },
-  publisher: { "@type": "Organization", name: "NoCodeCSV" },
+  publisher: {
+    "@type": "Organization",
+    name: "NoCodeCSV",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://nocodecsv.com/og-image.png",
+      width: 1200,
+      height: 630,
+    },
+  },
   mainEntityOfPage: "https://nocodecsv.com/blog/excel-formula-generator-ai",
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://nocodecsv.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://nocodecsv.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Excel Formula Generator (AI)",
+      "item": "https://nocodecsv.com/blog/excel-formula-generator-ai"
+    }
+  ]
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is an Excel formula generator AI really free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Many tools, including DataAnalyzer AI , offer free daily usage — no credit card required. You can generate formulas, ask questions about your data, and export results without paying. Paid tiers exist for heavy usage or advanced features like unlimited analyses."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can it generate Google Sheets formulas too?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Most generators support both Excel and Google Sheets. Just specify the platform in your prompt, since function names and syntax differ slightly between the two."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will the formula work with my specific column names?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only if you tell the AI what they are. Include your actual column names and sheet names in the prompt — that's the single biggest factor in getting a formula that works on the first paste."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if my data is too messy for formulas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Clean it first. Remove duplicates, fix inconsistent text, and standardize dates. For heavy cleanup or large files, an AI tool that reads the whole dataset — like DataAnalyzer AI's free CSV analyzer — can handle questions directly without you building formulas at all."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I generate formulas without Excel installed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — the generator runs in your browser. You can even analyze your data entirely online with AI Excel analysis and never open a desktop spreadsheet app."
+      }
+    }
+  ]
 };
 
 export default function BlogPost() {
@@ -47,6 +128,14 @@ export default function BlogPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12 prose prose-zinc prose-lg">
       <p className="text-blue-600 font-medium">🧮 Tutorial · 6 min read</p>

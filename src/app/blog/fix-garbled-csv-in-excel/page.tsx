@@ -37,8 +37,89 @@ const jsonLd = {
   dateModified: "2026-09-06",
   inLanguage: "en",
   author: { "@type": "Organization", name: "NoCodeCSV Team" },
-  publisher: { "@type": "Organization", name: "NoCodeCSV" },
+  publisher: {
+    "@type": "Organization",
+    name: "NoCodeCSV",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://nocodecsv.com/og-image.png",
+      width: 1200,
+      height: 630,
+    },
+  },
   mainEntityOfPage: "https://nocodecsv.com/blog/fix-garbled-csv-in-excel",
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://nocodecsv.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://nocodecsv.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Fix Garbled CSV in Excel",
+      "item": "https://nocodecsv.com/blog/fix-garbled-csv-in-excel"
+    }
+  ]
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why does my CSV show question marks (�) instead of characters?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The file contains characters that don't exist in the encoding Excel used to open it — usually a UTF-8 file opened as ANSI, or a file saved as ANSI that truly can't represent those characters. Re-import with File Origin set to 65001 (UTF-8). If the data was saved as ANSI, the characters may already be lost and you need the original file."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What exactly is a UTF-8 BOM?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A BOM is a 3-byte marker (EF BB BF) at the start of a UTF-8 file. It is not visible text — it just signals \"this file is UTF-8\" to programs like Excel. Files saved as \"CSV UTF-8 (BOM)\" open correctly with a double-click; files saved as plain \"CSV UTF-8\" sometimes don't on older Excel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I fix a garbled CSV inside Excel without other software?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — if the file is genuinely UTF-8. Use Data → From Text/CSV and set File Origin to Unicode (UTF-8). That fix requires no extra software at all. You only need Notepad++ or similar if the file has no BOM and you want double-click to work in the future."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Google Sheets open UTF-8 CSV files correctly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Google Sheets auto-detects UTF-8 and displays Chinese, accented characters, and emoji correctly — no BOM needed. That's why the Sheets round-trip is a reliable fix when Excel keeps mangling a file."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "My CSV opened fine yesterday but is garbled after re-saving in Excel — why?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Excel re-saved your file as ANSI/Windows-1252. When you edit and save a CSV, Excel silently changes the encoding. Solution: after editing, use File → Save As → CSV UTF-8 (Comma delimited) , or do your editing in a tool that preserves UTF-8. For data analysis, you can also skip round-tripping entirely and chat with the file in DataAnalyzer AI ."
+      }
+    }
+  ]
 };
 
 export default function BlogPost() {
@@ -47,6 +128,14 @@ export default function BlogPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12 prose prose-zinc prose-lg">
       <p className="text-blue-600 font-medium">📊 Tutorial · 6 min read</p>

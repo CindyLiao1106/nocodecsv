@@ -37,8 +37,89 @@ const jsonLd = {
   dateModified: "2026-09-03",
   inLanguage: "en",
   author: { "@type": "Organization", name: "NoCodeCSV Team" },
-  publisher: { "@type": "Organization", name: "NoCodeCSV" },
+  publisher: {
+    "@type": "Organization",
+    name: "NoCodeCSV",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://nocodecsv.com/og-image.png",
+      width: 1200,
+      height: 630,
+    },
+  },
   mainEntityOfPage: "https://nocodecsv.com/blog/split-large-csv-file-online",
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://nocodecsv.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://nocodecsv.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Split a Large CSV File Online",
+      "item": "https://nocodecsv.com/blog/split-large-csv-file-online"
+    }
+  ]
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the largest CSV file I can split online for free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most free online splitters handle files from 100 MB up to several GB depending on the service. If a tool rejects your file, look for one that advertises \"large file\" support or use the command-line method above. Browsers can struggle with files above ~2 GB, so that's the practical ceiling for most online tools."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will splitting remove the header row from each part?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — a proper splitter repeats the header on every output file. That's essential, because each chunk must be usable on its own. If your tool drops headers, switch to one that keeps them."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I split a CSV by columns instead of rows?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Row-based splitting divides records; column-based splitting divides fields. They serve different purposes: split by rows when a file is too big to open, split by columns when different teams need different fields."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Excel's row limit and how does splitting help?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Excel's limit is 1,048,576 rows per worksheet. If your CSV has more rows than that, split it into chunks below the limit — 500,000 rows per chunk is a safe target — and each part will open normally."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it safe to upload my CSV to an online splitter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For non-sensitive data, yes — choose a reputable service that states it deletes uploads after processing. For customer data or financial records, check the privacy policy first, or use the command-line method so the file never leaves your machine. NoCodeCSV's data tools process files with privacy in mind."
+      }
+    }
+  ]
 };
 
 export default function BlogPost() {
@@ -47,6 +128,14 @@ export default function BlogPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12 prose prose-zinc prose-lg">
       <p className="text-blue-600 font-medium">📁 Tutorial · 6 min read</p>

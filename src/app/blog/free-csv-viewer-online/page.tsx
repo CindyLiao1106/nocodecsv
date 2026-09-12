@@ -37,8 +37,89 @@ const jsonLd = {
   dateModified: "2026-08-31",
   inLanguage: "en",
   author: { "@type": "Organization", name: "NoCodeCSV Team" },
-  publisher: { "@type": "Organization", name: "NoCodeCSV" },
+  publisher: {
+    "@type": "Organization",
+    name: "NoCodeCSV",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://nocodecsv.com/og-image.png",
+      width: 1200,
+      height: 630,
+    },
+  },
   mainEntityOfPage: "https://nocodecsv.com/blog/free-csv-viewer-online",
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://nocodecsv.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://nocodecsv.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Free CSV Viewer Online",
+      "item": "https://nocodecsv.com/blog/free-csv-viewer-online"
+    }
+  ]
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is there a truly free CSV viewer online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. NoCodeCSV offers free analyses every day with no credit card required — enough for regular inspection and light analysis work. Pro plans exist only for heavy, unlimited use."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I open a 1 GB CSV file in a browser?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usually, yes. Modern viewers use virtualized tables that only render visible rows, so memory usage stays low even for very large files. If your file has unusual encoding or delimiter settings, a good viewer lets you adjust those during import."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it safe to upload CSV data to an online viewer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Legitimate tools process files for analysis and delete them after the session or keep them private to your account. Check the privacy policy before uploading sensitive data, and prefer tools that do not require sharing your file publicly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does Excel show my CSV with wrong numbers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Excel auto-detects data types and converts long IDs, phone numbers, and dates into formats it prefers. A dedicated viewer displays the raw values as they are in the file, so you see the true data."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I edit a CSV in an online viewer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most viewers focus on inspection and export. For heavy editing, clean the data first — our dirty CSV cleaning guide covers duplicates, missing values, and formatting fixes step by step."
+      }
+    }
+  ]
 };
 
 export default function BlogPost() {
@@ -47,6 +128,14 @@ export default function BlogPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12 prose prose-zinc prose-lg">
       <p className="text-blue-600 font-medium">📄 Tutorial · 5 min read</p>

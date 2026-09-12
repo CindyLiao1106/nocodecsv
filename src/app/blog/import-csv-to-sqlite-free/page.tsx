@@ -37,8 +37,89 @@ const jsonLd = {
   dateModified: "2026-09-01",
   inLanguage: "en",
   author: { "@type": "Organization", name: "NoCodeCSV Team" },
-  publisher: { "@type": "Organization", name: "NoCodeCSV" },
+  publisher: {
+    "@type": "Organization",
+    name: "NoCodeCSV",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://nocodecsv.com/og-image.png",
+      width: 1200,
+      height: 630,
+    },
+  },
   mainEntityOfPage: "https://nocodecsv.com/blog/import-csv-to-sqlite-free",
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://nocodecsv.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://nocodecsv.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Import CSV to SQLite",
+      "item": "https://nocodecsv.com/blog/import-csv-to-sqlite-free"
+    }
+  ]
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is SQLite really free for commercial use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. SQLite is public domain. You can use it in commercial products, internal tools, and servers without paying anything or releasing your code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to import a large CSV?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With the CLI's .import command, roughly 1–2 million rows per second on a normal laptop. If you use individual INSERT statements in Python, wrap them in a transaction (like the example above) or performance drops sharply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if my CSV has no header row?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Just skip the --skip 1 flag or uncheck \"Column names in first line\". The table will use automatic names like c1, c2, c3 — you can rename them afterward with ALTER TABLE ... RENAME COLUMN ."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I import multiple CSV files into one database?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Repeat the import with different table names, then join them in SQL. This is one of the main reasons people move from spreadsheets to SQLite in the first place."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to know SQL to use SQLite?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only for querying. Importing takes no SQL at all. For simple queries, SELECT * FROM table LIMIT 10 is enough to start. And if you'd rather not write SQL, analyze the same file with AI instead."
+      }
+    }
+  ]
 };
 
 export default function BlogPost() {
@@ -47,6 +128,14 @@ export default function BlogPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12 prose prose-zinc prose-lg">
       <p className="text-blue-600 font-medium">🗄️ Tutorial · 7 min read</p>

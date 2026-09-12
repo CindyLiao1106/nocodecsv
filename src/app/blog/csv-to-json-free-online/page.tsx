@@ -37,8 +37,89 @@ const jsonLd = {
   dateModified: "2026-08-30",
   inLanguage: "en",
   author: { "@type": "Organization", name: "NoCodeCSV Team" },
-  publisher: { "@type": "Organization", name: "NoCodeCSV" },
+  publisher: {
+    "@type": "Organization",
+    name: "NoCodeCSV",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://nocodecsv.com/og-image.png",
+      width: 1200,
+      height: 630,
+    },
+  },
   mainEntityOfPage: "https://nocodecsv.com/blog/csv-to-json-free-online",
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://nocodecsv.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://nocodecsv.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "CSV to JSON Free Online",
+      "item": "https://nocodecsv.com/blog/csv-to-json-free-online"
+    }
+  ]
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is converting CSV to JSON online really free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Browser-based converters like DataAnalyzer AI are free to use with no signup and no credit card. Your data is processed locally or in a single request — there are no hidden conversion fees."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are my files safe when I upload them?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Choose a tool that processes files client-side when possible. For tools that upload to a server, check their privacy policy and avoid uploading sensitive personal data unless you trust the service. When in doubt, anonymize your data before converting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I convert a large CSV file?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most online tools handle files up to a few megabytes without issues. For very large files, split them first — our guide on splitting and merging CSVs shows how — or use a command-line tool like jq if you're comfortable in a terminal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if my CSV has no header row?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You have two options: add a header row to the CSV before converting (so the JSON gets meaningful keys), or choose a converter that generates generic keys like column_1 , column_2 automatically."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can the converter handle nested data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CSV is flat by nature, so deeply nested structures don't exist in it. But advanced converters let you flatten JSON into CSV (the reverse direction), and some support dot-notation keys like address.city that become nested objects on conversion."
+      }
+    }
+  ]
 };
 
 export default function BlogPost() {
@@ -47,6 +128,14 @@ export default function BlogPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12 prose prose-zinc prose-lg">
       <p className="text-blue-600 font-medium">🔄 Tutorial · 5 min read</p>

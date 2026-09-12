@@ -37,8 +37,89 @@ const jsonLd = {
   dateModified: "2026-09-02",
   inLanguage: "en",
   author: { "@type": "Organization", name: "NoCodeCSV Team" },
-  publisher: { "@type": "Organization", name: "NoCodeCSV" },
+  publisher: {
+    "@type": "Organization",
+    name: "NoCodeCSV",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://nocodecsv.com/og-image.png",
+      width: 1200,
+      height: 630,
+    },
+  },
   mainEntityOfPage: "https://nocodecsv.com/blog/convert-csv-to-excel-without-excel",
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://nocodecsv.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://nocodecsv.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Convert CSV to Excel Without Excel",
+      "item": "https://nocodecsv.com/blog/convert-csv-to-excel-without-excel"
+    }
+  ]
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is converting CSV to Excel really free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. All three methods above are free: DataAnalyzer AI offers 3 free conversions per day, Google Sheets is free with any Google account, and LibreOffice/WPS/Numbers are free desktop apps. You never need an Office subscription."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will I lose data during conversion?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, as long as the CSV is parsed correctly. The two common culprits are the wrong delimiter (fix it in the import settings) and encoding issues with special characters (choose UTF-8). Numbers starting with zeros — like ZIP codes or IDs — may lose leading zeros in Excel; force those columns to text format if it matters."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I convert a CSV to Excel on my phone?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Use Google Sheets on Android/iPhone, the WPS Office app, or Numbers on iPhone. All of them can import CSV and export .xlsx."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I convert multiple CSV files to one Excel workbook?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Open each CSV in Google Sheets or LibreOffice Calc, then copy the sheets into one workbook — each CSV becomes its own tab. Save the combined file as .xlsx."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if my CSV data is messy before I convert it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Convert after cleaning, not before. Remove duplicate rows and fix broken fields first — our step-by-step guide to cleaning dirty CSV data walks you through it, and you can do the cleanup directly in the same free tool."
+      }
+    }
+  ]
 };
 
 export default function BlogPost() {
@@ -47,6 +128,14 @@ export default function BlogPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12 prose prose-zinc prose-lg">
       <p className="text-blue-600 font-medium">📄 Tutorial · 6 min read</p>

@@ -37,8 +37,89 @@ const jsonLd = {
   dateModified: "2026-09-03",
   inLanguage: "en",
   author: { "@type": "Organization", name: "NoCodeCSV Team" },
-  publisher: { "@type": "Organization", name: "NoCodeCSV" },
+  publisher: {
+    "@type": "Organization",
+    name: "NoCodeCSV",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://nocodecsv.com/og-image.png",
+      width: 1200,
+      height: 630,
+    },
+  },
   mainEntityOfPage: "https://nocodecsv.com/blog/remove-duplicates-from-csv",
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://nocodecsv.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://nocodecsv.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Remove Duplicates from CSV",
+      "item": "https://nocodecsv.com/blog/remove-duplicates-from-csv"
+    }
+  ]
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I remove duplicate rows from a CSV without Excel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use a free online dedupe tool, Google Sheets (Data → Data cleanup → Remove duplicates), or a text editor with a regex find-and-replace for simple cases. All of them handle the job without installing Excel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does removing duplicates delete rows that are similar but not identical?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only if you dedupe by a key column and the key matches. Exact-duplicate removal compares every column and only deletes fully identical rows. Similar-but-different rows survive unless you deliberately dedupe on the column where they match."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I keep the newest record instead of the first one?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sort your CSV by the \"last updated\" or date column in descending order (newest first) before removing duplicates. Since tools keep the first occurrence, the newest row will be the one that survives."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will the header row be removed when I dedupe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Excel, Google Sheets, and online tools all treat the header row separately and keep it. If you use a script, make sure your logic skips row 1."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do after removing duplicates?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Verify your counts, then check for duplicates that appeared across file boundaries if you split the work. If you cleaned several chunk files, you can merge CSV files back into one master list — then dedupe once more on the merged result."
+      }
+    }
+  ]
 };
 
 export default function BlogPost() {
@@ -47,6 +128,14 @@ export default function BlogPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12 prose prose-zinc prose-lg">
       <p className="text-blue-600 font-medium">🧹 Tutorial · 6 min read</p>

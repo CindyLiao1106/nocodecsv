@@ -37,8 +37,89 @@ const jsonLd = {
   dateModified: "2026-09-04",
   inLanguage: "en",
   author: { "@type": "Organization", name: "NoCodeCSV Team" },
-  publisher: { "@type": "Organization", name: "NoCodeCSV" },
+  publisher: {
+    "@type": "Organization",
+    name: "NoCodeCSV",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://nocodecsv.com/og-image.png",
+      width: 1200,
+      height: 630,
+    },
+  },
   mainEntityOfPage: "https://nocodecsv.com/blog/chat-with-spreadsheet-ai-free",
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://nocodecsv.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://nocodecsv.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Chat with Your Spreadsheet (Free)",
+      "item": "https://nocodecsv.com/blog/chat-with-spreadsheet-ai-free"
+    }
+  ]
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is it really free to chat with a spreadsheet AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — most spreadsheet AI tools, including NoCodeCSV's analyzer, offer a free tier that handles typical analysis tasks: uploading a file, asking questions in plain English, and getting answers with charts. Limits usually apply to file size and, on some platforms, the number of questions per day. For standard business files the free tier is enough to get real work done."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to know formulas or pivot tables to use it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. That is the entire point. You describe what you want to know in words, and the AI performs the grouping, filtering, and math. You can still inspect the numbers behind each answer, but you never have to write a formula to get them."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What file formats can I chat with?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CSV is supported everywhere, and most tools also accept Excel (.xlsx and .xls), Google Sheets exports, and sometimes JSON. If your tool only takes CSV, converting an Excel file takes one export click."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use it with customer or financial data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Technically yes, but check the tool's privacy policy first. Look for a statement that uploads are encrypted and deleted after processing, and avoid sharing data covered by confidentiality agreements unless you have approval. When in doubt, anonymize names and identifiers before uploading."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if my spreadsheet is messy or has duplicates?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Clean the file before you chat with it. Remove duplicate rows, fix blank headers, and standardize date formats — otherwise totals and rankings will be subtly wrong. A ten-minute cleanup makes every answer you get afterwards trustworthy."
+      }
+    }
+  ]
 };
 
 export default function BlogPost() {
@@ -47,6 +128,14 @@ export default function BlogPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12 prose prose-zinc prose-lg">
       <p className="text-blue-600 font-medium">📁 Tutorial · 6 min read</p>

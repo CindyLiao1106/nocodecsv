@@ -37,8 +37,89 @@ const jsonLd = {
   dateModified: "2026-09-04",
   inLanguage: "en",
   author: { "@type": "Organization", name: "NoCodeCSV Team" },
-  publisher: { "@type": "Organization", name: "NoCodeCSV" },
+  publisher: {
+    "@type": "Organization",
+    name: "NoCodeCSV",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://nocodecsv.com/og-image.png",
+      width: 1200,
+      height: 630,
+    },
+  },
   mainEntityOfPage: "https://nocodecsv.com/blog/summarize-excel-data-with-ai",
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://nocodecsv.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://nocodecsv.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Summarize Excel Data with AI",
+      "item": "https://nocodecsv.com/blog/summarize-excel-data-with-ai"
+    }
+  ]
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can I really summarize Excel data with AI for free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Free AI analyzers handle everyday spreadsheet summaries: upload the file, ask for a summary, and get key metrics, trends, and outliers in plain English. Free tiers typically limit file size and occasionally the number of questions, which is fine for standard business exports."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need pivot tables or formulas to understand the results?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — the summary is written in plain language with the supporting numbers. Pivot tables remain useful when you want to explore manually, but reading an AI summary requires no formula knowledge at all."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will it work on a very large Excel file?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Free tools handle files up to a certain size — commonly tens of megabytes or a few hundred thousand rows. For larger exports, split the file into chunks and summarize each one, then combine the findings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How accurate is an AI data summary?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI summaries are accurate when the source data is clean and the question is specific. Always spot-check headline numbers against the raw file, especially for anything that goes into a financial or client-facing report. Treat the summary as a brilliant first draft, not the final audit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can it summarize data that contains personal or financial information?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Technically yes, but check the tool's privacy policy first and only upload data you are permitted to share. Anonymize customer names and identifiers whenever possible — you can summarize patterns without exposing individuals."
+      }
+    }
+  ]
 };
 
 export default function BlogPost() {
@@ -47,6 +128,14 @@ export default function BlogPost() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12 prose prose-zinc prose-lg">
       <p className="text-blue-600 font-medium">📁 Tutorial · 6 min read</p>
