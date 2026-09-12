@@ -104,28 +104,47 @@ export const POST_TITLES: Record<string, string> = {
   'csv-vs-excel': 'CSV vs Excel',
 };
 
+/** 全站文章 slug 列表(顺序固定,用于轮转) */
+export const ALL_POST_SLUGS: string[] = Object.keys(POST_CLUSTERS);
+
+/** 数组轮转:按 seed 决定起点,避免固定字母序导致部分文章永远拿不到入链 */
+function rotate(arr: string[], seed: number | string): string[] {
+  if (arr.length === 0) return arr;
+  const n = typeof seed === 'number' ? seed : seed.split('').reduce((a, c) => a + c.charCodeAt(0), 0);
+  const start = ((n % arr.length) + arr.length) % arr.length;
+  return [...arr.slice(start), ...arr.slice(0, start)];
+}
+
 /**
  * 取相关文章:优先同集群,不足则用跨集群补充
  * @param slug 当前文章
  * @param limit 返回数量(默认 4)
  */
-export function getRelatedPosts(slug: string, limit = 4): { slug: string; title: string }[] {
+export function getRelatedPosts(slug: string, limit = 6): { slug: string; title: string }[] {
   const mine = POST_CLUSTERS[slug];
-  const sameCluster = Object.keys(POST_CLUSTERS).filter(
-    (s) => s !== slug && POST_CLUSTERS[s] === mine
-  );
-  const others = Object.keys(POST_CLUSTERS).filter(
-    (s) => s !== slug && POST_CLUSTERS[s] !== mine
-  );
-  // 同集群优先;组内按当前 slug 轮转起点,避免字母序靠后的文章永远拿不到入链
-  const rotate = (arr: string[], seed: string): string[] => {
-    if (arr.length === 0) return arr;
-    const start = seed.split("").reduce((a, c) => a + c.charCodeAt(0), 0) % arr.length;
-    return [...arr.slice(start), ...arr.slice(0, start)];
+  const sameCluster = ALL_POST_SLUGS.filter((s) => s !== slug && POST_CLUSTERS[s] === mine);
+  const others = ALL_POST_SLUGS.filter((s) => s !== slug && POST_CLUSTERS[s] !== mine);
+  const withoutSelf = ALL_POST_SLUGS.filter((s) => s !== slug);
+  const idx = ALL_POST_SLUGS.indexOf(slug);
+
+  const gap = Math.min(2, limit); // 保底槽位数:取自全站轮转窗口,数学上保证无孤岛
+  const picked: string[] = [];
+  const seen = new Set<string>();
+  const take = (seq: string[], cap: number) => {
+    for (const s of seq) {
+      if (picked.length >= cap || picked.length >= limit) return;
+      if (seen.has(s)) continue;
+      seen.add(s);
+      picked.push(s);
+    }
   };
-  const picked = [
-    ...rotate(sameCluster.sort(), slug),
-    ...rotate(others.sort(), slug),
-  ].slice(0, limit);
-  return picked.map((s) => ({ slug: s, title: POST_TITLES[s] || s }));
+
+  // 1) 同集群优先(集群内按当前索引轮转,不再固定字母序)
+  take(rotate(sameCluster, idx), Math.max(1, limit - gap));
+  // 2) 保底槽位:全站轮转窗口 —— 消除孤岛的关键
+  take(rotate(withoutSelf, idx + 1), limit);
+  // 3) 仍不足则按轮转补齐
+  take(rotate(sameCluster, idx).concat(rotate(others, idx)), limit);
+
+  return picked.map((s) => ({ slug: s, title: POST_TITLES[s] ?? s }));
 }
