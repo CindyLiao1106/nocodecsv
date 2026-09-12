@@ -24,6 +24,7 @@ export const POST_CLUSTERS: Record<string, Cluster> = {
   'csv-to-markdown-table': 'convert',
   'extract-data-from-pdf-to-csv-ai': 'convert',
   'csv-to-chart-online-free': 'convert',
+  'transpose-csv-file': 'convert',
 
   // B. 数据清理
   'how-to-clean-dirty-csv-data': 'clean',
@@ -32,6 +33,7 @@ export const POST_CLUSTERS: Record<string, Cluster> = {
   'fix-garbled-csv-in-excel': 'clean',
   'keep-leading-zeros-in-csv': 'clean',
   'change-csv-delimiter': 'clean',
+  'extract-email-addresses-from-csv': 'clean',
 
   // C. AI 与分析
   'how-to-analyze-csv-with-ai-free': 'ai',
@@ -45,6 +47,7 @@ export const POST_CLUSTERS: Record<string, Cluster> = {
   'ask-csv': 'ai',
   'analyze-survey-data-csv-with-ai': 'ai',
   'visualize-sales-data-csv': 'ai',
+  'opencode-go-review-cheap-ai-models': 'ai',
 
   // D. 文件操作
   'sort-csv-by-column': 'ops',
@@ -53,6 +56,7 @@ export const POST_CLUSTERS: Record<string, Cluster> = {
   'free-csv-viewer-online': 'ops',
   'import-csv-to-sqlite-free': 'ops',
   'import-csv-into-google-sheets': 'ops',
+  'merge-csv-files-free': 'ops',
 
   // E. 基础
   'csv-vs-excel': 'basics',
@@ -70,12 +74,14 @@ export const POST_TITLES: Record<string, string> = {
   'csv-to-markdown-table': 'CSV to Markdown Table',
   'extract-data-from-pdf-to-csv-ai': 'Extract Data from PDF to CSV with AI',
   'csv-to-chart-online-free': 'CSV to Chart Online Free',
+  'transpose-csv-file': 'Transpose a CSV File',
   'how-to-clean-dirty-csv-data': 'How to Clean Dirty CSV Data',
   'remove-duplicates-from-csv': 'Remove Duplicates from CSV',
   'remove-blank-rows-from-csv': 'Remove Blank Rows from CSV',
   'fix-garbled-csv-in-excel': 'Fix Garbled CSV in Excel',
   'keep-leading-zeros-in-csv': 'Keep Leading Zeros in CSV',
   'change-csv-delimiter': 'Change CSV Delimiter',
+  'extract-email-addresses-from-csv': 'Extract Email Addresses from a CSV',
   'how-to-analyze-csv-with-ai-free': 'Analyze CSV with AI (Free)',
   'best-ai-tools-for-excel-analysis': 'Best AI Tools for Excel Analysis',
   'ai-data-visualization-guide': 'AI Data Visualization Guide',
@@ -87,12 +93,14 @@ export const POST_TITLES: Record<string, string> = {
   'ask-csv': 'Ask Your CSV Questions',
   'analyze-survey-data-csv-with-ai': 'Analyze Survey Data CSV with AI',
   'visualize-sales-data-csv': 'Visualize Sales Data from CSV',
+  'opencode-go-review-cheap-ai-models': 'OpenCode Go Review',
   'sort-csv-by-column': 'Sort CSV by Column',
   'split-large-csv-file-online': 'Split a Large CSV File Online',
   'compare-two-csv-files-online': 'Compare Two CSV Files Online',
   'free-csv-viewer-online': 'Free CSV Viewer Online',
   'import-csv-to-sqlite-free': 'Import CSV to SQLite',
   'import-csv-into-google-sheets': 'Import CSV into Google Sheets',
+  'merge-csv-files-free': 'Merge CSV Files',
   'csv-vs-excel': 'CSV vs Excel',
 };
 
@@ -109,7 +117,15 @@ export function getRelatedPosts(slug: string, limit = 4): { slug: string; title:
   const others = Object.keys(POST_CLUSTERS).filter(
     (s) => s !== slug && POST_CLUSTERS[s] !== mine
   );
-  // 同集群优先,内部按字母序稳定排序
-  const picked = [...sameCluster.sort(), ...others.sort()].slice(0, limit);
+  // 同集群优先;组内按当前 slug 轮转起点,避免字母序靠后的文章永远拿不到入链
+  const rotate = (arr: string[], seed: string): string[] => {
+    if (arr.length === 0) return arr;
+    const start = seed.split("").reduce((a, c) => a + c.charCodeAt(0), 0) % arr.length;
+    return [...arr.slice(start), ...arr.slice(0, start)];
+  };
+  const picked = [
+    ...rotate(sameCluster.sort(), slug),
+    ...rotate(others.sort(), slug),
+  ].slice(0, limit);
   return picked.map((s) => ({ slug: s, title: POST_TITLES[s] || s }));
 }
