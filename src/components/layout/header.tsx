@@ -19,6 +19,7 @@ export function Header() {
 
         <nav className="flex items-center gap-3 sm:gap-4">
           <Link href="/#features" className="text-sm text-zinc-600 hover:text-zinc-900 hidden md:block">Features</Link>
+          <Link href="/blog" className="text-sm text-zinc-600 hover:text-zinc-900 hidden md:block">Blog</Link>
           <Link href="/pricing" className="text-sm text-zinc-600 hover:text-zinc-900 hidden sm:block">Pricing</Link>
           <Link href="/dashboard">
             <Button size="sm" variant="outline">Dashboard</Button>
