@@ -2,7 +2,8 @@
 
 import { useEffect, useRef } from "react";
 
-const CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
+const CLIENT =
+  process.env.NEXT_PUBLIC_ADSENSE_CLIENT || "ca-pub-4847137398088537";
 
 declare global {
   interface Window {

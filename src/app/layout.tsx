@@ -7,6 +7,9 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import "./globals.css";
 
+const ADSENSE_CLIENT =
+  process.env.NEXT_PUBLIC_ADSENSE_CLIENT || "ca-pub-4847137398088537";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://nocodecsv.com"),
   title: "NoCodeCSV — Chat with Your CSV & Excel Files Using AI",
@@ -96,12 +99,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               type="application/ld+json"
               dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteJsonLd) }}
             />
-            {process.env.NEXT_PUBLIC_ADSENSE_CLIENT ? (
+            {ADSENSE_CLIENT ? (
               <Script
                 async
                 strategy="afterInteractive"
                 crossOrigin="anonymous"
-                src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_CLIENT}`}
+                src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
               />
             ) : null}
           </TooltipProvider>
