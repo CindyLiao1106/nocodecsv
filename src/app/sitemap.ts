@@ -43,6 +43,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/extract-data-from-pdf-to-csv-ai`, lastModified: "2026-09-05T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
     { url: `${BASE_URL}/blog/convert-excel-to-csv-free-online`, lastModified: "2026-09-06T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
     { url: `${BASE_URL}/blog/fix-garbled-csv-in-excel`, lastModified: "2026-09-06T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: `${BASE_URL}/blog/chat-with-csv`, lastModified: "2026-09-13T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.8 },
     { url: `${BASE_URL}/blog/ask-csv`, lastModified: "2026-09-06T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.8 },
     { url: `${BASE_URL}/blog/json-to-csv-converter-online`, lastModified: "2026-09-07T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
     { url: `${BASE_URL}/blog/csv-to-chart-online-free`, lastModified: "2026-09-07T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
