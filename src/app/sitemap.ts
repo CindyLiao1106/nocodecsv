@@ -63,5 +63,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // 法律页面
     { url: `${BASE_URL}/privacy`, lastModified: "2026-08-01T00:00:00.000Z", changeFrequency: "yearly" as const, priority: 0.3 },
     { url: `${BASE_URL}/terms`, lastModified: "2026-08-01T00:00:00.000Z", changeFrequency: "yearly" as const, priority: 0.3 },
+    { url: `${BASE_URL}/contact`, lastModified: "2026-09-13T00:00:00.000Z", changeFrequency: "yearly" as const, priority: 0.3 },
   ];
 }

@@ -39,7 +39,7 @@ export function Footer() {
               <Link href="/pricing" className="block hover:text-zinc-700">Pricing</Link>
               <Link href="/privacy" className="block hover:text-zinc-700">Privacy</Link>
               <Link href="/terms" className="block hover:text-zinc-700">Terms</Link>
-              <a href="mailto:contact@nocodecsv.com" className="block hover:text-zinc-700">Contact</a>
+              <Link href="/contact" className="block hover:text-zinc-700">Contact</Link>
             </div>
           </div>
         </div>

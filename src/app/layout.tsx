@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { ClerkProvider } from "@clerk/nextjs";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "sonner";
@@ -95,6 +96,14 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               type="application/ld+json"
               dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteJsonLd) }}
             />
+            {process.env.NEXT_PUBLIC_ADSENSE_CLIENT ? (
+              <Script
+                async
+                strategy="afterInteractive"
+                crossOrigin="anonymous"
+                src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_CLIENT}`}
+              />
+            ) : null}
           </TooltipProvider>
         </body>
       </html>
