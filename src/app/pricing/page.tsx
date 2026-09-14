@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Check, Banknote, Mail } from "lucide-react";
-import { PAYPAL, PRICING, XTRANSFER } from "@/lib/payment";
-import { PayPalButton } from "@/components/paypal-button";
+import { PRICING, PAYPAL_URL, XTRANSFER } from "@/lib/payment";
+import { SubscribeButton } from "@/components/subscribe-button";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Pricing — Free AI CSV Analysis, Pro $15/mo | NoCodeCSV",
@@ -49,7 +50,7 @@ const plans = [
     href: "",
     highlight: true,
     paypal: true,
-    buttonId: PAYPAL.pro,
+    paypalHref: PAYPAL_URL.pro,
   },
   {
     name: PRICING.business.name,
@@ -61,94 +62,131 @@ const plans = [
     href: "",
     highlight: false,
     paypal: true,
-    buttonId: PAYPAL.business,
+    paypalHref: PAYPAL_URL.business,
   },
 ];
 
 export default function PricingPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6 py-16">
-      <div className="text-center mb-12">
-        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">Simple, transparent pricing</h1>
-        <p className="mt-4 text-lg text-zinc-500 max-w-xl mx-auto">
+      <div className="text-center">
+        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">
+          Simple, transparent pricing
+        </h1>
+        <p className="mt-3.5 text-lg text-zinc-500">
           Start free. Upgrade when you need more. Cancel anytime.
         </p>
       </div>
 
       {/* 定价卡片 */}
-      <div className="grid gap-6 sm:grid-cols-3 max-w-4xl mx-auto mb-16">
+      <div className="mt-12 grid items-stretch gap-5 sm:grid-cols-3">
         {plans.map((plan) => (
           <Card
             key={plan.name}
-            className={`relative ${plan.highlight ? "border-blue-400 ring-2 ring-blue-100 shadow-lg" : "border-zinc-200"}`}
+            className={cn(
+              "relative flex flex-col gap-0 rounded-2xl bg-white p-6 ring-0",
+              plan.highlight
+                ? "border-2 border-blue-600 shadow-[0_10px_30px_rgba(37,99,235,0.12)]"
+                : "border border-zinc-200"
+            )}
           >
             {plan.badge && (
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                <Badge className="bg-blue-600 text-white">{plan.badge}</Badge>
-              </div>
+              <Badge className="mb-3 h-auto self-start rounded-full bg-blue-600 px-2.5 py-1 text-[11px] font-bold tracking-wide text-white uppercase">
+                {plan.badge}
+              </Badge>
             )}
-            <CardHeader>
-              <CardTitle className="text-xl">{plan.name}</CardTitle>
-              <div className="mt-2">
-                <span className="text-3xl font-bold">{plan.price}</span>
-                <span className="text-zinc-500 text-sm">/{plan.period}</span>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-2">
-                {plan.features.map((f: string) => (
-                  <li key={f} className="flex items-start gap-2 text-sm">
-                    <Check className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
-                    <span className="text-zinc-600">{f}</span>
-                  </li>
-                ))}
-              </ul>
-            </CardContent>
-            <CardFooter>
+
+            <div className="text-lg font-semibold text-zinc-700">{plan.name}</div>
+
+            <div className="mt-1.5 flex items-baseline gap-1">
+              <span className="text-4xl font-bold tracking-tight text-zinc-900">
+                {plan.price}
+              </span>
+              <span className="text-sm text-zinc-400">/ {plan.period}</span>
+            </div>
+
+            <div className="my-4 border-t border-zinc-100" />
+
+            <ul className="flex flex-col gap-2.5">
+              {plan.features.map((f: string) => (
+                <li key={f} className="flex items-start gap-2 text-sm text-zinc-600">
+                  <Check
+                    className={cn(
+                      "mt-0.5 h-4 w-4 shrink-0",
+                      plan.paypal ? "text-blue-600" : "text-green-600"
+                    )}
+                  />
+                  <span>{f}</span>
+                </li>
+              ))}
+            </ul>
+
+            <div className="mt-auto pt-6">
               {plan.paypal ? (
-                <PayPalButton buttonId={plan.buttonId!} />
+                <SubscribeButton
+                  href={plan.paypalHref!}
+                  label={plan.cta}
+                  variant={plan.highlight ? "primary" : "outline"}
+                  note={
+                    <>
+                      Pay with{" "}
+                      <strong className="font-semibold text-[#003087] italic">
+                        PayPal
+                      </strong>{" "}
+                      · cancel anytime
+                    </>
+                  }
+                />
               ) : (
-                <Link href={plan.href} className="w-full">
-                  <Button variant={plan.highlight ? "default" : "outline"} className="w-full">
-                    {plan.cta}
-                  </Button>
-                </Link>
+                <>
+                  <Link href={plan.href} className="block w-full">
+                    <Button
+                      variant="outline"
+                      className="h-12 w-full border-zinc-300 bg-white text-[15px] text-zinc-900 hover:bg-zinc-50"
+                    >
+                      {plan.cta}
+                    </Button>
+                  </Link>
+                  <div className="mt-2.5 text-center text-xs text-zinc-400">
+                    No account needed
+                  </div>
+                </>
               )}
-            </CardFooter>
+            </div>
           </Card>
         ))}
       </div>
 
-      {/* XTransfer 企业收款 */}
-      <div className="max-w-2xl mx-auto">
-        <Card className="border-amber-200 bg-amber-50">
-          <CardContent className="pt-6">
-            <div className="flex items-start gap-3">
-              <Banknote className="h-6 w-6 text-amber-600 mt-1 shrink-0" />
-              <div>
-                <h2 className="font-semibold text-lg mb-2">Enterprise / Wire Transfer</h2>
-                <p className="text-sm text-zinc-600 mb-3">{XTRANSFER.note}</p>
-                <p className="text-sm text-zinc-600 mb-1">
-                  <strong>Accepted via XTransfer:</strong> USD wire transfer, supporting US/UK/EU/Southeast Asia bank accounts.
-                </p>
-                <p className="text-sm text-zinc-600 mb-4">
-                  We issue formal invoices for your accounting. Ideal for teams requiring purchase orders or annual billing.
-                </p>
-                <a href={`mailto:${XTRANSFER.contactEmail}`} className="inline-flex items-center gap-2 text-sm text-amber-700 font-medium hover:text-amber-800">
-                  <Mail className="h-4 w-4" />
-                  Contact us for enterprise pricing
-                </a>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+      {/* 信任条 */}
+      <div className="mt-6 flex flex-wrap justify-center gap-6 text-[13px] text-zinc-500">
+        <span>🔒 Secure PayPal checkout</span>
+        <span>💳 No card details stored</span>
+        <span>↩️ Cancel anytime</span>
       </div>
 
-      {/* 支付方式 */}
-      <div className="mt-12 text-center text-sm text-zinc-400">
-        <p>Payments processed securely by <strong>PayPal</strong>. No credit card details touch our servers.</p>
-        <p className="mt-1">Enterprise: wire transfer via <strong>XTransfer</strong>. Invoices provided.</p>
-        <p className="mt-1">Cancel anytime from your PayPal subscriptions. No questions asked.</p>
+      {/* XTransfer 企业收款 */}
+      <div className="mx-auto mt-9 max-w-3xl rounded-2xl border border-zinc-200 bg-white p-6">
+        <div className="flex items-start gap-3.5">
+          <Banknote className="mt-0.5 h-6 w-6 shrink-0 text-zinc-500" />
+          <div>
+            <h2 className="text-base font-semibold text-zinc-900">
+              Enterprise / Wire Transfer
+            </h2>
+            <p className="mt-1.5 text-[13.5px] text-zinc-600">{XTRANSFER.note}</p>
+            <p className="mt-1.5 text-[13.5px] text-zinc-600">
+              Accepted via <strong>XTransfer</strong>: USD wire transfer, supporting
+              US/UK/EU/Southeast Asia bank accounts. Formal invoices provided for
+              your accounting.
+            </p>
+            <a
+              href={`mailto:${XTRANSFER.contactEmail}`}
+              className="mt-2 inline-flex items-center gap-1.5 text-[13.5px] font-semibold text-blue-600 hover:text-blue-700"
+            >
+              <Mail className="h-4 w-4" />
+              Contact us for enterprise pricing
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
