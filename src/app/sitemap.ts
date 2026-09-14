@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { ALL_POST_SLUGS, POST_DATES } from "@/lib/related-posts";
 
 const BASE_URL = "https://nocodecsv.com";
 
@@ -6,6 +7,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // 各页面使用真实最后修改日期，避免误导搜索引擎反复抓取未变化页面
   const homeLastModified = new Date();
   const seoLastModified = "2026-08-04T00:00:00.000Z";
+
+  // 博客文章：单一数据源 ALL_POST_SLUGS + POST_DATES，杜绝漏 slug
+  const blogPosts: MetadataRoute.Sitemap = ALL_POST_SLUGS.map((slug) => ({
+    url: `${BASE_URL}/blog/${slug}`,
+    lastModified: `${POST_DATES[slug] ?? "2026-08-01"}T00:00:00.000Z`,
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
 
   return [
     { url: BASE_URL, lastModified: homeLastModified, changeFrequency: "weekly" as const, priority: 1 },
@@ -19,50 +28,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/tools/excel-data-analysis`, lastModified: seoLastModified, changeFrequency: "monthly" as const, priority: 0.8 },
     { url: `${BASE_URL}/tools/spreadsheet-charts`, lastModified: seoLastModified, changeFrequency: "monthly" as const, priority: 0.8 },
 
-    // 博客文章（按各自发布日期）
-    { url: `${BASE_URL}/blog/how-to-analyze-csv-with-ai-free`, lastModified: "2026-08-01T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/best-ai-tools-for-excel-analysis`, lastModified: "2026-08-01T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/ai-data-visualization-guide`, lastModified: "2026-08-02T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/spreadsheet-automation-with-ai`, lastModified: "2026-08-02T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/free-alternative-to-chatgpt-code-interpreter`, lastModified: "2026-08-03T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/merge-csv-files-free`, lastModified: "2026-08-30T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/csv-to-json-free-online`, lastModified: "2026-08-30T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/excel-formula-generator-ai`, lastModified: "2026-08-30T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/how-to-clean-dirty-csv-data`, lastModified: "2026-08-31T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/free-csv-viewer-online`, lastModified: "2026-08-31T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
+    // 博客文章（按各自发布日期，来自 src/lib/related-posts.ts 的单一数据源）
+    ...blogPosts,
 
-    { url: `${BASE_URL}/blog/analyze-survey-data-csv-with-ai`, lastModified: "2026-09-01T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/import-csv-to-sqlite-free`, lastModified: "2026-09-01T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/visualize-sales-data-csv`, lastModified: "2026-09-02T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/convert-csv-to-excel-without-excel`, lastModified: "2026-09-02T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/split-large-csv-file-online`, lastModified: "2026-09-03T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/remove-duplicates-from-csv`, lastModified: "2026-09-03T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/chat-with-spreadsheet-ai-free`, lastModified: "2026-09-04T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/summarize-excel-data-with-ai`, lastModified: "2026-09-04T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/compare-two-csv-files-online`, lastModified: "2026-09-05T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/extract-data-from-pdf-to-csv-ai`, lastModified: "2026-09-05T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/convert-excel-to-csv-free-online`, lastModified: "2026-09-06T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/fix-garbled-csv-in-excel`, lastModified: "2026-09-06T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/chat-with-csv`, lastModified: "2026-09-13T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.8 },
-    { url: `${BASE_URL}/blog/ask-csv`, lastModified: "2026-09-06T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.8 },
-    { url: `${BASE_URL}/blog/json-to-csv-converter-online`, lastModified: "2026-09-07T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/csv-to-chart-online-free`, lastModified: "2026-09-07T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/csv-to-html-table`, lastModified: "2026-09-07T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/import-csv-into-google-sheets`, lastModified: "2026-09-07T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/convert-tsv-to-csv`, lastModified: "2026-09-08T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/sort-csv-by-column`, lastModified: "2026-09-08T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/csv-vs-excel`, lastModified: "2026-09-09T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/change-csv-delimiter`, lastModified: "2026-09-09T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/convert-csv-to-pdf`, lastModified: "2026-09-10T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/remove-blank-rows-from-csv`, lastModified: "2026-09-10T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/opencode-go-review-cheap-ai-models`, lastModified: "2026-09-10T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.8 },
-    { url: `${BASE_URL}/blog/csv-to-markdown-table`, lastModified: "2026-09-11T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/keep-leading-zeros-in-csv`, lastModified: "2026-09-11T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/transpose-csv-file`, lastModified: "2026-09-12T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/extract-email-addresses-from-csv`, lastModified: "2026-09-12T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/excel-row-limit`, lastModified: "2026-09-14T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.8 },
-    { url: `${BASE_URL}/blog/query-csv-with-sql`, lastModified: "2026-09-14T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${BASE_URL}/blog/remove-special-characters-in-excel`, lastModified: "2026-09-14T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
     // 法律页面
     { url: `${BASE_URL}/privacy`, lastModified: "2026-08-01T00:00:00.000Z", changeFrequency: "yearly" as const, priority: 0.3 },
     { url: `${BASE_URL}/terms`, lastModified: "2026-08-01T00:00:00.000Z", changeFrequency: "yearly" as const, priority: 0.3 },

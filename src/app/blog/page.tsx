@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import {
+  ALL_POST_SLUGS,
+  POST_CLUSTERS,
+  POST_TITLES,
+  POST_SUMMARIES,
+  type Cluster,
+} from "@/lib/related-posts";
 
 export const metadata: Metadata = {
   title: "CSV, Excel & Data Guides — NoCodeCSV Blog",
@@ -31,76 +38,42 @@ export const metadata: Metadata = {
 
 type Post = { slug: string; title: string; blurb: string };
 
-const GROUPS: { label: string; blurb: string; posts: Post[] }[] = [
-  {
+// 分组顺序与文案：数据本身来自 src/lib/related-posts.ts 的单一数据源，
+// 新增文章只需要改那一个文件，这里和 GROUPS 会自动同步。
+const GROUP_ORDER: Cluster[] = ["convert", "clean", "ai", "ops", "basics"];
+
+const GROUP_META: Record<Cluster, { label: string; blurb: string }> = {
+  convert: {
     label: "Format & Conversion",
     blurb: "Moving data between CSV, Excel, PDF, JSON, HTML and Markdown without losing anything on the way.",
-    posts: [
-      { slug: "convert-csv-to-pdf", title: "Convert CSV to PDF", blurb: "Turn a spreadsheet into a clean, printable document without buying software." },
-      { slug: "convert-csv-to-excel-without-excel", title: "Convert CSV to Excel Without Excel", blurb: "Get an .xlsx out of a .csv when Excel is not installed." },
-      { slug: "convert-excel-to-csv-free-online", title: "Convert Excel to CSV Free Online", blurb: "Export a workbook to CSV with the encoding and columns intact." },
-      { slug: "convert-tsv-to-csv", title: "Convert TSV to CSV", blurb: "Swap tabs for commas when a system only accepts one of the two." },
-      { slug: "csv-to-json-free-online", title: "CSV to JSON Free Online", blurb: "Reshape rows into objects for an API, an app or a script." },
-      { slug: "json-to-csv-converter-online", title: "JSON to CSV Converter", blurb: "Flatten API output back into a table you can actually read." },
-      { slug: "csv-to-html-table", title: "CSV to HTML Table", blurb: "Paste-ready markup for a web page or an email." },
-      { slug: "csv-to-markdown-table", title: "CSV to Markdown Table", blurb: "Turn a table into Markdown for docs, READMEs and wikis." },
-      { slug: "csv-to-chart-online-free", title: "CSV to Chart Online Free", blurb: "Go from a column of numbers to a graph in the browser." },
-      { slug: "extract-data-from-pdf-to-csv-ai", title: "Extract Data from PDF to CSV with AI", blurb: "Pull tables out of a PDF without retyping a single row." },
-      { slug: "transpose-csv-file", title: "Transpose a CSV File", blurb: "Swap rows and columns in Excel, Sheets or Python without breaking quoted fields." },
-    ],
   },
-  {
+  clean: {
     label: "Data Cleaning",
     blurb: "The unglamorous work that decides whether the rest of the pipeline runs at all.",
-    posts: [
-      { slug: "how-to-clean-dirty-csv-data", title: "How to Clean Dirty CSV Data", blurb: "The checklist for messy exports: blanks, duplicates, stray quotes and headers." },
-      { slug: "remove-duplicates-from-csv", title: "Remove Duplicates from CSV", blurb: "Find and drop repeat rows without losing the ones that matter." },
-      { slug: "remove-blank-rows-from-csv", title: "Remove Blank Rows from CSV", blurb: "Strip the empty rows that break imports and charts." },
-      { slug: "fix-garbled-csv-in-excel", title: "Fix Garbled CSV in Excel", blurb: "Fix mojibake: UTF-8, BOM and the wrong-encoding trap." },
-      { slug: "keep-leading-zeros-in-csv", title: "Keep Leading Zeros in CSV", blurb: "Stop Excel eating the zero off ZIP codes, IDs and phone numbers." },
-      { slug: "change-csv-delimiter", title: "Change a CSV Delimiter", blurb: "Convert semicolons, tabs and pipes to commas, and back again." },
-      { slug: "extract-email-addresses-from-csv", title: "Extract Email Addresses from a CSV", blurb: "Pull addresses out of free text, then clean and dedupe the list." },
-    ],
   },
-  {
+  ai: {
     label: "AI & Analysis",
     blurb: "Getting answers, summaries and charts out of a file without writing a formula nobody can maintain.",
-    posts: [
-      { slug: "how-to-analyze-csv-with-ai-free", title: "Analyze CSV with AI (Free)", blurb: "Ask questions of a spreadsheet and get answers back, no coding required." },
-      { slug: "best-ai-tools-for-excel-analysis", title: "Best AI Tools for Excel Analysis", blurb: "Which AI spreadsheet tools are worth a subscription, and which are not." },
-      { slug: "ai-data-visualization-guide", title: "AI Data Visualization Guide", blurb: "Turn a plain table into a chart worth showing someone." },
-      { slug: "spreadsheet-automation-with-ai", title: "Spreadsheet Automation with AI", blurb: "Automate the repetitive quarter of spreadsheet work." },
-      { slug: "free-alternative-to-chatgpt-code-interpreter", title: "Free ChatGPT Code Interpreter Alternative", blurb: "Run the same data tasks without the paid tier." },
-      { slug: "excel-formula-generator-ai", title: "Excel Formula Generator (AI)", blurb: "Describe the formula you want in plain English and get it back." },
-      { slug: "chat-with-spreadsheet-ai-free", title: "Chat with Your Spreadsheet (Free)", blurb: "A conversational way to explore a file you did not build." },
-      { slug: "summarize-excel-data-with-ai", title: "Summarize Excel Data with AI", blurb: "Get a written summary instead of a pivot table nobody reads." },
-      { slug: "ask-csv", title: "Ask Your CSV Questions", blurb: "Ask one direct question and get the number back." },
-      { slug: "analyze-survey-data-csv-with-ai", title: "Analyze Survey Data CSV with AI", blurb: "Make sense of survey responses without a statistics package." },
-      { slug: "visualize-sales-data-csv", title: "Visualize Sales Data from CSV", blurb: "Chart a sales export without writing code." },
-      { slug: "opencode-go-review-cheap-ai-models", title: "OpenCode Go Review", blurb: "A cheap coding-model subscription, tested and priced honestly." },
-    ],
   },
-  {
+  ops: {
     label: "File Operations",
     blurb: "Splitting, sorting, comparing and loading files — the mechanical jobs that come up every week.",
-    posts: [
-      { slug: "sort-csv-by-column", title: "Sort CSV by Column", blurb: "Order rows by one or more columns, correctly, including dates." },
-      { slug: "split-large-csv-file-online", title: "Split a Large CSV File Online", blurb: "Break a file too big to open into parts you can work with." },
-      { slug: "compare-two-csv-files-online", title: "Compare Two CSV Files Online", blurb: "Find what changed between two versions of the same file." },
-      { slug: "free-csv-viewer-online", title: "Free CSV Viewer Online", blurb: "Open a CSV in the browser without Excel or a download." },
-      { slug: "import-csv-to-sqlite-free", title: "Import CSV to SQLite", blurb: "Load a CSV into SQLite so you can run real queries against it." },
-      { slug: "import-csv-into-google-sheets", title: "Import CSV into Google Sheets", blurb: "Get a local file into a shared sheet without mangling it." },
-      { slug: "merge-csv-files-free", title: "Merge CSV Files", blurb: "Combine several files into one table with a single header row." },
-    ],
   },
-  {
+  basics: {
     label: "CSV Fundamentals",
     blurb: "The format itself, and the trade-offs that decide which one to keep.",
-    posts: [
-      { slug: "csv-vs-excel", title: "CSV vs Excel", blurb: "Which format to keep, and why the difference bites you later." },
-    ],
   },
-];
+};
+
+const GROUPS: { label: string; blurb: string; posts: Post[] }[] = GROUP_ORDER.map((cluster) => ({
+  label: GROUP_META[cluster].label,
+  blurb: GROUP_META[cluster].blurb,
+  posts: ALL_POST_SLUGS.filter((slug) => POST_CLUSTERS[slug] === cluster).map((slug) => ({
+    slug,
+    title: POST_TITLES[slug] ?? slug,
+    blurb: POST_SUMMARIES[slug] ?? "",
+  })),
+}));
 
 const allPosts = GROUPS.flatMap((g) => g.posts);
 

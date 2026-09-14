@@ -35,6 +35,27 @@
 - [Convert Excel to CSV Free Online](https://nocodecsv.com/blog/convert-excel-to-csv-free-online): Quick Excel (.xlsx) to CSV conversion in the browser.
 - [Fix Garbled CSV in Excel](https://nocodecsv.com/blog/fix-garbled-csv-in-excel): Solving mojibake/encoding issues when opening CSV in Excel (UTF-8, GBK).
 - [Ask CSV](https://nocodecsv.com/blog/ask-csv): Product overview — asking questions about your CSV data conversationally.
+- [Convert CSV to PDF](https://nocodecsv.com/blog/convert-csv-to-pdf): Turning a plain CSV file into a clean, printable PDF document, no software install needed.
+- [Convert TSV to CSV](https://nocodecsv.com/blog/convert-tsv-to-csv): Converting tab-separated TSV files into comma-separated CSV files.
+- [JSON to CSV Converter Online](https://nocodecsv.com/blog/json-to-csv-converter-online): Flattening nested JSON API output back into a readable CSV table.
+- [CSV to HTML Table](https://nocodecsv.com/blog/csv-to-html-table): Generating paste-ready HTML table markup from CSV data for web pages or emails.
+- [CSV to Markdown Table](https://nocodecsv.com/blog/csv-to-markdown-table): Converting a CSV spreadsheet into a Markdown table for docs and READMEs.
+- [CSV to Chart Online Free](https://nocodecsv.com/blog/csv-to-chart-online-free): Turning a column of CSV numbers into a shareable chart in the browser.
+- [Transpose a CSV File](https://nocodecsv.com/blog/transpose-csv-file): Swapping rows and columns in a CSV file without breaking quoted fields.
+- [Remove Blank Rows From CSV](https://nocodecsv.com/blog/remove-blank-rows-from-csv): Stripping empty rows from a CSV file that break imports and charts.
+- [Keep Leading Zeros in CSV](https://nocodecsv.com/blog/keep-leading-zeros-in-csv): Stopping Excel from stripping leading zeros from ZIP codes, IDs and phone numbers.
+- [Change a CSV Delimiter](https://nocodecsv.com/blog/change-csv-delimiter): Converting CSV delimiters between commas, semicolons, tabs and pipes.
+- [Extract Email Addresses From a CSV](https://nocodecsv.com/blog/extract-email-addresses-from-csv): Pulling email addresses out of free-text CSV columns, then cleaning the list.
+- [Remove Special Characters in Excel](https://nocodecsv.com/blog/remove-special-characters-in-excel): Removing unwanted special characters and symbols from Excel cells.
+- [Find and Replace in a CSV](https://nocodecsv.com/blog/find-and-replace-in-csv): Finding and replacing text values across a CSV file safely.
+- [Chat With CSV](https://nocodecsv.com/blog/chat-with-csv): Chatting with a CSV file in plain English to explore data and get answers.
+- [Sort CSV by Column](https://nocodecsv.com/blog/sort-csv-by-column): Sorting CSV rows by one or more columns correctly, including dates.
+- [Query a CSV With SQL](https://nocodecsv.com/blog/query-csv-with-sql): Running SQL queries directly against a CSV file without a database server.
+- [Count Rows in a CSV File](https://nocodecsv.com/blog/count-rows-in-csv-file): Quickly counting the number of rows in a CSV file without opening Excel.
+- [Import CSV Into Google Sheets](https://nocodecsv.com/blog/import-csv-into-google-sheets): Importing a local CSV file into Google Sheets without mangling data.
+- [Excel Row Limit](https://nocodecsv.com/blog/excel-row-limit): Understanding Excel's maximum row limit and what to do when a CSV exceeds it.
+- [OpenCode Go Review](https://nocodecsv.com/blog/opencode-go-review-cheap-ai-models): A hands-on review of a cheap coding-model subscription, tested and priced honestly.
+- [CSV vs Excel](https://nocodecsv.com/blog/csv-vs-excel): A comparison of CSV and Excel formats, and which one to keep for your data.
 
 ## Key Facts
 
@@ -43,6 +64,7 @@
 - Free tier: 3 analyses per day; Pro tier: $15/month for unlimited use
 - Target users: business analysts, marketers, researchers, and non-technical spreadsheet users
 - Competes with ChatGPT Code Interpreter as a free, focused alternative for data analysis
+- The blog covers 44 guides across format conversion, data cleaning, AI analysis, file operations and CSV fundamentals
 
 ## Contact
 
