@@ -61,6 +61,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/transpose-csv-file`, lastModified: "2026-09-12T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
     { url: `${BASE_URL}/blog/extract-email-addresses-from-csv`, lastModified: "2026-09-12T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
     { url: `${BASE_URL}/blog/excel-row-limit`, lastModified: "2026-09-14T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: `${BASE_URL}/blog/query-csv-with-sql`, lastModified: "2026-09-14T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: `${BASE_URL}/blog/remove-special-characters-in-excel`, lastModified: "2026-09-14T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.7 },
     // 法律页面
     { url: `${BASE_URL}/privacy`, lastModified: "2026-08-01T00:00:00.000Z", changeFrequency: "yearly" as const, priority: 0.3 },
     { url: `${BASE_URL}/terms`, lastModified: "2026-08-01T00:00:00.000Z", changeFrequency: "yearly" as const, priority: 0.3 },
