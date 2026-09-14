@@ -44,7 +44,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-6 border-t border-zinc-200 text-center text-sm text-zinc-400">
-          <p>© 2026 DataAnalyzer AI. All rights reserved.</p>
+          <p>© 2026 NoCodeCSV. All rights reserved.</p>
         </div>
       </div>
     </footer>
