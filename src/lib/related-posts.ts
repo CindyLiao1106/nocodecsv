@@ -57,6 +57,7 @@ export const POST_CLUSTERS: Record<string, Cluster> = {
   'import-csv-to-sqlite-free': 'ops',
   'import-csv-into-google-sheets': 'ops',
   'merge-csv-files-free': 'ops',
+  'excel-row-limit': 'ops',
 
   // E. 基础
   'csv-vs-excel': 'basics',
@@ -101,6 +102,7 @@ export const POST_TITLES: Record<string, string> = {
   'import-csv-to-sqlite-free': 'Import CSV to SQLite',
   'import-csv-into-google-sheets': 'Import CSV into Google Sheets',
   'merge-csv-files-free': 'Merge CSV Files',
+  'excel-row-limit': 'Excel Row Limit',
   'csv-vs-excel': 'CSV vs Excel',
 };
 
