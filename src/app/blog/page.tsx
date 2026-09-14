@@ -138,6 +138,13 @@ export default function BlogIndex() {
           </Link>{" "}
           if you are not sure what is wrong with a file yet.
         </p>
+        <p className="mt-3 text-sm text-zinc-500">
+          Looking for numbers instead of methods? The{" "}
+          <Link href="/ai-analytics-statistics" className="text-blue-600 underline">
+            53 verified AI analytics statistics
+          </Link>
+          , each linked to the organisation that published it.
+        </p>
 
         {GROUPS.map((g) => (
           <section key={g.label} className="mt-12">

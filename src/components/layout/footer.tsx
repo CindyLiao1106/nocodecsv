@@ -19,6 +19,7 @@ export function Footer() {
               <Link href="/tools/csv-analyzer" className="block hover:text-zinc-700">CSV Analyzer</Link>
               <Link href="/tools/excel-data-analysis" className="block hover:text-zinc-700">Excel Analysis</Link>
               <Link href="/tools/spreadsheet-charts" className="block hover:text-zinc-700">Chart Generator</Link>
+              <Link href="/ai-analytics-statistics" className="block hover:text-zinc-700">AI Statistics</Link>
             </div>
           </div>
           <div>
