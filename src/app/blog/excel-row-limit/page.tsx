@@ -436,12 +436,16 @@ ORDER BY revenue DESC;`}</code>
         </p>
 
         <div className="not-prose my-8 flex flex-col sm:flex-row gap-3">
-          <Button asChild size="lg">
-            <Link href="/dashboard">Analyse your CSV free →</Link>
-          </Button>
-          <Button asChild size="lg" variant="outline">
-            <Link href="/blog/count-rows-in-csv-file">How to count rows correctly</Link>
-          </Button>
+          <Link href="/tools/csv-analyzer">
+            <Button size="lg" variant="secondary" className="text-base px-8">
+              Analyze Your CSV Free
+            </Button>
+          </Link>
+          <Link href="/blog/count-rows-in-csv-file">
+            <Button size="lg" variant="outline" className="text-base px-8">
+              How to Count Rows Correctly
+            </Button>
+          </Link>
         </div>
 
         <RelatedPosts slug="excel-row-limit" />
