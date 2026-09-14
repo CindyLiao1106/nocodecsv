@@ -444,7 +444,7 @@ ORDER BY revenue DESC;`}</code>
           </Button>
         </div>
 
-        <RelatedPosts currentSlug="excel-row-limit" />
+        <RelatedPosts slug="excel-row-limit" />
       </article>
     </>
   );
