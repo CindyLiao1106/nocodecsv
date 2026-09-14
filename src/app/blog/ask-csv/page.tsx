@@ -153,7 +153,7 @@ export default function BlogPost() {
       <h3>Business questions</h3>
       <p>&quot;What is the average order value by country?&quot; · &quot;Which month had the highest churn?&quot;</p>
       <h3>Before a meeting</h3>
-      <p>&quot;Give me 3 key takeaways from this data.&quot; This works especially well on exports from Stripe, Shopify, or your CRM — see our guide on the <Link href="/blog/subscription-csv-analyzer">subscription CSV analyzer</Link> for recurring-revenue files.</p>
+      <p>&quot;Give me 3 key takeaways from this data.&quot; This works especially well on exports from Stripe, Shopify, or your CRM — see our guide on <Link href="/blog/chat-with-csv">chatting with your CSV data</Link> for recurring-revenue files.</p>
 
       <h2>Limitations to Know</h2>
       <ul>
