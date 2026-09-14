@@ -1,0 +1,2 @@
+export const ADSENSE_CLIENT =
+  process.env.NEXT_PUBLIC_ADSENSE_CLIENT || "ca-pub-4847137398088537";

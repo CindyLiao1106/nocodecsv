@@ -37,6 +37,15 @@ export function Hero() {
         <p className="mt-4 text-sm text-zinc-400">
           No credit card required. 3 free analyses per day.
         </p>
+        <p className="mt-3 text-sm text-zinc-500">
+          Not ready to sign up?{" "}
+          <Link
+            href="/tools/csv-analyzer"
+            className="font-medium text-blue-600 underline underline-offset-2 hover:text-blue-700"
+          >
+            Try the free CSV analyzer — no account needed
+          </Link>
+        </p>
       </div>
     </section>
   );
