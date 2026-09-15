@@ -27,6 +27,7 @@ export const POST_CLUSTERS: Record<string, Cluster> = {
   'transpose-csv-file': 'convert',
   'convert-text-to-csv': 'convert',
   'convert-csv-to-word': 'convert',
+  'convert-json-to-excel': 'convert',
 
   // B. 数据清理
   'how-to-clean-dirty-csv-data': 'clean',
@@ -65,6 +66,7 @@ export const POST_CLUSTERS: Record<string, Cluster> = {
   'import-csv-into-google-sheets': 'ops',
   'merge-csv-files-free': 'ops',
   'excel-row-limit': 'ops',
+  'csv-to-sql': 'ops',
 
   // E. 基础
   'csv-vs-excel': 'basics',
@@ -85,6 +87,7 @@ export const POST_TITLES: Record<string, string> = {
   'transpose-csv-file': 'Transpose a CSV File',
   'convert-text-to-csv': 'Convert Text to CSV',
   'convert-csv-to-word': 'Convert CSV to Word',
+  'convert-json-to-excel': 'Convert JSON to Excel',
   'how-to-clean-dirty-csv-data': 'How to Clean Dirty CSV Data',
   'remove-duplicates-from-csv': 'Remove Duplicates from CSV',
   'remove-blank-rows-from-csv': 'Remove Blank Rows from CSV',
@@ -117,6 +120,7 @@ export const POST_TITLES: Record<string, string> = {
   'import-csv-into-google-sheets': 'Import CSV into Google Sheets',
   'merge-csv-files-free': 'Merge CSV Files',
   'excel-row-limit': 'Excel Row Limit',
+  'csv-to-sql': 'CSV to SQL',
   'csv-vs-excel': 'CSV vs Excel',
 };
 
@@ -135,6 +139,7 @@ export const POST_SUMMARIES: Record<string, string> = {
   'transpose-csv-file': 'Swap rows and columns in a CSV file without breaking quoted fields or formatting.',
   'convert-text-to-csv': 'Turn tab, space or fixed-width text files into real CSV files without shifting a column.',
   'convert-csv-to-word': 'Get CSV data into a Word document as a real table, or one document per row, without broken columns.',
+  'convert-json-to-excel': 'Turn nested JSON objects, arrays and whole folders of files into one usable spreadsheet.',
   'how-to-clean-dirty-csv-data': 'A checklist for cleaning messy CSV exports: blanks, duplicates, stray quotes, and broken headers.',
   'remove-duplicates-from-csv': 'Find and remove duplicate rows from a CSV file without losing unique records.',
   'remove-blank-rows-from-csv': 'Strip empty rows from a CSV file that break imports, charts, and calculations.',
@@ -167,6 +172,7 @@ export const POST_SUMMARIES: Record<string, string> = {
   'import-csv-into-google-sheets': 'Import a local CSV file into Google Sheets without mangling formatting or data.',
   'merge-csv-files-free': 'Combine several CSV files into one table with a single header row, for free.',
   'excel-row-limit': "Understand Excel's maximum row limit and what to do when a CSV file exceeds it.",
+  'csv-to-sql': 'Convert a CSV into SQL INSERT statements or load it with the database\'s own bulk loader.',
   'csv-vs-excel': 'A comparison of CSV and Excel formats, and which one to keep for your data.',
 };
 
@@ -185,6 +191,7 @@ export const POST_DATES: Record<string, string> = {
   'transpose-csv-file': '2026-09-12',
   'convert-text-to-csv': '2026-09-14',
   'convert-csv-to-word': '2026-09-14',
+  'convert-json-to-excel': '2026-09-15',
   'how-to-clean-dirty-csv-data': '2026-08-31',
   'remove-duplicates-from-csv': '2026-09-03',
   'remove-blank-rows-from-csv': '2026-09-10',
@@ -217,6 +224,7 @@ export const POST_DATES: Record<string, string> = {
   'import-csv-into-google-sheets': '2026-09-07',
   'merge-csv-files-free': '2026-08-30',
   'excel-row-limit': '2026-09-14',
+  'csv-to-sql': '2026-09-15',
   'csv-vs-excel': '2026-09-09',
 };
 
