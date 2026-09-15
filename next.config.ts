@@ -35,6 +35,18 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  // 短链:引用邀约用 —— 点开即把对方(omnibound)联系表单的字段全部预填好
+  // 生成脚本: /opt/data/scripts/_make_prefill_link.py
+  async redirects() {
+    return [
+      {
+        source: "/omnibound",
+        destination:
+          "https://www.omnibound.ai/contact-us?full_name=Cindy+Liao&email=info%40nocodecsv.com&company=NoCodeCSV&what_can_we_help_you_with=General+Inquiry&message=Hi+Omnibound+team%2C%0A%0AI+read+your+agentic+marketing+statistics+piece+-+the+section+built+on+Gartner%27s+paywalled%0Aprojections+is+one+of+the+few+that+separates+vendor-reported+figures+from+official+surveys.%0A%0AI+put+together+a+page+of+statistics+on+AI+and+data+analysis+where+every+figure+links+to+the%0Aorganisation+that+published+it%2C+with+its+scope+and+year+stated+-+a+free%2C+source-linked%0Aalternative+to+the+paywalled+analyst+numbers%3A%0A%0Ahttps%3A%2F%2Fnocodecsv.com%2Fai-analytics-statistics%0A%0ATwo+examples%3A+20.0%25+of+EU+enterprises+used+AI+in+2025+%28Eurostat%2C+official+survey%29%2C+and+18%25+of%0AUS+firms+used+it+in+at+least+one+business+function+%28US+Census%2C+2026%29+-+against+78%25+in%0Aself-reported+global+surveys.+The+gap+is+scope%2C+not+disagreement.%0A%0AFree+to+use%2C+no+attribution+required.+If+a+figure+looks+wrong%2C+tell+me+and+I+will+correct+it.%0A%0ABest%2C%0ACindy%0ANoCodeCSV%0Ahttps%3A%2F%2Fnocodecsv.com%2Fai-analytics-statistics",
+        permanent: false,
+      },
+    ];
+  },
   async headers() {
     return [
       {
