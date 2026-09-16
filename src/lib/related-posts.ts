@@ -48,6 +48,10 @@ export const POST_CLUSTERS: Record<string, Cluster> = {
   'ai-data-visualization-guide': 'ai',
   'spreadsheet-automation-with-ai': 'ai',
   'free-alternative-to-chatgpt-code-interpreter': 'ai',
+  'ai-for-csv-files': 'ai',
+  'ai-csv-generator': 'ai',
+  'analyze-csv-file-online': 'ai',
+  'ai-csv-analyzer': 'ai',
   'excel-formula-generator-ai': 'ai',
   'chat-with-spreadsheet-ai-free': 'ai',
   'summarize-excel-data-with-ai': 'ai',
@@ -187,6 +191,10 @@ export const POST_SUMMARIES: Record<string, string> = {
 
 /** 发布日期(slug → "YYYY-MM-DD"),用于 sitemap 与文章元数据 */
 export const POST_DATES: Record<string, string> = {
+  "ai-csv-analyzer": "2026-09-17",
+  "analyze-csv-file-online": "2026-09-17",
+  "ai-csv-generator": "2026-09-17",
+  "ai-for-csv-files": "2026-09-17",
   'convert-csv-to-pdf': '2026-09-10',
   'convert-csv-to-excel-without-excel': '2026-09-02',
   'convert-excel-to-csv-free-online': '2026-09-06',
