@@ -40,14 +40,27 @@ function today(): string {
   return new Date().toISOString().split("T")[0];
 }
 
+/** 兼容两种命名:Upstash 直连(UPSTASH_REDIS_REST_*)与 Vercel KV(KV_REST_API_*) */
+export function redisCreds(): { url: string; token: string } | null {
+  const pairs = [
+    [process.env.UPSTASH_REDIS_REST_URL, process.env.UPSTASH_REDIS_REST_TOKEN],
+    [process.env.KV_REST_API_URL, process.env.KV_REST_API_TOKEN],
+  ];
+  for (const [url, token] of pairs) {
+    if (url && token) return { url, token };
+  }
+  return null;
+}
+
 function redisConfigured(): boolean {
-  return Boolean(process.env.UPSTASH_REDIS_REST_URL && process.env.UPSTASH_REDIS_REST_TOKEN);
+  return redisCreds() !== null;
 }
 
 /** Upstash REST:执行一条命令 */
 async function redis(command: (string | number)[]): Promise<unknown> {
-  const url = process.env.UPSTASH_REDIS_REST_URL as string;
-  const token = process.env.UPSTASH_REDIS_REST_TOKEN as string;
+  const creds = redisCreds();
+  if (!creds) throw new Error("redis not configured");
+  const { url, token } = creds;
   const res = await fetch(url, {
     method: "POST",
     headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
