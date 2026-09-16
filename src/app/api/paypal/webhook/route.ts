@@ -1,13 +1,19 @@
 import { NextResponse } from "next/server";
 import { clerkClient } from "@clerk/nextjs/server";
+import { planExpiry } from "@/lib/quota";
 
 /**
- * PayPal 付款 → 自动开通 Pro
+ * PayPal 付款 → 自动开通 / 降级
  *
- * 流程:PayPal 后台配置 webhook 指向本路由 → PayPal 用官方 API 验签 → 我们写 Clerk 用户档案
- * 安全:必须验签通过才写;验签失败一律 400(fail closed)
+ * 安全:必须通过 PayPal 官方验签(verify-webhook-signature)才写状态;验签失败一律 400(fail closed)
+ * 生命周期(2026-09-17 审计 F4 修复):
+ *   开通类:PAYMENT.SALE.COMPLETED / CHECKOUT.ORDER.COMPLETED /
+ *           BILLING.SUBSCRIPTION.ACTIVATED / BILLING.SUBSCRIPTION.PAYMENT.COMPLETED
+ *   撤销类:PAYMENT.SALE.REFUNDED / PAYMENT.CAPTURE.REFUNDED /
+ *           BILLING.SUBSCRIPTION.CANCELLED / SUSPENDED / EXPIRED  → 立即降级为 free
+ *   同时写入 planExpiresAt(一次付款覆盖 31 天),这样即使漏掉撤销事件,权益也会自然到期。
  *
- * 需要的环境变量(Vercel 上配置):
+ * 需要的环境变量(Vercel):
  *   PAYPAL_CLIENT_ID, PAYPAL_CLIENT_SECRET, PAYPAL_WEBHOOK_ID
  *   PAYPAL_ENV = "live" | "sandbox"(默认 live)
  */
@@ -15,6 +21,22 @@ import { clerkClient } from "@clerk/nextjs/server";
 const API_BASE = (process.env.PAYPAL_ENV === "sandbox")
   ? "https://api-m.sandbox.paypal.com"
   : "https://api-m.paypal.com";
+
+const PROVISION_EVENTS = new Set([
+  "PAYMENT.SALE.COMPLETED",
+  "CHECKOUT.ORDER.COMPLETED",
+  "BILLING.SUBSCRIPTION.ACTIVATED",
+  "BILLING.SUBSCRIPTION.PAYMENT.COMPLETED",
+]);
+
+const REVOKE_EVENTS = new Set([
+  "PAYMENT.SALE.REFUNDED",
+  "PAYMENT.CAPTURE.REFUNDED",
+  "PAYMENT.CAPTURE.REVERSED",
+  "BILLING.SUBSCRIPTION.CANCELLED",
+  "BILLING.SUBSCRIPTION.SUSPENDED",
+  "BILLING.SUBSCRIPTION.EXPIRED",
+]);
 
 async function getAccessToken(): Promise<string | null> {
   const id = process.env.PAYPAL_CLIENT_ID;
@@ -63,12 +85,12 @@ function extractPayer(event: any): { email?: string; amount?: string; currency?:
   const email =
     r?.payer?.email_address ||
     r?.subscriber?.email_address ||
-    r?.custom ||
     event?.summary?.payer_email ||
+    r?.custom ||
     undefined;
   const amount = r?.amount?.total || r?.amount?.value || r?.amount_with_breakdown?.gross_amount?.value;
   const currency = r?.amount?.currency || r?.amount_with_breakdown?.gross_amount?.currency_code;
-  const plan = r?.plan_id || r?.plan?.id || (r?.amount?.total ? `oneoff:${r.amount.total}` : undefined);
+  const plan = r?.plan_id || r?.plan?.id;
   return { email: typeof email === "string" ? email.toLowerCase() : undefined, amount, currency, plan };
 }
 
@@ -77,7 +99,6 @@ export async function POST(req: Request) {
 
   const verified = await verifySignature(req, rawBody);
   if (!verified) {
-    // 没配 webhook_id / 验签失败:不写任何状态
     console.warn("[paypal-webhook] signature verification failed or not configured");
     return NextResponse.json({ ok: false, error: "signature verification failed" }, { status: 400 });
   }
@@ -90,14 +111,9 @@ export async function POST(req: Request) {
   }
 
   const type: string = event?.event_type ?? "";
-  const PROVISION_EVENTS = new Set([
-    "PAYMENT.SALE.COMPLETED",
-    "CHECKOUT.ORDER.COMPLETED",
-    "BILLING.SUBSCRIPTION.ACTIVATED",
-    "BILLING.SUBSCRIPTION.PAYMENT.COMPLETED",
-  ]);
-
-  if (!PROVISION_EVENTS.has(type)) {
+  const isProvision = PROVISION_EVENTS.has(type);
+  const isRevoke = REVOKE_EVENTS.has(type);
+  if (!isProvision && !isRevoke) {
     return NextResponse.json({ ok: true, ignored: type });
   }
 
@@ -107,22 +123,37 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: true, warning: "no payer email" });
   }
 
-  // 按邮箱找 Clerk 用户并升级
   const client = await clerkClient();
   try {
     const found = await client.users.getUserList({ emailAddress: [email] });
     const user = found.data?.[0];
     if (!user) {
-      // 付款时还没注册:交给 /welcome 认领页处理
-      console.log("[paypal-webhook] paid but no account yet:", email);
-      return NextResponse.json({ ok: true, note: "no matching account; claim flow will handle" });
+      // 付款时还没注册:交给 /welcome 说明页 + 人工路径处理
+      console.log("[paypal-webhook] no matching account:", email, type);
+      return NextResponse.json({ ok: true, note: "no matching account" });
     }
+
+    if (isRevoke) {
+      await client.users.updateUserMetadata(user.id, {
+        publicMetadata: {
+          ...user.publicMetadata,
+          plan: "free",
+          planRevokedAt: new Date().toISOString(),
+          planRevokeReason: type,
+          payerEmail: email,
+        },
+      });
+      console.log("[paypal-webhook] revoked", user.id, email, type);
+      return NextResponse.json({ ok: true, revoked: true });
+    }
+
     await client.users.updateUserMetadata(user.id, {
       publicMetadata: {
         ...user.publicMetadata,
         plan: "pro",
         planSource: "paypal",
         planSince: new Date().toISOString(),
+        planExpiresAt: planExpiry(),
         payerEmail: email,
         lastPayment: { amount, currency, plan, eventType: type },
       },
