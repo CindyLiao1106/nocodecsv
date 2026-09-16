@@ -69,6 +69,7 @@ export const POST_CLUSTERS: Record<string, Cluster> = {
   'excel-row-limit': 'ops',
   'csv-to-sql': 'ops',
   'csv-to-mysql': 'ops',
+  'open-csv-file-too-big-for-excel': 'ops',
 
   // E. 基础
   'csv-vs-excel': 'basics',
@@ -125,6 +126,7 @@ export const POST_TITLES: Record<string, string> = {
   'excel-row-limit': 'Excel Row Limit',
   'csv-to-sql': 'CSV to SQL',
   'csv-to-mysql': 'CSV to MySQL',
+  'open-csv-file-too-big-for-excel': 'Open a CSV Too Big for Excel',
   'csv-vs-excel': 'CSV vs Excel',
 };
 
@@ -179,6 +181,7 @@ export const POST_SUMMARIES: Record<string, string> = {
   'excel-row-limit': "Understand Excel's maximum row limit and what to do when a CSV file exceeds it.",
   'csv-to-sql': 'Convert a CSV into SQL INSERT statements or load it with the database\'s own bulk loader.',
   'csv-to-mysql': 'Load a CSV into a MySQL table with LOAD DATA, and fix the settings that quietly drop rows.',
+  'open-csv-file-too-big-for-excel': 'Fix an oversized CSV that Excel will not open: split it, read it without a grid, or move it to a database.',
   'csv-vs-excel': 'A comparison of CSV and Excel formats, and which one to keep for your data.',
 };
 
@@ -233,6 +236,7 @@ export const POST_DATES: Record<string, string> = {
   'excel-row-limit': '2026-09-14',
   'csv-to-sql': '2026-09-15',
   'csv-to-mysql': '2026-09-16',
+  'open-csv-file-too-big-for-excel': '2026-09-16',
   'csv-vs-excel': '2026-09-09',
 };
 
