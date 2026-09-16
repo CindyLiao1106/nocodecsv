@@ -237,9 +237,12 @@ sed -n &apos;1000002,2000001p&apos; data.csv &gt; part_2.csv</code></pre>
 
 
       <div className="not-prose my-10 rounded-2xl bg-blue-600 p-8 text-center text-white">
-        <h2 className="text-2xl font-bold mb-3">Analyze Your CSV After Splitting — Free</h2>
-        <p className="text-blue-100 mb-5">Upload a chunk and ask a question in plain English. No signup needed.</p>
-        <Link href="/dashboard"><Button size="lg" variant="secondary" className="text-base px-8">Analyze Your CSV Free</Button></Link>
+        <h2 className="text-2xl font-bold mb-3">Split Your CSV Free — In the Browser</h2>
+        <p className="text-blue-100 mb-5">By rows, by size, or by column value — every part keeps its header, and the file never leaves your computer. No signup needed.</p>
+        <div className="flex flex-wrap items-center justify-center gap-3">
+          <Link href="/tools/csv-splitter"><Button size="lg" variant="secondary" className="text-base px-8">Split Your CSV Free</Button></Link>
+          <Link href="/dashboard"><Button size="lg" variant="secondary" className="text-base px-8">Analyze a Chunk Free</Button></Link>
+        </div>
       </div>
       <RelatedPosts slug="split-large-csv-file-online" />
     </article>

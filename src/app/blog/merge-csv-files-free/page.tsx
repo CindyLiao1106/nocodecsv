@@ -131,7 +131,7 @@ export default function BlogPost() {
       <p>Copy-pasting rows between files is fine for 20 rows. It is a disaster for 20,000: duplicated headers, misaligned columns, invisible whitespace, and encoding issues. A proper merge tool handles all of that automatically.</p>
 
       <h2>Method 1: Use a Free Online CSV Merger</h2>
-      <p>The fastest option is a dedicated online tool. Upload two or more files, and it combines them by matching column names. Our free <Link href="/tools/csv-analyzer">CSV analyzer tool</Link> can inspect merged files too — upload the result and ask questions about it in plain English.</p>
+      <p>The fastest option is a dedicated online tool. Upload two or more files, and it combines them by matching column names. Our free <Link href="/tools/csv-analyzer">CSV analyzer tool</Link> can inspect merged files too — upload the result and ask questions about it in plain English. And if you need the opposite — cutting one huge file into several — the browser-based <Link href="/tools/csv-splitter">CSV splitter</Link> does it without uploading anything.</p>
       <p>Most online mergers are free up to a file-size limit, which covers typical e-commerce and analytics exports.</p>
 
       <h2>Method 2: Use Your Spreadsheet&apos;s Built-In Tools</h2>
