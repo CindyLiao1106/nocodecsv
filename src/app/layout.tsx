@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "sonner";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
+import { AdsenseScript } from "@/components/ads/adsense-script";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -87,6 +88,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <main className="flex-1">{children}</main>
             <Footer />
             <Toaster position="top-center" richColors />
+            {/* AdSense 脚本(自动广告模式下只需这一行;手动单元时再在各页放 <AdSense slot=.../>) */}
+            <AdsenseScript />
             <script
               type="application/ld+json"
               dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
