@@ -25,6 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // SEO 工具页
     { url: `${BASE_URL}/tools/csv-analyzer`, lastModified: seoLastModified, changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: `${BASE_URL}/tools/csv-delimiter-converter`, lastModified: seoLastModified, changeFrequency: "monthly" as const, priority: 0.8 },
 
     // 引用枢纽页（统计数据页，赚免费外链的核心资产）
     { url: `${BASE_URL}/ai-analytics-statistics`, lastModified: "2026-09-14T00:00:00.000Z", changeFrequency: "monthly" as const, priority: 0.9 },

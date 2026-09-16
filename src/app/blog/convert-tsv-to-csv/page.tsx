@@ -249,8 +249,11 @@ csv.writer(sys.stdout).writerows(rows)
 
       <div className="not-prose my-10 rounded-2xl bg-blue-600 p-8 text-center text-white">
         <h2 className="text-2xl font-bold mb-3">Check the Converted File</h2>
-        <p className="text-blue-100 mb-5">Upload your CSV and let the AI analyzer flag column mismatches, duplicates, and stray delimiters before you use it.</p>
-        <Link href="/tools/csv-analyzer"><Button size="lg" variant="secondary" className="text-base px-8">Analyze Your CSV Free</Button></Link>
+        <p className="text-blue-100 mb-5">Swapped the wrong separator? Fix it in the browser with the free delimiter converter (tabs, commas, semicolons, pipes — nothing is uploaded), then let the AI analyzer flag column mismatches, duplicates, and stray delimiters before you use it.</p>
+        <div className="flex flex-wrap items-center justify-center gap-3">
+          <Link href="/tools/csv-delimiter-converter"><Button size="lg" variant="secondary" className="text-base px-8">Convert Tab to Comma Free</Button></Link>
+          <Link href="/tools/csv-analyzer"><Button size="lg" variant="secondary" className="text-base px-8">Analyze Your CSV Free</Button></Link>
+        </div>
       </div>
       <RelatedPosts slug="convert-tsv-to-csv" />
     </article>

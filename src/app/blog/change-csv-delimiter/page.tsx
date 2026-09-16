@@ -262,8 +262,11 @@ with open("customers_fixed.csv", "w", newline="", encoding="utf-8") as f:
 
       <div className="not-prose my-10 rounded-2xl bg-blue-600 p-8 text-center text-white">
         <h2 className="text-2xl font-bold mb-3">Not Sure What Delimiter Your File Uses?</h2>
-        <p className="text-blue-100 mb-5">Run it through the free CSV analyzer, which flags stray delimiters and mixed formats before they cost you an afternoon.</p>
-        <Link href="/tools/csv-analyzer"><Button size="lg" variant="secondary" className="text-base px-8">Analyze Your CSV Free</Button></Link>
+        <p className="text-blue-100 mb-5">Swap commas, semicolons, tabs and pipes in the browser with the free delimiter converter — your file never leaves your computer. Then run it through the CSV analyzer to catch stray delimiters before they cost you an afternoon.</p>
+        <div className="flex flex-wrap items-center justify-center gap-3">
+          <Link href="/tools/csv-delimiter-converter"><Button size="lg" variant="secondary" className="text-base px-8">Convert the Delimiter Free</Button></Link>
+          <Link href="/tools/csv-analyzer"><Button size="lg" variant="secondary" className="text-base px-8">Analyze Your CSV Free</Button></Link>
+        </div>
       </div>
       <RelatedPosts slug="change-csv-delimiter" />
     </article>
