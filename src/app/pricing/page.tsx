@@ -134,6 +134,10 @@ export default function PricingPage() {
                         PayPal
                       </strong>{" "}
                       · cancel anytime
+                      <br />
+                      <Link href="/welcome" className="underline hover:text-zinc-600">
+                        After paying: activation is automatic
+                      </Link>
                     </>
                   }
                 />
