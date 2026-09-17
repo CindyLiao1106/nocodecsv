@@ -235,7 +235,7 @@ export default function BlogPost() {
       <h3>My JSON records don't all have the same keys. Will the CSV break?</h3>
       <p>No. Missing keys become empty cells in the row. The column list comes from the union of all keys across your records, so the file stays rectangular.</p>
       <h3>Is it safe to upload JSON data to an online converter?</h3>
-      <p>Only if the tool processes files in your browser. Many do; some upload to a server. For anything confidential, convert locally with pandas or in Excel Power Query and skip web uploads entirely.</p>
+      <p>Only if the tool processes files in your browser. Many do; some upload to a server. For anything confidential, convert locally with pandas or in Excel Power Query and skip web uploads entirely — or use our <Link href="/tools/json-csv-converter">browser-based JSON ⇄ CSV converter</Link>, which never sends your file anywhere (it also flattens nested objects into <code>user.name</code> style columns).</p>
       <h3>Can I chat with the converted CSV afterwards?</h3>
       <p>Yes. Once the file is in CSV form, tools like NoCodeCSV&apos;s <Link href="/tools/csv-analyzer">free AI analyzer</Link> answer questions about it and generate charts from plain-English requests.</p>
 

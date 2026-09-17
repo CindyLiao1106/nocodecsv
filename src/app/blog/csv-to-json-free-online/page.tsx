@@ -196,7 +196,7 @@ JSON:
         <li>Load it straight into JavaScript with <code>JSON.parse()</code> or <code>fetch()</code></li>
         <li>Send it to an AI tool for <Link href="/blog/how-to-analyze-csv-with-ai-free">analysis and insights</Link> — JSON keeps types intact, so the AI sees real numbers and booleans</li>
       </ul>
-      <p>And if you need to go the other direction — JSON back to a spreadsheet — the same tools typically convert both ways. Combined with <Link href="/blog/merge-csv-files-free">merging CSV files</Link> and <Link href="/blog/spreadsheet-automation-with-ai">spreadsheet automation</Link>, you can build a complete data pipeline without writing a line of code.</p>
+      <p>And if you need to go the other direction — JSON back to a spreadsheet — use our free <Link href="/tools/json-csv-converter">JSON ⇄ CSV converter</Link>, which runs entirely in your browser and flattens nested objects into readable columns. Combined with <Link href="/blog/merge-csv-files-free">merging CSV files</Link> and <Link href="/blog/spreadsheet-automation-with-ai">spreadsheet automation</Link>, you can build a complete data pipeline without writing a line of code.</p>
 
       <h2>Frequently Asked Questions</h2>
       <h3>Is converting CSV to JSON online really free?</h3>
