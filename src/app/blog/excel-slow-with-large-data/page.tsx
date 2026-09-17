@@ -579,6 +579,33 @@ export default function BlogPost() {
           </div>
         </div>
 
+      <section className="mt-10 rounded-xl border border-blue-100 bg-blue-50/60 p-5">
+        <h2 className="text-lg font-semibold text-zinc-900">
+          If the bottleneck is your machine, not the file
+        </h2>
+        <p className="mt-2 text-sm leading-relaxed text-zinc-700">
+          Trimming and splitting the file fixes most of this. If you are still fighting your
+          hardware, two upgrades genuinely move the needle for CSV work: <strong>more RAM</strong>{" "}
+          and <strong>fast external storage</strong>. Our guide to{" "}
+          <Link href="/blog/best-cheap-usb-flash-drives-under-50" className="text-blue-700 underline">
+            cheap drives under $50 for large CSV files
+          </Link>{" "}
+          covers what actually matters (USB 3.2 vs 3.0, flash drive vs portable SSD lifespan, and
+          exFAT so Windows and macOS both read the same drive) — and what to skip.
+        </p>
+        <p className="mt-2 text-xs text-zinc-500">
+          As an Amazon Associate I earn from qualifying purchases.{" "}
+          <a
+            href="https://www.amazon.com/s?k=portable+ssd+500gb&tag=nocodecsv-20"
+            rel="nofollow sponsored noopener"
+            target="_blank"
+            className="underline hover:text-blue-700"
+          >
+            Portable SSDs on Amazon
+          </a>
+        </p>
+      </section>
+
         <RelatedPosts slug="excel-slow-with-large-data" />
       </article>
     </>

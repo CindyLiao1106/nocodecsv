@@ -9,9 +9,16 @@ import { CTA } from "@/components/landing/cta";
 import { ALL_POST_SLUGS, POST_DATES, POST_TITLES } from "@/lib/related-posts";
 
 /** 首页 Guides 区块:自动取【最新 5 篇】文章(由注册表派生,避免新文章永远进不了首页) */
+const DATE_INDEX: Record<string, number> = Object.fromEntries(
+  Object.keys(POST_DATES).map((s, i) => [s, i]),
+);
 const LATEST_GUIDES: string[] = [...ALL_POST_SLUGS]
   .filter((s) => Boolean(POST_DATES[s]))
-  .sort((a, b) => (POST_DATES[b] ?? "").localeCompare(POST_DATES[a] ?? ""))
+  .sort(
+    (a, b) =>
+      (POST_DATES[b] ?? "").localeCompare(POST_DATES[a] ?? "") ||
+      (DATE_INDEX[b] ?? 0) - (DATE_INDEX[a] ?? 0),
+  )
   .slice(0, 5);
 
 /** 长标题裁短:去掉年份、问号后的从句,超长加省略号 */
