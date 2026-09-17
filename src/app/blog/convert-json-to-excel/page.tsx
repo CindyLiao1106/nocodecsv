@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { RelatedPosts } from "@/components/blog/related-posts";
+import { FaqSection } from "@/components/blog/faq-section";
 
 export const metadata: Metadata = {
   title: "Convert JSON to Excel: Nested Data and a Folder of Files (2026)",
@@ -431,6 +432,8 @@ pd.concat(frames, ignore_index=True).to_excel("combined.xlsx", index=False)`}</c
           <Link href="/blog/csv-vs-excel">CSV vs Excel</Link> covers when each one is the right
           container.
         </p>
+
+        <FaqSection items={faqJsonLd.mainEntity} />
 
         {/* ===== Affiliate tools recommendation ===== */}
         <div className="my-10 rounded-xl border border-slate-200 bg-slate-50 p-6">

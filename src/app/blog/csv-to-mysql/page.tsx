@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { RelatedPosts } from "@/components/blog/related-posts";
+import { FaqSection } from "@/components/blog/faq-section";
 
 export const metadata: Metadata = {
   title: "CSV to MySQL: Why Rows Go Missing on Import (2026)",
@@ -472,6 +473,8 @@ SET id     = NULLIF(@id, ''),
           MySQL, <Link href="/blog/import-csv-to-sqlite-free">the .import route</Link> has no
           privileges to configure at all.
         </p>
+
+        <FaqSection items={faqJsonLd.mainEntity} />
 
         {/* ===== Affiliate tools recommendation ===== */}
         <div className="my-10 rounded-xl border border-slate-200 bg-slate-50 p-6">

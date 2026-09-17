@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { RelatedPosts } from "@/components/blog/related-posts";
+import { FaqSection } from "@/components/blog/faq-section";
 
 export const metadata: Metadata = {
   title: "Convert Excel to JSON: Sheets, Dates and Nested Rows (2026)",
@@ -440,6 +441,8 @@ for name, frame in sheets.items():
           <Link href="/blog/json-to-csv-converter-online">JSON to CSV</Link> is the flatter,
           cheaper neighbour of this job.
         </p>
+
+        <FaqSection items={faqJsonLd.mainEntity} />
 
         {/* ===== Affiliate tools recommendation ===== */}
         <div className="my-10 rounded-xl border border-slate-200 bg-slate-50 p-6">
