@@ -78,6 +78,7 @@ export const POST_CLUSTERS: Record<string, Cluster> = {
   'open-csv-file-too-big-for-excel': 'ops',
   'excel-slow-with-large-data': 'ops',
   'best-cheap-usb-flash-drives-under-50': 'ops',
+  'best-wireless-keyboard-and-mouse-for-excel-under-30': 'ops',
 
   // E. 基础
   'csv-vs-excel': 'basics',
@@ -143,6 +144,7 @@ export const POST_TITLES: Record<string, string> = {
   'csv-opens-in-one-column': 'CSV Opens in One Column',
   'excel-slow-with-large-data': 'Excel Slow With Large Data',
   'best-cheap-usb-flash-drives-under-50': 'Cheap USB Drives & Portable SSDs Under $50 for CSV',
+  'best-wireless-keyboard-and-mouse-for-excel-under-30': 'Wireless Keyboard & Mouse for Excel Under $30',
   'csv-vs-excel': 'CSV vs Excel',
 };
 
@@ -206,6 +208,7 @@ export const POST_SUMMARIES: Record<string, string> = {
   'csv-opens-in-one-column': 'Diagnose why a CSV landed in a single column and convert the delimiter or the encoding so the columns come back.',
   'excel-slow-with-large-data': 'Why Excel slows down with large data, a five-minute diagnostic, and the fixes ranked by effort.',
   'best-cheap-usb-flash-drives-under-50': 'Budget storage for big CSV files: how much each price tier holds, why flash drives wear out under repeated large writes, USB 3.0 vs 3.2, and formatting exFAT.',
+  'best-wireless-keyboard-and-mouse-for-excel-under-30': 'A spreadsheet-focused buying guide to budget wireless keyboards and mice: why a numeric keypad decides your typing speed, scroll-wheel and tilt-wheel behavior, 2.4GHz versus Bluetooth, and what to skip under $30.',
   'csv-vs-excel': 'A comparison of CSV and Excel formats, and which one to keep for your data.',
 };
 
@@ -269,6 +272,7 @@ export const POST_DATES: Record<string, string> = {
   'csv-opens-in-one-column': '2026-09-17',
   'excel-slow-with-large-data': '2026-09-17',
   'best-cheap-usb-flash-drives-under-50': '2026-09-17',
+  'best-wireless-keyboard-and-mouse-for-excel-under-30': '2026-09-17',
   'csv-vs-excel': '2026-09-09',
 };
 
