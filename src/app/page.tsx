@@ -6,6 +6,20 @@ import { Hero } from "@/components/landing/hero";
 import { Features } from "@/components/landing/features";
 import { HowItWorks } from "@/components/landing/how-it-works";
 import { CTA } from "@/components/landing/cta";
+import { ALL_POST_SLUGS, POST_DATES, POST_TITLES } from "@/lib/related-posts";
+
+/** 首页 Guides 区块:自动取【最新 5 篇】文章(由注册表派生,避免新文章永远进不了首页) */
+const LATEST_GUIDES: string[] = [...ALL_POST_SLUGS]
+  .filter((s) => Boolean(POST_DATES[s]))
+  .sort((a, b) => (POST_DATES[b] ?? "").localeCompare(POST_DATES[a] ?? ""))
+  .slice(0, 5);
+
+/** 长标题裁短:去掉年份、问号后的从句,超长加省略号 */
+function shortGuideTitle(title: string): string {
+  const clean = title.replace(/\s*\(20\d\d\)\s*$/, "");
+  const head = clean.split(/[?:—|]/)[0].trim();
+  return head.length > 52 ? `${head.slice(0, 49).trimEnd()}…` : head;
+}
 
 export const metadata: Metadata = {
   title: "NoCodeCSV — Chat with Your CSV & Excel Files Using AI",
@@ -139,9 +153,13 @@ export default function Home() {
             <div className="rounded-xl border border-zinc-200 p-6">
               <h3 className="font-semibold text-lg mb-3">Guides</h3>
               <ul className="space-y-2 text-sm text-zinc-600">
-                <li><Link href="/blog/how-to-analyze-csv-with-ai-free" className="hover:text-blue-600">How to Analyze CSV With AI</Link></li>
-                <li><Link href="/blog/ai-data-visualization-guide" className="hover:text-blue-600">AI Data Visualization Guide</Link></li>
-                <li><Link href="/blog/best-ai-tools-for-excel-analysis" className="hover:text-blue-600">Best AI Tools for Excel</Link></li>
+                {LATEST_GUIDES.map((slug) => (
+                  <li key={slug}>
+                    <Link href={`/blog/${slug}`} className="hover:text-blue-600">
+                      {shortGuideTitle(POST_TITLES[slug] ?? slug)}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
             <div className="rounded-xl border border-zinc-200 p-6 flex flex-col">
