@@ -40,6 +40,7 @@ export const POST_CLUSTERS: Record<string, Cluster> = {
   'extract-email-addresses-from-csv': 'clean',
   'remove-special-characters-in-excel': 'clean',
   'find-and-replace-in-csv': 'clean',
+  'csv-opens-in-one-column': 'clean',
 
   // C. AI 与分析
   'how-to-analyze-csv-with-ai-free': 'ai',
@@ -74,6 +75,7 @@ export const POST_CLUSTERS: Record<string, Cluster> = {
   'csv-to-sql': 'ops',
   'csv-to-mysql': 'ops',
   'open-csv-file-too-big-for-excel': 'ops',
+  'excel-slow-with-large-data': 'ops',
 
   // E. 基础
   'csv-vs-excel': 'basics',
@@ -117,6 +119,10 @@ export const POST_TITLES: Record<string, string> = {
   'ask-csv': 'Ask Your CSV Questions',
   'analyze-survey-data-csv-with-ai': 'Analyze Survey Data CSV with AI',
   'visualize-sales-data-csv': 'Visualize Sales Data from CSV',
+  'ai-csv-analyzer': 'AI CSV Analyzer',
+  'ai-csv-generator': 'AI CSV Generator',
+  'ai-for-csv-files': 'AI for CSV Files',
+  'analyze-csv-file-online': 'Analyze a CSV File Online',
   'opencode-go-review-cheap-ai-models': 'OpenCode Go Review',
   'sort-csv-by-column': 'Sort CSV by Column',
   'split-large-csv-file-online': 'Split a Large CSV File Online',
@@ -131,6 +137,8 @@ export const POST_TITLES: Record<string, string> = {
   'csv-to-sql': 'CSV to SQL',
   'csv-to-mysql': 'CSV to MySQL',
   'open-csv-file-too-big-for-excel': 'Open a CSV Too Big for Excel',
+  'csv-opens-in-one-column': 'CSV Opens in One Column',
+  'excel-slow-with-large-data': 'Excel Slow With Large Data',
   'csv-vs-excel': 'CSV vs Excel',
 };
 
@@ -172,6 +180,10 @@ export const POST_SUMMARIES: Record<string, string> = {
   'ask-csv': 'Ask direct questions about your CSV data and get immediate, plain-English answers.',
   'analyze-survey-data-csv-with-ai': 'Use AI to analyze survey responses exported as CSV without a statistics package.',
   'visualize-sales-data-csv': 'Turn a sales data CSV export into charts and insights without writing any code.',
+  'ai-csv-analyzer': 'Ask questions about a CSV in plain English and get numbers, summaries and charts back with no formulas.',
+  'ai-csv-generator': 'Generate realistic sample and test CSV files from a prompt, complete with edge cases.',
+  'ai-for-csv-files': 'Eight practical things AI can do with a CSV file, from summarising to QA, with the limits of each one.',
+  'analyze-csv-file-online': 'A four-step way to analyze a CSV in the browser: inspect the structure, spot dirty data, answer a question, chart it.',
   'opencode-go-review-cheap-ai-models': 'A hands-on review of OpenCode Go, a cheap coding-model subscription, tested and priced honestly.',
   'sort-csv-by-column': 'Sort CSV rows by one or more columns correctly, including dates and numbers.',
   'split-large-csv-file-online': 'Break a CSV file too large to open into smaller, manageable parts online.',
@@ -186,6 +198,8 @@ export const POST_SUMMARIES: Record<string, string> = {
   'csv-to-sql': 'Convert a CSV into SQL INSERT statements or load it with the database\'s own bulk loader.',
   'csv-to-mysql': 'Load a CSV into a MySQL table with LOAD DATA, and fix the settings that quietly drop rows.',
   'open-csv-file-too-big-for-excel': 'Fix an oversized CSV that Excel will not open: split it, read it without a grid, or move it to a database.',
+  'csv-opens-in-one-column': 'Diagnose why a CSV landed in a single column and convert the delimiter or the encoding so the columns come back.',
+  'excel-slow-with-large-data': 'Why Excel slows down with large data, a five-minute diagnostic, and the fixes ranked by effort.',
   'csv-vs-excel': 'A comparison of CSV and Excel formats, and which one to keep for your data.',
 };
 
@@ -245,6 +259,8 @@ export const POST_DATES: Record<string, string> = {
   'csv-to-sql': '2026-09-15',
   'csv-to-mysql': '2026-09-16',
   'open-csv-file-too-big-for-excel': '2026-09-16',
+  'csv-opens-in-one-column': '2026-09-17',
+  'excel-slow-with-large-data': '2026-09-17',
   'csv-vs-excel': '2026-09-09',
 };
 
