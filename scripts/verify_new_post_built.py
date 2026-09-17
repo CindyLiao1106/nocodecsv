@@ -4,7 +4,9 @@
 import glob, json, os, re, sys
 
 root = "/opt/data/cad_work/nocodecsv_workspace"
-slug = "best-wireless-keyboard-and-mouse-for-excel-under-30"
+# 用法: python3 scripts/verify_new_post_built.py [slug]   (不传则校验默认那篇)
+DEFAULT_SLUG = "best-wireless-keyboard-and-mouse-for-excel-under-30"
+slug = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_SLUG
 cands = glob.glob(f"{root}/.next/**/blog/{slug}*.html", recursive=True)
 if not cands:
     print("❌ 没找到构建产物 HTML"); sys.exit(1)
