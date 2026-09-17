@@ -60,6 +60,7 @@ export const POST_CLUSTERS: Record<string, Cluster> = {
   'analyze-survey-data-csv-with-ai': 'ai',
   'visualize-sales-data-csv': 'ai',
   'opencode-go-review-cheap-ai-models': 'ai',
+  'best-books-data-analysis-ai': 'ai',
 
   // D. 文件操作
   'sort-csv-by-column': 'ops',
@@ -76,6 +77,7 @@ export const POST_CLUSTERS: Record<string, Cluster> = {
   'csv-to-mysql': 'ops',
   'open-csv-file-too-big-for-excel': 'ops',
   'excel-slow-with-large-data': 'ops',
+  'best-cheap-usb-flash-drives-under-50': 'ops',
 
   // E. 基础
   'csv-vs-excel': 'basics',
@@ -124,6 +126,7 @@ export const POST_TITLES: Record<string, string> = {
   'ai-for-csv-files': 'AI for CSV Files',
   'analyze-csv-file-online': 'Analyze a CSV File Online',
   'opencode-go-review-cheap-ai-models': 'OpenCode Go Review',
+  'best-books-data-analysis-ai': 'Best Books to Learn Data Analysis with AI',
   'sort-csv-by-column': 'Sort CSV by Column',
   'split-large-csv-file-online': 'Split a Large CSV File Online',
   'compare-two-csv-files-online': 'Compare Two CSV Files Online',
@@ -139,6 +142,7 @@ export const POST_TITLES: Record<string, string> = {
   'open-csv-file-too-big-for-excel': 'Open a CSV Too Big for Excel',
   'csv-opens-in-one-column': 'CSV Opens in One Column',
   'excel-slow-with-large-data': 'Excel Slow With Large Data',
+  'best-cheap-usb-flash-drives-under-50': 'Cheap USB Drives & Portable SSDs Under $50 for CSV',
   'csv-vs-excel': 'CSV vs Excel',
 };
 
@@ -185,6 +189,7 @@ export const POST_SUMMARIES: Record<string, string> = {
   'ai-for-csv-files': 'Eight practical things AI can do with a CSV file, from summarising to QA, with the limits of each one.',
   'analyze-csv-file-online': 'A four-step way to analyze a CSV in the browser: inspect the structure, spot dirty data, answer a question, chart it.',
   'opencode-go-review-cheap-ai-models': 'A hands-on review of OpenCode Go, a cheap coding-model subscription, tested and priced honestly.',
+  'best-books-data-analysis-ai': 'A category-by-category buying guide to data analysis books: the five skill layers, a four-question filter for outdated books, and how to read with an AI tutor.',
   'sort-csv-by-column': 'Sort CSV rows by one or more columns correctly, including dates and numbers.',
   'split-large-csv-file-online': 'Break a CSV file too large to open into smaller, manageable parts online.',
   'compare-two-csv-files-online': 'Find the differences between two versions of the same CSV file online.',
@@ -200,6 +205,7 @@ export const POST_SUMMARIES: Record<string, string> = {
   'open-csv-file-too-big-for-excel': 'Fix an oversized CSV that Excel will not open: split it, read it without a grid, or move it to a database.',
   'csv-opens-in-one-column': 'Diagnose why a CSV landed in a single column and convert the delimiter or the encoding so the columns come back.',
   'excel-slow-with-large-data': 'Why Excel slows down with large data, a five-minute diagnostic, and the fixes ranked by effort.',
+  'best-cheap-usb-flash-drives-under-50': 'Budget storage for big CSV files: how much each price tier holds, why flash drives wear out under repeated large writes, USB 3.0 vs 3.2, and formatting exFAT.',
   'csv-vs-excel': 'A comparison of CSV and Excel formats, and which one to keep for your data.',
 };
 
@@ -245,7 +251,8 @@ export const POST_DATES: Record<string, string> = {
   'ask-csv': '2026-09-06',
   'analyze-survey-data-csv-with-ai': '2026-09-01',
   'visualize-sales-data-csv': '2026-09-02',
-  'opencode-go-review-cheap-ai-models': '2026-09-10',
+  "opencode-go-review-cheap-ai-models": "2026-09-10",
+  "best-books-data-analysis-ai": "2026-09-17",
   'sort-csv-by-column': '2026-09-08',
   'split-large-csv-file-online': '2026-09-03',
   'compare-two-csv-files-online': '2026-09-05',
@@ -261,6 +268,7 @@ export const POST_DATES: Record<string, string> = {
   'open-csv-file-too-big-for-excel': '2026-09-16',
   'csv-opens-in-one-column': '2026-09-17',
   'excel-slow-with-large-data': '2026-09-17',
+  'best-cheap-usb-flash-drives-under-50': '2026-09-17',
   'csv-vs-excel': '2026-09-09',
 };
 
