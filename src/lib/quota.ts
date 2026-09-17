@@ -31,10 +31,13 @@ export type QuotaState = {
   atomic: boolean;
 };
 
-const FREESTATE: QuotaState = {
-  plan: "free", isPro: false, used: 0, limit: DAILY_FREE_LIMIT,
-  remaining: DAILY_FREE_LIMIT, signedIn: false, atomic: false,
-};
+/** 未登录时的默认状态(atomic 反映真实配置,便于运维自检) */
+function freeState(): QuotaState {
+  return {
+    plan: "free", isPro: false, used: 0, limit: DAILY_FREE_LIMIT,
+    remaining: DAILY_FREE_LIMIT, signedIn: false, atomic: redisConfigured(),
+  };
+}
 
 function today(): string {
   return new Date().toISOString().split("T")[0];
@@ -97,7 +100,7 @@ export function isProMeta(meta: Record<string, unknown>): boolean {
 }
 
 export async function getQuota(userId: string | null): Promise<QuotaState> {
-  if (!userId) return FREESTATE;
+  if (!userId) return freeState();
 
   const client = await clerkClient();
   const user = await client.users.getUser(userId);
