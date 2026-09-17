@@ -79,6 +79,7 @@ export const POST_CLUSTERS: Record<string, Cluster> = {
   'excel-slow-with-large-data': 'ops',
   'best-cheap-usb-flash-drives-under-50': 'ops',
   'best-wireless-keyboard-and-mouse-for-excel-under-30': 'ops',
+  'best-monitor-for-spreadsheets': 'ops',
 
   // E. 基础
   'csv-vs-excel': 'basics',
@@ -145,6 +146,7 @@ export const POST_TITLES: Record<string, string> = {
   'excel-slow-with-large-data': 'Excel Slow With Large Data',
   'best-cheap-usb-flash-drives-under-50': 'Cheap USB Drives & Portable SSDs Under $50 for CSV',
   'best-wireless-keyboard-and-mouse-for-excel-under-30': 'Wireless Keyboard & Mouse for Excel Under $30',
+  'best-monitor-for-spreadsheets': 'Best Monitor for Spreadsheets: Pivot, Ultrawide or 27-inch?',
   'csv-vs-excel': 'CSV vs Excel',
 };
 
@@ -209,6 +211,7 @@ export const POST_SUMMARIES: Record<string, string> = {
   'excel-slow-with-large-data': 'Why Excel slows down with large data, a five-minute diagnostic, and the fixes ranked by effort.',
   'best-cheap-usb-flash-drives-under-50': 'Budget storage for big CSV files: how much each price tier holds, why flash drives wear out under repeated large writes, USB 3.0 vs 3.2, and formatting exFAT.',
   'best-wireless-keyboard-and-mouse-for-excel-under-30': 'A spreadsheet-focused buying guide to budget wireless keyboards and mice: why a numeric keypad decides your typing speed, scroll-wheel and tilt-wheel behavior, 2.4GHz versus Bluetooth, and what to skip under $30.',
+  'best-monitor-for-spreadsheets': 'A spreadsheet-focused monitor guide: the row and column arithmetic that decides visible sheet area, why pivot doubles your rows and ultrawide only adds columns, what 4K scaling does to Excel, panel and stand details for long sessions, and using USB-C as a dock.',
   'csv-vs-excel': 'A comparison of CSV and Excel formats, and which one to keep for your data.',
 };
 
@@ -273,6 +276,7 @@ export const POST_DATES: Record<string, string> = {
   'excel-slow-with-large-data': '2026-09-17',
   'best-cheap-usb-flash-drives-under-50': '2026-09-17',
   'best-wireless-keyboard-and-mouse-for-excel-under-30': '2026-09-17',
+  'best-monitor-for-spreadsheets': '2026-09-18',
   'csv-vs-excel': '2026-09-09',
 };
 
