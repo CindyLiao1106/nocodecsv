@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ShieldCheck, Zap } from "lucide-react";
 import { DelimiterConverterTool } from "./delimiter-converter-tool";
+import { WebMcpForm } from "@/components/tools/webmcp-form";
 
 export const metadata: Metadata = {
   title: "CSV Delimiter Converter — Change Comma, Semicolon, Tab, Pipe (Free)",
@@ -130,14 +131,10 @@ export default function CsvDelimiterConverterPage() {
             </div>
           </div>
 
-          {/* WebMCP:把该工具声明给 AI agent(旧浏览器忽略这些属性)*/}
-          <form
-            toolname="fixCsvDelimiter"
-            tooldescription="Converts a CSV file whose delimiter is wrong — semicolon, tab or pipe — so that the columns line up properly in Excel or Google Sheets. Use this when a user's file opens as a single column."
-            onSubmit={(e) => e.preventDefault()}
-          >
+          {/* WebMCP:把该工具声明给 AI agent(客户端包装组件,旧浏览器忽略这些属性) */}
+          <WebMcpForm toolname="fixCsvDelimiter" tooldescription="Converts a CSV file whose delimiter is wrong — semicolon, tab or pipe — so that the columns line up properly in Excel or Google Sheets. Use this when a user's file opens as a single column.">
             <DelimiterConverterTool />
-          </form>
+          </WebMcpForm>
         </div>
       </section>
 

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ShieldCheck, Zap } from "lucide-react";
 import { CsvSplitterTool } from "./csv-splitter-tool";
+import { WebMcpForm } from "@/components/tools/webmcp-form";
 
 export const metadata: Metadata = {
   title: "CSV Splitter — Split a Large CSV Into Multiple Files (Free)",
@@ -130,14 +131,10 @@ export default function CsvSplitterPage() {
             </div>
           </div>
 
-          {/* WebMCP:把该工具声明给 AI agent(旧浏览器忽略这些属性)*/}
-          <form
-            toolname="splitLargeCsv"
-            tooldescription="Splits a CSV file that is too large for Excel or Google Sheets into smaller files with a chosen number of rows each. Use this when a user has a file that will not open or is too big to work with."
-            onSubmit={(e) => e.preventDefault()}
-          >
+          {/* WebMCP:把该工具声明给 AI agent(客户端包装组件,旧浏览器忽略这些属性) */}
+          <WebMcpForm toolname="splitLargeCsv" tooldescription="Splits a CSV file that is too large for Excel or Google Sheets into smaller files with a chosen number of rows each. Use this when a user has a file that will not open or is too big to work with.">
             <CsvSplitterTool />
-          </form>
+          </WebMcpForm>
         </div>
       </section>
 

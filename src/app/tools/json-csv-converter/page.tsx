@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ShieldCheck, Zap } from "lucide-react";
 import { JsonCsvConverterTool } from "./json-csv-converter-tool";
+import { WebMcpForm } from "@/components/tools/webmcp-form";
 
 export const metadata: Metadata = {
   title: "JSON to CSV & CSV to JSON Converter — Free, No Upload",
@@ -137,14 +138,10 @@ export default function JsonCsvConverterPage() {
             </div>
           </div>
 
-          {/* WebMCP:把该工具声明给 AI agent(旧浏览器忽略这些属性)*/}
-          <form
-            toolname="convertJsonCsv"
-            tooldescription="Converts data between JSON and CSV in either direction: JSON (including NDJSON) to CSV, or CSV/TSV to JSON. Use this when a user needs their data in the other format."
-            onSubmit={(e) => e.preventDefault()}
-          >
+          {/* WebMCP:把该工具声明给 AI agent(客户端包装组件,旧浏览器忽略这些属性) */}
+          <WebMcpForm toolname="convertJsonCsv" tooldescription="Converts data between JSON and CSV in either direction: JSON (including NDJSON) to CSV, or CSV/TSV to JSON. Use this when a user needs their data in the other format.">
             <JsonCsvConverterTool />
-          </form>
+          </WebMcpForm>
         </div>
       </section>
 
