@@ -204,17 +204,22 @@ export function DelimiterConverterTool() {
             const file = e.dataTransfer.files[0];
             if (file) handleFile(file);
           }}
-          onClick={() => {
-            const input = document.createElement("input");
-            input.type = "file";
-            input.accept = ".csv,.tsv,.txt";
-            input.onchange = (e) => {
-              const file = (e.target as HTMLInputElement).files?.[0];
-              if (file) handleFile(file);
-            };
-            input.click();
-          }}
+          onClick={() => document.getElementById("toolFileInput")?.click()}
         >
+          {/* 真实存在的文件输入:AI agent / 屏幕阅读器靠它找到上传控件 */}
+          <input
+            id="toolFileInput"
+            name="file"
+            type="file"
+            accept=".csv,.tsv,.txt"
+            aria-label="Choose a file to process"
+            toolparamdescription="The file to process (.csv,.tsv,.txt). Up to 25MB."
+            className="sr-only"
+            onChange={(e) => {
+              const f = e.target.files?.[0];
+              if (f) handleFile(f);
+            }}
+          />
           <Upload className="mx-auto h-10 w-10 text-zinc-400 mb-3" />
           <p className="text-base font-medium text-zinc-700">
             Drop your file here, or <span className="text-blue-600">browse</span>

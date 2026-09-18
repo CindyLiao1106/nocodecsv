@@ -130,7 +130,14 @@ export default function CsvDelimiterConverterPage() {
             </div>
           </div>
 
-          <DelimiterConverterTool />
+          {/* WebMCP:把该工具声明给 AI agent(旧浏览器忽略这些属性)*/}
+          <form
+            toolname="fixCsvDelimiter"
+            tooldescription="Converts a CSV file whose delimiter is wrong — semicolon, tab or pipe — so that the columns line up properly in Excel or Google Sheets. Use this when a user's file opens as a single column."
+            onSubmit={(e) => e.preventDefault()}
+          >
+            <DelimiterConverterTool />
+          </form>
         </div>
       </section>
 

@@ -130,7 +130,14 @@ export default function CsvSplitterPage() {
             </div>
           </div>
 
-          <CsvSplitterTool />
+          {/* WebMCP:把该工具声明给 AI agent(旧浏览器忽略这些属性)*/}
+          <form
+            toolname="splitLargeCsv"
+            tooldescription="Splits a CSV file that is too large for Excel or Google Sheets into smaller files with a chosen number of rows each. Use this when a user has a file that will not open or is too big to work with."
+            onSubmit={(e) => e.preventDefault()}
+          >
+            <CsvSplitterTool />
+          </form>
         </div>
       </section>
 

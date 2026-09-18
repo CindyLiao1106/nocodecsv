@@ -41,6 +41,10 @@ export function QueryInput({ onSubmit, loading, disabled }: Props) {
       <div className="flex gap-2">
         <div className="flex-1 relative">
           <Textarea
+            id="question"
+            name="question"
+            aria-label="Ask a question about your uploaded spreadsheet"
+            toolparamdescription="The question to answer about the uploaded spreadsheet, in plain English. Example: 'Which region had the highest growth last quarter?'"
             placeholder={disabled ? "Upgrade to Pro to continue..." : 'Ask about your data... e.g., "Show me total sales by region"'}
             value={question}
             onChange={(e) => setQuestion(e.target.value)}
@@ -54,7 +58,11 @@ export function QueryInput({ onSubmit, loading, disabled }: Props) {
             disabled={loading || disabled}
           />
           <Button
+            id="askSubmit"
+            type="submit"
             size="icon"
+            aria-label="Run the analysis"
+            toolparamdescription="Runs the analysis and shows the answer, a data table and a chart."
             className="absolute right-2 bottom-2 h-8 w-8"
             onClick={handleSubmit}
             disabled={loading || disabled || !question.trim()}

@@ -137,7 +137,14 @@ export default function JsonCsvConverterPage() {
             </div>
           </div>
 
-          <JsonCsvConverterTool />
+          {/* WebMCP:把该工具声明给 AI agent(旧浏览器忽略这些属性)*/}
+          <form
+            toolname="convertJsonCsv"
+            tooldescription="Converts data between JSON and CSV in either direction: JSON (including NDJSON) to CSV, or CSV/TSV to JSON. Use this when a user needs their data in the other format."
+            onSubmit={(e) => e.preventDefault()}
+          >
+            <JsonCsvConverterTool />
+          </form>
         </div>
       </section>
 

@@ -127,7 +127,14 @@ export default function DashboardPage() {
               </Card>
             )}
           </div>
-          <FileUploader onParsed={handleFileParsed} />
+          {/* WebMCP:未上传时这是一个"上传表格"工具 */}
+          <form
+            toolname="uploadCsvFile"
+            tooldescription="Uploads a spreadsheet (CSV, TSV, .xlsx or .xls up to 25MB) so the user can then ask questions about its contents. Use this when a user wants to analyse a data file they have."
+            onSubmit={(e) => e.preventDefault()}
+          >
+            <FileUploader onParsed={handleFileParsed} />
+          </form>
         </div>
       ) : (
         <div>
@@ -153,7 +160,14 @@ export default function DashboardPage() {
           )}
 
           {/* 查询输入 */}
-          <QueryInput onSubmit={handleQuery} loading={loading} disabled={usage?.remaining === 0 && !usage?.isPro} />
+          {/* WebMCP:已有文件时这是一个"提问并分析"工具 */}
+          <form
+            toolname="askQuestionAboutData"
+            tooldescription="Answers a plain-English question about the already-uploaded spreadsheet, returning an explanation, a data table and an automatically generated chart. Use this when a user asks something about data they have already provided."
+            onSubmit={(e) => e.preventDefault()}
+          >
+            <QueryInput onSubmit={handleQuery} loading={loading} disabled={usage?.remaining === 0 && !usage?.isPro} />
+          </form>
 
           {/* 结果区域 */}
           <div ref={scrollRef}>

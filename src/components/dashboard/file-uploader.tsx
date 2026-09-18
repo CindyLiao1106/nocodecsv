@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useState } from "react";
+import { useCallback, useRef, useState } from "react";
 import { Upload, FileSpreadsheet, AlertCircle } from "lucide-react";
 import * as XLSX from "xlsx";
 import Papa from "papaparse";
@@ -82,6 +82,9 @@ export function FileUploader({ onParsed }: Props) {
     }
   }, [onParsed]);
 
+  // WebMCP / 无障碍:真实存在于 DOM 的文件输入框(AI 和屏幕阅读器靠它找到上传控件)
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
   return (
     <div>
       <div
@@ -96,16 +99,7 @@ export function FileUploader({ onParsed }: Props) {
           const file = e.dataTransfer.files[0];
           if (file) processFile(file);
         }}
-        onClick={() => {
-          const input = document.createElement("input");
-          input.type = "file";
-          input.accept = ".csv,.tsv,.xlsx,.xls";
-          input.onchange = (e) => {
-            const file = (e.target as HTMLInputElement).files?.[0];
-            if (file) processFile(file);
-          };
-          input.click();
-        }}
+        onClick={() => fileInputRef.current?.click()}
       >
         <Upload className="mx-auto h-12 w-12 text-zinc-400 mb-4" />
         <p className="text-lg font-medium text-zinc-700">
@@ -113,6 +107,28 @@ export function FileUploader({ onParsed }: Props) {
         </p>
         <p className="mt-2 text-sm text-zinc-400">CSV, Excel (.xlsx, .xls), TSV — up to 25MB</p>
       </div>
+
+      {/*
+        真实存在(而非 JS 动态创建)的文件输入:
+        · AI agent 需要它才能通过 DOM/AX 树找到"上传文件"这个动作
+        · 屏幕阅读器同样依赖它
+        · sr-only 保持视觉不变(仍是点击上面的虚线框触发)
+        · toolparamdescription 是 WebMCP 的参数说明,旧浏览器会忽略
+      */}
+      <input
+        ref={fileInputRef}
+        id="csvFileInput"
+        name="file"
+        type="file"
+        accept=".csv,.tsv,.xlsx,.xls"
+        aria-label="Upload a CSV or Excel file to analyse"
+        toolparamdescription="The spreadsheet file to analyse. Accepts CSV, TSV, .xlsx or .xls, up to 25MB."
+        className="sr-only"
+        onChange={(e) => {
+          const f = e.target.files?.[0];
+          if (f) processFile(f);
+        }}
+      />
 
       {error && (
         <div className="mt-3 flex items-center gap-2 text-sm text-red-600">
