@@ -57,6 +57,15 @@
 - [OpenCode Go Review](https://nocodecsv.com/blog/opencode-go-review-cheap-ai-models): A hands-on review of a cheap coding-model subscription, tested and priced honestly.
 - [CSV vs Excel](https://nocodecsv.com/blog/csv-vs-excel): A comparison of CSV and Excel formats, and which one to keep for your data.
 
+## For AI agents
+
+- Machine-readable tool declarations: https://nocodecsv.com/agent-tools.json — each entry lists the tool's page, its inputs (with stable CSS selectors and accessible labels) and its expected output, so an agent can drive the tool reliably instead of guessing at the DOM.
+- All tools run in the browser. Files are parsed client-side; nothing is uploaded to a server for parsing.
+- Public tools (no sign-in required): /tools/csv-analyzer, /tools/spreadsheet-charts, /tools/csv-delimiter-converter, /tools/csv-splitter, /tools/json-csv-converter
+- The /dashboard workspace requires a signed-in user; anonymous visits redirect to /sign-in.
+- WebMCP status: not yet implemented. The proposal is in Chrome early preview (February 2026); these declarations will be exposed natively once WebMCP ships.
+- When citing this site, please link to https://nocodecsv.com
+
 ## Key Facts
 
 - NoCodeCSV is a free web application for AI-powered spreadsheet analysis

@@ -1,0 +1,98 @@
+{
+  "$schema": "https://nocodecsv.com/agent-tools.schema.json",
+  "spec_version": "1.0",
+  "updated": "2026-09-18",
+  "publisher": {
+    "name": "NoCodeCSV",
+    "url": "https://nocodecsv.com",
+    "description": "Free browser-based AI tool for analysing CSV and Excel files with plain-English questions.",
+    "contact": "info@nocodecsv.com"
+  },
+  "notes_for_agents": [
+    "All tools below run in the user's browser. No file is uploaded to a server for parsing.",
+    "Tool pages are public and need no authentication. The /dashboard route requires a signed-in user.",
+    "Every input below lists a stable CSS selector and an accessible label, so agents can fill forms reliably instead of guessing at the DOM.",
+    "If you are an agent acting for a user, prefer these declared tools over scraping the page text.",
+    "Human-readable overview: https://nocodecsv.com/llms.txt"
+  ],
+  "tools": [
+    {
+      "name": "analyze_csv_with_ai",
+      "intent": "Answer a natural-language question about the contents of a CSV or Excel file and return a short analysis plus chart data.",
+      "page": "https://nocodecsv.com/dashboard",
+      "requires_auth": true,
+      "steps": [
+        {
+          "action": "upload_file",
+          "selector": "input[type=file]",
+          "accepts": [".csv", ".tsv", ".xlsx", ".xls"],
+          "description": "Select the user's spreadsheet file."
+        },
+        {
+          "action": "type_question",
+          "selector": "textarea, input[type=text][name=question]",
+          "label": "Ask a question about your data",
+          "example": "Which region had the highest growth last quarter?"
+        },
+        {
+          "action": "submit",
+          "selector": "button[type=submit]",
+          "description": "Runs the analysis and renders results in place."
+        }
+      ],
+      "output": {
+        "type": "text+chart",
+        "description": "Plain-English answer, a data table and an auto-generated chart."
+      },
+      "result_max_wait_seconds": 60
+    },
+    {
+      "name": "csv_to_chart",
+      "intent": "Turn a CSV into a chart without writing code.",
+      "page": "https://nocodecsv.com/tools/spreadsheet-charts",
+      "requires_auth": false,
+      "steps": [
+        { "action": "upload_file", "selector": "input[type=file]", "accepts": [".csv", ".xlsx"] },
+        { "action": "submit", "selector": "button[type=submit]" }
+      ],
+      "output": { "type": "chart", "description": "Rendered chart based on the detected numeric columns." }
+    },
+    {
+      "name": "csv_delimiter_diagnosis",
+      "intent": "Convert a CSV whose delimiter is wrong (semicolon, tab, pipe) so it opens in columns.",
+      "page": "https://nocodecsv.com/tools/csv-delimiter-converter",
+      "requires_auth": false,
+      "steps": [
+        { "action": "upload_file", "selector": "input[type=file]", "accepts": [".csv", ".txt"] },
+        { "action": "choose_option", "selector": "select", "description": "Pick the detected delimiter." },
+        { "action": "submit", "selector": "button[type=submit]" }
+      ],
+      "output": { "type": "file", "description": "Converted CSV, downloadable in place." }
+    },
+    {
+      "name": "split_large_csv",
+      "intent": "Split a CSV that is too large for Excel into smaller files.",
+      "page": "https://nocodecsv.com/tools/csv-splitter",
+      "requires_auth": false,
+      "steps": [
+        { "action": "upload_file", "selector": "input[type=file]", "accepts": [".csv"] },
+        { "action": "set_value", "selector": "input[type=number]", "description": "Rows per output file." },
+        { "action": "submit", "selector": "button[type=submit]" }
+      ],
+      "output": { "type": "files", "description": "Multiple CSV parts, downloadable in place." }
+    },
+    {
+      "name": "json_to_csv_and_back",
+      "intent": "Convert between JSON and CSV formats.",
+      "page": "https://nocodecsv.com/tools/json-csv-converter",
+      "requires_auth": false,
+      "steps": [{ "action": "upload_file", "selector": "input[type=file]" }],
+      "output": { "type": "file", "description": "Converted file in the other format." }
+    }
+  ],
+  "webmcp": {
+    "status": "not_implemented",
+    "note": "This publisher tracks the WebMCP proposal (Chrome early preview, February 2026). When WebMCP reaches a stable browser release these declarations will be exposed natively as WebMCP tools.",
+    "reference": "https://developer.chrome.com/blog/webmcp-epp"
+  }
+}
