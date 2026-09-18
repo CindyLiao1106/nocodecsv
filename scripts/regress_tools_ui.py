@@ -24,6 +24,27 @@ from playwright.sync_api import sync_playwright  # noqa: E402
 CSV_TEXT = "name,amount\nalpha,1\nbeta,2\ngamma,3\ndelta,4\necho,5\n"
 JSON_TEXT = '[{"name":"alpha","meta":{"score":1}},{"name":"beta","meta":{"score":2}}]'
 
+# 第三方脚本(广告/分析/鉴权)与本回归无关,且在 headless 下会让页面崩溃
+# (实测:线上跑到第二个工具页时 Page crashed)。挡掉才能稳定复跑。
+BLOCK_HOSTS = (
+    "doubleclick.net",
+    "googleads",
+    "googlesyndication",
+    "adtrafficquality",
+    "google-analytics",
+    "vercel-insights",
+    "clerk",
+)
+
+
+def block_third_party(page) -> None:
+    page.route(
+        "**/*",
+        lambda route: route.abort()
+        if any(h in route.request.url for h in BLOCK_HOSTS)
+        else route.continue_(),
+    )
+
 
 def expected_parts(csv_text: str, rows_per_file: int):
     rows = list(csv.reader(io.StringIO(csv_text.strip())))
@@ -72,6 +93,7 @@ def main() -> int:
         browser = p.chromium.launch(headless=True, args=["--no-sandbox"])
         ctx = browser.new_context()
         page = ctx.new_page()
+        block_third_party(page)
         console_errors: list[str] = []
         page.on("console", lambda m: console_errors.append(m.text) if m.type == "error" else None)
         bad_responses: list[str] = []

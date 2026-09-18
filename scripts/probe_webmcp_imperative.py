@@ -64,10 +64,14 @@ GET_TOOLS = """async (name) => {
   if (!mc || !mc.getTools) return { err: 'WebMCP not available on this page' };
   const tools = await mc.getTools();
   const t = tools.find(x => x.name === name);
+  // 实测:getTools() 返回的 inputSchema 是【JSON 字符串】而不是对象 —— 两种都归一化
+  let schema = t ? t.inputSchema : null;
+  if (typeof schema === 'string') { try { schema = JSON.parse(schema); } catch (e) {} }
   return {
     allNames: tools.map(x => x.name),
     found: !!t,
-    inputSchema: t ? t.inputSchema : null,
+    inputSchemaType: t ? typeof t.inputSchema : null,
+    inputSchema: schema,
     description: t ? (t.description || '').slice(0, 200) : null,
     annotations: t ? t.annotations : null,
   };
@@ -80,9 +84,12 @@ EXEC = """async ({ name, args }) => {
   const tool = tools.find(x => x.name === name);
   if (!tool) return { err: 'tool not found: ' + name };
   const attempts = [
+    // ✅ 实测(Chrome 149 源试验):第二个参数必须是【JSON 字符串】,传对象会
+    //    报 UnknownError: Failed to parse input arguments。
+    //    官方文档提到"JSON stringified input arguments are deprecated from Chrome 155",
+    //    所以两种都试,谁先成功用谁。
+    () => mc.executeTool(tool, JSON.stringify(args)),
     () => mc.executeTool(tool, args),
-    () => mc.executeTool({ name: name }, args),
-    () => mc.executeTool(name, args),
   ];
   let lastErr = null;
   for (let i = 0; i < attempts.length; i++) {
@@ -106,7 +113,9 @@ def expected_split(csv_text: str, rows_per_file: int):
         w = csv.writer(buf, lineterminator="\n")
         w.writerow(header)
         w.writerows(chunk)
-        parts.append((chunk, buf.getvalue().strip()))
+        # Papa.unparse 按 RFC 4180 输出 \r\n —— 比较时统一换行符,
+        # 否则会把"编码差异"误报成"功能错误"(本次已踩,浪费一轮)。
+        parts.append((chunk, buf.getvalue().strip().replace("\n", "\r\n")))
     return header, data, parts
 
 
@@ -200,7 +209,7 @@ def main() -> int:
             if not payload.get("ok"):
                 failures.append(f"convertJsonCsvText 返回 ok=false: {payload.get('error')}")
             else:
-                expected_csv = "name,meta.score\nalpha,1\nbeta,2"
+                expected_csv = "name,meta.score\r\nalpha,1\r\nbeta,2"
                 actual = (payload.get("output") or "").strip()
                 if actual != expected_csv:
                     failures.append(
