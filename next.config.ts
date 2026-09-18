@@ -2,6 +2,13 @@ import type { NextConfig } from "next";
 
 // C28: 安全响应头（SEO/GEO 结构检查项）
 // CSP 先用 Report-Only 上线：不阻断任何请求，只上报，确认无副作用后再切换为正式 CSP。
+// WebMCP 源试验令牌(2026-09-18 注册)
+//   · 绑定 origin:https://nocodecsv.com   · 功能:WebMCP   · 到期:2026-11-17
+//   · 作用:让 Chrome 在该域名上启用 WebMCP —— 页面上的 <form toolname="…"> 才会被识别为 AI 可调用工具
+//   · 续期或换域名:重新在 developer.chrome.com/origintrials 注册,替换下面这串
+const WEBMCP_TRIAL_TOKEN =
+  "AiO4UfD2GWVo9+dSMcLeP6XnyubzoSy/m1BpaviiEstK28uCJjfea4n3E+G5J5crsoOSssnpZAEDfRupLKoDUwMAAABNeyJvcmlnaW4iOiJodHRwczovL25vY29kZWNzdi5jb206NDQzIiwiZmVhdHVyZSI6IldlYk1DUCIsImV4cGlyeSI6MTc5NDg3MzYwMH0=";
+
 const cspReportOnly = [
   "default-src 'self'",
   "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.clerk.com https://*.clerk.accounts.dev https://va.vercel-scripts.com",
@@ -32,6 +39,8 @@ const securityHeaders = [
   { key: "Content-Security-Policy-Report-Only", value: cspReportOnly },
   // 最小权限
   { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
+  // WebMCP 源试验令牌:全站下发,使 Chrome 启用 WebMCP(未启用该特性的浏览器会忽略此头)
+  { key: "Origin-Trial", value: WEBMCP_TRIAL_TOKEN },
 ];
 
 const nextConfig: NextConfig = {
