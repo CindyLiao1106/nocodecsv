@@ -83,6 +83,10 @@ export const POST_CLUSTERS: Record<string, Cluster> = {
 
   // E. 基础
   'csv-vs-excel': 'basics',
+
+  // F. Agent-Ready / AI 可见性
+  'what-is-webmcp': 'ai',
+  'llms-txt-explained': 'ai',
 };
 
 /** 文章标题(slug → 显示标题),用于内链锚文本 */
@@ -147,6 +151,8 @@ export const POST_TITLES: Record<string, string> = {
   'best-cheap-usb-flash-drives-under-50': 'Cheap USB Drives & Portable SSDs Under $50 for CSV',
   'best-wireless-keyboard-and-mouse-for-excel-under-30': 'Wireless Keyboard & Mouse for Excel Under $30',
   'best-monitor-for-spreadsheets': 'Best Monitor for Spreadsheets: Pivot, Ultrawide or 27-inch?',
+  'what-is-webmcp': 'What Is WebMCP?',
+  'llms-txt-explained': 'llms.txt Explained',
   'csv-vs-excel': 'CSV vs Excel',
 };
 
@@ -212,6 +218,8 @@ export const POST_SUMMARIES: Record<string, string> = {
   'best-cheap-usb-flash-drives-under-50': 'Budget storage for big CSV files: how much each price tier holds, why flash drives wear out under repeated large writes, USB 3.0 vs 3.2, and formatting exFAT.',
   'best-wireless-keyboard-and-mouse-for-excel-under-30': 'A spreadsheet-focused buying guide to budget wireless keyboards and mice: why a numeric keypad decides your typing speed, scroll-wheel and tilt-wheel behavior, 2.4GHz versus Bluetooth, and what to skip under $30.',
   'best-monitor-for-spreadsheets': 'A spreadsheet-focused monitor guide: the row and column arithmetic that decides visible sheet area, why pivot doubles your rows and ultrawide only adds columns, what 4K scaling does to Excel, panel and stand details for long sessions, and using USB-C as a dock.',
+  'what-is-webmcp': 'What WebMCP is: the declarative and imperative APIs, how it differs from MCP, and the tool list we read back from a live site, including the file-input gap.',
+  'llms-txt-explained': 'What goes in an llms.txt file, real examples measured by size, the differences from robots.txt and sitemap.xml, and word counts from three of our own sites.',
   'csv-vs-excel': 'A comparison of CSV and Excel formats, and which one to keep for your data.',
 };
 
@@ -277,6 +285,8 @@ export const POST_DATES: Record<string, string> = {
   'best-cheap-usb-flash-drives-under-50': '2026-09-17',
   'best-wireless-keyboard-and-mouse-for-excel-under-30': '2026-09-17',
   'best-monitor-for-spreadsheets': '2026-09-18',
+  'what-is-webmcp': '2026-09-18',
+  'llms-txt-explained': '2026-09-18',
   'csv-vs-excel': '2026-09-09',
 };
 
