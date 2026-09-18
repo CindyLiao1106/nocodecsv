@@ -270,6 +270,9 @@ export function CsvSplitterTool() {
           onClick={() => document.getElementById("toolFileInput")?.click()}
         >
           {/* 真实存在的文件输入:AI agent / 屏幕阅读器靠它找到上传控件 */}
+          <label htmlFor="toolFileInput" className="sr-only">
+            CSV file to split
+          </label>
           <input
             id="toolFileInput"
             name="file"
