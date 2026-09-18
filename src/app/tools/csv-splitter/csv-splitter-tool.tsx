@@ -12,12 +12,12 @@ import {
   RefreshCw,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { buildSplitFiles, groupRows, type SplitMode } from "@/lib/csv-split-core";
+import { useWebMcpTool } from "@/lib/webmcp-imperative";
 
 const LARGE_FILE_BYTES = 20 * 1024 * 1024; // 20MB
 const DEFAULT_ROWS_PER_FILE = 50000;
 const DEFAULT_SIZE_PER_FILE_MB = 5;
-
-type SplitMode = "rows" | "size" | "column";
 
 type Chunk = {
   filename: string;
@@ -37,13 +37,6 @@ function formatBytes(bytes: number): string {
   if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`;
   return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
 }
-
-function sanitizeForFilename(value: string): string {
-  const cleaned = value.trim().replace(/[^a-zA-Z0-9_-]+/g, "_").replace(/^_+|_+$/g, "");
-  return cleaned || "empty";
-}
-
-const encoder = new TextEncoder();
 
 export function CsvSplitterTool() {
   const [rawFile, setRawFile] = useState<File | null>(null);
@@ -161,43 +154,15 @@ export function CsvSplitterTool() {
   }, [header, dataRows, splitMode, rowsPerFile, sizePerFileMB, fileSize, splitColumnIndex, distinctColumnCount]);
 
   const buildGroups = useCallback((): { suffix: string; rows: string[][] }[] => {
-    if (splitMode === "rows") {
-      const groups: { suffix: string; rows: string[][] }[] = [];
-      for (let i = 0; i < dataRows.length; i += rowsPerFile) {
-        groups.push({ suffix: `part${groups.length + 1}`, rows: dataRows.slice(i, i + rowsPerFile) });
-      }
-      return groups;
-    }
-
-    if (splitMode === "size") {
-      const targetBytes = Math.max(1, sizePerFileMB) * 1024 * 1024;
-      const groups: { suffix: string; rows: string[][] }[] = [];
-      let current: string[][] = [];
-      let currentBytes = 0;
-      for (const row of dataRows) {
-        const rowBytes = encoder.encode(Papa.unparse([row], { delimiter })).length + 2;
-        if (current.length > 0 && currentBytes + rowBytes > targetBytes) {
-          groups.push({ suffix: `part${groups.length + 1}`, rows: current });
-          current = [];
-          currentBytes = 0;
-        }
-        current.push(row);
-        currentBytes += rowBytes;
-      }
-      if (current.length > 0) groups.push({ suffix: `part${groups.length + 1}`, rows: current });
-      return groups;
-    }
-
-    const map = new Map<string, string[][]>();
-    for (const row of dataRows) {
-      const key = row[splitColumnIndex] ?? "";
-      const group = map.get(key);
-      if (group) group.push(row);
-      else map.set(key, [row]);
-    }
-    return Array.from(map.entries())
-      .sort((a, b) => a[0].localeCompare(b[0]))
-      .map(([value, rows]) => ({ suffix: sanitizeForFilename(value), rows }));
+    // 算法在 @/lib/csv-split-core —— 页面与 WebMCP 命令式工具共用同一份实现
+    return groupRows({
+      mode: splitMode,
+      dataRows,
+      rowsPerFile,
+      sizePerFileMB,
+      delimiter,
+      splitColumnIndex,
+    });
   }, [splitMode, dataRows, rowsPerFile, sizePerFileMB, delimiter, splitColumnIndex]);
 
   const handleSplit = useCallback(() => {
@@ -211,17 +176,14 @@ export function CsvSplitterTool() {
     setTimeout(() => {
       try {
         const groups = buildGroups();
-        const bom = encoding === "utf8-bom" ? "﻿" : "";
-        const base = prefix.trim() || "file";
+        const bom = encoding === "utf8-bom" ? "\ufeff" : "";
+        const files = buildSplitFiles({ header, groups, delimiter, repeatHeader, prefix, bom });
 
-        const built: Chunk[] = groups.map((group, i) => {
-          const includeHeader = repeatHeader || i === 0;
-          const outRows = includeHeader ? [header, ...group.rows] : group.rows;
-          const csvText = Papa.unparse(outRows, { delimiter });
-          const blob = new Blob([bom + csvText], { type: "text/csv;charset=utf-8" });
+        const built: Chunk[] = files.map((file) => {
+          const blob = new Blob([file.csv], { type: "text/csv;charset=utf-8" });
           return {
-            filename: `${base}-${group.suffix}.csv`,
-            rows: group.rows.length,
+            filename: file.filename,
+            rows: file.rows,
             size: blob.size,
             url: URL.createObjectURL(blob),
           };
@@ -249,6 +211,117 @@ export function CsvSplitterTool() {
       }, i * 250);
     });
   }, [chunks]);
+
+  // ---- WebMCP 命令式工具:让 AI agent 直接把 CSV 内容当文本传进来拆分 ----
+  // 声明式 API 拿不到文件参数(实测 schema 为空),所以这里用 registerTool 把
+  // 「CSV 文本 + 每文件行数」暴露成参数;算法仍走 @/lib/csv-split-core,与页面按钮同一套。
+  useWebMcpTool({
+    name: "splitCsvText",
+    description:
+      "Splits CSV content into several smaller CSV files by row count, repeating the header row in every part. Use this when a CSV is too large for Excel or Google Sheets, or when the CSV content is available as text rather than as a file. Returns the resulting CSV files as text plus a row/byte count for each.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        csvText: {
+          type: "string",
+          description:
+            "The complete CSV content to split, including the header row. Comma, semicolon or tab delimited — the delimiter is detected automatically and preserved.",
+        },
+        rowsPerFile: {
+          type: "number",
+          description:
+            "Maximum number of data rows per output file. The header row is not counted. Defaults to 50000 when omitted.",
+        },
+      },
+      required: ["csvText"],
+    },
+    annotations: { readOnlyHint: true, untrustedContentHint: true, consequentialHint: false },
+    execute: ({ csvText, rowsPerFile }) => {
+      const text = typeof csvText === "string" ? csvText : "";
+      if (!text.trim()) {
+        return JSON.stringify({ ok: false, error: "csvText is empty — pass the CSV content to split." });
+      }
+
+      const perFile =
+        typeof rowsPerFile === "number" && Number.isFinite(rowsPerFile) && rowsPerFile >= 1
+          ? Math.floor(rowsPerFile)
+          : DEFAULT_ROWS_PER_FILE;
+
+      const parsed = Papa.parse<string[]>(text, { delimiter: "", skipEmptyLines: true });
+      const rows = parsed.data.filter((row) => Array.isArray(row));
+      const detectedDelimiter = parsed.meta.delimiter || ",";
+      if (rows.length < 2) {
+        return JSON.stringify({
+          ok: false,
+          error: "Need at least a header row and one data row to split.",
+          totalRowsParsed: rows.length,
+        });
+      }
+
+      const headerRow = rows[0];
+      const dataRows = rows.slice(1);
+      const groups = groupRows({
+        mode: "rows",
+        dataRows,
+        rowsPerFile: perFile,
+        sizePerFileMB: DEFAULT_SIZE_PER_FILE_MB,
+        delimiter: detectedDelimiter,
+        splitColumnIndex: 0,
+      });
+      const files = buildSplitFiles({
+        header: headerRow,
+        groups,
+        delimiter: detectedDelimiter,
+        repeatHeader: true,
+        prefix: "split",
+      });
+
+      // 输出预算:返回的文本可能很大 —— 超过 150,000 字符时只带第一个文件的正文,
+      // 其余只给元数据,并如实标注截断(agent 需要正文可让它自己缩小 rowsPerFile 重调)。
+      const MAX_CHARS = 150000;
+      let budget = MAX_CHARS;
+      const outFiles: {
+        filename: string;
+        rows: number;
+        bytes: number;
+        csv?: string;
+        csvOmitted?: string;
+      }[] = [];
+      for (const file of files) {
+        const bytes = new TextEncoder().encode(file.csv).length;
+        if (file.csv.length <= budget) {
+          outFiles.push({ filename: file.filename, rows: file.rows, bytes, csv: file.csv });
+          budget -= file.csv.length;
+        } else {
+          outFiles.push({
+            filename: file.filename,
+            rows: file.rows,
+            bytes,
+            csvOmitted:
+              "Omitted to keep the response small — call the tool again with a smaller rowsPerFile, or fetch this file from the page download links.",
+          });
+        }
+      }
+
+      return JSON.stringify(
+        {
+          ok: true,
+          mode: "rows",
+          delimiter: detectedDelimiter,
+          headerRow,
+          totalDataRows: dataRows.length,
+          rowsPerFile: perFile,
+          fileCount: files.length,
+          headerRepeatedInEveryFile: true,
+          truncated: outFiles.some((f) => f.csvOmitted),
+          files: outFiles,
+          note: "Files are computed in the browser; nothing was uploaded. The same tool is described for humans at https://nocodecsv.com/tools/csv-splitter",
+        },
+        null,
+        2
+      );
+    },
+  });
 
   return (
     <div className="rounded-xl border border-zinc-200 bg-white p-4 sm:p-6">

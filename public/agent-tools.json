@@ -1,6 +1,6 @@
 {
   "spec_version": "1.1",
-  "updated": "2026-09-18",
+  "updated": "2026-09-19",
   "publisher": {
     "name": "NoCodeCSV",
     "url": "https://nocodecsv.com",
@@ -15,11 +15,11 @@
     "Human-readable overview: https://nocodecsv.com/llms.txt"
   ],
   "webmcp": {
-    "status": "declarative_implemented",
+    "status": "declarative_and_imperative_implemented",
     "spec": "https://developer.chrome.com/docs/ai/webmcp/declarative-api",
-    "note": "HTML forms are annotated with toolname / tooldescription, and individual fields with toolparamdescription. Browsers that do not implement WebMCP ignore these attributes, so this is a progressive enhancement. Activation in Chrome requires the WebMCP origin trial (or the local flag chrome://flags/#enable-webmcp-testing).",
+    "spec_imperative": "https://developer.chrome.com/docs/ai/webmcp/imperative-api",
+    "note": "Two APIs are live. (1) Declarative: HTML forms are annotated with toolname / tooldescription and individual fields with toolparamdescription. (2) Imperative: two tools are registered with navigator.modelContext.registerTool and carry a typed inputSchema, so an assistant can pass content as text instead of attaching a file. Browsers that do not implement WebMCP ignore both, so this is a progressive enhancement. Activation in Chrome requires the WebMCP origin trial (or the local flag chrome://flags/#enable-webmcp-testing).",
     "origins_pending_trial_registration": [
-      "https://nocodecsv.com",
       "https://buildex-1dm.pages.dev",
       "https://carecosttool.pages.dev"
     ],
@@ -29,6 +29,30 @@
       { "toolname": "fixCsvDelimiter", "page": "/tools/csv-delimiter-converter" },
       { "toolname": "splitLargeCsv", "page": "/tools/csv-splitter" },
       { "toolname": "convertJsonCsv", "page": "/tools/json-csv-converter" }
+    ],
+    "imperative_tools": [
+      {
+        "name": "splitCsvText",
+        "page": "/tools/csv-splitter",
+        "inputs": {
+          "csvText": "string, required - the full CSV content, header row included",
+          "rowsPerFile": "number, optional - data rows per output file (default 50000)"
+        },
+        "returns": "JSON string: ok, delimiter, headerRow, totalDataRows, rowsPerFile, fileCount, files[] (filename, rows, bytes, csv)",
+        "annotations": { "readOnlyHint": true, "untrustedContentHint": true, "consequentialHint": false },
+        "why": "The declarative API cannot expose a file input as a parameter. Passing the CSV as text lets an assistant split it without a file."
+      },
+      {
+        "name": "convertJsonCsvText",
+        "page": "/tools/json-csv-converter",
+        "inputs": {
+          "text": "string, required - JSON (array of objects, array of arrays, single object or NDJSON) or CSV text",
+          "direction": "string, required - json2csv | csv2json"
+        },
+        "returns": "JSON string: ok, direction, rows, columns, columnNames or detectedDelimiter, warnings, truncated, output",
+        "annotations": { "readOnlyHint": true, "untrustedContentHint": true, "consequentialHint": false },
+        "why": "Same reason: conversion takes text, so no file upload is needed."
+      }
     ]
   },
   "tools": [
@@ -79,7 +103,7 @@
     },
     {
       "name": "split_large_csv",
-      "webmcp_toolname": "splitLargeCsv",
+      "webmcp_toolname": "splitLargeCsv (declarative) | splitCsvText (imperative, callable with CSV text)",
       "intent": "Split a CSV that is too large for Excel into smaller files.",
       "page": "https://nocodecsv.com/tools/csv-splitter",
       "requires_auth": false,
@@ -92,7 +116,7 @@
     },
     {
       "name": "convert_json_csv",
-      "webmcp_toolname": "convertJsonCsv",
+      "webmcp_toolname": "convertJsonCsv (declarative) | convertJsonCsvText (imperative, callable with JSON/CSV text)",
       "intent": "Convert between JSON and CSV formats in either direction.",
       "page": "https://nocodecsv.com/tools/json-csv-converter",
       "requires_auth": false,

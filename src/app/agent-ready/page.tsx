@@ -90,7 +90,7 @@ const faqJsonLd = {
       name: "Can AI assistants fill in my contact form today?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Partly. Text, dropdown, number and radio fields can be declared and become available to an assistant through WebMCP in Chrome. File-upload fields cannot: we measured the generated tool schema on a live site and it came back as {\"type\":\"object\",\"properties\":{},\"required\":[]} even after associating a label with the input. So an assistant can complete a text enquiry or run a calculator, but a human still chooses files.",
+        text: "Partly. Text, dropdown, number and radio fields can be declared and become available to an assistant through WebMCP in Chrome. File-upload fields cannot: we measured the generated tool schema on a live site and it came back as {\"type\":\"object\",\"properties\":{},\"required\":[]} even after associating a label with the input. So an assistant can complete a text enquiry or run a calculator, but a human still chooses files. Content that can be expressed as text does not need a file at all: two of this site's tools are registered through the imperative API, so an assistant can pass CSV or JSON content itself and receive the result back.",
       },
     },
     {
@@ -190,7 +190,7 @@ export default function AgentReadyPage() {
               <tr className="border-b border-slate-100">
                 <td className="py-2 pr-4">Run your calculator or converter</td>
                 <td className="py-2 pr-4">Click by trial and error</td>
-                <td className="py-2">Declared with its parameters</td>
+                <td className="py-2">Declared with its parameters — and callable with content passed as text</td>
               </tr>
               <tr>
                 <td className="py-2 pr-4">Upload a file for the user</td>
@@ -242,7 +242,7 @@ export default function AgentReadyPage() {
         {[
           {
             name: "nocodecsv.com — a tool site",
-            what: "Five tools declared, including a CSV splitter and a JSON⇄CSV converter; file input exists in the DOM so it can be targeted at all; WebMCP enabled for the whole origin.",
+            what: "Five tools declared, including a CSV splitter and a JSON⇄CSV converter; file input exists in the DOM so it can be targeted at all; two of the tools are also registered through the imperative API, so an assistant can pass CSV or JSON content as text and get the result back; WebMCP enabled for the whole origin.",
             cmd: "curl -sI https://nocodecsv.com/ | grep -i origin-trial",
           },
           {
@@ -366,6 +366,8 @@ export default function AgentReadyPage() {
           WebMCP in Chrome. File-upload fields cannot: we measured the generated tool schema on a live site and it came
           back as <code>{`{"type":"object","properties":{},"required":[]}`}</code> even after associating a label with
           the input. So an assistant can complete a text enquiry or run a calculator, but a human still chooses files.
+          Content that can be expressed as text does not need a file at all: two of this site&apos;s tools are registered
+          through the imperative API, so an assistant can pass CSV or JSON content itself and receive the result back.
         </p>
       </div>
       <div className="mt-6">
