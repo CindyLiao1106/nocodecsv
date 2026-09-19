@@ -9,7 +9,7 @@ import { ToolAnimation } from "@/components/tools/tool-animation";
 export const metadata: Metadata = {
   title: "JSON to CSV & CSV to JSON Converter — Free, No Upload",
   description:
-    "Convert JSON to CSV or CSV to JSON entirely in your browser. Nested objects flatten to dot-notation columns automatically. No upload, no signup. Preview, copy, or download.",
+    "Convert JSON to CSV or CSV to JSON in your browser. Nested objects flatten to dot-notation columns automatically. No upload, no signup — preview, then download.",
   keywords: [
     "json to csv",
     "csv to json",

@@ -185,6 +185,9 @@ export default function BlogPost() {
       <p>Nine times out of ten, garbled output means an <strong>encoding mismatch</strong>: Excel saved the file as ANSI (Windows-1252), but the receiving system reads UTF-8 — or vice versa. The fix is to always export as <strong>CSV UTF-8</strong> and, when in doubt, pick the file with <em>(BOM)</em> in the name. Older Excel versions (2013 and earlier on Windows) default to ANSI, which is exactly when you&apos;ll see &quot;Ã©&quot; instead of &quot;é&quot;.</p>
       <p>If you&apos;re already staring at a garbled file, don&apos;t re-type it — read our dedicated guide on <Link href="/blog/fix-garbled-csv-in-excel">fixing garbled CSV files in Excel</Link>.</p>
 
+      <h2>Where These Limits Come From</h2>
+      <p>Two references are worth knowing. Microsoft&apos;s <strong>Excel specifications and limits</strong> page documents the worksheet cap at 1,048,576 rows by 16,384 columns — which is why an oversized export can silently truncate. And the CSV format itself is described in <strong>RFC 4180</strong>, including the rule that any field containing a comma, a double quote or a line break must be wrapped in double quotes. Both are the reason a plain rename from .xlsx to .csv is not always enough.</p>
+
       <h2>Frequently Asked Questions</h2>
       <h3>Does converting Excel to CSV keep my formulas?</h3>
       <p>No — CSV stores <strong>values only</strong>. If a cell contains <code>=A1*1.2</code>, the CSV contains the calculated result (if Excel has computed it), not the formula. CSV is data transport, not a workbook format.</p>

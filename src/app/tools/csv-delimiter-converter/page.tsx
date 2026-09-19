@@ -7,7 +7,7 @@ import { WebMcpForm } from "@/components/tools/webmcp-form";
 
 import { ToolAnimation } from "@/components/tools/tool-animation";
 export const metadata: Metadata = {
-  title: "CSV Delimiter Converter — Change Comma, Semicolon, Tab, Pipe (Free)",
+  title: "CSV Delimiter Converter — Comma, Semicolon, Tab, Pipe (Free)",
   description:
     "Convert a CSV's delimiter — comma to semicolon, tab, pipe, or custom — entirely in your browser. No upload, no signup. Preview before/after, then download.",
   keywords: [
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://nocodecsv.com/tools/csv-delimiter-converter" },
   openGraph: {
     images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
-    title: "CSV Delimiter Converter — Change Comma, Semicolon, Tab, Pipe (Free)",
+    title: "CSV Delimiter Converter — Comma, Semicolon, Tab, Pipe (Free)",
     description: "Convert a CSV's delimiter in your browser. No upload, no signup.",
     type: "website",
     url: "https://nocodecsv.com/tools/csv-delimiter-converter",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "CSV Delimiter Converter — Change Comma, Semicolon, Tab, Pipe (Free)",
+    title: "CSV Delimiter Converter — Comma, Semicolon, Tab, Pipe (Free)",
     description: "Convert a CSV's delimiter in your browser. No upload, no signup.",
   },
 };

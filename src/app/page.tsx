@@ -142,6 +142,63 @@ export default function Home() {
       <Features />
       <HowItWorks />
 
+      {/* FAQ —— 必须是"页面上看得见"的问答,否则 FAQPage schema 属于违规(2026-09-19 体检修复) */}
+      <section className="bg-zinc-50 border-t border-zinc-100 py-16">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-10">
+            Frequently asked questions
+          </h2>
+          <div className="space-y-8">
+            <div>
+              <h3 className="font-semibold text-lg mb-2">What is NoCodeCSV?</h3>
+              <p className="text-zinc-600 leading-relaxed">
+                NoCodeCSV is a free AI-powered tool that lets you chat with your CSV and Excel
+                files. Upload a spreadsheet, ask questions in plain English, and get instant
+                charts, patterns, and summaries — no SQL, Python, or coding required.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg mb-2">Is NoCodeCSV free to use?</h3>
+              <p className="text-zinc-600 leading-relaxed">
+                Yes. NoCodeCSV offers a free tier with 3 analyses per day. A Pro plan at
+                $15/month unlocks unlimited analyses and advanced features.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg mb-2">How do I analyze a CSV file with AI?</h3>
+              <p className="text-zinc-600 leading-relaxed">
+                Upload your CSV file to the free analyzer, then type questions about your data
+                in plain English. The AI generates charts, finds patterns, and summarizes the
+                results for you.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg mb-2">
+                Do I need to know SQL or Python to use NoCodeCSV?
+              </h3>
+              <p className="text-zinc-600 leading-relaxed">
+                No. NoCodeCSV is designed for non-technical users. You ask questions in natural
+                language and the AI handles the analysis, charting, and data exploration for you.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg mb-2">What file types does NoCodeCSV support?</h3>
+              <p className="text-zinc-600 leading-relaxed">
+                NoCodeCSV supports CSV and Excel (.xlsx) files. You can upload, analyze, and
+                export your data entirely in the browser.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg mb-2">Is my data private when I upload it?</h3>
+              <p className="text-zinc-600 leading-relaxed">
+                Files are parsed in your browser and analysis is processed per request without
+                being stored. NoCodeCSV does not keep your uploaded data on its servers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Internal links: tools & guides */}
       <section className="bg-white border-t border-zinc-100 py-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">

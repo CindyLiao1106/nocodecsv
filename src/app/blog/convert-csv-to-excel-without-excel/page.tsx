@@ -184,6 +184,9 @@ export default function BlogPost() {
       </table>
       <p>Keep the original CSV as a backup — it&apos;s your cleanest source of truth. Convert a copy to .xlsx only when a colleague, client, or accounting system actually needs the Excel format.</p>
 
+      <h2>Why the Quotes Matter</h2>
+      <p>Per <strong>RFC 4180</strong>, a well-formed CSV wraps in double quotes any field that contains a comma, a double quote or a line break — and doubles the internal quotes. That single rule is what decides whether a conversion stays clean: if the source file skips it, a converter can turn one row into several. So if your import produces extra columns, check the source quoting before blaming the tool.</p>
+
       <h2>Frequently Asked Questions</h2>
       <h3>Is converting CSV to Excel really free?</h3>
       <p>Yes. All three methods above are free: DataAnalyzer AI offers 3 free conversions per day, Google Sheets is free with any Google account, and LibreOffice/WPS/Numbers are free desktop apps. You never need an Office subscription.</p>

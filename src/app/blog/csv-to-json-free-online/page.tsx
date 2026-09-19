@@ -198,6 +198,9 @@ JSON:
       </ul>
       <p>And if you need to go the other direction — JSON back to a spreadsheet — use our free <Link href="/tools/json-csv-converter">JSON ⇄ CSV converter</Link>, which runs entirely in your browser and flattens nested objects into readable columns. Combined with <Link href="/blog/merge-csv-files-free">merging CSV files</Link> and <Link href="/blog/spreadsheet-automation-with-ai">spreadsheet automation</Link>, you can build a complete data pipeline without writing a line of code.</p>
 
+      <h2>What the Standards Actually Say</h2>
+      <p>CSV is described in <strong>RFC 4180</strong> and JSON in <strong>RFC 8259</strong>. One difference matters the moment you convert: JSON has real types — numbers, booleans and null are distinct from strings — while CSV is text-only, so every value arrives as characters. That is exactly why a good converter <em>infers</em> types when going CSV → JSON, and why values with leading zeros (ZIP codes, order numbers) are safest kept as text.</p>
+
       <h2>Frequently Asked Questions</h2>
       <h3>Is converting CSV to JSON online really free?</h3>
       <p>Yes. Browser-based converters like <Link href="/">DataAnalyzer AI</Link> are free to use with no signup and no credit card. Your data is processed locally or in a single request — there are no hidden conversion fees.</p>
