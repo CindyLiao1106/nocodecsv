@@ -118,7 +118,7 @@ export function HeroAnimation() {
       ctx.clearRect(0, 0, W, H);
 
       // 背景网格:直接画在屏幕空间,铺满整幅画面(不随构图缩放)
-      ctx.strokeStyle = "rgba(18,48,76,.055)";
+      ctx.strokeStyle = "rgba(18,48,76,.075)";
       ctx.lineWidth = 1;
       for (let x = -((f * 0.3) % 40); x < W; x += 40) {
         ctx.beginPath();
@@ -251,7 +251,7 @@ export function HeroAnimation() {
 
   return (
     <div className="w-full">
-      <div className="w-full bg-gradient-to-b from-white via-[#f7f2e9] to-[#efe8dd]">
+      <div className="w-full bg-transparent">
         <canvas
           ref={canvasRef}
           className="block h-[300px] w-full sm:h-[380px] lg:h-[460px]"
