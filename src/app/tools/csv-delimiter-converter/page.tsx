@@ -5,6 +5,7 @@ import { ShieldCheck, Zap } from "lucide-react";
 import { DelimiterConverterTool } from "./delimiter-converter-tool";
 import { WebMcpForm } from "@/components/tools/webmcp-form";
 
+import { ToolAnimation } from "@/components/tools/tool-animation";
 export const metadata: Metadata = {
   title: "CSV Delimiter Converter — Change Comma, Semicolon, Tab, Pipe (Free)",
   description:
@@ -137,6 +138,9 @@ export default function CsvDelimiterConverterPage() {
           </WebMcpForm>
         </div>
       </section>
+
+      {/* 产品动图(纯 canvas,零依赖) */}
+      <ToolAnimation variant="delimiter" />
 
       {/* Three methods */}
       <section className="py-16 bg-zinc-50 border-t border-zinc-100">

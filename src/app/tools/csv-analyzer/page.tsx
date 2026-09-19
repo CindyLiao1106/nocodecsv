@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Upload, MessageSquare, BarChart3, ArrowRight, Check } from "lucide-react";
 
+import { ToolAnimation } from "@/components/tools/tool-animation";
 export const metadata: Metadata = {
   title: "Free AI CSV Analyzer — Chat With Your CSV Files",
   description: "Upload any CSV file and analyze it with AI in plain English. No SQL, no Python, no coding. Get instant charts and insights. Free to start.",
@@ -110,6 +111,9 @@ export default function CsvAnalyzerPage() {
           </div>
         </div>
       </section>
+
+      {/* 产品动图(纯 canvas,零依赖) */}
+      <ToolAnimation variant="analyzer" />
 
       {/* How it works */}
       <section className="py-16 bg-white">

@@ -5,6 +5,7 @@ import { ShieldCheck, Zap } from "lucide-react";
 import { JsonCsvConverterTool } from "./json-csv-converter-tool";
 import { WebMcpForm } from "@/components/tools/webmcp-form";
 
+import { ToolAnimation } from "@/components/tools/tool-animation";
 export const metadata: Metadata = {
   title: "JSON to CSV & CSV to JSON Converter — Free, No Upload",
   description:
@@ -144,6 +145,9 @@ export default function JsonCsvConverterPage() {
           </WebMcpForm>
         </div>
       </section>
+
+      {/* 产品动图(纯 canvas,零依赖) */}
+      <ToolAnimation variant="jsoncsv" />
 
       {/* Nested JSON handling */}
       <section className="py-16 bg-zinc-50 border-t border-zinc-100">
