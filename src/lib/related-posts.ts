@@ -87,6 +87,8 @@ export const POST_CLUSTERS: Record<string, Cluster> = {
   // F. Agent-Ready / AI 可见性
   'what-is-webmcp': 'ai',
   'llms-txt-explained': 'ai',
+  'can-ai-fill-out-a-form': 'ai',
+  'robots-txt-ai-crawlers': 'ai',
 };
 
 /** 文章标题(slug → 显示标题),用于内链锚文本 */
@@ -153,6 +155,8 @@ export const POST_TITLES: Record<string, string> = {
   'best-monitor-for-spreadsheets': 'Best Monitor for Spreadsheets: Pivot, Ultrawide or 27-inch?',
   'what-is-webmcp': 'What Is WebMCP?',
   'llms-txt-explained': 'llms.txt Explained',
+  'can-ai-fill-out-a-form': 'Can AI Fill Out a Form?',
+  'robots-txt-ai-crawlers': 'AI Crawlers in robots.txt',
   'csv-vs-excel': 'CSV vs Excel',
 };
 
@@ -220,6 +224,8 @@ export const POST_SUMMARIES: Record<string, string> = {
   'best-monitor-for-spreadsheets': 'A spreadsheet-focused monitor guide: the row and column arithmetic that decides visible sheet area, why pivot doubles your rows and ultrawide only adds columns, what 4K scaling does to Excel, panel and stand details for long sessions, and using USB-C as a dock.',
   'what-is-webmcp': 'What WebMCP is: the declarative and imperative APIs, how it differs from MCP, and the tool list we read back from a live site, including the file-input gap.',
   'llms-txt-explained': 'What goes in an llms.txt file, real examples measured by size, the differences from robots.txt and sitemap.xml, and word counts from three of our own sites.',
+  'can-ai-fill-out-a-form': 'Which HTML attributes turn a form into a tool an AI assistant can call, which field types become parameters, and the file-input gap measured on five live pages.',
+  'robots-txt-ai-crawlers': 'The AI crawler tokens in robots.txt, what each vendor says it does, the RFC 9309 grouping rule, and the parser test we ran against our own live file.',
   'csv-vs-excel': 'A comparison of CSV and Excel formats, and which one to keep for your data.',
 };
 
@@ -287,6 +293,8 @@ export const POST_DATES: Record<string, string> = {
   'best-monitor-for-spreadsheets': '2026-09-18',
   'what-is-webmcp': '2026-09-18',
   'llms-txt-explained': '2026-09-18',
+  'can-ai-fill-out-a-form': '2026-09-19',
+  'robots-txt-ai-crawlers': '2026-09-19',
   'csv-vs-excel': '2026-09-09',
 };
 
