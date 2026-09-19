@@ -266,6 +266,25 @@ export default function AgentReadyPage() {
         ))}
       </div>
 
+      <div className="not-prose my-8 rounded-xl border border-slate-200 bg-white p-6">
+        <h2 className="text-lg font-semibold text-slate-900">The audit tool is open source</h2>
+        <p className="mt-2 text-sm text-slate-600">
+          I put the exact script I run on every engagement on GitHub — so you can check any site yourself
+          before paying anyone, including me. It reports what already exists, what is missing, and what to
+          fix first, and it never claims more than it can verify.
+        </p>
+        <p className="mt-3 text-sm">
+          <a
+            href="https://github.com/CindyLiao1106/agent-ready-audit"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-blue-600 underline"
+          >
+            github.com/CindyLiao1106/agent-ready-audit
+          </a>
+        </p>
+      </div>
+
       <h2>What I measured that nobody else publishes</h2>
       <p>
         On a live site with the origin trial active, the browser exposes the tools it has registered. This is the real

@@ -587,6 +587,16 @@ export default function BlogPost() {
         <p className="text-sm text-slate-500">
           I build this layer for other sites: llms.txt, agent-tools.json and WebMCP declarations,
           verified against the live pages. Details at <Link href="/agent-ready">/agent-ready</Link>.
+          The audit tool I use is open source —{" "}
+          <a
+            href="https://github.com/CindyLiao1106/agent-ready-audit"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-slate-700"
+          >
+            run it on your own site
+          </a>
+          .
         </p>
 
         <RelatedPosts slug="what-is-webmcp" />
