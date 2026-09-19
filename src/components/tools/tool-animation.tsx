@@ -225,7 +225,7 @@ export function ToolAnimation({ variant }: { variant: Variant }) {
       if (headers > 0) {
         ctx.globalAlpha = headers;
         ["name", "city", "amount"].forEach((h, c) => {
-          const x = colX[1 + c + (c === 2 ? 1 : 0)];
+          const x = colX[1 + c];
           label(h, x, 74, "600 13px -apple-system,Segoe UI,Roboto,sans-serif", "rgba(200,149,82,.95)");
         });
         ctx.fillStyle = "rgba(200,149,82,.14)";
@@ -315,7 +315,7 @@ export function ToolAnimation({ variant }: { variant: Variant }) {
 
       // 左侧:嵌套块
       const bob = Math.sin(t * Math.PI * 2) * 3;
-      ctx.globalAlpha = 1 - flat * 0.8;
+      ctx.globalAlpha = 1 - flat * 0.45;
       ctx.save();
       ctx.shadowColor = "rgba(18,48,76,.12)";
       ctx.shadowBlur = 12;
