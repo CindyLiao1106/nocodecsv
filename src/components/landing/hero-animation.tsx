@@ -31,6 +31,7 @@ export function HeroAnimation() {
     let W = 0;
     let H = 0;
     let SC = 1;
+    let OX = 0;   // 宽屏时把构图居中(背景网格仍铺满整幅)
     let raf = 0;
     let f = 0;
 
@@ -51,17 +52,21 @@ export function HeroAnimation() {
     const TB_H = 26;
     const GAP = 8;
     const TB_LEFT = 700;
-    const TB_TOP = 0.5 * REF_H - (TB_H * ROWS + GAP * (ROWS - 1)) / 2;
+    const TABLE_H = TB_H * ROWS + GAP * (ROWS - 1);
 
-    const cellXY = (c: number, r: number): [number, number] => [
-      TB_LEFT + c * (TB_W + GAP),
-      TB_TOP + r * (TB_H + GAP),
-    ];
+    // 设计空间的垂直中心(随画布实际高度变化,保证构图始终居中)
+    let CY = 0.5 * REF_H;
+    const cy = () => CY;
+
+    const cellX = (c: number) => TB_LEFT + c * (TB_W + GAP);
+    const cellY = (r: number) => cy() - TABLE_H / 2 + r * (TB_H + GAP);
+
+    const cellXY = (c: number, r: number): [number, number] => [cellX(c), cellY(r)];
 
     const spawnPacket = () => {
       packets.push({
         x: -20,
-        y: 120 + Math.random() * 280,
+        y: CY - 150 + Math.random() * 300,
         vx: 2.6 + Math.random() * 1.8,
         col: Math.floor(Math.random() * COLS),
         row: Math.floor(Math.random() * ROWS),
@@ -78,7 +83,7 @@ export function HeroAnimation() {
     const spawnBubble = () => {
       bubbles.push({
         x: TB_LEFT + 200,
-        y: TB_TOP + 40 + Math.random() * 160,
+        y: CY - 90 + Math.random() * 170,
         life: 0,
         text: BUBBLE_TEXTS[Math.floor(Math.random() * BUBBLE_TEXTS.length)],
       });
@@ -102,30 +107,35 @@ export function HeroAnimation() {
       canvas.width = Math.round(W * dpr);
       canvas.height = Math.round(H * dpr);
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      SC = W / REF_W; // 设计空间 → 实际宽度
+      // 等比缩放:既铺满宽度,又保证垂直不溢出(取较小者)
+      SC = Math.max(0.5, Math.min(W / REF_W, H / 400));
+      OX = Math.max(0, (W / SC - REF_W) / 2);
+      CY = H / SC / 2;
     };
 
     const frame = () => {
       f++;
       ctx.clearRect(0, 0, W, H);
-      ctx.save();
-      ctx.scale(SC, SC);
 
-      // 背景网格(很淡)
+      // 背景网格:直接画在屏幕空间,铺满整幅画面(不随构图缩放)
       ctx.strokeStyle = "rgba(18,48,76,.055)";
       ctx.lineWidth = 1;
-      for (let x = -((f * 0.3) % 40); x < REF_W / SC; x += 40) {
+      for (let x = -((f * 0.3) % 40); x < W; x += 40) {
         ctx.beginPath();
         ctx.moveTo(x, 0);
-        ctx.lineTo(x, REF_H / SC);
+        ctx.lineTo(x, H);
         ctx.stroke();
       }
-      for (let y = -((f * 0.2) % 40); y < REF_H / SC; y += 40) {
+      for (let y = -((f * 0.2) % 40); y < H; y += 40) {
         ctx.beginPath();
         ctx.moveTo(0, y);
-        ctx.lineTo(REF_W / SC, y);
+        ctx.lineTo(W, y);
         ctx.stroke();
       }
+
+      ctx.save();
+      ctx.scale(SC, SC);
+      ctx.translate(OX, 0);
 
       // 表格:白卡片
       for (let r = 0; r < ROWS; r++) {
@@ -184,7 +194,7 @@ export function HeroAnimation() {
         ctx.beginPath();
         for (let t = 0; t <= 1; t += 0.02) {
           const x = TB_LEFT + TB_W * COLS + 30 + t * 260;
-          const y = 0.5 * REF_H + Math.sin(t * 7 + f * 0.03 + s * 2) * (28 + s * 10) + (s - 1) * 70;
+          const y = cy() + Math.sin(t * 7 + f * 0.03 + s * 2) * (28 + s * 10) + (s - 1) * 70;
           if (t === 0) ctx.moveTo(x, y);
           else ctx.lineTo(x, y);
         }
@@ -240,15 +250,15 @@ export function HeroAnimation() {
   }, []);
 
   return (
-    <div className="mx-auto mt-14 max-w-6xl px-4 sm:px-6">
-      <div className="overflow-hidden rounded-2xl border border-amber-200/70 bg-gradient-to-br from-[#fdfbf8] via-[#f6f1e9] to-[#efe8dd] shadow-[0_10px_40px_-18px_rgba(18,48,76,0.25)]">
+    <div className="w-full">
+      <div className="w-full border-t border-amber-200/60 bg-gradient-to-br from-[#fdfbf8] via-[#f6f1e9] to-[#efe8dd]">
         <canvas
           ref={canvasRef}
-          className="block h-[240px] w-full sm:h-[320px] lg:h-[380px]"
+          className="block h-[300px] w-full sm:h-[380px] lg:h-[460px]"
           aria-hidden="true"
         />
       </div>
-      <p className="mt-3 text-center text-xs text-zinc-400">
+      <p className="py-3 text-center text-xs text-zinc-400">
         Files are read in your browser — nothing is uploaded.
       </p>
     </div>

@@ -6,7 +6,7 @@ import { HeroAnimation } from "@/components/landing/hero-animation";
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-blue-50 to-white">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 py-20 sm:py-32 text-center">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 pt-20 sm:pt-28 pb-8 text-center">
         <div className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-1.5 text-sm text-blue-700 mb-8">
           <Zap className="h-4 w-4" />
           Powered by DeepSeek AI — 10x cheaper than the competition
