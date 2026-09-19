@@ -251,7 +251,7 @@ export function HeroAnimation() {
 
   return (
     <div className="w-full">
-      <div className="w-full border-t border-amber-200/60 bg-gradient-to-br from-[#fdfbf8] via-[#f6f1e9] to-[#efe8dd]">
+      <div className="w-full bg-gradient-to-b from-white via-[#f7f2e9] to-[#efe8dd]">
         <canvas
           ref={canvasRef}
           className="block h-[300px] w-full sm:h-[380px] lg:h-[460px]"
