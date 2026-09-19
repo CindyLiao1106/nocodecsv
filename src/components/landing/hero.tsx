@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Upload, BarChart3, Zap } from "lucide-react";
+import { HeroAnimation } from "@/components/landing/hero-animation";
 
 export function Hero() {
   return (
@@ -47,6 +48,7 @@ export function Hero() {
           </Link>
         </p>
       </div>
+      <HeroAnimation />
     </section>
   );
 }
