@@ -158,7 +158,9 @@ export function ToolAnimation({ variant }: { variant: Variant }) {
         rr(cx, 60, 440, 220, 14);
         ctx.stroke();
         label("Answer", cx + 24, 96, "600 15px -apple-system,Segoe UI,Roboto,sans-serif", "rgba(18,48,76,.6)");
-        label("EMEA grew fastest — up 18%", cx + 24, 124, "600 20px -apple-system,Segoe UI,Roboto,sans-serif", INK);
+        label("EMEA grew fastest", cx + 24, 124, "600 20px -apple-system,Segoe UI,Roboto,sans-serif", INK);
+        label("sample data — your file, your numbers", cx + 24, 146,
+          "12px -apple-system,Segoe UI,Roboto,sans-serif", "rgba(18,48,76,.45)");
         // 迷你柱状图
         const bx = cx + 24, by = 250, bwid = 300, maxh = 96;
         const vals = [0.42, 0.68, 1.0];
