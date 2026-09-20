@@ -89,6 +89,8 @@ export const POST_CLUSTERS: Record<string, Cluster> = {
   'llms-txt-explained': 'ai',
   'can-ai-fill-out-a-form': 'ai',
   'robots-txt-ai-crawlers': 'ai',
+  'agent-tools-json': 'ai',
+  'can-chatgpt-analyze-csv': 'ai',
 };
 
 /** 文章标题(slug → 显示标题),用于内链锚文本 */
@@ -157,6 +159,8 @@ export const POST_TITLES: Record<string, string> = {
   'llms-txt-explained': 'llms.txt Explained',
   'can-ai-fill-out-a-form': 'Can AI Fill Out a Form?',
   'robots-txt-ai-crawlers': 'AI Crawlers in robots.txt',
+  'agent-tools-json': 'agent-tools.json Explained',
+  'can-chatgpt-analyze-csv': 'Can ChatGPT Analyze a CSV?',
   'csv-vs-excel': 'CSV vs Excel',
 };
 
@@ -226,6 +230,8 @@ export const POST_SUMMARIES: Record<string, string> = {
   'llms-txt-explained': 'What goes in an llms.txt file, real examples measured by size, the differences from robots.txt and sitemap.xml, and word counts from three of our own sites.',
   'can-ai-fill-out-a-form': 'Which HTML attributes turn a form into a tool an AI assistant can call, which field types become parameters, and the file-input gap measured on five live pages.',
   'robots-txt-ai-crawlers': 'The AI crawler tokens in robots.txt, what each vendor says it does, the RFC 9309 grouping rule, and the parser test we ran against our own live file.',
+  'agent-tools-json': 'What goes in agent-tools.json, how it differs from llms.txt and WebMCP, and the getTools() cross-check that found one entry an anonymous agent cannot reach.',
+  'can-chatgpt-analyze-csv': 'A two-pass test of a chat model over a deliberately messy 14-row CSV: the totals matched Python, one row count did not, and the file cap changed the rest.',
   'csv-vs-excel': 'A comparison of CSV and Excel formats, and which one to keep for your data.',
 };
 
@@ -295,6 +301,8 @@ export const POST_DATES: Record<string, string> = {
   'llms-txt-explained': '2026-09-18',
   'can-ai-fill-out-a-form': '2026-09-19',
   'robots-txt-ai-crawlers': '2026-09-19',
+  'agent-tools-json': '2026-09-20',
+  'can-chatgpt-analyze-csv': '2026-09-20',
   'csv-vs-excel': '2026-09-09',
 };
 
