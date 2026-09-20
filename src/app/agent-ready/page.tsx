@@ -3,9 +3,9 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Agent-Ready Websites: Make Your Site Usable by AI Assistants",
+  title: "Agent-Ready Websites: Make Your Site Usable by AI Agents",
   description:
-    "AI assistants can read your site but cannot use it. I implement the agent layer — llms.txt, agent-tools.json, AI-crawler robots rules and WebMCP declarations — and verify it on your live site. Free audit first.",
+    "AI assistants can read your site but cannot use it. I implement llms.txt, agent-tools.json, AI-crawler robots rules and WebMCP, and verify it on your live site.",
   keywords: [
     "agent ready website",
     "make website usable by ai agents",

@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
-  title: "AI Crawlers in robots.txt: Which to Allow, Which to Block (2026)",
+  title: "AI Crawlers in robots.txt: Which to Allow or Block",
   description:
-    "Which AI crawler tokens exist, what each vendor says it does, and the grouping rule that silently gives every bot in your list the same rules. Includes the parser test we ran on our own robots.txt.",
+    "Which AI crawler tokens exist, what each vendor says it does, and the grouping rule that silently gives every bot in your list the same rules. Plus our parser test.",
   keywords: [
     "robots.txt ai crawler",
     "block gptbot robots txt",

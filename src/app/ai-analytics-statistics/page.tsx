@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "AI Analytics Statistics 2026: 53 Verified Data Points",
   description:
-    "Every AI and data analytics statistic we could verify at the source — adoption rates, investment, time savings, benchmark accuracy and the numbers that contradict each other. Each figure links to the publisher and states its scope.",
+    "Every AI and data analytics statistic we could verify at the source: adoption rates, investment, time savings and benchmark accuracy. Each links to the publisher.",
   keywords: [
     "ai analytics statistics",
     "ai in data analysis statistics",

@@ -5,9 +5,9 @@ import { RelatedPosts } from "@/components/blog/related-posts";
 import { FaqSection } from "@/components/blog/faq-section";
 
 export const metadata: Metadata = {
-  title: "CSV to SQL: INSERT Statements That Survive Quotes and Commas (2026)",
+  title: "CSV to SQL: INSERT Statements That Survive Quotes",
   description:
-    "Turn a CSV file into SQL without broken INSERTs. The escaping rules, the six loading routes, and how to handle NULLs, chunking and dates properly.",
+    "Turn a CSV file into SQL without broken INSERTs: the escaping rules, the six loading routes, and how to handle NULLs, chunking and dates properly.",
   keywords: [
     "csv to sql",
     "csv to sql insert",

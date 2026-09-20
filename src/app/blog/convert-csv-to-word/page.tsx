@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
-  title: "Convert CSV to Word Without Broken Tables (4 Ways, 2026)",
+  title: "Convert CSV to Word Without Broken Tables (4 Ways)",
   description:
-    "Word has no CSV import button, so every route into it goes through a table or a merge. Convert a CSV to a Word table that keeps its columns, or to one document per row.",
+    "Word has no CSV import button, so every route into it goes through a table or a merge. Convert a CSV to a Word table that keeps its columns.",
   keywords: [
     "convert csv to word",
     "csv to word converter",

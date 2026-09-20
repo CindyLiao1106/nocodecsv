@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
-  title: "llms.txt Explained: What to Put in the File (Real Examples, 2026)",
+  title: "llms.txt Explained: What to Put in the File (Examples)",
   description:
-    "llms.txt is a Markdown file at your site root that gives AI assistants a short, curated map of your pages: an H1, a one-line summary, then links worth reading. The format, real examples, and what we measured across three of our own sites.",
+    "llms.txt is a Markdown file at your site root that gives AI assistants a short, curated map of your pages: an H1, a one-line summary, then links worth reading.",
   keywords: [
     "llms.txt",
     "llms txt example",

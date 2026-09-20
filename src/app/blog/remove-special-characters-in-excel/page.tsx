@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
-  title: "Remove Special Characters in Excel: 6 Formulas That Actually Work (2026)",
+  title: "Remove Special Characters in Excel: 6 Formulas That Work",
   description:
-    "TRIM, CLEAN, SUBSTITUTE, REDUCE and REGEXREPLACE each remove a different thing, which is why one of them seems to do nothing. Here is what each one really strips, and the formula for a whole column.",
+    "TRIM, CLEAN, SUBSTITUTE, REDUCE and REGEXREPLACE each remove a different thing, which is why one seems to do nothing. What each strips, plus a column formula.",
   keywords: [
     "remove special characters in excel",
     "excel remove special characters formula",

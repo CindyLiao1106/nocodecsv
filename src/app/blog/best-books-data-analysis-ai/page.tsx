@@ -6,7 +6,7 @@ import { RelatedPosts } from "@/components/blog/related-posts";
 export const metadata: Metadata = {
   title: "Best Books to Learn Data Analysis with AI (2026)",
   description:
-    "A buying guide for data analysis books in 2026: what each kind of book actually teaches, how to tell a current book from an outdated one, and how to pair reading with AI so the analysis sticks.",
+    "What each kind of data analysis book actually teaches, how to tell a current book from an outdated one, and how to pair reading with AI so it sticks.",
   keywords: [
     "best books to learn data analysis",
     "data analysis books 2026",

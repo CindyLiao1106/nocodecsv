@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
-  title: "Cheap USB Flash Drives & Portable SSDs Under $50 for Large CSV Files (2026)",
+  title: "Cheap USB Flash Drives & SSDs Under $50 for Large CSV Files",
   description:
-    "A budget guide to storing large CSV and dataset files: what a sub-$15 flash drive really holds, why flash drives wear out under repeated large writes, USB 3.0 versus 3.2 for imports, and formatting exFAT for Windows and Mac.",
+    "What a sub-$15 flash drive really holds, why flash drives wear out under repeated large writes, USB 3.0 vs 3.2, and formatting exFAT for Windows and Mac.",
   keywords: [
     "cheap usb flash drive for csv files",
     "best budget usb drive for large files",

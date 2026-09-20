@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
-  title: "What Is WebMCP? How a Website Hands Its Tools to an AI Agent (2026)",
+  title: "What Is WebMCP? How a Website Hands Tools to an AI Agent",
   description:
-    "WebMCP is a proposed browser standard that lets a site declare its own tools in HTML or JavaScript, so an agent inside the browser can call them instead of guessing which button to click. Includes the measurements we took on a live site.",
+    "WebMCP is a proposed browser standard that lets a site declare its own tools in HTML or JavaScript, so an agent can call them instead of clicking a button.",
   keywords: [
     "what is webmcp",
     "webmcp",

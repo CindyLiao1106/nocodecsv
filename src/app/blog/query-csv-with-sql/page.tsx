@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
-  title: "How to Query a CSV File With SQL — Without Importing It (2026)",
+  title: "Query a CSV File With SQL — Without Importing It (2026)",
   description:
-    "You can run SELECT, WHERE, GROUP BY and JOIN directly against a CSV file with DuckDB, SQLite, pandas or a command-line tool. No import step, no schema, no ETL. Here is which method fits which file.",
+    "Run SELECT, WHERE, GROUP BY and JOIN directly against a CSV with DuckDB, SQLite, pandas or a CLI. No import step, no schema. Which method fits which file.",
   keywords: [
     "sql query csv file",
     "query csv with sql",

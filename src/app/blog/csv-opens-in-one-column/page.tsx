@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
-  title: "CSV Opens in One Column? How to Split It Back Into Columns (2026)",
+  title: "CSV Opens in One Column? How to Split It Back",
   description:
-    "When every line of a CSV lands in column A, the delimiter or the encoding is not what the app expects. How to find out which one it is, and four ways to split the file back into columns.",
+    "When every line of a CSV lands in column A, the delimiter or the encoding is not what the app expects. How to tell which one, and four ways to split it back.",
   keywords: [
     "csv opens in one column",
     "csv file opening in one column",

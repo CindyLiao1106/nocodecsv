@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
-  title: "Can AI Fill Out a Form for You? What Works on a Website (2026)",
+  title: "Can AI Fill Out a Form for You? What Works (2026)",
   description:
-    "An AI assistant can only fill a web form when the page publishes it as a tool. The two attributes that do it, which field types reach the assistant, which do not, and what we measured on five of our own pages.",
+    "An AI assistant can only fill a web form when the page publishes it as a tool. The two attributes that do it, and which field types reach the assistant.",
   keywords: [
     "can ai fill out a form for me",
     "can ai fill out online forms",

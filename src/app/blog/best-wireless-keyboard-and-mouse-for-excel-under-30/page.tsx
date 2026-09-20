@@ -5,9 +5,9 @@ import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
   title:
-    "Best Wireless Keyboard and Mouse for Excel & Spreadsheet Work Under $30 (2026)",
+    "Best Wireless Keyboard and Mouse for Excel Under $30 (2026)",
   description:
-    "A budget hardware guide for people who work in tables: why a compact keyboard without a ten-key pad slows down data entry, what a scroll wheel has to do in a large sheet, 2.4GHz versus Bluetooth, batteries and receiver storage, and how to spend under $30 without wasting it.",
+    "Why a compact keyboard without a ten-key pad slows data entry, what a scroll wheel has to do in a large sheet, and how to spend under $30 well.",
   keywords: [
     "wireless keyboard for excel",
     "keyboard with numeric keypad for data entry",

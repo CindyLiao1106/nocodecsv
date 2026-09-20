@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
-  title: "Best Monitor for Spreadsheets & Excel (2026): Pivot, Ultrawide or 27-inch?",
+  title: "Best Monitor for Spreadsheets: Pivot, Ultrawide or 27-inch?",
   description:
-    "A monitor guide for people who work in tables: the row-and-column arithmetic that decides how much of a sheet you can see, why a pivot monitor doubles your visible rows, why an ultrawide only adds columns, what 4K scaling really does to Excel, and how to pick a second screen without wasting money.",
+    "The row-and-column arithmetic that decides how much of a sheet you can see, why a pivot monitor doubles your visible rows, and how to pick a second screen.",
   keywords: [
     "best monitor for spreadsheets",
     "monitor for spreadsheets",

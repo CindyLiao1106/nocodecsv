@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
-  title: "CSV to Markdown Table: Convert Any CSV in Seconds (Free, 2026) | NoCodeCSV",
-  description: "Markdown tables render in GitHub, Notion, Obsidian and AI chats, but a CSV does not. Four ways to convert CSV to Markdown, and what breaks when your data contains pipes.",
+  title: "CSV to Markdown Table: Convert Any CSV Free (2026)",
+  description: "Markdown tables render in GitHub, Notion, Obsidian and AI chats, but a CSV does not. Four ways to convert CSV to Markdown, and what breaks on pipes.",
   keywords: ["csv to markdown table", "convert csv to markdown table", "csv to markdown converter", "csv to markdown table online", "markdown table generator from csv", "excel to markdown table"],
   alternates: { canonical: "https://nocodecsv.com/blog/csv-to-markdown-table" },
   openGraph: {

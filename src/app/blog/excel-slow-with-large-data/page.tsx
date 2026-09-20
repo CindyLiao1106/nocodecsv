@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
-  title: "Excel Slow With Large Data? Why It Happens and What to Do (2026)",
+  title: "Excel Slow With Large Data? Why It Happens and What to Do",
   description:
-    "Excel recalculates after nearly every edit, so a workbook that grew past a few hundred thousand rows spends its time thinking. The causes, a five-minute check, and what actually makes it fast again.",
+    "Excel recalculates after nearly every edit, so a workbook past a few hundred thousand rows spends its time thinking. The causes and a five-minute check.",
   keywords: [
     "excel slow with large data",
     "why is excel so slow with large data",

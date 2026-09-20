@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
-  title: "How to Keep Leading Zeros in CSV Files: Excel, Sheets and Python (2026) | NoCodeCSV",
-  description: "Excel strips the leading zero from ZIP codes, phone numbers and IDs the moment it opens a CSV. Here is how to stop it, in Excel, Google Sheets and pandas, plus the 15-digit trap behind it.",
+  title: "Keep Leading Zeros in CSV: Excel, Sheets, Python (2026)",
+  description: "Excel strips the leading zero from ZIP codes, phone numbers and IDs the moment it opens a CSV. How to stop it in Excel, Google Sheets and pandas.",
   keywords: ["keep leading zeros in csv", "csv leading zeros", "excel removes leading zeros csv", "leading zeros dropped csv", "csv file leading zeros missing", "excel leading zeros zip code"],
   alternates: { canonical: "https://nocodecsv.com/blog/keep-leading-zeros-in-csv" },
   openGraph: {

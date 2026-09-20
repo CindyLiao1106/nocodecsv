@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
-  title: "Excel Row Limit: Why Your CSV Won't Fit, and 6 Ways Past It (2026)",
+  title: "Excel Row Limit: Why Your CSV Won't Fit, 6 Ways Past It",
   description:
-    "Excel stops at 1,048,576 rows and truncates larger CSVs without telling you. Here is where the limit comes from, what happens when you hit it, and six ways to work with files that are too large for Excel.",
+    "Excel stops at 1,048,576 rows and truncates larger CSVs without telling you. Where the limit comes from, what happens when you hit it, and six ways past it.",
   keywords: [
     "excel row limit",
     "excel row limit per sheet",
