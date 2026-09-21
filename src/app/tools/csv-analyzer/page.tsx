@@ -65,6 +65,38 @@ const jsonLd = {
             text: "Yes — NoCodeCSV accepts CSV files up to 25MB, covering tens of thousands of rows. Files are processed and discarded, so your data stays private.",
           },
         },
+        {
+          "@type": "Question",
+          name: "Does it work with semicolon-separated files?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Only after the file is fixed. Semicolon exports (common in much of Europe) parse as a single column, so convert the delimiter first with our free delimiter converter, then analyse. The same applies to files with a byte-order mark glued to the first header.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is my file uploaded to a server?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The file is parsed in your browser. The analysis step sends the parsed text to the model for that request and does not store it afterwards — no database of your data is kept.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I use it with Excel (.xlsx) files?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes — .xlsx and .csv are both accepted, up to 25MB. If a file is too large to open comfortably, split it into parts that keep the header row, then analyse each part.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What are the free limits?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Three analyses per day on the free tier, with no account needed for the first look. The Pro tier removes the daily cap; the pricing page lists what each tier includes.",
+          },
+        },
       ],
     },
   ],
@@ -176,6 +208,148 @@ export default function CsvAnalyzerPage() {
         </div>
       </section>
 
+      {/* 深度内容(2026-09-21 加:针对 GSC 里"chat with csv / ai for csv"这一簇查询,第 6-10 页 → 补足内容深度) */}
+      <section className="py-16 bg-zinc-50 border-t border-zinc-100">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 prose prose-zinc">
+          <h2 className="text-2xl sm:text-3xl font-bold">Chat with your CSV — what that actually means</h2>
+          <p className="text-zinc-600">
+            &ldquo;Chat with CSV&rdquo; is not a chatbot that has memorised your file. It is three
+            mechanical steps, and knowing them tells you exactly what you can and cannot ask:
+          </p>
+          <ol className="text-zinc-600 list-decimal pl-6 space-y-2">
+            <li>
+              <strong>Your file is parsed into rows and columns.</strong> The header row becomes field
+              names; everything below becomes values. This is why a file that opens in one column in
+              Excel will also look wrong here — the delimiter, not the AI, is the problem.
+            </li>
+            <li>
+              <strong>Your question is turned into a computation.</strong> &ldquo;Total sales by
+              region&rdquo; becomes a group-by and a sum. The assistant is choosing the operation, not
+              inventing the numbers.
+            </li>
+            <li>
+              <strong>The result is rendered back</strong> as a table or chart you can check against
+              your own file.
+            </li>
+          </ol>
+          <p className="text-zinc-600">
+            That is the whole trick — and it is why a plain-English question works at all. It is also
+            why the quality of your header row decides the quality of the answer.
+          </p>
+
+          <h2 className="text-2xl sm:text-3xl font-bold mt-12">AI for CSV: what it can and cannot answer</h2>
+          <div className="grid sm:grid-cols-2 gap-6 not-prose">
+            <div className="rounded-lg border border-emerald-200 bg-emerald-50/50 p-5">
+              <h3 className="font-semibold text-emerald-900 mb-3">Good questions to ask</h3>
+              <ul className="text-sm text-zinc-700 space-y-2 list-disc pl-5">
+                <li>Which category grew fastest between these two periods?</li>
+                <li>How many rows have a blank value in this column?</li>
+                <li>What is the median order value per region?</li>
+                <li>Group these customers by how much they spent.</li>
+                <li>Are there duplicate rows in this file?</li>
+              </ul>
+            </div>
+            <div className="rounded-lg border border-amber-200 bg-amber-50/50 p-5">
+              <h3 className="font-semibold text-amber-900 mb-3">Where it stops (be honest about this)</h3>
+              <ul className="text-sm text-zinc-700 space-y-2 list-disc pl-5">
+                <li>
+                  <strong>It cannot fix a broken file.</strong> Wrong delimiter, mixed encodings or a
+                  stray header row all produce confident nonsense. Fix the file first.
+                </li>
+                <li>
+                  <strong>It cannot know your business rules.</strong> Whether refunds count as
+                  revenue is your call, not the model&rsquo;s.
+                </li>
+                <li>
+                  <strong>It cannot guarantee a number is right.</strong> Every answer should be
+                  checkable against the source rows — ask for the rows behind an answer when the
+                  stakes are real.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 className="text-2xl sm:text-3xl font-bold mt-12">Four ways to analyse a CSV — compared honestly</h2>
+          <p className="text-zinc-600">
+            There is no single best method. Each one trades setup effort against repeatability:
+          </p>
+          <div className="not-prose overflow-x-auto">
+            <table className="w-full text-sm border border-zinc-200">
+              <thead className="bg-zinc-100 text-left">
+                <tr>
+                  <th className="p-3 border-b border-zinc-200">Approach</th>
+                  <th className="p-3 border-b border-zinc-200">You need to know</th>
+                  <th className="p-3 border-b border-zinc-200">Best when</th>
+                  <th className="p-3 border-b border-zinc-200">Weakest at</th>
+                </tr>
+              </thead>
+              <tbody className="text-zinc-600">
+                <tr>
+                  <td className="p-3 border-b border-zinc-200">Sorting and filtering by hand in Excel</td>
+                  <td className="p-3 border-b border-zinc-200">Nothing</td>
+                  <td className="p-3 border-b border-zinc-200">One-off look at a small file</td>
+                  <td className="p-3 border-b border-zinc-200">Repeating it next month</td>
+                </tr>
+                <tr>
+                  <td className="p-3 border-b border-zinc-200">Formulas (SUMIF, COUNTIF, XLOOKUP)</td>
+                  <td className="p-3 border-b border-zinc-200">Function syntax</td>
+                  <td className="p-3 border-b border-zinc-200">The same question every month</td>
+                  <td className="p-3 border-b border-zinc-200">Questions you did not anticipate</td>
+                </tr>
+                <tr>
+                  <td className="p-3 border-b border-zinc-200">Pivot tables</td>
+                  <td className="p-3 border-b border-zinc-200">Field dragging, grouping</td>
+                  <td className="p-3 border-b border-zinc-200">Cross-tabs and totals</td>
+                  <td className="p-3 border-b border-zinc-200">Ad-hoc wording of a question</td>
+                </tr>
+                <tr>
+                  <td className="p-3 border-b border-zinc-200">Asking an AI assistant in plain English</td>
+                  <td className="p-3 border-b border-zinc-200">Nothing beyond the question</td>
+                  <td className="p-3 border-b border-zinc-200">Exploring a file you have never seen</td>
+                  <td className="p-3 border-b border-zinc-200">Anything that must be reproducible to the cent</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-zinc-600">
+            In practice most people do both: ask the AI to find the pattern, then rebuild the two
+            figures that matter as formulas so they stay reproducible.
+          </p>
+
+          <h2 className="text-2xl sm:text-3xl font-bold mt-12">Why semicolon and BOM files break CSV tools</h2>
+          <p className="text-zinc-600">
+            The CSV format is not one format. <strong>RFC 4180</strong> defines commas as the
+            separator and requires any field containing a comma, quote or line break to be wrapped in
+            double quotes — which is why a file with unescaped commas in a text column can shift every
+            row by one column. Two other failures are just as common:
+          </p>
+          <ul className="text-zinc-600 list-disc pl-6 space-y-2">
+            <li>
+              <strong>Semicolon-delimited files.</strong> Spreadsheet apps in much of Europe export
+              with semicolons, because the comma is already used as the decimal separator. Parsed as
+              comma-CSV, the whole row lands in column A.
+            </li>
+            <li>
+              <strong>A BOM at the start.</strong> Some exporters prefix a UTF-8 byte-order mark,
+              which becomes an invisible character glued to your first header name — so a lookup on
+              &ldquo;Region&rdquo; silently fails.
+            </li>
+          </ul>
+          <p className="text-zinc-600">
+            Fix the delimiter before analysing: our free{" "}
+            <Link href="/tools/csv-delimiter-converter" className="text-blue-600 underline">
+              delimiter converter
+            </Link>{" "}
+            detects the separator and rewrites the file in your browser, and if the result is still
+            too big to open, the{" "}
+            <Link href="/tools/csv-splitter" className="text-blue-600 underline">
+              CSV splitter
+            </Link>{" "}
+            cuts it into parts that keep the header row.
+          </p>
+        </div>
+      </section>
+
       {/* FAQ section */}
       <section className="py-16 bg-white border-t border-zinc-100">
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
@@ -209,6 +383,22 @@ export default function CsvAnalyzerPage() {
               </p>
             </div>
           </div>
+            <div>
+              <h3 className="font-semibold text-lg mb-2">Does it work with semicolon-separated files?</h3>
+              <p className="text-zinc-600">Only after the file is fixed. Semicolon exports (common in much of Europe) parse as a single column, so convert the delimiter first with our free delimiter converter, then analyse. The same applies to files with a byte-order mark glued to the first header.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg mb-2">Is my file uploaded to a server?</h3>
+              <p className="text-zinc-600">The file is parsed in your browser. The analysis step sends the parsed text to the model for that request and does not store it afterwards — no database of your data is kept.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg mb-2">Can I use it with Excel (.xlsx) files?</h3>
+              <p className="text-zinc-600">Yes — .xlsx and .csv are both accepted, up to 25MB. If a file is too large to open comfortably, split it into parts that keep the header row, then analyse each part.</p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg mb-2">What are the free limits?</h3>
+              <p className="text-zinc-600">Three analyses per day on the free tier, with no account needed for the first look. The Pro tier removes the daily cap; the pricing page lists what each tier includes.</p>
+            </div>
           <div className="mt-10 text-center">
             <Link href="/blog/how-to-analyze-csv-with-ai-free" className="text-blue-600 underline">
               Read the full guide: How to analyze CSV files with AI →
