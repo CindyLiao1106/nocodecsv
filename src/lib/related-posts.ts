@@ -91,6 +91,8 @@ export const POST_CLUSTERS: Record<string, Cluster> = {
   'robots-txt-ai-crawlers': 'ai',
   'agent-tools-json': 'ai',
   'can-chatgpt-analyze-csv': 'ai',
+  'webmcp-vs-mcp': 'ai',
+  'is-your-website-agent-ready': 'ai',
 };
 
 /** 文章标题(slug → 显示标题),用于内链锚文本 */
@@ -162,6 +164,8 @@ export const POST_TITLES: Record<string, string> = {
   'agent-tools-json': 'agent-tools.json Explained',
   'can-chatgpt-analyze-csv': 'Can ChatGPT Analyze a CSV?',
   'csv-vs-excel': 'CSV vs Excel',
+  'webmcp-vs-mcp': 'WebMCP vs MCP',
+  'is-your-website-agent-ready': 'Is Your Website Agent-Ready?',
 };
 
 /** 一句话简介(slug → 简介),用于枢纽页卡片与 SEO 摘要 */
@@ -233,6 +237,8 @@ export const POST_SUMMARIES: Record<string, string> = {
   'agent-tools-json': 'What goes in agent-tools.json, how it differs from llms.txt and WebMCP, and the getTools() cross-check that found one entry an anonymous agent cannot reach.',
   'can-chatgpt-analyze-csv': 'A two-pass test of a chat model over a deliberately messy 14-row CSV: the totals matched Python, one row count did not, and the file cap changed the rest.',
   'csv-vs-excel': 'A comparison of CSV and Excel formats, and which one to keep for your data.',
+  'webmcp-vs-mcp': 'Where each one runs, the comparison table Chrome publishes, and the tool list we read back from a live site with getTools().',
+  'is-your-website-agent-ready': 'Seven checks for agent-readiness, the exact commands, and measured results from three live sites, including the two that are not there yet.',
 };
 
 /** 发布日期(slug → "YYYY-MM-DD"),用于 sitemap 与文章元数据 */
@@ -304,6 +310,8 @@ export const POST_DATES: Record<string, string> = {
   'agent-tools-json': '2026-09-20',
   'can-chatgpt-analyze-csv': '2026-09-20',
   'csv-vs-excel': '2026-09-09',
+  'webmcp-vs-mcp': '2026-09-21',
+  'is-your-website-agent-ready': '2026-09-21',
 };
 
 /** 全站文章 slug 列表(顺序固定,用于轮转) */
