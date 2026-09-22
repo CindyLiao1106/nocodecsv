@@ -41,6 +41,8 @@ export const POST_CLUSTERS: Record<string, Cluster> = {
   'remove-special-characters-in-excel': 'clean',
   'find-and-replace-in-csv': 'clean',
   'csv-opens-in-one-column': 'clean',
+  'csv-scientific-notation': 'clean',
+  'quotes-in-csv-files': 'clean',
 
   // C. AI 与分析
   'how-to-analyze-csv-with-ai-free': 'ai',
@@ -166,6 +168,8 @@ export const POST_TITLES: Record<string, string> = {
   'csv-vs-excel': 'CSV vs Excel',
   'webmcp-vs-mcp': 'WebMCP vs MCP',
   'is-your-website-agent-ready': 'Is Your Website Agent-Ready?',
+  'csv-scientific-notation': 'CSV Scientific Notation in Excel',
+  'quotes-in-csv-files': 'Quotes in CSV Files',
 };
 
 /** 一句话简介(slug → 简介),用于枢纽页卡片与 SEO 摘要 */
@@ -239,6 +243,8 @@ export const POST_SUMMARIES: Record<string, string> = {
   'csv-vs-excel': 'A comparison of CSV and Excel formats, and which one to keep for your data.',
   'webmcp-vs-mcp': 'Where each one runs, the comparison table Chrome publishes, and the tool list we read back from a live site with getTools().',
   'is-your-website-agent-ready': 'Seven checks for agent-readiness, the exact commands, and measured results from three live sites, including the two that are not there yet.',
+  'csv-scientific-notation': 'Why Excel shows long CSV values as 1.23E+15, what Microsoft documents about the 15-digit truncation, and the three fixes that keep the original digits.',
+  'quotes-in-csv-files': "RFC 4180's quoting rules in plain language, which fields need quotes, and what a naive split does to a row we wrote with a standard CSV writer.",
 };
 
 /** 发布日期(slug → "YYYY-MM-DD"),用于 sitemap 与文章元数据 */
@@ -312,6 +318,8 @@ export const POST_DATES: Record<string, string> = {
   'csv-vs-excel': '2026-09-09',
   'webmcp-vs-mcp': '2026-09-21',
   'is-your-website-agent-ready': '2026-09-21',
+  'csv-scientific-notation': '2026-09-22',
+  'quotes-in-csv-files': '2026-09-22',
 };
 
 /** 全站文章 slug 列表(顺序固定,用于轮转) */
