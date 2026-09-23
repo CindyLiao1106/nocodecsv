@@ -4,14 +4,14 @@ import { Button } from "@/components/ui/button";
 import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
-  title: "How to Convert CSV to Excel Without Excel — Free & Easy",
-  description: "Convert CSV to Excel without Excel installed: free online converter, Google Sheets, or LibreOffice. Step-by-step guide for Windows, Mac, and phone.",
+  title: "CSV to Excel Without Excel — Convert or Export a CSV File Free",
+  description: "Convert a CSV file to Excel without Excel installed: free online converter, Google Sheets or LibreOffice. Export CSV to Excel step by step on Windows, Mac and phone.",
   keywords: ["convert csv to excel without excel", "csv to xlsx free online", "open csv without microsoft office", "convert csv to xlsx no install", "csv to excel converter free"],
   alternates: { canonical: "https://nocodecsv.com/blog/convert-csv-to-excel-without-excel" },
   openGraph: {
     images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
-    title: "How to Convert CSV to Excel Without Excel — Free & Easy",
-    description: "Free online converter, Google Sheets, or LibreOffice: convert your CSV to a real .xlsx file without Microsoft Office.",
+    title: "CSV to Excel Without Excel — Convert or Export a CSV File Free",
+    description: "Convert or export a CSV file to Excel without Microsoft Office: free online converter, Google Sheets, LibreOffice.",
     type: "article",
     url: "https://nocodecsv.com/blog/convert-csv-to-excel-without-excel",
     siteName: "NoCodeCSV",
@@ -31,7 +31,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: "How to Convert CSV to Excel Without Excel — Free and Easy",
-  description: "Free online converter, Google Sheets, or LibreOffice: convert your CSV to a real .xlsx file without Microsoft Office.",
+  description: "Convert or export a CSV file to Excel without Microsoft Office: free online converter, Google Sheets, LibreOffice.",
   url: "https://nocodecsv.com/blog/convert-csv-to-excel-without-excel",
   datePublished: "2026-09-02",
   dateModified: "2026-09-02",
@@ -139,7 +139,7 @@ export default function BlogPost() {
       />
       <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12 prose prose-zinc prose-lg">
       <p className="text-blue-600 font-medium">📄 Tutorial · 6 min read</p>
-      <h1>How to Convert CSV to Excel Without Excel — Free and Easy</h1>
+      <h1>CSV to Excel Without Excel — How to Convert or Export a CSV File Free</h1>
       <p>A client sends you a .csv file and asks for it &quot;in Excel.&quot; Or your bank exports CSV, but your team works in .xlsx. The problem: you don&apos;t have Microsoft Excel installed — and you don&apos;t want to pay for a subscription just to open one file.</p>
       <p>Good news: you can <strong>convert CSV to Excel without Excel</strong> in under a minute, completely free. Here are three reliable methods that work on Windows, Mac, and even your phone — plus what you need to know about the difference between the two formats.</p>
 

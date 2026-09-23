@@ -6,14 +6,14 @@ import { Upload, MessageSquare, BarChart3, ArrowRight, Check } from "lucide-reac
 
 import { ToolAnimation } from "@/components/tools/tool-animation";
 export const metadata: Metadata = {
-  title: "Free AI CSV Analyzer — Chat With Your CSV Files",
-  description: "Upload any CSV file and analyze it with AI in plain English. No SQL, no Python, no coding. Get instant charts and insights. Free to start.",
+  title: "Free AI CSV Analyzer — Analyse CSV & Chat With Your Data",
+  description: "Analyse a CSV file with AI in plain English — ask questions, get charts, no SQL or Python. Works as an AI CSV analyser and a chat-with-CSV tool. Free to start.",
   keywords: ["free AI CSV analyzer", "CSV data analysis AI", "analyze CSV online free", "AI CSV tool", "chat with CSV", "CSV insights generator"],
   alternates: { canonical: "https://nocodecsv.com/tools/csv-analyzer" },
   openGraph: {
     images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
-    title: "Free AI CSV Analyzer — Chat With Your CSV Files",
-    description: "Upload CSV, ask questions, get charts. No coding required.",
+    title: "Free AI CSV Analyzer — Analyse CSV & Chat With Your Data",
+    description: "Analyse CSV with AI: ask questions, get charts. No coding required.",
     type: "website",
     url: "https://nocodecsv.com/tools/csv-analyzer",
     siteName: "NoCodeCSV",
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Free AI CSV Analyzer — Chat With Your CSV Files",
-    description: "Upload CSV, ask questions, get charts. No coding required.",
+    title: "Free AI CSV Analyzer — Analyse CSV & Chat With Your Data",
+    description: "Analyse CSV with AI: ask questions, get charts. No coding required.",
   },
 };
 
@@ -35,7 +35,7 @@ const jsonLd = {
       url: "https://nocodecsv.com/tools/csv-analyzer",
       applicationCategory: "BusinessApplication",
       operatingSystem: "Web",
-      description: "Upload any CSV file and analyze it with AI in plain English. Get instant charts and insights.",
+      description: "Analyse any CSV file with AI in plain English — as an AI CSV analyser, or simply chat with your CSV. Get instant charts and insights.",
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
     },
     {
