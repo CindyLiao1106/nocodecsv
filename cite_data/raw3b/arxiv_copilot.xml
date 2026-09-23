@@ -1,0 +1,343 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/rCVAbRcMCxTe1aPS+1reBcgLZYA</id>
+  <title>arXiv Query: search_query=all:"GitHub Copilot" AND all:"productivity"&amp;id_list=&amp;start=0&amp;max_results=12</title>
+  <updated>2026-09-14T22:55:07Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22GitHub+Copilot%22+AND+all:%22productivity%22&amp;start=0&amp;max_results=12&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>12</opensearch:itemsPerPage>
+  <opensearch:totalResults>69</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2501.13282v1</id>
+    <title>Experience with GitHub Copilot for Developer Productivity at Zoominfo</title>
+    <updated>2025-01-23T00:17:48Z</updated>
+    <link href="https://arxiv.org/abs/2501.13282v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2501.13282v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper presents a comprehensive evaluation of GitHub Copilot's deployment and impact on developer productivity at Zoominfo, a leading Go-To-Market (GTM) Intelligence Platform. We describe our systematic four-phase approach to evaluating and deploying GitHub Copilot across our engineering organization, involving over 400 developers. Our analysis combines both quantitative metrics, focusing on acceptance rates of suggestions given by GitHub Copilot and qualitative feedback given by developers through developer satisfaction surveys. The results show an average acceptance rate of 33% for suggestions and 20% for lines of code, with high developer satisfaction scores of 72%. We also discuss language-specific performance variations, limitations, and lessons learned from this medium-scale enterprise deployment. Our findings contribute to the growing body of knowledge about AI-assisted software development in enterprise settings.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-01-23T00:17:48Z</published>
+    <arxiv:comment>25 pages, 11 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Gal Bakal</name>
+    </author>
+    <author>
+      <name>Ali Dasdan</name>
+    </author>
+    <author>
+      <name>Yaniv Katz</name>
+    </author>
+    <author>
+      <name>Michael Kaufman</name>
+    </author>
+    <author>
+      <name>Guy Levin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2302.06590v1</id>
+    <title>The Impact of AI on Developer Productivity: Evidence from GitHub Copilot</title>
+    <updated>2023-02-13T18:42:46Z</updated>
+    <link href="https://arxiv.org/abs/2302.06590v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2302.06590v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Generative AI tools hold promise to increase human productivity. This paper presents results from a controlled experiment with GitHub Copilot, an AI pair programmer. Recruited software developers were asked to implement an HTTP server in JavaScript as quickly as possible. The treatment group, with access to the AI pair programmer, completed the task 55.8% faster than the control group. Observed heterogenous effects show promise for AI pair programmers to help people transition into software development careers.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-02-13T18:42:46Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Sida Peng</name>
+    </author>
+    <author>
+      <name>Eirini Kalliamvakou</name>
+    </author>
+    <author>
+      <name>Peter Cihon</name>
+    </author>
+    <author>
+      <name>Mert Demirer</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.13199v2</id>
+    <title>The Role of GitHub Copilot on Software Development: A Perspective on Productivity, Security, Best Practices and Future Directions</title>
+    <updated>2025-05-02T16:44:12Z</updated>
+    <link href="https://arxiv.org/abs/2502.13199v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2502.13199v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>GitHub Copilot is transforming software development by automating tasks and boosting productivity through AI driven code generation. In this paper, we conduct a literature survey to synthesize insights on Copilot's impact on productivity and security. We review academic journal databases, industry reports, and official documentation to highlight key findings and challenges. While Copilot accelerates coding and prototyping, concerns over security vulnerabilities and intellectual property risks persist. Drawing from the literature, we provide a perspective on best practices and future directions for responsible AI adoption in software engineering, offering actionable insights for developers and organizations to integrate Copilot effectively while maintaining high standards of quality and security.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-02-18T18:08:20Z</published>
+    <arxiv:comment>Correspondence and co-first authors: nettursuresh@gmail.com, shanthi.karpurapu@gmail.com</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Suresh Babu Nettur</name>
+    </author>
+    <author>
+      <name>Shanthi Karpurapu</name>
+    </author>
+    <author>
+      <name>Unnati Nettur</name>
+    </author>
+    <author>
+      <name>Likhit Sagar Gajja</name>
+    </author>
+    <author>
+      <name>Sravanthy Myneni</name>
+    </author>
+    <author>
+      <name>Akhil Dusi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.20353v2</id>
+    <title>Developer Productivity With and Without GitHub Copilot: A Longitudinal Mixed-Methods Case Study</title>
+    <updated>2026-01-28T14:17:12Z</updated>
+    <link href="https://arxiv.org/abs/2509.20353v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.20353v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This study investigates the real-world impact of the generative AI (GenAI) tool GitHub Copilot on developer activity and perceived productivity. We conducted a mixed-methods case study in NAV IT, a large public sector agile organization. We analyzed 26,317 unique non-merge commits from 703 of NAV IT's GitHub repositories over a two-year period, focusing on commit-based activity metrics from 25 Copilot users and 14 non-users. The analysis was complemented by survey responses on their roles and perceived productivity, as well as 13 interviews. Our analysis of activity metrics revealed that individuals who used Copilot were consistently more active than non-users, even prior to Copilot's introduction. We did not find any statistically significant changes in commit-based activity for Copilot users after they adopted the tool, although minor increases were observed. This suggests a discrepancy between changes in commit-based metrics and the subjective experience of productivity.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-24T17:55:56Z</published>
+    <arxiv:comment>Published in the Proceedings of the 59th Hawaii International Conference on System Sciences (HICSS-59), 2026. https://hdl.handle.net/10125/112286</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <arxiv:journal_ref>Proceedings of the 59th Hawaii International Conference on System Sciences (HICSS-59), 7413-7422, 2026</arxiv:journal_ref>
+    <author>
+      <name>Viktoria Stray</name>
+    </author>
+    <author>
+      <name>Elias Goldmann Brandtzæg</name>
+    </author>
+    <author>
+      <name>Viggo Tellefsen Wivestad</name>
+    </author>
+    <author>
+      <name>Astri Barbala</name>
+    </author>
+    <author>
+      <name>Nils Brede Moe</name>
+    </author>
+    <arxiv:doi>10.24251/HICSS.2026.880</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.24251/HICSS.2026.880" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2402.05636v2</id>
+    <title>The Impact of AI Tool on Engineering at ANZ Bank An Empirical Study on GitHub Copilot within Corporate Environment</title>
+    <updated>2024-04-17T12:14:40Z</updated>
+    <link href="https://arxiv.org/abs/2402.05636v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2402.05636v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The increasing popularity of AI, particularly Large Language Models (LLMs), has significantly impacted various domains, including Software Engineering. This study explores the integration of AI tools in software engineering practices within a large organization. We focus on ANZ Bank, which employs over 5000 engineers covering all aspects of the software development life cycle. This paper details an experiment conducted using GitHub Copilot, a notable AI tool, within a controlled environment to evaluate its effectiveness in real-world engineering tasks. Additionally, this paper shares initial findings on the productivity improvements observed after GitHub Copilot was adopted on a large scale, with about 1000 engineers using it. ANZ Bank's six-week experiment with GitHub Copilot included two weeks of preparation and four weeks of active testing. The study evaluated participant sentiment and the tool's impact on productivity, code quality, and security. Initially, participants used GitHub Copilot for proposed use-cases, with their feedback gathered through regular surveys. In the second phase, they were divided into Control and Copilot groups, each tackling the same Python challenges, and their experiences were again surveyed. Results showed a notable boost in productivity and code quality with GitHub Copilot, though its impact on code security remained inconclusive. Participant responses were overall positive, confirming GitHub Copilot's effectiveness in large-scale software engineering environments. Early data from 1000 engineers also indicated a significant increase in productivity and job satisfaction.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-02-08T12:47:57Z</published>
+    <arxiv:comment>16 pages, 4 figures. in proceeding for 10th International Conference on Software Engineering (SEC 2024)</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Sayan Chatterjee</name>
+    </author>
+    <author>
+      <name>Ching Louis Liu</name>
+    </author>
+    <author>
+      <name>Gareth Rowland</name>
+    </author>
+    <author>
+      <name>Tim Hogarth</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.00101v1</id>
+    <title>Agentic Coding in the Wild: Characterizing GitHub Copilot Traces at Production Scale</title>
+    <updated>2026-07-30T20:51:51Z</updated>
+    <link href="https://arxiv.org/abs/2608.00101v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.00101v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>AI coding agents like GitHub Copilot, Claude Code, and Codex interleave multi-step LLM inference with tool execution, creating a workload different from chatbots. We present the first production-scale characterization of this workload using sampled GitHub Copilot traces from June 2026, comprising 3.2M users, 13M sessions, 761M LLM calls, and 95T tokens.
+  Our analysis reveals distinctive workload properties with important systems implications. For example, agentic coding sessions consist of sparse user-initiated turns, each unfolding into an autonomous agent loop of LLM calls almost always coupled with tool execution. This structure yields KV cache hit rates averaging 90% within a turn, but falling to 55\% across turn boundaries and drastically invalidated after events like model switches or context compaction. Diverse workflows and user behaviors are observed with variable and long-tailed token consumption, time span, and tool calls. We highlight the difference between quick agentic turnaround times and the minutes-long user idle periods at turn boundaries, and design a lightweight idle-time predictor that captures 86-90\% of total idle time, enabling proactive decisions for efficient resource orchestration. These findings challenge assumptions underlying current LLM-serving systems and provide an empirical foundation for agent-native infrastructure.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-30T20:51:51Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Banruo Liu</name>
+    </author>
+    <author>
+      <name>Haoran Qiu</name>
+    </author>
+    <author>
+      <name>Íñigo Goiri</name>
+    </author>
+    <author>
+      <name>Rodrigo Fonseca</name>
+    </author>
+    <author>
+      <name>Ricardo Bianchini</name>
+    </author>
+    <author>
+      <name>Esha Choukse</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.00438v1</id>
+    <title>GitHub Copilot and Developer Productivity: An Observational Dose-Response Analysis</title>
+    <updated>2026-05-30T00:09:51Z</updated>
+    <link href="https://arxiv.org/abs/2606.00438v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.00438v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Does GitHub Copilot (GHCP) make engineers more productive, or do the engineers who use it more differ from those who use it less? And even within a single engineer, are GHCP-heavy weeks just busy weeks in which more of everything gets done? We study these questions using 43 weeks of data from 16,223 software engineers across Microsoft's Cloud+AI organization. Engineer fixed effects address the first concern by comparing each engineer against themselves rather than against other engineers, eliminating time-invariant differences in skill, role, and team. Active coding time and browser time then enter a Poisson Pseudo-Maximum Likelihood model with two-way fixed effects to address the harder, within-engineer confound: that GHCP-heavy weeks coincide with high-effort weeks. This defines our estimand as an efficiency effect: more pull requests completed at equivalent levels of coding time. Engineers are estimated to complete 40.5% more PRs in their highest GHCP usage weeks relative to their zero-usage weeks, holding measured development effort constant. The gradient is monotonic with diminishing returns at high intensity. Seven robustness and falsification tests target the remaining plausible alternative explanations (non-coding AI engagement, team-level shocks, within-week task reallocation, cross-week contamination, PR slicing into smaller units, shifts toward easier task types, and sensitivity to how the treatment is operationalized). Under an explicitly stated conditional-independence assumption, the within-engineer design estimates a tool-specific efficiency effect that is consistent with all seven robustness tests.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-30T00:09:51Z</published>
+    <arxiv:comment>9 pages, 10 figures, 1 table</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Alex Heilman</name>
+    </author>
+    <author>
+      <name>Alex Kyllo</name>
+    </author>
+    <author>
+      <name>Emerson Murphy-Hill</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2406.17910v1</id>
+    <title>Transforming Software Development: Evaluating the Efficiency and Challenges of GitHub Copilot in Real-World Projects</title>
+    <updated>2024-06-25T19:51:21Z</updated>
+    <link href="https://arxiv.org/abs/2406.17910v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.17910v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Generative AI technologies promise to transform the product development lifecycle. This study evaluates the efficiency gains, areas for improvement, and emerging challenges of using GitHub Copilot, an AI-powered coding assistant. We identified 15 software development tasks and assessed Copilot's benefits through real-world projects on large proprietary code bases. Our findings indicate significant reductions in developer toil, with up to 50% time saved in code documentation and autocompletion, and 30-40% in repetitive coding tasks, unit test generation, debugging, and pair programming. However, Copilot struggles with complex tasks, large functions, multiple files, and proprietary contexts, particularly with C/C++ code. We project a 33-36% time reduction for coding-related tasks in a cloud-first software development lifecycle. This study aims to quantify productivity improvements, identify underperforming scenarios, examine practical benefits and challenges, investigate performance variations across programming languages, and discuss emerging issues related to code quality, security, and developer experience.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-06-25T19:51:21Z</published>
+    <arxiv:comment>13 pages, 8 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Ruchika Pandey</name>
+    </author>
+    <author>
+      <name>Prabhat Singh</name>
+    </author>
+    <author>
+      <name>Raymond Wei</name>
+    </author>
+    <author>
+      <name>Shaila Shankar</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2311.11177v1</id>
+    <title>Assessing the Security of GitHub Copilot Generated Code -- A Targeted Replication Study</title>
+    <updated>2023-11-18T22:12:59Z</updated>
+    <link href="https://arxiv.org/abs/2311.11177v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2311.11177v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>AI-powered code generation models have been developing rapidly, allowing developers to expedite code generation and thus improve their productivity. These models are trained on large corpora of code (primarily sourced from public repositories), which may contain bugs and vulnerabilities. Several concerns have been raised about the security of the code generated by these models. Recent studies have investigated security issues in AI-powered code generation tools such as GitHub Copilot and Amazon CodeWhisperer, revealing several security weaknesses in the code generated by these tools. As these tools evolve, it is expected that they will improve their security protocols to prevent the suggestion of insecure code to developers. This paper replicates the study of Pearce et al., which investigated security weaknesses in Copilot and uncovered several weaknesses in the code suggested by Copilot across diverse scenarios and languages (Python, C and Verilog). Our replication examines Copilot security weaknesses using newer versions of Copilot and CodeQL (the security analysis framework). The replication focused on the presence of security vulnerabilities in Python code. Our results indicate that, even with the improvements in newer versions of Copilot, the percentage of vulnerable code suggestions has reduced from 36.54% to 27.25%. Nonetheless, it remains evident that the model still suggests insecure code.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-11-18T22:12:59Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Vahid Majdinasab</name>
+    </author>
+    <author>
+      <name>Michael Joshua Bishop</name>
+    </author>
+    <author>
+      <name>Shawn Rasheed</name>
+    </author>
+    <author>
+      <name>Arghavan Moradidakhel</name>
+    </author>
+    <author>
+      <name>Amjed Tahir</name>
+    </author>
+    <author>
+      <name>Foutse Khomh</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2410.02091v4</id>
+    <title>The Impact of Generative AI on Collaborative Open-Source Software Development: Evidence from GitHub Copilot</title>
+    <updated>2026-08-13T01:40:52Z</updated>
+    <link href="https://arxiv.org/abs/2410.02091v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2410.02091v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Generative artificial intelligence (AI) facilitates content production and enhances ideation, with potentially important implications for developer productivity and participation in software development. To explore its impact on collaborative open-source software (OSS) development, we investigate the role of GitHub Copilot, a generative AI pair programmer, in OSS development where multiple distributed developers voluntarily collaborate. Using GitHub's proprietary Copilot usage data, combined with public OSS project data obtained from GitHub, we find that Copilot use increases project-level code contributions by 5.9%. This gain is accompanied by a 3.4% increase in developer coding participation and a 2.1% increase in individual code contributions. However, Copilot use is also associated with an 8% increase in coordination time and more code discussions. This reveals an important tradeoff: While AI expands who can contribute and how much they contribute, it slows coordination in collective development efforts. Despite this tension, the overall effect remains positive, resulting in a net increase in the timely merge of code contributions at the project level. Interestingly, we also find heterogeneous effects across developer roles. Peripheral developers exhibit relatively smaller increases in project-level code contributions and larger increases in coordination time than core developers. Together, our findings highlight the dual effects of AI pair programmers on code contributions and coordination in OSS development and provide implications for how generative AI may reshape the structure of OSS communities over time.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="econ.GN" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-10-02T23:26:10Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Fangchen Song</name>
+    </author>
+    <author>
+      <name>Ashish Agarwal</name>
+    </author>
+    <author>
+      <name>Wen Wen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2205.06537v1</id>
+    <title>Productivity Assessment of Neural Code Completion</title>
+    <updated>2022-05-13T09:53:25Z</updated>
+    <link href="https://arxiv.org/abs/2205.06537v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2205.06537v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Neural code synthesis has reached a point where snippet generation is accurate enough to be considered for integration into human software development workflows. Commercial products aim to increase programmers' productivity, without being able to measure it directly. In this case study, we asked users of GitHub Copilot about its impact on their productivity, and sought to find a reflection of their perception in directly measurable user data. We find that the rate with which shown suggestions are accepted, rather than more specific metrics regarding the persistence of completions in the code over time, drives developers' perception of productivity.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-05-13T09:53:25Z</published>
+    <arxiv:comment>To appear in: Proceedings of the 6th ACM SIGPLAN International Symposium on Machine Programming (MAPS '22), June 13, 2022</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Albert Ziegler</name>
+    </author>
+    <author>
+      <name>Eirini Kalliamvakou</name>
+    </author>
+    <author>
+      <name>Shawn Simister</name>
+    </author>
+    <author>
+      <name>Ganesh Sittampalam</name>
+    </author>
+    <author>
+      <name>Alice Li</name>
+    </author>
+    <author>
+      <name>Andrew Rice</name>
+    </author>
+    <author>
+      <name>Devon Rifkin</name>
+    </author>
+    <author>
+      <name>Edward Aftandilian</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.10165v3</id>
+    <title>AI-Assisted Programming Decreases the Productivity of Experienced Developers by Increasing the Technical Debt and Maintenance Burden</title>
+    <updated>2026-01-28T12:11:30Z</updated>
+    <link href="https://arxiv.org/abs/2510.10165v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.10165v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>GenAI solutions like GitHub Copilot have been shown to increase the productivity of software developers. Yet prior work remains unclear on the quality of code produced and the challenges of maintaining it in software projects. If quality declines as volume grows, technical debt accumulates as experienced developers face increased workloads reviewing and reworking code from less-experienced contributors. We analyze developer activity in Open Source Software (OSS) projects following the introduction of GitHub Copilot. We find that productivity indeed increases. However, the increase in productivity is primarily driven by less-experienced (peripheral) developers. We also find that code written after the adoption of AI requires more rework to satisfy repository standards, indicating a potential increase in technical debt. Importantly, the added rework burden falls on the more experienced (core) developers, who review 6.5% more code after Copilot's introduction, but show a 19% drop in their original code productivity. More broadly, this finding raises caution that productivity gains of AI may mask the growing burden of maintenance on a shrinking pool of experts, together with increased technical debt for the projects. The results highlight a fundamental tension in AI-assisted software development between short-term productivity gains and long-term system sustainability.</summary>
+    <category term="econ.GN" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-11T10:58:58Z</published>
+    <arxiv:comment>Presented at WITS 2025, CIST 2025, SCECR 2025, INFORMS 2024</arxiv:comment>
+    <arxiv:primary_category term="econ.GN"/>
+    <author>
+      <name>Feiyang Xu</name>
+    </author>
+    <author>
+      <name>Poonacha K. Medappa</name>
+    </author>
+    <author>
+      <name>Murat M. Tunc</name>
+    </author>
+    <author>
+      <name>Martijn Vroegindeweij</name>
+    </author>
+    <author>
+      <name>Jan C. Fransoo</name>
+    </author>
+  </entry>
+</feed>

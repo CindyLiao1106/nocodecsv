@@ -1,0 +1,158 @@
+[
+  {
+    "kw": "csv to excel converter",
+    "strong": 1,
+    "weak": 2,
+    "diff": 20,
+    "intent_w": 1.5,
+    "paa": true,
+    "top3": [
+      "https://cloudconvert.com/csv-to-xls",
+      "https://www.freeconvert.com/csv-to-excel",
+      "https://convertio.co/csv-xlsx/"
+    ]
+  },
+  {
+    "kw": "csv to excel free",
+    "strong": 0,
+    "weak": 1,
+    "diff": 10,
+    "intent_w": 1.5,
+    "paa": true,
+    "top3": [
+      "https://www.freeconvert.com/csv-to-excel",
+      "https://convertio.co/csv-xlsx/",
+      "https://document.online-convert.com/convert/csv-to-excel"
+    ]
+  },
+  {
+    "kw": "convert csv to excel online free",
+    "strong": 0,
+    "weak": 1,
+    "diff": 10,
+    "intent_w": 1.5,
+    "paa": true,
+    "top3": [
+      "https://www.freeconvert.com/csv-to-xls",
+      "https://convertio.co/csv-xlsx/",
+      "https://tableconvert.com/csv-to-excel"
+    ]
+  },
+  {
+    "kw": "csv analyzer online",
+    "strong": 0,
+    "weak": 1,
+    "diff": 0,
+    "intent_w": 1.5,
+    "paa": false,
+    "top3": [
+      "https://dataconverter.io/view/csv",
+      "https://askcsv.com/",
+      "https://www.devtoolsdaily.com/csv/viewer/"
+    ]
+  },
+  {
+    "kw": "csv converter free",
+    "strong": 0,
+    "weak": 0,
+    "diff": 10,
+    "intent_w": 1.5,
+    "paa": true,
+    "top3": [
+      "https://cloudconvert.com/csv-converter",
+      "https://www.freeconvert.com/csv-converter",
+      "https://convertio.co/csv-converter/"
+    ]
+  },
+  {
+    "kw": "csv converter to pdf",
+    "strong": 1,
+    "weak": 1,
+    "diff": 20,
+    "intent_w": 1.5,
+    "paa": true,
+    "top3": [
+      "https://smallpdf.com/csv-to-pdf",
+      "https://cloudconvert.com/csv-to-pdf",
+      "https://www.canva.com/features/csv-to-pdf-converter/"
+    ]
+  },
+  {
+    "kw": "csv converter to qif",
+    "strong": 1,
+    "weak": 2,
+    "diff": 20,
+    "intent_w": 1.5,
+    "paa": true,
+    "top3": [
+      "https://financefileconverter.com/csv-to-qif-converter",
+      "https://www.filetailored.com/tools/finance/convert/csv-to-qif",
+      "https://accountingconverter.com/tools"
+    ]
+  },
+  {
+    "kw": "csv converter to vcf",
+    "strong": 2,
+    "weak": 1,
+    "diff": 30,
+    "intent_w": 1.5,
+    "paa": true,
+    "top3": [
+      "https://www.coolutils.com/online/CSV-to-VCF",
+      "https://www.fileconverts.com/csv/csv-to-vcard/",
+      "https://www.convertsimple.com/convert-csv-to-vcf/"
+    ]
+  },
+  {
+    "kw": "csv to excel online",
+    "strong": 1,
+    "weak": 1,
+    "diff": 20,
+    "intent_w": 1.5,
+    "paa": true,
+    "top3": [
+      "https://tableconvert.com/csv-to-excel",
+      "https://convertio.co/csv-xlsx/",
+      "https://support.microsoft.com/en-us/excel/get-started/import-or-export-text-txt-or-csv-files"
+    ]
+  },
+  {
+    "kw": "csv to excel converter online",
+    "strong": 0,
+    "weak": 1,
+    "diff": 0,
+    "intent_w": 1.5,
+    "paa": false,
+    "top3": [
+      "https://tableconvert.com/csv-to-excel",
+      "https://convertio.co/csv-xlsx/",
+      "https://www.freeconvert.com/csv-to-excel"
+    ]
+  },
+  {
+    "kw": "csv to excel free online",
+    "strong": 0,
+    "weak": 1,
+    "diff": 10,
+    "intent_w": 1.5,
+    "paa": true,
+    "top3": [
+      "https://convertio.co/csv-xlsx/",
+      "https://www.freeconvert.com/csv-to-xls",
+      "https://document.online-convert.com/convert/csv-to-excel"
+    ]
+  },
+  {
+    "kw": "csv to json converter",
+    "strong": 0,
+    "weak": 2,
+    "diff": 10,
+    "intent_w": 1.5,
+    "paa": true,
+    "top3": [
+      "https://www.csvjson.com/",
+      "https://www.convertcsv.com/csv-to-json.htm",
+      "https://www.reddit.com/r/json/comments/1obgwza/how_to_convert_csv_to_json/"
+    ]
+  }
+]

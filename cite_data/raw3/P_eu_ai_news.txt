@@ -1,0 +1,119 @@
+Skip to Main Content
+An official website of the European Union
+How do you know?
+
+This site uses cookies. Visit our cookies policy page or click the link in any footer for more information and to change your preferences.
+
+Accept all cookies
+Accept only essential cookies
+Log in
+English
+Search by keyword
+Search
+Search
+Home
+Data
+News
+Publications
+About us
+Contact us
+Help
+Home
+News
+News articles
+NEWS ARTICLES 11 December 2025
+20% of EU enterprises use AI technologies
+
+In 2025, 20.0% of EU enterprises with 10 or more employees used artificial intelligence (AI) technologies to conduct their business, showing a solid growth of 6.5 percentage points (pp) from 13.5% in 2024. Compared with 2021 (7.7%) and 2023 (8.1%), the use of AI technologies is becoming more popular among EU businesses.
+
+The highest shares of these enterprises in 2025 were in Denmark (42.0%), Finland (37.8%) and Sweden (35.0%). At the other end were Romania (5.2%), Poland (8.4%) and Bulgaria (8.5%).
+
+Almost all EU countries recorded increases in the share of enterprises using AI technologies compared with the previous year. Denmark registered the highest increase (+14.5 pp), followed by Finland (+13.5 pp) and Lithuania (+12.5 pp). 
+
+Click to enlarge
+
+Source dataset: isoc_eb_ai
+
+The most common use of AI technology by EU enterprises was to analyse written language (11.8%). This was followed by AI use to generate pictures, videos, sound/audio (9.5%), written or spoken language (8.8%) and to convert spoken language into machine-readable format (7.2%). 
+
+Compared with 2024, the use of AI technology that grew the most in 2025 was analysing written language (+4.9 pp), followed by the generation of written or spoken language (+3.4%). 
+
+Click to enlarge
+
+Source dataset: isoc_eb_ai
+
+For more information
+Statistics Explained article on use of artificial intelligence in enterprises
+Thematic section on digital economy and society
+Database on digital economy and society
+Digitalisation in Europe - 2025 edition
+Digitalisation dashboard 
+Business sector profiles - visualisation
+Methodological notes
+Data comes from the 2025 EU survey on ICT usage and e-commerce in enterprises and refers to all enterprises with at least 10 employees or self-employed persons (classified in statistical classification of economic activities in the European Community (NACE) Rev. 2 sections C to J, L to N and group 95.1).
+Enterprises using artificial intelligence refer to the following AI technologies: 
+technologies performing analysis of written language (text mining)
+technologies converting spoken language into machine-readable format (speech recognition)
+technologies generating written or spoken language or programming codes (natural language generation, speech synthesis)
+technologies generating pictures, videos, sound/audio
+technologies identifying objects or persons based on images (image recognition, image processing)
+machine learning (e.g. deep learning) for data analysis
+technologies automating different workflows or assisting in decision making (Al-based software robotic process automation)
+technologies enabling physical movement of machines via autonomous decisions based on observation of surroundings (autonomous robots, self-driving vehicles, autonomous drones)
+Machine learning (e.g. deep learning) involves ‘training’ a computer model to better perform an automated task, e.g. pattern recognition.
+Natural language processing, natural language generation or speech recognition are the ability for a computer program to understand human language as it is spoken, to convert data into natural language representation or to identify words and phrases in spoken language and convert them to a machine-readable format.
+AI technologies used to generate pictures, videos, sound/audio is a new category, not present in the 2024 questionnaire, therefore there is no data for that year. 
+
+
+For information on upcoming releases visit our release calendar. If you have any queries, please visit our contact us page.
+ 
+
+Share this page: 
+Facebook
+X
+LinkedIn
+E-mail
+You might also like
+Films, series & sports: top choice for paid subscriptions
+27 August 2026
+A quarter of EU citizens buy tickets online for events
+4 August 2026
+75% of young Europeans have at least basic digital skills
+15 July 2026
+54% of young people encountered hostile messages online
+18 June 2026
+Rate this page
+Select the number of stars that correspond to your rating
+5 stars
+4 stars
+3 stars
+2 stars
+1 star
+Give us more feedback
+This site is managed by Eurostat and is an official website of the European Union
+Accessibility
+Need help?
+Sitemap
+Contact us
+Follow us
+X
+Facebook
+Instagram
+LinkedIn
+Youtube
+RSS
+Discover more on europa.eu
+Contact the EU
+Call us 00 800 6 7 8 9 10 11
+Use other telephone options
+Write us via our contact form
+Meet us at one of the EU centres
+Social media
+Search for EU social media channels
+Legal
+Languages on our websites
+Privacy policy
+Legal notice
+Cookies
+EU institutions and bodies
+Search all EU institutions and bodies

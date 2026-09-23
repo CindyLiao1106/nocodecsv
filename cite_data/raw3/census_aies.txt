@@ -1,0 +1,208 @@
+An official website of the United States government
+
+Here’s how you know
+Income, Poverty and Health Insurance
+Join us Tuesday, Sept. 15 at 10 am ET for a live webinar announcing new Income, Poverty and Health Insurance estimates for the nation.
+Skip Header
+Partners
+Researchers
+Educators
+Survey Respondents
+News
+NAICS Codes
+Jobs
+About Us
+Contact Us
+Help
+Topics
+Data & Maps
+Surveys & Programs
+Resource Library
+Search data, events, resources, and more
+New Ways to Access One-of-a-Kind Data
+//
+Census.gov /
+Library /
+America Counts: Stories /
+New Ways to Access One-of-a-Kind Data
+The Annual Integrated Economic Survey (AIES) Offers a Streamlined Approach to Business Statistics and Visualizations
+August 06, 2026
+Written by:
+Ruby-Jean Davis, Jordan Lloyd and Krysten Mesner
+
+It doesn’t matter whether you’re a policymaker, a business leader or just trying to stay informed — our nation’s economy is complex.
+
+Tracking online trends, judging local market conditions and gauging the economic health of an industry are easier with the right tools.
+
+And now, you can access business revenue, payroll and employment data from the Annual Integrated Economic Survey (AIES) in one interactive visualization tool for the first time.
+
+By bringing these data together in one place, the AIES enables data users to examine the economy with a depth of detail previously unavailable.
+
+
+The AIES is the U.S. Census Bureau’s most comprehensive source of annual national and subnational economic data.
+
+Combining seven previously administered business surveys and adding new levels of geographic detail, “the AIES provides insights that will inform decisions across the public and private sectors,” says Lisa Donaldson, assistant director for economic programs at the Census Bureau.
+
+What Is the AIES?
+
+The AIES gives a yearly snapshot of businesses by collecting information measures of their economic activity such as revenue, expenses and other industry-specific operations.
+
+By bringing these data together in one place, the AIES enables data users to examine the economy with a depth of detail previously unavailable.
+
+The AIES offers several key advantages over the surveys it replaced:
+
+It reduces burden, improves operational efficiency and enhances data quality.
+It provides annual data spanning 19 sectors in a single, unified location. Previously, users had to compile information from multiple sources to get a comprehensive view of the employer economy.
+It offers data at the regional, divisional and state levels for select sectors.
+
+For example, data users interested in finding statistics for the Food Manufacturing subsector can now compare summary statistics at various geographies (Table 1).
+
+A New Visualization Tool
+
+The AIES interactive visualization enables users to explore select North American Industry Classification System (NAICS) sector and subsector statistics by region (Figure 1).
+
+Take the Food Manufacturing subsector again as an example. Users can view revenue and other summary statistic estimates across all regions of the country.
+
+Data Access
+
+Visit the AIES data page to explore the full range of AIES data. All available data are organized into multiple hyperlinked tables that make it easy to find needed information across a broad set of economic statistics. The available data and access methods include:
+
+AIES Data Types
+
+Summary Statistics (Sales, Value of Shipments or Revenue, Annual Payroll, First-Quarter Payroll, Employment, Production Workers, Inventories, Expenses).
+Detailed Industry Expenses.
+Inventory Valuation Statistics.
+Detailed Revenue Products by Industry Statistics.
+Statistics by Customer Type.
+E-Commerce Statistics.
+Experimental Data Releases.
+
+AIES Data Access
+
+data.census.gov.
+File Transfer Protocol (FTP) Files.
+Application Programming Interface (API).
+Other Data Visualizations
+
+In addition to the interactive visualization, new static data visualizations are also available for the 2023 AIES data.
+
+Economic Snapshots by Industry and Geography showcase national, regional and division-level data for select sectors in the United States (Figure 2) and give users a glimpse of the kind of data available in an easy-to-consume format.
+
+More information on the AIES is available on the AIES webpage and in our webinar, the February 2026 press release and a Random Samplings blog post.
+
+Keep a lookout for 2024 AIES summary statistics (data collected in 2025) set to be released in September.
+
+Ruby-Jean Davis is a survey statistician at the Census Bureau.
+
+Jordan Lloyd is a survey statistician at the Census Bureau.
+
+Krysten Mesner is a survey statistician and methodologist at the Census Bureau.
+
+This article was filed under:
+
+Business and Economy
+Related Statistics
+About the AIES
+Provides detailed information on this company-based survey that covers domestic, nonfarm employer businesses with operations during the survey year.
+Subscribe
+
+Our email newsletter is sent out on the day we publish a story. Get an alert directly in your inbox to read, share and blog about our newest stories.
+
+SIGN UP TODAY
+
+Contact our Public Information Office for media inquiries or interviews.
+
+Share
+
+Facebook
+X (Twitter)
+LinkedIn
+Related America Counts Stories
+Business and Economy
+Economic Census Geographic Area Statistics Data Now Available
+April 07, 2025
+A new data visualization based on the 2022 Economic Census shows the changing business landscape of 19 economic sectors across the United States.
+Business and Economy
+Big Improvements to the Annual Integrated Economic Survey (AIES)
+March 26, 2025
+The Census Bureau is making several changes and enhancements to capture 2024 economic data based on feedback from last year’s survey.
+Business and Economy
+Exploring Two “First Look” Economic Datasets
+June 06, 2024
+Early data from the 2022 Economic Census and 2023 Annual Business Survey offer a glimpse of the number of employer businesses in the United States.
+More Stories
+America Counts: Stories
+Taxation
+How States Get Their Cut of the Cannabis Industry
+September 10, 2026
+Census Bureau cannabis excise tax data show how expanding markets and shifting tax structures influence state revenue trends.
+Age
+World Is Aging Faster Than the United States
+September 03, 2026
+Despite slower growth of its older population than other countries, the United States still faces challenges among older adults, like chronic illness.
+Business and Economy
+New Ways to Access One-of-a-Kind Data
+August 06, 2026
+The Annual Integrated Economic Survey expands how users can access economic data by industry and geography.
+Population
+Measuring Foreign-Born Population Over Nation’s 250-Year History
+July 21, 2026
+Historical census data document changes in the foreign-born population in both numbers and countries of origin. 
+Page Last Revised - August 3, 2026
+
+Some content on this site is available in several different electronic formats. Some of the files may require a plug-in or additional software to view.
+
+✕
+Is this page helpful?
+
+ Yes  No
+Back to Header
+
+Receive Updates
+
+To sign up for updates please enter your email address.
+
+Enter your email address
+SUBSCRIBE
+
+Stay Current
+
+America Counts
+
+Director’s Blog
+
+Deputy Director’s Blog
+
+Random Samplings
+
+Research Matters
+
+Stay Connected
+
+Contact
+
+Support
+
+Jobs
+
+Follow
+
+Information Quality
+|
+Data Linkage Infrastructure
+|
+Data Protection and Privacy Policy
+|
+Accessibility
+|
+FOIA
+|
+Inspector General
+|
+No FEAR Act
+|
+U.S. Department of Commerce
+|
+USA.gov
+
+Measuring America's People and Economy

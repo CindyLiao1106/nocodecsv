@@ -1,0 +1,182 @@
+{
+ "ai-data-visualization-guide": {
+  "title": "AI Data Visualization Guide \u2014 Turn Spreadsheets Into Charts",
+  "desc": "Learn how AI transforms raw spreadsheet data into beautiful charts. A guide to AI-powered data visualization for non-designers \u2014 no coding.",
+  "h1": "AI Data Visualization: Turn Any Spreadsheet Into Charts \u2014 No Design Skills"
+ },
+ "analyze-survey-data-csv-with-ai": {
+  "title": "How to Analyze Survey Data CSV With AI (Free, No Coding)",
+  "desc": "Analyze survey data CSV with AI in 3 steps: export your survey, upload it, ask questions in plain English. Free, no coding, works for Google Forms.",
+  "h1": "How to Analyze Survey Data CSV With AI \u2014 Free, No Coding"
+ },
+ "ask-csv": {
+  "title": "Ask CSV: AI Answers About Your CSV Data (Free)",
+  "desc": "Upload a CSV and ask questions in plain English \u2014 get answers, summaries, and charts instantly. Free AI way to ask your CSV anything, no Excel.",
+  "h1": "Ask CSV: How to Ask Questions About Your CSV Data with AI \u2014 Free"
+ },
+ "best-ai-tools-for-excel-analysis": {
+  "title": "Best AI Tools for Excel Analysis in 2026 (Free & Paid)",
+  "desc": "Compare top AI tools for Excel and spreadsheet analysis: ChatGPT Code Interpreter, Julius AI, DataAnalyzer AI, and more. Free to start.",
+  "h1": "5 Best AI Tools for Excel Analysis in 2026"
+ },
+ "change-csv-delimiter": {
+  "title": "How to Change a CSV Delimiter (Semicolon to Comma)",
+  "desc": "CSV opens as one column? The file uses a different delimiter, usually semicolons. Fix it in Excel, Google Sheets, LibreOffice, or the terminal.",
+  "h1": "How to Change a CSV Delimiter: Semicolon to Comma and Back (2026)"
+ },
+ "chat-with-spreadsheet-ai-free": {
+  "title": "Chat With Spreadsheet AI Free: Ask & Get Answers",
+  "desc": "Chat with spreadsheet AI free: upload your CSV or Excel file, ask questions in plain English, and get answers, charts, and insights in seconds.",
+  "h1": "Chat With Spreadsheet AI Free: Ask Questions, Get Instant Answers"
+ },
+ "compare-two-csv-files-online": {
+  "title": "Compare Two CSV Files Online: Find Differences Free",
+  "desc": "Learn how to compare two CSV files online for free. Spot new rows, changed values, and missing records fast with AI, Excel, or a diff tool.",
+  "h1": "Compare Two CSV Files Online: Find Differences in Minutes (Free)"
+ },
+ "convert-csv-to-excel-without-excel": {
+  "title": "How to Convert CSV to Excel Without Excel \u2014 Free & Easy",
+  "desc": "Convert CSV to Excel without Excel installed: free online converter, Google Sheets, or LibreOffice. Step-by-step guide for Windows, Mac, and phone.",
+  "h1": "How to Convert CSV to Excel Without Excel \u2014 Free and Easy"
+ },
+ "convert-csv-to-pdf": {
+  "title": "Convert CSV to PDF: 5 Free Ways (Clean & Printable)",
+  "desc": "A CSV carries no layout, so turning it into a PDF means importing and formatting first. Five free ways to produce a readable PDF, plus the traps.",
+  "h1": "Convert CSV to PDF: 5 Free Ways to Get a Clean Printable File (2026)"
+ },
+ "convert-excel-to-csv-free-online": {
+  "title": "Convert Excel to CSV Free Online \u2014 No Data Loss",
+  "desc": "Convert Excel to CSV free online or with Excel's built-in Save As. Keep UTF-8 encoding, avoid garbled text, and learn which sheet gets exported.",
+  "h1": "How to Convert Excel to CSV Free Online \u2014 No Data Loss, No Signup"
+ },
+ "convert-tsv-to-csv": {
+  "title": "Convert TSV to CSV Free: Tab to Comma in Seconds",
+  "desc": "Convert TSV to CSV free in four ways: Google Sheets, Excel text import, the terminal, or Python. Plus the quoting traps that break naive swaps.",
+  "h1": "Convert TSV to CSV: Tab-Separated Files, Done in a Minute (2026)"
+ },
+ "csv-to-chart-online-free": {
+  "title": "CSV to Chart Online Free \u2014 No Excel, No Code",
+  "desc": "Turn a CSV into a chart online free in under a minute. Compare chart makers, pick the right graph type, and fix common date and scaling problems.",
+  "h1": "CSV to Chart Online Free: Turn Data Into Graphs in Minutes (2026)"
+ },
+ "csv-to-html-table": {
+  "title": "CSV to HTML Table Converter: Free & Fast, No Code",
+  "desc": "Turn a CSV into a clean HTML table in minutes. Compare free converters, learn when to script or hand-code it, and dodge encoding traps.",
+  "h1": "CSV to HTML Table: Free Converters That Actually Work (2026)"
+ },
+ "csv-to-json-free-online": {
+  "title": "CSV to JSON Converter Free Online: Fast, Accurate, No Signup",
+  "desc": "Convert CSV to JSON free online in seconds. Handle headers, custom delimiters, and nested data. No signup, no install. Perfect for developers.",
+  "h1": "CSV to JSON Converter Free Online: Fast, Accurate, No Signup"
+ },
+ "csv-to-markdown-table": {
+  "title": "CSV to Markdown Table: Free Converter + 3 Gotchas",
+  "desc": "Markdown tables render in GitHub, Notion, Obsidian and AI chats, but a CSV does not. Four ways to convert CSV to Markdown, and what breaks when your data contains pipes.",
+  "h1": "CSV to Markdown Table: Convert Any CSV in Seconds (2026)"
+ },
+ "csv-vs-excel": {
+  "title": "CSV vs Excel: What's the Difference & When to Use",
+  "desc": "CSV is plain text with no formatting; Excel (.xlsx) is a compressed workbook with formulas and sheets. See the difference and when each wins.",
+  "h1": "CSV vs Excel: What&apos;s the Difference and When to Use Which (2026)"
+ },
+ "excel-formula-generator-ai": {
+  "title": "Excel Formula Generator AI: Plain English to Formula",
+  "desc": "Generate Excel formulas from plain English with a free AI formula generator. Step-by-step prompts and examples for VLOOKUP, IF, SUMIFS and more.",
+  "h1": "Excel Formula Generator AI: Write Any Formula From Plain English (Free)"
+ },
+ "extract-data-from-pdf-to-csv-ai": {
+  "title": "Extract Data From PDF to CSV With AI: Free, No Manual Typing",
+  "desc": "Learn how to extract data from PDF to CSV with AI for free \u2014 no manual typing. Covers text PDFs, scanned documents with OCR, cleanup, and analysis.",
+  "h1": "Extract Data From PDF to CSV With AI \u2014 Free, No Manual Typing"
+ },
+ "fix-garbled-csv-in-excel": {
+  "title": "Fix Garbled CSV in Excel: UTF-8 & BOM Encoding",
+  "desc": "CSV opens in Excel with weird characters? Fix garbled CSV fast: import as UTF-8, add a BOM, or re-encode the file. Step-by-step guide.",
+  "h1": "Fix Garbled CSV in Excel: UTF-8, BOM &amp; Encoding Issues Explained"
+ },
+ "free-alternative-to-chatgpt-code-interpreter": {
+  "title": "Free ChatGPT Code Interpreter Alternative for Data Analysis",
+  "desc": "Looking for a free ChatGPT Code Interpreter alternative? Compare features, pricing, and privacy. DeepSeek-powered analysis at a fraction of the cost.",
+  "h1": "Free Alternative to ChatGPT Code Interpreter \u2014 Same Power, Lower Cost"
+ },
+ "free-csv-viewer-online": {
+  "title": "Free CSV Viewer Online: Open Large CSV Files Instantly",
+  "desc": "Open and inspect CSV files free online \u2014 no Excel, no installs. View large CSVs instantly, check columns and values, and analyze data with AI.",
+  "h1": "Free CSV Viewer Online \u2014 Open Large CSV Files Instantly in Your Browser"
+ },
+ "how-to-analyze-csv-with-ai-free": {
+  "title": "How to Analyze CSV Files With AI (Free, No Coding)",
+  "desc": "Learn how to analyze CSV data using AI in 3 simple steps. No SQL, Python, or Excel skills needed. Free tools and step-by-step guide for beginners.",
+  "h1": "How to Analyze CSV Files With AI \u2014 Completely Free, No Coding"
+ },
+ "how-to-clean-dirty-csv-data": {
+  "title": "How to Clean Dirty CSV Data: A Step-by-Step Guide (Free)",
+  "desc": "Fix messy CSV data fast: duplicates, missing values, inconsistent formats, extra spaces. Step-by-step guide with free AI tools \u2014 no coding needed.",
+  "h1": "How to Clean Dirty CSV Data \u2014 A Step-by-Step Guide for Non-Coders"
+ },
+ "import-csv-into-google-sheets": {
+  "title": "How to Import CSV Into Google Sheets: 4 Ways",
+  "desc": "Import a CSV into Google Sheets four ways: upload, paste, IMPORTDATA from a URL, or a scheduled script. Plus delimiter and encoding fixes.",
+  "h1": "How to Import CSV Into Google Sheets: 4 Ways (2026)"
+ },
+ "import-csv-to-sqlite-free": {
+  "title": "How to Import CSV to SQLite Free: 5 Working Methods",
+  "desc": "Import CSV to SQLite for free with CLI, DB Browser, or Python. Step-by-step methods plus fixes for encoding, type, and header errors.",
+  "h1": "How to Import CSV to SQLite for Free \u2014 5 Methods That Actually Work"
+ },
+ "json-to-csv-converter-online": {
+  "title": "JSON to CSV Converter Online: Free, No Code",
+  "desc": "Convert JSON to CSV free online. Flatten nested objects, keep your data types, and open the result in Excel or Google Sheets. No signup, no code.",
+  "h1": "JSON to CSV Converter Online: Free, No Code (2026)"
+ },
+ "keep-leading-zeros-in-csv": {
+  "title": "Keep Leading Zeros in CSV: Excel, Sheets & Python Fix",
+  "desc": "Excel strips the leading zero from ZIP codes, phone numbers and IDs the moment it opens a CSV. Here is how to stop it, in Excel, Google Sheets and pandas, plus the 15-digit trap behind it.",
+  "h1": "How to Keep Leading Zeros in CSV Files: Excel, Sheets and Python (2026)"
+ },
+ "merge-csv-files-free": {
+  "title": "How to Merge CSV Files for Free (No Excel, No Coding)",
+  "desc": "Merge multiple CSV files into one in 3 simple ways \u2014 all free. Online tools, spreadsheet tips, and AI-powered cleanup for messy data.",
+  "h1": "How to Merge CSV Files for Free \u2014 3 Simple Ways, No Excel Needed"
+ },
+ "opencode-go-review-cheap-ai-models": {
+  "title": "OpenCode Go Review 2026: $10/Month Cheap AI Models",
+  "desc": "Hands-on OpenCode Go review: $10/month, ~158K requests, DeepSeek V4 Flash, GPT 5.6 Luna, GLM-5.3. Real usage data plus the 402/403 gotchas.",
+  "h1": "OpenCode Go Review 2026: $10/Month for DeepSeek V4 Flash, GPT 5.6 Luna &amp; GLM \u2014 Is It Worth It?"
+ },
+ "remove-blank-rows-from-csv": {
+  "title": "Remove Blank Rows From CSV: 4 Free Methods",
+  "desc": "Blank rows break sorts, formulas, and imports. How to find and delete empty rows in Excel, Google Sheets, the terminal, and Python.",
+  "h1": "How to Remove Blank Rows From a CSV: 4 Free Methods (2026)"
+ },
+ "remove-duplicates-from-csv": {
+  "title": "How to Remove Duplicates From CSV Files \u2014 Free and Easy",
+  "desc": "Remove duplicate rows from a CSV file for free: in Excel, Google Sheets, or online. Step-by-step methods, plus how to dedupe by one column only.",
+  "h1": "How to Remove Duplicates From CSV Files \u2014 Free and Easy"
+ },
+ "sort-csv-by-column": {
+  "title": "How to Sort a CSV File by Column: 4 Free Ways",
+  "desc": "Sort a CSV by column free in Google Sheets, Excel, the terminal, or Python. Headers stay on top, numbers sort correctly, million-row files covered.",
+  "h1": "How to Sort a CSV File by Column: 4 Free Ways (2026)"
+ },
+ "split-large-csv-file-online": {
+  "title": "How to Split a Large CSV File Online \u2014 Free, No Software",
+  "desc": "Split a large CSV file online for free: by rows, by column, or by size. Step-by-step methods for files too big for Excel, with no software install.",
+  "h1": "How to Split a Large CSV File Online \u2014 Free, No Software"
+ },
+ "spreadsheet-automation-with-ai": {
+  "title": "Spreadsheet Automation With AI \u2014 Stop Manual Data Work",
+  "desc": "How AI is automating spreadsheet analysis in 2026. From automated data cleaning to AI-generated reports \u2014 what you can automate today.",
+  "h1": "Spreadsheet Automation With AI \u2014 Stop Doing Manual Data Work in 2026"
+ },
+ "summarize-excel-data-with-ai": {
+  "title": "Summarize Excel Data With AI \u2014 Free, No Pivot Tables",
+  "desc": "Summarize Excel data with AI for free: get totals, trends, outliers, and plain-English summaries of large spreadsheets in seconds.",
+  "h1": "How to Summarize Excel Data With AI \u2014 Free, No Pivot Tables Needed"
+ },
+ "visualize-sales-data-csv": {
+  "title": "How to Visualize Sales Data CSV \u2014 Free, Fast, No Coding",
+  "desc": "Learn how to visualize sales data CSV files in minutes, free. Turn raw sales exports into clear charts with AI \u2014 no Excel, SQL, or coding needed.",
+  "h1": "How to Visualize Sales Data From a CSV \u2014 Free, No Coding"
+ }
+}

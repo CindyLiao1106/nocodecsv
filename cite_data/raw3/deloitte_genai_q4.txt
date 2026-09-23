@@ -1,0 +1,1582 @@
+<<<P1>>>
+Deloitte’s State of Generative AI in the Enterprise 
+Quarter four report
+January 2025
+Now decides next:  
+Generating a new future
+deloitte.com/us/state-of-generative-ai
+
+<<<P2>>>
+2
+Introduction
+Key findings
+Looking back at 2024
+Now: Where we are
+Next: Looking ahead
+Considerations
+Case studies
+Authorship & Acknowledgments
+About the Deloitte AI Institute   
+About the Deloitte Center for Integrated Research 
+About the Deloitte Center for Technology, Media & Telecommunications
+Methodology
+Table of contents
+
+<<<P3>>>
+Introduction
+Foreword
+It was only about 10 years ago when visionary tech leaders started talking about 
+a future powered by ubiquitous computing and ambient intelligence. Back then it 
+sounded like science fiction. Today, it’s real. No where is this future more evident than 
+in the rapid advancement and adoption of AI technologies. New models and tools are 
+gaining greater and greater capabilities and performing more complex reasoning. Even 
+what was state of the art a few years ago pales in comparison to what we have today. 
+In this AI era, many now believe that Moore’s Law is effectively dead. And we have 
+every reason to believe that the AI flywheel will continue to accelerate with every week 
+and year—often referenced as the greatest secular shift of this quarter century. 
+Despite the technology’s rapid pace, I hear from clients and business leaders who are 
+wondering when it will meet their transformational expectations—when will business 
+leaders see the value and innovation that has been promised?  
+Just like the internet, cloud, or even mobile, the transformational opportunities weren’t 
+uncovered overnight. But as they became pervasive, they drove significant disruption 
+to business and technology capabilities, and also triggered many new business 
+models, new products and services, new partnerships, and new ways of working and 
+countless other innovations that led to the next wave across industries. As we have 
+experienced the half-life of these waves continues to be shorter. As such, it requires 
+enterprises to be a lot more structurally agile to adapt, embrace and innovate to stay 
+relevant and differentiated. 
+In the following report, we see that most companies are transforming at the speed 
+of organizational change, not at the speed of technology. This is not surprising but is 
+something that will need to be addressed. That said, many are also already using 
+GenAI to create business value that exceeds their expectations—with compelling new 
+use cases emerging every day. 
+So, what do I say to clients who are in the trenches of this transformation? Don’t lose 
+focus. Stay curious, and challenge the orthodoxies of your organizations. GenAI and 
+AI broadly is our reality—it’s not going away. While there are more questions than 
+answers, but to stay in the game, leaders must be willing to try, do unconventional 
+things, learn and help mature.
+State of GenAI in the Enterprise is a snapshot in time of this great transformation. An 
+opportunity for you to see where and how organizations across industries are finding 
+their way. I hope it serves to spark new ideas and new approaches that help illuminate 
+the path to your organization’s AI-fueled future.    
+–Ranjit Bawa, Principal, US Chief Strategy and Technology Officer
+3
+
+<<<P4>>>
+Introduction
+Generating a new future
+For the past year, Deloitte has been conducting quarterly global survey reports and 
+executive interviews focused on Generative AI (GenAI) in the enterprise. We titled 
+our study Now decides next because we believed in GenAI’s potential to dramatically 
+transform how businesses operate—and that the actions companies take today will 
+have a decisive impact on their ability to succeed with GenAI in the future. And that’s 
+exactly what we found. 
+As with previous transformational technologies, the initial excitement and hype about 
+GenAI has gradually given way to a mindset of positive pragmatism. Many companies 
+are already seeing encouraging returns on their early GenAI investments. However, 
+those companies and others have learned that creating value with GenAI—and 
+deploying it at scale—is hard work. Although the technology at times seems like magic, 
+there is no magic wand when it comes to GenAI adoption, deployment, integration  
+and value creation.
+4
+
+<<<P5>>>
+There is a speed limit. 
+GenAI technology continues to advance at incredible 
+speed. However, most organizations are moving at the 
+speed of organizations, not at the speed of technology.  
+No matter how quickly the technology advances—or 
+how hard the companies producing GenAI technology 
+push—organizational change in an enterprise can only 
+happen so fast. 
+Barriers are evolving. 
+Significant barriers to scaling and value creation are still 
+widespread across key areas. And, over the past year 
+regulatory uncertainty and risk management have risen in 
+organizations’ lists of concerns to address. Also, levels of trust 
+in GenAI are still moderate for the majority of organizations. 
+Even so, with increased customization and accuracy of 
+models—combined with a focus on better governance—
+adoption of GenAI is becoming more established. 
+Some uses are outpacing others.  
+Application of GenAI is further along in some business 
+areas than in others in terms of integration, return on 
+investment (ROI) and expectations. The IT function is 
+most mature; cybersecurity, operations, marketing and 
+customer service are also showing strong adoption and 
+results. Organizations reporting higher ROI for their 
+most scaled initiatives are broadly further along in their 
+GenAI journeys. 
+Introduction
+Key findings
+All statistics noted in this report and its graphics are derived from Deloitte’s fourth quarterly survey, conducted July – September 2024; The 
+State of Generative AI in the Enterprise: Now decides next, a report series. N (Total leader survey responses) = 2,773. Percentages in this report 
+and its charts may not add up to 100, due to rounding. 
+Generative AI is an evolving area of artificial intelligence and refers to AI that in response to a query—a prompt—can create new text, 
+images, video and other assets. Generative AI systems can interact with humans and are built—or “trained”—on datasets that range in 
+size and quality from small language models (SLMs) to large language models (LLMs). Generative AI is also referred to as “GenAI.” 
+Evolving upon GenAI technologies, emerging AI agents are software systems that can complete complex tasks and meet objectives with little 
+or no human intervention. They are called “agents” because they have the agency to act independently, planning and executing actions to 
+achieve a specified goal. Related, the vision for agentic AI is that autonomous AI agents will be able to execute assigned tasks consistently and 
+reliably by acquiring and processing multimodal data, using various tools to complete tasks, and coordinating with other AI agents—all while 
+remembering what they’ve done in the past and learning from their experience.
+5
+
+<<<P6>>>
+The focus is on core business value. 
+A strategic shift is emerging, from technology catch-up 
+to competitive differentiation with GenAI. Beyond the 
+IT function, organizations tend to focus their deepest 
+GenAI deployments on parts of the business uniquely 
+critical to success in their industries.  
+The C-suite sees things differently. 
+Relative to leaders outside of the C-suite, CxOs tend 
+to express a rosier view of their organization’s GenAI 
+investments—and how easily and quickly GenAI’s 
+barriers will be addressed and value achieved. It’s critical 
+that CxOs move on from being cheerleaders to being 
+champions for achieving organizational efficiency and 
+market competitiveness.
+Agentic AI is here.   
+Agentic AI is gaining interest as a breakthrough 
+innovation that could unlock the full potential of GenAI, 
+with GenAI-powered systems having the “agency” 
+to orchestrate complex workflows, coordinate tasks 
+with other agents, and execute tasks without human 
+involvement. However, agentic AI is not a silver bullet and 
+all the broad challenges currently facing GenAI still apply.
+Introduction
+Key findings
+6
+
+<<<P7>>>
+Our previous quarterly report said the clock was ticking 
+to prove value—and this remains true today. Senior 
+decision-makers might not be demanding tangible value 
+and financial results from GenAI yet, but they soon will be. 
+More and more organizations are moving from GenAI 
+experimentation to deployment and scaling—with 
+proven use cases emerging and significant ROI being 
+achieved through the most advanced GenAI initiatives. 
+What’s more, despite some feelings of disillusionment 
+and unmet expectations, the vast majority of 
+organizations we surveyed are taking a realistic 
+perspective and showing sustained commitment in their 
+quest for value from GenAI, and they seem willing to 
+do the hard work that needs to be done. Foundation 
+model improvements—including domain and industry 
+customization—and the promise of AI agents could 
+help overcome inherent challenges and accelerate 
+the creation of business value. However, it might be a 
+multiyear journey for some organizations to reach full-scale 
+deployment and achieve the ROI they are looking for.
+With GenAI, some level of uncertainty is unavoidable 
+and the technology will likely continue to advance at 
+a  rapid pace. Business and technology leaders, for 
+their part, should focus on what they can control—
+namely, organizational readiness, particularly in areas 
+such as data, risk management, governance, regulatory 
+compliance and workforce / talent. Addressing issues 
+in these key areas will help position organizations for 
+success with GenAI no matter how the future unfolds. 
+Introduction
+Key findings
+About the State of Generative 
+AI in the Enterprise:  
+Wave four survey results
+The wave four survey covered in this report was fielded 
+to 2,773 director- to C-suite-level respondents across six 
+industries and 14 countries between July and September 
+2024. Industries included: consumer; energy, resources and 
+industrials; financial services; life sciences and health care; 
+technology, media and telecom; and government and public 
+services. The survey data was augmented by additional 
+insights from 15 interviews with C-suite executives and AI and 
+data science leaders at large organizations across a range of 
+industries. For details on methodology, please see p. 45.
+This quarterly report is part of an ongoing series by the 
+Deloitte AI InstituteTM to help leaders in business, technology 
+and the public sector track the rapid pace of Generative AI 
+change and adoption. The series is based on Deloitte’s  
+State of AI in the Enterprise reports, which have been  
+released annually the past five years. Learn more at  
+deloitte.com/us/state-of-generative-ai.
+7
+
+<<<P8>>>
+The case studies featured in this report are a small subset of the insights from our ongoing 
+in-depth interviews with business and AI leaders from a wide range of industries. The goal is 
+to build on the quantitative findings from our quarterly surveys by capturing practical, real-
+world insights directly from leaders and organizations on the front lines of GenAI adoption.
+Our interviews explore how leading organizations in diverse industries are  
+using GenAI to create value. Most notably, we are seeing initiatives focused  
+on applying GenAI to business-specific challenges in areas critical to success  
+in that organization’s industry. Examples include using GenAI for:
+•   Brand promotion and integrated business planning in the consumer products industry
+•   Predictive maintenance for physical assets in the energy industry
+•   Drug discovery and clinical trial tracking in the pharmaceutical industry
+•   Cybersecurity and portfolio management in the financial services industry
+•   Sales enablement, chip development and improved search in the technology industry
+•   Archive management and music source separation in the media and entertainment industry
+This focus on mission-critical activities suggests a broad strategic shift in the GenAI 
+landscape, from technology catch-up to competitive differentiation.
+Real-world case studies
+Go to case studies
+8
+
+<<<P9>>>
+ 
+Looking back at 2024
+9
+
+<<<P10>>>
+Our first global quarterly survey, conducted in late 2023, revealed great excitement and expectations for GenAI. 
+However, those feelings were tempered by uncertainty and fear about the technology’s potentially negative impacts 
+on workers and society. Our second and third quarterly surveys focused more deeply on how organizations were 
+prioritizing tangible results and value creation from their GenAI investments, and on understanding and tackling 
+the barriers to successful scaling. 
+A key finding during the year was that promising results from early GenAI pilots were raising expectations and 
+driving increased investment in the technology.
+Today, interest and excitement about GenAI remain high. However, the initial fervor has gradually given way to a 
+positive yet pragmatic mindset—especially among business leaders at all levels. Meanwhile, technology leaders’ 
+interest and excitement have remained high and steady (figure 1).
+Although this shift among business leaders might seem like a step backward for GenAI, it is entirely consistent with 
+the usual life cycle for transformative technologies. It is also a net positive in terms of helping organizations move 
+past the hype stage so they can directly tackle the serious work of using GenAI to create real business value.
+Looking back at 2024
+Now: Looking back at 2024
+Figure 1
+Q: For the following groups in your organization, rate their 
+overall level of interest in Generative AI.
+State of Generative AI in the Enterprise Survey,  
+Q1 (Oct./Dec. 2023) N (Total) = 2,774; Q4 (July/Sept. 2024)  
+N (Total) = 2,773; 14 countries common to both data sets
+Level of interest in GenAI
+(high + very high)
+Q1
+Q4
+Board
+C-suite /  
+executive 
+leaders
+Technical 
+leaders
+LOB / 
+functional 
+leaders
+Employees
+62%
+74%
+86%
+64%
+49%
+46%
+59%
+86%
+56%
+50%
+A key finding during the year was that promising results 
+from early GenAI pilots were raising expectations and 
+driving increased investment in the technology.
+-16 pts
+-15 pts
+10
+10
+
+<<<P11>>>
+Over the past year, as organizations gained experience with GenAI, they began to better 
+understand both the rewards and challenges of deploying the technology at scale—
+and adjusted their plans and expectations accordingly. Budgets have risen, and the 
+need for C-suites and boards to spur their organizations into action has diminished. 
+At the same time, the need for disciplined action has grown. Technical preparedness 
+has improved, while regulatory uncertainty and risk management have become bigger 
+barriers to progress. Talent and workforce issues remain important; however, access to 
+specialized technical talent no longer seems to be the dire emergency it once was, at least 
+in comparison to other priorities. There has been one constant, however: improved data 
+management continues to be a top priority, even for companies that live and breathe data.
+“Data emerged as the central factor for [our GenAI] success,” said a former software 
+engineering manager for one of the world’s leading technology companies. “While 
+the models and computing power existed, accessing the right data proved to be the 
+biggest bottleneck. To address this, the company implemented a centralized data 
+strategy, managed by a single data leader, to streamline data acquisition and minimize 
+redundancy—enabling faster model development.”
+Now: Looking back at 2024
+“Data emerged as the central  
+factor for [our GenAI] success …”
+— Former software engineering manager for leading technology company
+11
+
+<<<P12>>>
+From a technology perspective, the capabilities of 
+foundation models and applications have improved 
+dramatically over the past year. There are smaller, more 
+efficient models; better latency; bigger access windows; 
+expanded modalities; greater autonomy; and increased 
+model specialization. 
+Reliability and trust have improved as well, although both 
+still have a long way to go. Meanwhile, the adoption rate 
+for customized, open-source and/or proprietary large 
+language models (LLMs) remains limited at 20%–25% of 
+those surveyed. 
+Over the past year, respondents reported they 
+believe their organizations have most improved their 
+GenAI preparedness in the critical areas of technology 
+infrastructure (+7 points) and strategy (+5 points). However, 
+preparedness has seemingly not improved in the other 
+critical areas of risk and governance and talent. 
+The vast majority of respondents (78%) reported they 
+expect to increase their overall AI spending in the next 
+fiscal year, with GenAI mostly expanding its share of 
+the overall AI budget relative to our first-quarter survey 
+results. In particular, the percentage of organizations 
+investing 20%–39% of their overall AI budget on 
+GenAI climbed by 12 points, while the percentage of 
+organizations investing less than 20% of their AI budget 
+on GenAI fell by 6 points.
+“The way we do business has not changed,” said the VP of 
+artificial intelligence at a major media and entertainment 
+company. “For every project, our objective is always to do 
+something that has a positive impact on the business. This 
+has not changed and is not going to change because it’s 
+what makes sense. However, a large proportion of project 
+proposals now have a [GenAI] component to them.”
+Now: Looking back at 2024
+78%
+of respondents expect to increase their overall AI spending  
+in the next fiscal year.
+12
+
+<<<P13>>>
+Relative to other respondents, the C-suite leaders (CxOs) in our survey generally demonstrated higher levels 
+of excitement and optimism about their organizations’ GenAI implementations. For example, 21% of C-suite 
+survey respondents reported they feel GenAI is already transforming their organization, compared to only 8% 
+of non-C-suite respondents. C-suite executives surveyed are comparatively less worried about barriers such 
+as trust, risk management, governance and regulatory compliance. They also have a rosier view of how quickly 
+their organization is moving, and how quickly the barriers to scaling and value creation will be addressed. 
+Sixty percent of non-C-suite respondents believe it will take 12 months or more to overcome scaling barriers, 
+compared to only 47% of C-suite respondents.
+This doesn’t necessarily mean CxOs are out of touch with the challenges of adopting and deploying GenAI. 
+It could be they are still playing the primary role of catalyst or cheerleader and are in the process of learning 
+what it really takes to implement and scale GenAI. What will be important going forward is for CxOs to direct 
+that enthusiasm to removing barriers and enabling scaling.  
+Now that GenAI in the enterprise is moving past its infancy, CxOs should take on new roles, including those 
+of guide, counselor and challenger. Chief executive officers should show top-down support for GenAI, be the 
+champions for governance and risk initiatives, and foster an environment of trust and transparency. Chief 
+information officers, chief technology officers and chief data officers should sharpen their focus on identifying and 
+overcoming the barriers to large-scale GenAI deployment within their domains. Chief financial officers should 
+ensure responsible spending without stifling innovation. And chief human resource officers should promote 
+training, reskilling and other human capital investments. 
+View from the C-suite
+Now: Looking back at 2024
+13
+
+<<<P14>>>
+The uneven pace of change
+With transformational technologies, 
+there are always gaps between the pace 
+of technological change and the ability of 
+individuals, businesses and policymakers 
+to keep up. GenAI is no exception.
+Incredible advances in GenAI technology, fueled by 
+massive capital and intellectual investments from 
+tech companies, are already manifesting in individuals’ 
+everyday lives—through smarter smartphones, 
+improved customer service, AI-enhanced search 
+engines, and more. 
+For businesses, embracing and integrating GenAI 
+is much harder—and takes much longer—due to a 
+complex mix of factors. This could include dealing with 
+competing transformational priorities. However, policy, 
+legislative and regulatory changes might be more 
+challenging overall. 
+Governments today face the monumental task 
+of regulating a technology whose capabilities are 
+still taking shape. One direct consequence is that 
+regulatory compliance has emerged from the pack 
+to become the top barrier holding organizations 
+back from developing and deploying GenAI tools and 
+applications (figure 2). This highlights respondents’ 
+unease about which use cases will be acceptable, 
+and to what extent their organizations will be held 
+accountable for GenAI-related problems.
+This uneven pace of change creates friction for 
+organizations, which likely contributes to the relatively 
+moderate pace of transformation we are seeing as 
+businesses work through their challenges on the path 
+to creating sustained value with GenAI. 
+Now: Looking back at 2024
+Barriers to developing and deploying GenAI
+Q: What, if anything, has most held your organization back in developing and deploying Generative AI tools / applications? (Select up to three challenges)
+State of Generative AI in the Enterprise Survey, Q1 (Oct./Dec. 2023) N (Total) = 2,774; Q4 (July/Sept. 2024) N (Total) = 2,773; 14 countries common to both data sets
+Figure 2
+Worries about 
+complying with 
+regulations
+Difficulty 
+managing risks
+Lack of an 
+adoption 
+strategy
+Difficulty 
+identifying use 
+cases
+Trouble choosing 
+the right 
+technologies
+Implementation 
+challenges
+Lack of technical 
+talent and skills
+Lack of a 
+governance 
+model
+Cultural 
+resistance from 
+employees
+28%
+Not having the 
+right comp. 
+infrastructure / 
+data
+Lack of executive 
+commitment 
+and/or funding
+38%
+26%
+32%
+26%
+27%
+36%
+26%
+27%
+24%
+18%
+22%
+25%
+21%
+20%
+17%
+17%
+17%
+15%
+15%
+19%
+14%
+Q1
+Q4
++10 pts.
++6 pts.
+-10 pts.
+14
+
+<<<P15>>>
+ 
+Now: Where we are
+15
+15
+
+<<<P16>>>
+For our fourth wave report, we wanted to answer  
+several questions about scaling and value realization.
+	
+Where do things stand with workforce adoption? 
+	
+How many experiments are organizations pursuing, and what are  
+their success rates? 
+	
+Which benefits are GenAI initiatives targeting? 
+	
+Are some types of GenAI initiatives / use cases showing more promise  
+than others?
+	
+Are they meeting ROI expectations? 
+Now: Where we are
+1
+2
+3
+4
+5
+16
+
+<<<P17>>>
+Where do things stand with workforce adoption?
+Now: Where we are
+1
+Our latest survey results show that access to GenAI is still largely limited to less than 
+40% of the workforce. Also, for most organizations, fewer than 60% of workers who 
+have access to GenAI actually use it on a daily basis. This suggests many companies 
+have yet to integrate GenAI into their standard business workflows. It also raises the 
+chicken-and-egg question of whether limited access to GenAI is inhibiting comfort and 
+uptake with the technology (and stifling innovation), or whether the lack of high-value, 
+innovative use cases is limiting interest and adoption. 
+For GenAI to become truly transformational, it will likely require greater numbers of 
+workers experimenting and leveraging the technology to identify new, high-impact use 
+cases within the business. “Within our organization, the demand for GenAI use cases 
+and innovation primarily comes from middle management and employees, rather than 
+being driven by the C-suite,” said the director of product management for GenAI, cloud 
+and data centers at a leading semiconductor company. “While the C-suite has been 
+slower to engage in AI implementation, teams across the company are developing 
+proofs-of-concept and driving AI adoption through internal boards and governance 
+structures. This bottom-up approach emphasizes improving workflows and test cases, 
+with leadership providing support as needed for broader integration.”
+Of course, access alone does not equate success. Providing access to GenAI does 
+not mean workers will use it. Conversely, workers with a burning desire to use GenAI 
+will likely find a way to do so, with or without approval. However, in order to foster 
+transformation and maintain some level of control over how GenAI is used within the 
+enterprise, it generally makes sense to offer broad workforce access to sanctioned 
+GenAI tools, supported by clear guidelines for proper use. 
+“Currently, GenAI adoption is driven by internal demand, with early adopters seeking 
+to use the tools to meet their specific needs,” said the head of GenAI in product 
+management at a major technology company. “However, we expect a shift towards 
+push-driven adoption in the next year, where all business units will be required to 
+integrate the platform as it becomes an approved and proven tool. This shift will create 
+pressure for teams to leverage the technology or risk missing out on the benefits it offers.”
+“Currently, GenAI adoption is driven 
+by internal demand, with early 
+adopters seeking to use the tools to 
+meet their specific needs …”
+— Head of Generative AI, project management at major technology company
+17
+
+<<<P18>>>
+We found organizations are still heavily experimenting 
+with GenAI, and scaling tends to be a longer-term goal. 
+Over two-thirds of respondents said that 30% or fewer 
+of their current experiments will be fully scaled in the 
+next three to six months. This suggests companies are 
+taking time to test GenAI’s capabilities and to figure 
+out where it can help the most (figure 3).
+The lion’s share of organizations are currently 
+pursuing 20 or fewer GenAI experiments or proofs of 
+concept (POCs) and expect to fully scale 10%–30% of 
+those experiments in the next three to six months. 
+As expected, individual company actions vary, with 
+larger numbers of experiments being conducted by 
+organizations that are large, advanced in their use of 
+AI, and/or operating in key industries of technology, 
+media and telecommunications; life sciences and 
+health care; or financial services.
+What is the state of  
+GenAI experimentation?
+Q: Approximately how many Generative AI experiments or proofs of concept is your organization currently pursuing? What percentage of these AI 
+experiments or proofs of concept do you anticipate will be fully scaled in the next three to six months?
+State of Generative AI in the Enterprise Survey, (July/Sept. 2024) N (Total) = 2,773
+Figure 3
+Now: Where we are
+2
+Volume of experiments / POCs
+3%
+More than 100
+51 to 100
+21 to 50
+11 to 20
+Less than 10
+Don’t know
+7%
+35%
+24%
+29%
+3%
+Volume of experiments / POCs
+% of organizations
+Scaling progress (next 3-6 months)
+2%
+80%
+2%
+9%  
+5%
+13%
+26%
+% of experiments / POCs
+27%
+16%
+1%
+% of organizations
+70%
+60%
+50%
+40%
+30%
+20%
+10%
+0%
+18
+
+<<<P19>>>
+“Improved efficiency and productivity” continue to be 
+the most commonly sought benefits from GenAI, and 
+many organizations (40%) reported they are already 
+achieving their expected benefits in this area to a large 
+or very large extent. However, our respondents cited 
+slightly higher levels of success in a small handful of 
+more strategic benefit areas, particularly “new ideas 
+and insights” (46%) and “innovation and growth”  
+(45%) (figure 4).
+Which benefits are GenAI 
+initiatives targeting?
+Now: Where we are
+60%
+50%
+40%
+30%
+20%
+10%
+10%    15%    20%    25%    30%    35%    40%    45%    50%    55%    60%
+Benefits achieved 
+ 
+(among companies that sought it, the % that  
+achieved it to a large or very large extent)
+Benefit sought
+(% hoping to achieve the benefit)
+Q: What are the key benefits you hope to achieve through your Generative AI efforts? (Select up to three benefits) To what extent are you achieving 
+those benefits to date?  
+State of Generative AI in the Enterprise Survey, (July/Sept. 2024) N (Total) = 2,773
+Figure 4
+Benefits achieved vs. benefits sought
+Detect fraud and manage risk
+achieving
+seeking
+Increase speed / ease of developing new systems
+Enhance relationships with clients / customers
+Uncover new ideas and insights
+Encourage innovation and growth
+Improve 
+efficiency and 
+productivity
+Improve existing products and services
+Shift workers from lower- to higher-value tasks
+Increase revenue
+Reduce costs
+3
+46%
+of respondents (seeking the benefit) 
+reported that they are uncovering  
+new ideas and insights with GenAI.
+19
+
+<<<P20>>>
+To understand where GenAI is having the deepest impact on organizations, we asked respondents to consider one 
+of their most advanced GenAI initiatives—an initiative that is most fully scaled—and then to identify which function or 
+department it targets.
+Since GenAI is a highly advanced technology—and one of its best capabilities is generating 
+computer code—it’s no surprise that the IT function came out on top (28%). 
+However, the survey data also shows GenAI being deployed deeply in many other parts of the business as well, including 
+operations (11%), marketing (10%), and customer service (8%) (figure 5a).
+Figure 5a
+Q: Consider one of your organization’s most advanced (scaled) 
+GenAI initiatives. In which function or department is this initiative?
+State of Generative AI in the Enterprise Survey, (July/Sept. 2024)  
+N (Total) = 2,773
+GenAI initiatives are most 
+advanced within these functions
+  28%
+IT
+Operations
+Marketing
+Customer service
+Cybersecurity
+Product development
+Are some use cases showing more promise?
+Now: Where we are
+R&D
+Sales
+Strategy
+Supply chain
+Finance
+HR
+Manufacturing
+Legal, risk, compliance
+  11%
+  8%
+  10%
+  8%
+  6%
+  7%
+  5%
+  4%
+  5%
+  4%
+  2%
+  2%
+  1%
+4
+20
+
+<<<P21>>>
+Even more revealing, we found that the 
+most advanced GenAI applications outside 
+of IT overwhelmingly target critical business 
+areas that are fundamental to success in a 
+company’s specific industry (e.g., marketing in the 
+consumer industry; operations in energy, resources and 
+industrial; cybersecurity in financial services). 
+For example, in the life sciences and health care industry, 
+where R&D is strategically important, the associate 
+director of artificial intelligence at a leading health care 
+products company said: “Value creation is measured 
+operationally by the acceleration of development 
+timelines, with AI providing faster results while staying 
+within set performance and output quality constraints. 
+Our focus is on development speed, rather than 
+outperforming human capabilities. And while a tenfold 
+acceleration without human involvement remains 
+aspirational, a three- to five-fold increase in speed has 
+already been realized.”
+This is a crucial insight since many business leaders still 
+associate GenAI with personal productivity and other 
+relatively mundane tasks secondary to the core business. 
+“Our company has an enterprisewide AI leadership 
+team, but I think they’re really focused on a co-pilot 
+strategy and helping all individuals use AI tools to improve 
+their productivity,” said the director of organizational 
+transformation and change at a leading consumer 
+products company. “We’re a little bit behind the eight 
+ball on internal processes, and AI is sort of on the fringe. 
+I don’t think business-facing case studies have been 
+weaved into an overall enterprise AI strategy.”
+Now: Where we are
+Top three most advanced (scaled) GenAI initiatives by industry
+Color of the bubble represents the function
+Tech, media & telecom
+Government
+IT 96%
+Operations 3%
+IT 34%
+Product dev 17%
+Cybersecurity 12%
+IT 23%
+R&D 21%
+Operations 11%
+IT 21%
+Cybersecurity 14%
+Finance 13%
+Operations 23%
+IT 17%
+Strategy 11%
+IT 20%
+Marketing 20%
+Customer service 12%
+Figure 5b
+Q: Consider one of your organization’s most advanced (scaled) GenAI initiatives. In which function or department is this initiative?
+State of Generative AI in the Enterprise Survey, (July/Sept. 2024) N (Total) = 2,773
+Industry
+Top 3 functions 
+using GenAI 
+applications and 
+the percentage of 
+initiatives in each
+Consumer
+Energy, resources & industrial
+Financial services
+Life sciences & health care
+21
+
+<<<P22>>>
+Are advanced GenAI initiatives meeting ROI expectations?
+Return on investment for organizations’ most advanced GenAI initiatives has been 
+generally positive. Almost all organizations report measurable ROI, and one-fifth 
+(20%) report ROI in excess of 30%. Similarly, nearly three-quarters (74%) say their 
+most advanced initiative is meeting or exceeding their ROI expectations (43% 
+meeting, 31% exceeding). Also, two-thirds (67%) say their most advanced initiative is 
+at least moderately integrated into their broader work processes (figure 6).
+Figure 6
+Most advanced (scaled) GenAI initiatives
+Now: Where we are
+51% or more 
+31% to 50% 
+11% to 30% 
+6% to 10% 
+Less than 5% 
+Not measuring 
+ROI to date
+  6%
+  14%
+  23%
+  41%
+  9%
+ 5%
+Significantly above
+Somewhat above
+Meeting
+Somewhat below
+Significantly below
+ROI expectations
+  7%
+  24%
+  19%
+  43%
+  5%
+Completely integrated
+Large extent
+Moderate extent
+Small extent
+Not at all, but intend to
+No intention to integrate
+Level of integration
+  4%
+  20%
+  25%
+  43%
+  7%
+  2%
+Q: ROI to date: Estimate the ROI to date for this specific initiative. / ROI expectations: How is the ROI from this Generative AI initiative meeting your organization’s expectations? / Level of integration: To what level is the Generative AI initiative integrated 
+into the broader organization’s work process?
+State of Generative AI in the Enterprise Survey, (July/Sept. 2024) N (Total) = 2,773
+74%
+of respondents say their most advanced 
+Generative AI initiative is meeting or 
+exceeding their ROI expectations.
+5
+22
+
+<<<P23>>>
+Relative to other types of advanced GenAI initiatives, those focused on cybersecurity 
+are far more likely to be exceeding their ROI expectations, with 44% of cybersecurity 
+initiatives delivering an ROI somewhat or significantly above expectations versus 
+only 17% that are delivering an ROI somewhat or significantly below expectations (a 
+27-point gap) (figure 7). On the other hand, with advanced GenAI implementations 
+in functions such as sales, finance and R&D, more respondents reported ROI below 
+expectations than reported ROI above expectations. This suggests some challenges 
+have yet to be overcome in those areas.
+Meanwhile, 36% of respondents said their cybersecurity initiative is integrated into 
+work processes to a large extent—a higher level of integration than any other kind 
+of advanced GenAI initiative. These results are somewhat skewed by advanced 
+GenAI deployments in the financial services and technology industries, where 
+cybersecurity is especially critical. However, the relatively strong performance of 
+cyber-related GenAI initiatives makes sense for a number of other reasons as well.1 
+Many organizations are already experienced in using AI to manage cyberthreats and 
+have related infrastructure in place to scale cyber capabilities. According to Deloitte’s 
+Global Future of Cyber Survey, fourth edition, 86% of the organizations surveyed 
+already deploy AI-based tools to continuously monitor their digital infrastructure  
+to a moderate or large extent.2
+Now: Where we are
+45%
+40%
+35%
+30%
+25%
+20%
+15%
+10%
+20%          25%          30%          35%          40%          45%          50%
+Below ROI expectations
+(% saying somewhat and significantly below)
+Above ROI expectations
+(% saying somewhat and significantly above)
+Q: How is the ROI from this Generative 
+AI initiative meeting your organization’s 
+expectations?
+State of Generative AI in the Enterprise Survey, 
+(July/Sept. 2024) N (Total) = 2,773
+Figure 7
+ROI performance against expectations  
+(for most advanced initiatives)
+R&D -5
+Operations 0
+Sales -8
+Finance -8
+More below 
+than above
+More above 
+than below
+Product dev 0
+Marketing +2
+Strategy +10
+Customer service +8
+Supply chain +7
+IT +15
+Cybersecurity  
++27
+Those focused on cybersecurity are far more 
+likely to be exceeding their ROI expectations.
+Meeting expectations
+Significantly above expectations
+Below expectations
+Above expectations
+The numbers with each function indicate  
+the difference between the % above 
+expectations and the % below expectations.
+23
+
+<<<P24>>>
+ 
+Next: Looking ahead
+24
+24
+
+<<<P25>>>
+In our final survey of the year, we wanted to explore how organizations expect GenAI adoption and value creation 
+to unfold over the next 12–18 months. What do they think could slow adoption? How long do they expect it will take 
+to overcome their GenAI-related challenges, and are they willing to sustain their commitment long enough for their 
+investments to pay off? Also, what emerging GenAI technologies are they most interested in? 
+What could slow GenAI adoption?
+According to our respondents, there are a range of issues with the greatest potential to slow overall marketplace 
+adoption of GenAI over the next two years. The top potential barriers to adoption include: mistakes / errors with 
+real-world consequences (35%); not achieving expected value (34%); shortage of high-quality data (30%); and general 
+loss of trust due to bias, hallucinations and inaccuracies (29%) (figure 8).
+For broader GenAI adoption to occur, the technology’s reliability, accuracy and trustworthiness will need to improve. 
+Also, GenAI initiatives will need to deliver their expected value in a timely manner.
+Next: Looking ahead
+Q: Which of the following do you think could MOST slow adoption 
+of GenerativeAI models/tools/applications by organizations over 
+the next two years? (Select two) 
+State of Generative AI in the Enterprise Survey, (July/Sept. 2024)  
+N (Total) = 2,773
+Figure 8
+Impediments to GenAI adoption  
+in the near future
+35%
+Mistakes / 
+errors leading 
+to real-world 
+consequences
+Not achieving 
+expected value
+The availability 
+of enough high-
+quality data
+A general loss of 
+trust due to bias, 
+hallucinations and 
+inaccuracies
+Intellectual 
+property issues
+34%
+30%
+29%
+25%
+Concerns over 
+energy usage /
+environmental 
+concerns
+Rising cost of 
+building and 
+operating models /
+tools / applications
+20%
+13%
+AI sovereignty 
+issues
+12%
+35%
+of organizations we surveyed said their top potential barrier to adopting  
+Generative AI is mistakes / errors with real-world consequences.
+25
+
+<<<P26>>>
+As noted above, “not achieving expected value” is in a virtual tie as the No. 1 potential barrier 
+to overall adoption of GenAI. Yet, the majority of respondents (55%–70%, depending on the 
+challenge) believe their organizations will need at least 12 months to resolve adoption challenges 
+such as governance, training, talent, building trust and addressing data issues (figure 9).
+According to the head of finance for private assets investments and strategic ventures at a 
+leading financial services company, “To create value from our GenAI use case, we will need to 
+fundamentally transform our operating cost model by reducing fees and demonstrating that 
+one portfolio manager can manage multiple portfolios efficiently over time. This will take at 
+least five years to validate and substantiate the KPIs fully.”
+Will organizations have the patience and sustained commitment  
+to work through their GenAI challenges, or will they cut and run 
+before their investments have a chance to pay off? 
+In our latest survey, 70% of respondents said their organizations will need at least 12 months 
+to resolve the challenges related to surpassing or achieving their expected ROI from GenAI. 
+However, 76% reported their organizations will wait at least 12 months before reducing 
+investment in a GenAI initiative that is not meeting its value targets. Based on these two 
+responses, it appears organizations will likely have the patience necessary to see their GenAI 
+investments pay off. 
+How long will it take to resolve challenges 
+related to GenAI, and are organizations willing 
+to wait?
+Time to resolve GenAI challenges
+Less than 1 year
+1 to 2 years
+Figure 9
+Q: With respect to your organization’s priority Generative AI initiatives, when do you think the 
+organization will adequately resolve challenges around the following areas? 
+State of Generative AI in the Enterprise Survey, (July/Sept. 2024) N (Total) = 2,773
+More than 2 years
+Implementing 
+a governance 
+strategy
+29%
+52%
+17%
+Achieving ROI
+26%
+55%
+15%
+Acquiring talent
+37%
+51%
+9%
+39%
+49%
+9%
+Addressing  
+data challenges
+40%
+51%
+Overcoming  
+scaling barriers
+42%
+48%
+Training workers
+44%
+48%
+Next: Looking ahead
+8%
+8%
+7%
+Managing trust 
+issues
+26
+
+<<<P27>>>
+Among all the emerging GenAI-related technological 
+innovations, agentic AI currently appears to be capturing  
+the most interest and attention.  
+ 
+ 
+In fact, according to our survey, the two most interesting areas today are agentic AI 
+(52%) and multiagent systems (45%), which is essentially a more advanced, complex 
+variant of agentic AI. Closely behind those two is multimodal capabilities, which is 
+also an integral part of agentic AI systems (figure 10).
+Interest in future GenAI-related developments
+Figure 10
+Q: What Generative AI technology developments is your organization most interested in? (Select all) 
+State of Generative AI in the Enterprise Survey, (July/Sept. 2024) N (Total) = 2,773
+52%
+GenAI for automation 
+(agentic AI)
+45%
+Multiagent 
+systems
+Synthetic data for 
+training / tuning
+Large action 
+models
+Advanced hardware 
+specifically for GenAI 
+applications
+44%
+Multimodal 
+capabilities
+New training 
+techniques
+35%
+Smaller, less 
+resource-intensive 
+models
+35%
+30%
+Alternative /
+improved 
+architectures
+28%
+21%
+Next: Looking ahead
+Which technology advances could drive the future of GenAI?
+20%
+27
+
+<<<P28>>>
+AI agents are software systems that can complete complex tasks and meet objectives 
+with little or no human intervention. They are called “agents” because they have the  
+agency to act independently, planning and executing actions to achieve a specified goal.3 
+The vision for agentic AI is that autonomous AI agents will be able to execute assigned 
+tasks consistently and reliably by acquiring and processing multimodal data, using various 
+tools to complete tasks, and coordinating with other AI agents—all while remembering 
+what they’ve done in the past and learning from their experience. 
+“In the next phase of GenAI, we envision the development of specialized AI agents 
+tailored to specific functions, like sales research, to manage the overwhelming volume 
+of data,” said the director of product management for GenAI, cloud and data centers at 
+a leading high-tech manufacturing company. “These agents will streamline processes, 
+helping sales teams gather critical information quickly—without the need for extensive 
+manual research. Multiagent workflows are a future possibility; however, we anticipate 
+starting with single-agent solutions that can mature and scale efficiently, focusing on ROI 
+as they evolve into production.”
+Agentic AI is the next logical step for GenAI, giving GenAI-based 
+systems access to more types of information and increasing AI’s  
+level of responsibility and autonomy. 
+In fact, 26% of our survey respondents said their organizations were already exploring 
+autonomous agent development to a large or very large extent. However, as with 
+current GenAI systems, agentic AI is not a silver bullet for everything a company needs 
+to get done. The key barriers currently facing GenAI—such as regulatory uncertainty, 
+inadequate risk management, data deficiencies, and workforce / talent issues—still apply 
+and are arguably even more important and challenging due to the increased complexity 
+of agentic AI systems.
+Next: Looking ahead
+“In the next phase of GenAI, we envision the development of specialized AI agents tailored to 
+specific functions, like sales research, to manage the overwhelming volume of data.”
+— Director of product management for GenAI, cloud and data centers at a leading high-tech manufacturing company
+28
+
+<<<P29>>>
+ 
+Considerations
+29
+29
+
+<<<P30>>>
+Initially, senior executives acted as catalysts and drivers for GenAI adoption 
+in their organizations. However, with strategies set, funding approved and 
+guidance given, many are now expecting GenAI to deliver significant and timely 
+improvements in efficiency, productivity, innovation and competitive advantage. 
+As such, C-suite leaders (CxOs) today should think about how to redefine their 
+roles around GenAI—and how to best lead their organizations forward. 
+There are three main ways CxOs can aid in this preparation. First, they must 
+ensure the organization stays aligned. Technical and business executives 
+should be involved in each other’s conversations and decisions, making 
+sure GenAI is appropriately represented. Second, CxOs must manage 
+organizational expectations. Leaders at the most senior level tend to be 
+more optimistic than those below them when it comes to the organization’s 
+rate of progress with GenAI (and ability to overcome obstacles). The GenAI 
+journey is long, and C-suite leaders need to be realistic about time horizons 
+for project success and organizational transformation. Third, CxOs must 
+show patience in the face of uncertainty—providing a steady hand and 
+sustained commitment to achieving long-term transformation across 
+multiple business areas. 
+ 
+Task the C-suite with creating alignment 
+and managing expectations  
+Next: Considerations
+30
+
+<<<P31>>>
+GenAI initiatives are already delivering significant enterprise value, including improved 
+efficiency, relationships and innovation. However, our survey results show that measurable 
+ROI varies widely for different use cases and functions. Some initiatives are already 
+exceeding expectations, but others are currently falling short. The bridge to sustained ROI 
+can only be built by establishing the right holistic strategies, building platform capabilities, 
+being realistic about targets and timelines, and taking some risks. 
+In our case studies, we found that focusing on a small number of high-impact use cases in 
+proven areas can accelerate ROI, as can layering GenAI on top of existing processes. Additionally, 
+centralized governance can pave the way for smoother adoption and employee buy-in, which 
+tends to yield better results and improves scalability. Finally, continuous iteration based on user 
+feedback and real-world performance can help ensure sustained value creation. 
+Ultimately, organizations need to move beyond isolated initiatives and integrate GenAI  
+into increasingly sophisticated and interconnected processes, evolving toward cognitive 
+systems with advanced reasoning capabilities. The goal should be to fundamentally  
+reinvent business processes.
+Build bridges to sustained ROI
+Prioritize your workforce and prepare it for disruption
+According to our survey results, the number of organizations that feel prepared for GenAI 
+from a talent perspective is still quite low and hasn’t changed much since the beginning of 
+2024. Also, workforce access to GenAI tools is still somewhat limited and daily use remains 
+low. These results all shine a spotlight on the need for organizations to do more to prepare 
+their workers for potential disruption from GenAI. 
+Although organizations have many priorities and barriers to focus on, they can’t overlook 
+talent issues if they want to achieve sustained growth and maximize ROI. Workers need 
+more GenAI access and experience—and they need it sooner rather than later. 
+Several of our case studies revealed organizational resistance to adopting GenAI solutions, 
+which slowed project timelines. Usually, the resistance stemmed from unfamiliarity with 
+the technologies and/or skill and technical gaps. Effective change management, including 
+education and training, was pivotal in overcoming the challenge. Without adequate 
+workforce buy-in and training, even the most powerful GenAI solutions can fail to deliver the 
+expected outcomes. Also, developing systems for continuous improvement is critical—with 
+users providing ongoing feedback on the quality and accuracy of GenAI solution outputs.
+Next: Considerations
+31
+
+<<<P32>>>
+With agentic AI, the question is not if, but when. Although the technology is still in its early 
+stages, it is evolving rapidly and will likely become increasingly capable over the next few 
+years. And while there are still many challenges to overcome—and technical complexities 
+to sort out—now is the time to start preparing.4  Organizational knowledge and experience 
+gained from GenAI implementations will help with the development and deployment of AI 
+agents. Also, the 13 elements of scaling mentioned in our prior GenAI reports will be just as 
+applicable to agentic AI.5  
+Organizations can begin by developing a strategic road map and assessing which tasks and 
+workflows are well-suited for agentic AI. Identify specific goals and desired value. Map out 
+the risks associated with autonomous agents and create mitigation plans. Start with low-risk 
+use cases that use noncritical data—with human oversight as a backup. These early steps 
+can help test and build the data management, cybersecurity and governance capabilities 
+necessary for safe agentic AI applications. Once your organization is comfortable, it can then 
+progress to applications that use more proprietary data, have access to more tools, and 
+operate more autonomously.
+Start planning for GenAI agents  
+Manage an uncertain future
+GenAI’s present is filled with great promise, but its future holds many uncertainties. Will 
+investments pay off in the long term? Will bias, hallucinations, misinformation and “AI-
+generated pollution” be controlled? Will GenAI use cases lead to new business models and 
+breakthrough innovations or just optimize existing operations? How fast will GenAI achieve 
+broad, human-level performance—if ever? 
+Although no one can answer these questions, one thing we know for sure is that all the 
+uncertainty surrounding GenAI is hindering its progress. 
+To act confidently and decisively in the face of this uncertainty, organizations should consider 
+boosting their efforts and capabilities in the areas of foresight, market sensing and scenario 
+planning.6 This will help leaders model plausible futures, identify potential blind spots in their 
+strategies, and make more informed decisions today.
+The widespread transformation being driven by GenAI is truly an odyssey that will take place 
+over many years and have many phases. Building the right capabilities today will help your 
+organization make more informed strategic choices and position itself to capitalize on future 
+developments and opportunities.
+Next: Considerations
+32
+
+<<<P33>>>
+ 
+Case studies
+33
+33
+
+<<<P34>>>
+GenAI is boosting software security  
+in banking 		 	 	
+In banking, robust cybersecurity and data governance are essential 
+to protect sensitive customer data, comply with complex regulatory 
+frameworks, and maintain public trust. 
+Case study 1:
+Return to page 8
+34
+
+<<<P35>>>
+We met with the global head of GenAI, cloud and data privacy at a leading bank to explore 
+how GenAI is transforming secure software development in financial services. By analyzing 
+application vulnerability alerts and reducing false positives, GenAI enables engineers to focus 
+on critical issues, limit the number of actionable alerts and enhance operational efficiency.
+Problem 
+On a typical day, the bank’s security team faces millions of alerts related to code-level 
+security issues, such as endpoint vulnerabilities and misconfigurations. Managing this 
+volume of alerts is both time intensive and yields false positives, leading to tension with 
+the application developers whose performance incentives are aligned with new feature 
+development rather than vulnerability remediation. “Previously, developers got frustrated 
+because 80% of their time was spent remediating vulnerabilities. Their performance is 
+measured by how many new features they deliver, not how many vulnerabilities they fix in 
+their code,” said the leader we interviewed.  
+Solution 
+The bank’s solution aimed to improve the way software is securely developed with GenAI. 
+The leader explained that the solution was built on a mature AI foundation within the 
+bank. The team deployed “an AI-powered platform, which translates regulations, policies 
+and standards … into security controls (including preventative controls, detective controls, 
+responsive controls and corrective controls), and then codifies those controls across the 
+software development life cycle.”   
+From there, facing a daily deluge of potential application security alerts, the bank needed an 
+efficient yet accurate way to identify critical vulnerabilities. To address this need, the bank’s 
+security operations center implemented a GenAI solution to streamline its vulnerability 
+management processes and systems. 
+Case study 1: GenAI is boosting software security in banking
+35
+
+<<<P36>>>
+Approach 
+The solution triages millions of incoming cyberthreat alerts, paring them down to thousands 
+of “real threats” that then go to different cyber teams—for example, distributed denial-
+of-service, malware and others. To enable that prioritization, different security control 
+requirements are assessed to score and reduce those alerts down to the most critical 
+threats based on breachability (the size of the risk) and exploitability (the likelihood of 
+exploitation by a threat actor).  
+Additionally, as GenAI is increasingly used to translate regulatory requirements, controls 
+can become more automated. For example, GenAI can summarize requirements such as 
+the need to rotate encryption keys at set intervals and identify opportunities to automate 
+the bank’s security protocols, or it can be used as an intelligence-gathering tool to identify 
+common security risks that should be automated. 
+For example, “Say an employee’s login credentials aren’t used for more than 30 days; AI can 
+detect that and disable the account,” said the leader. “This reduces cybersecurity risk by 
+reducing the attack surface.”
+Results 
+When asked how to think about ROI for this type of solution, the bank leader explained, “We 
+calculate the cost for the potential risk against the cost of remediating this risk.” For security, 
+the risk economic model covers domains positively impacted / measured by the bank’s 
+data-driven, risk-based, decision-making process. These domains include data protection, 
+encryption, address in transit, in use, network segmentation, authentication, authorization, 
+logging and monitoring.  
+The solution has dramatically reduced the number of common application security 
+vulnerability alerts the cyber team must triage and development teams must address—
+down to fewer than 10 critical vulnerabilities a day. 
+Overall, the GenAI solution has significantly reduced the bank’s cyber risk by enabling 
+its security and development teams to focus their time and effort on problems that are 
+real, impactful and actionable. It has also boosted morale and productivity across the 
+engineering team by reducing the time spent on DevSecOps so they can focus more time 
+on what they’re economically incentivized to do—develop new software and push critical 
+updates into production.  
+Case study 1: GenAI is boosting software security in banking
+36
+
+<<<P37>>>
+GenAI is accelerating sales success  
+in tech 		 	 	
+Tech companies are players on both sides of the Generative AI market, 
+developing GenAI-based products and services they can sell to external 
+customers while also harnessing the power of GenAI to help their own 
+workers and enhance their own business processes.
+Case study 2:
+Return to page 8
+37
+
+<<<P38>>>
+We spoke with the head of Generative AI product management at a large tech company 
+to learn how his group is using GenAI. He described how the company uses a centralized 
+process to collect all internal GenAI use cases from various business units, and then 
+prioritizes them based on importance and feasibility. Use cases are categorized into 
+three types: (1) external-facing tools such as chatbots and “agentic solutions” aimed at 
+improving customer service; (2) internal developer tools or “co-pilots” designed to enhance 
+productivity; and (3) playgrounds driven by application programming interfaces (APIs) that 
+allow developers—including technical and business users—to build custom applications 
+for specific needs not covered by the other two categories. By employing a structured, 
+centralized approach, the company aligns GenAI projects with core business goals,  
+ensuring high relevance and strategic impact across multiple functions.
+One compelling example from the API playground category is the firm’s accelerated sales 
+application, enabled by GenAI. The solution aims to make the company’s sales teams more 
+efficient and effective—and help them close deals faster—with an eye toward eventually 
+selling those same capabilities as an external product.
+Problem 
+When it comes to selling big tech, time is money. Sales reps need to use their time wisely so 
+they can pursue more deals and build stronger relationships with clients. Although they have 
+access to detailed playbooks and other materials designed to help them sell more effectively, 
+sales reps struggle with inconsistent processes and dispersed resources, making it 
+challenging to efficiently access the available information. What’s more, sales and marketing 
+leaders have different intake points across different business units, which makes for a highly 
+variable process. 
+Sales reps also must be very timely when responding to a new opportunity, especially a “tight 
+deadline” request for proposal (RFP). “External customers often need to spend their budgets 
+quickly, otherwise the budget will be gone,” said the executive we interviewed. “In many 
+cases, the window to respond to an RFP is just three or four business days.”  
+Solution 
+The company’s new GenAI-powered sales tools have two major components. One is an RFP 
+response tool that allows sales reps to summarize customer requirements and expedite 
+the creation of responses to RFPs, allowing business leaders to more quickly generate a 
+complete and customized proposal with just a few mouse clicks. 
+The other is an interactive chatbot with access to the company’s internal knowledge base of 
+playbooks and other sales materials. The solution helps business leaders quickly summarize 
+information to better prepare for pitches. “Using the tool is very similar to other chatbot 
+experiences, but it’s more within our internal domain,” the executive said. “Imagine I’m a 
+sales rep and tell the chatbot, ‘I want to sell X, Y, Z. What is the playbook?’ And the system 
+responds by giving me some customized bullet points I can rehearse with myself before I 
+have to pitch to the client.”
+Case study 2: GenAI is accelerating sales success in tech
+38
+
+<<<P39>>>
+Approach 
+The overall strategy originated from the CEO’s dual GenAI agenda of improving internal 
+productivity and identifying external commercialization opportunities. This approach 
+included guidance to develop an internal platform that, if proven, could potentially be offered 
+in the marketplace to external clients facing similar challenges. 
+The company used a “sandbox” approach when developing the new sales tools. This gave 
+interested sales reps access to GenAI tools and APIs in a safe, low-cost environment so 
+they could experiment freely and develop new applications without writing computer code. 
+The solution aims to detect common customer pain points and then use those insights to 
+generate sales activity by identifying opportunities for commercialization or optimization.
+Results 
+The GenAI tools seek to enhance deal closure speed and size and improve the accuracy of 
+proposal generation—with the ultimate goal of increasing sales performance by leveraging 
+internal knowledge resources more effectively.
+Currently, the company is more focused on feasibility than monetary returns, using key 
+performance indicators (KPIs) related to efficiency and time savings. How many sales reps 
+are using the tool, and how long is the period between their first access and generating their 
+first output? If the period is short, it’s a sign the tool is both appealing and easy to use. The 
+earliest measure of success is onboarding.
+Of course, the most important measure of success for a sales tool is its impact on sales. 
+In conducting direct A/B comparisons between sales processes that used the new GenAI-
+powered tools and those that didn’t, the company found a marked improvement in how 
+quickly deals got closed when the tools were used. 
+Although the tools are not yet ready to be offered as external products, doing so remains a 
+top priority. According to the executive we interviewed, “[Our company’s] CEO would really 
+like us to first adopt this Generative AI platform internally and then try to think about any 
+way we can sell it to external customers.”
+What does long-term success look like for its GenAI sales tool? The hope is for increased deal 
+sizes, faster deal closings, and effective deployment of a commercialized external solution.
+Case study 2: GenAI is accelerating sales success in tech
+39
+
+<<<P40>>>
+GenAI is powering an always-on, 
+multimodal social media presence in 
+the consumer industry	 	 	 	 	
+Social media is an increasingly important marketing channel for all 
+consumer companies, allowing them to convey the voice of their brand 
+and reach customers in a highly compelling way.  
+Case study 3:
+Return to page 8
+40
+
+<<<P41>>>
+We spoke with the senior director, head of data and analytics for a leading global consumer 
+company to learn how his team is activating a GenAI strategy to help the company’s brands fully 
+automate and expand the scope of their real-time social media trend analysis and content creation.
+Problem 
+Social media marketing is a critical business activity that is costly, time-consuming and subject 
+to human bias. In a recent year, social media strategy and content generation cost the company 
+US$500M, with much of that spent on third-party contracts with media and creative agencies. 
+Solution 
+The company is now using GenAI to produce and manage much of its brand-focused social 
+media content, including copywriting and creative design previously performed by humans. 
+The GenAI-powered solution goes beyond replicating tasks typically handled by third-
+party agencies and marketing personnel—expanding creative, targeted and personalized 
+marketing in ways that are faster, cheaper and more thorough.  
+“A recent example is the Emmys. Our brands were posting content about the event and 
+related viral moments,” the consumer executive said. “This content was created entirely by 
+GenAI models, picking up some of the trending hashtags, viral clips and news moments, 
+then generating a post when it fit with the brand.”
+He continued, “Of course, we have strong moderation because we’re putting content out 
+to the public web. We have a human in the loop who monitors content, as well as systems 
+that use reinforcement learning from human feedback.” This highlights that—despite GenAI’s 
+impressive capabilities and performance—human engagement is still considered essential  
+to ensure content aligns with brand standards.
+Case study 3: GenAI is powering an always-on, multimodal social media presence in the consumer industry
+41
+
+<<<P42>>>
+Approach 
+The company built on its already strong data and AI foundation, which included years of 
+experience working with GenAI-related technologies such as natural language processing, 
+cognitive intelligence and multistep reasoning. Over the past 18 months, it has deeply 
+integrated LLMs and foundation models into its business, focusing on architecture, 
+governance and use case development—balancing build versus buy strategies to maximize 
+impact and value.
+The company’s GenAI strategy has been to rapidly expand and prototype. “In 2023, we were 
+throwing a lot at the wall and seeing what stuck: lots of different providers, architectures, 
+models and experimentation types,” the executive said. “But in 2024, a lot of that coalesced 
+into a strategy we’ve now codified and defined.”
+“In this case, our [proof of concept] took the shape of a pre-GenAI solution we already 
+had that specifically looked at a social media platform [analyzing trending influencers and 
+brand affinity]. Building on that existing dataset, we focused our initial effort on collecting, 
+cleansing, organizing and structuring the data in real time. We then took the data and threw 
+an LLM on top of it to see what kinds of text content it could generate. Later, we expanded 
+our scope to include hashtags, then a multimodal model that includes images, and now 
+short-form video.”
+Results 
+In the United States, around 60% of the company’s brands are using the GenAI-powered 
+solution to achieve an always-on social media presence and produce relevant content with 
+minimal human involvement. The solution is delivering tangible benefits in three key areas. 
+First and foremost is increased productivity, which directly translates into substantial cost 
+savings. “Whether it’s a first party, second or third party, there were individuals who were 
+conducting these tasks, and there is a dollar value directly associated with each hour of their 
+time,” the executive said. 
+Second is increased sales, with the GenAI solution helping to boost both the incremental 
+number of impressions for each social media post and the monetary value created by those 
+impressions (due to heightened awareness, increased purchase conviction, and an easier 
+path to purchase). 
+The third is reduced media costs, particularly the cost savings that accrue when an effective 
+unpromoted social media post eliminates the need to pay for a promoted post—freeing up 
+budget that can be invested more strategically elsewhere.
+Although many of these benefits have had an immediate impact on the company’s bottom 
+line, some of the productivity gains will take longer to fully realize because they require 
+formal process changes or revisions to existing annual or multiyear contracts.
+Case study 3: GenAI is powering an always-on, multimodal social media presence in the consumer industry
+42
+
+<<<P43>>>
+Authorship and Acknowledgments
+Acknowledgments 
+The authors would like to thank our project sponsors and leaders Nitin Mittal, Kevin Westcott and Jeff Loucks, as well as the additional Deloitte subject matter specialists who contributed to the 
+development of the survey and report: Bjoern Bringmann, Lou DiLorenzo, Rohan Gupta, Kellie Nuttal, Baris Sarer, Ajay Tripathi and Ashish Verma.
+We would also like to thank our team of professionals who brought this report and campaign to life, including: Ahmed Alibage, Siri Anderson, Hali Austin, Saurabh Bansode, Natasha Buckley,  
+Vanessa Carney, Dystnct Media, Tracy Fulham, Jordan Garrick, Gerson Lehrman Group (GLG), Karen Hogger, Susie Husted, Lisa Iliff, Wendy Jenkins, Justin Joyner, Diana Kearns-Manolatos, Lena La,  
+Amy Lando, Michael Lim, Cullen Marriott, Rajesh Medisetti, Adriana Mendez, Judy Freeman Mills, Melissa Neumann, Inal Olmez, Jamie Palmeroni, Jonathan Pryce, Negina Rood, Emily Rosenberg,  
+Kate Schmidt, Meredith Schoen, Michael Steinhart, Kelcey Strong, 10 EQS, Sandeep Vellanki, Ivana Vucenovic, Talia Wertico, Micah Whitson, Marianne Wilkinson and Sourabh Yaduvanshi.
+Brenna Sniderman 
+Executive Director 
+Deloitte Center for Integrated Research 
+Deloitte Services LP 
+bsniderman@deloitte.com
+Jim Rowan 
+Applied AI SGO Leader 
+Deloitte Consulting LLP 
+jimrowan@deloitte.com
+Costi Perricos 
+Deloitte Global GenAI Business Leader 
+Deloitte LLP 
+cperricos@deloitte.co.uk
+Beena Ammanath  
+Executive Director 
+Global Deloitte AI Institute  
+Deloitte LLP 
+bammanath@deloitte.com
+Business leadership
+Research leadership
+David Jarvis 
+Senior Research Leader 
+Deloitte Center for Technology,  
+Media & Telecommunications 
+Deloitte Services LP 
+davjarvis@deloitte.com
+43
+
+<<<P44>>>
+About the Deloitte AI Institute 
+The Deloitte AI Institute™ helps organizations connect all the different dimensions of the robust, highly dynamic and rapidly evolving AI ecosystem. The AI 
+Institute leads conversations on applied AI innovation across industries, using cutting-edge insights to promote human-machine collaboration in the Age  
+of With™.
+The Deloitte AI Institute aims to promote dialogue about and development of artificial intelligence, stimulate innovation, and examine challenges to AI 
+implementation and ways to address them. The AI Institute collaborates with an ecosystem composed of academic research groups, startups, entrepreneurs, 
+innovators, mature AI product leaders and AI visionaries to explore key areas of artificial intelligence including risks, policies, ethics, future of work and talent, 
+and applied AI use cases. Combined with Deloitte’s deep knowledge and experience in artificial intelligence applications, the institute helps make sense of this 
+complex ecosystem and, as a result, delivers impactful perspectives to help organizations succeed by making informed AI decisions.
+About the Deloitte Center for Integrated Research
+The Deloitte Center for Integrated Research (CIR) offers rigorously researched and data-driven perspectives on critical issues affecting businesses today. We sit  
+at the center of Deloitte’s industry and functional expertise, combining the leading insights from across our firm to help leaders confidently compete in today’s 
+ever-changing marketplace. 
+About the Deloitte Center for Technology, Media & Telecommunications
+The Deloitte Center for Technology, Media & Telecommunications (TMT Center) is a world-class research organization that serves Deloitte’s TMT practice and 
+our clients. Our team of professional researchers produce practical foresight, fresh insights, and trustworthy data to help clients see clearly, act decisively and 
+compete with confidence. We create original research using a combination of rigorous methodologies and deep TMT industry knowledge. 
+Learn more
+Learn more
+Learn more
+44
+
+<<<P45>>>
+To obtain a global view of how Generative AI is being adopted by organizations on the 
+leading edge of AI, Deloitte surveyed 2,773 leaders between July and September 2024.
+Respondents were senior leaders in their organizations and included board and 
+C-suite members, and those at the president, vice president and director levels. The 
+survey sample was split equally between IT and line of business leaders. Fourteen 
+countries were represented: Australia (100 respondents), Brazil (115 respondents), 
+Canada (175 respondents), France (130 respondents), Germany (150 respondents), 
+India (200 respondents), Italy (75 respondents), Japan (100 respondents), Mexico (100 
+respondents), the Netherlands (50 respondents), Singapore (75 respondents), Spain 
+(100 respondents), the United Kingdom (200 respondents), and the United States 
+(1,203 respondents).
+All participating organizations have one or more working implementations of AI 
+being used daily. Plus, they have pilots in place to explore Generative AI or have one 
+or more working implementations of Generative AI being used daily. Respondents 
+were required to meet one of the following criteria with respect to their organization’s 
+AI and data science strategy, investments, implementation approach and value 
+measurement: influence decision-making, are part of a team that makes decisions, are 
+the final decision-maker, or manage or oversee AI technology implementations.
+All statistics noted in this report and its graphics are derived from Deloitte’s fourth 
+quarterly survey, conducted July – September 2024; The State of Generative AI in the 
+Enterprise: Now decides next, a report series. N (Total leader survey responses) = 2,773
+The survey data was supplemented with case studies and qualitative findings 
+derived from 15 interviews with executives and AI and data science leaders at large 
+organizations across a range of industries.
+Methodology
+1.   Duncan Stewart, Karthik Ramachandran and Prashant Raman, “Generative AI and cyber: Big risks, but big 
+opportunities too,” Deloitte, November 19, 2024, https://www2.deloitte.com/us/en/insights/industry/technology/
+technology-media-and-telecom-predictions.html#rising-trends, accessed November 26, 2024.
+2.   Emily Mossberg, et al, Global Future of Cyber Survey, 4th edition, Deloitte Global, 2024, pg 23, https://www.deloitte.
+com/content/dam/assets-shared/docs/services/risk-advisory/2024/deloitte-global-future-of-cyber-survey-4th-
+edition-the-promise-of-cyber.pdf, accessed November 26, 2024.
+3.   Jeff Loucks, Gillian Crossan, Baris Sarer and China Widener, “Autonomous generative AI agents: Under 
+development,” Deloitte, November 19, 2024, https://www2.deloitte.com/us/en/insights/industry/technology/
+technology-media-and-telecom-predictions.html#autonomous-generative-ai, accessed November 26, 2024.  
+4.   Vivek Kulkarni, Scott Holcomb, Prakul Sharma, Ed Van Buren and Caroline Ritter, “Prompting for action, How AI 
+agents are reshaping the future of work,” Deloitte, November 2024, p. 16, https://www2.deloitte.com/content/
+dam/Deloitte/us/Documents/consulting/us-ai-institute-generative-ai-agents-multiagent-systems.pdf, accessed 
+November 26, 2024.
+5.   “Scaling GenAI: 13 Elements for Sustainable Growth and Value,” Deloitte, https://www2.deloitte.com/us/en/pages/
+consulting/articles/scaling-generative-ai-strategy-in-the-enterprise.html, accessed November 26, 2024.
+6.   Laura Shact, Brad Kreit, Gregory Vert, Jonathan Holdowsky and Natasha Buckley, “Four futures of generative AI 
+in the enterprise: Scenario planning for strategic resilience and adaptability,” Deloitte, October 25, 2024, https://
+www2.deloitte.com/us/en/insights/topics/digital-transformation/generative-ai-and-the-future-enterprise.html, 
+accessed November 26, 2024.
+Endnotes
+45
+
+<<<P46>>>
+About Deloitte
+Deloitte refers to one or more of Deloitte Touche Tohmatsu Limited (DTTL), its global network of member firms, and their related entities (collectively, the “Deloitte organization”). DTTL ( also referred to as “Deloitte 
+Global”) and each of its member firms and related entities are legally separate and independent entities, which cannot obligate or bind each other in respect of third parties. DTTL and each DTTL member firm and 
+related entity is liable only for its own acts and omissions, and not those of each other. DTTL does not provide services to clients. Please see www.deloitte.com/about to learn more.
+ 
+Deloitte provides industry-leading audit and assurance, tax and related services, consulting, financial advisory, and risk advisory services to nearly 90% of the Fortune Global 500® and thousands of private 
+companies. Our people deliver measurable and lasting results that help reinforce public trust in capital markets, enable clients to transform and thrive, and lead the way toward a stronger economy, a more equitable 
+society, and a sustainable world. Building on its 175-plus year history, Deloitte spans more than 150 countries and territories. Learn how Deloitte’s approximately 457,000 people worldwide make an impact that 
+matters at www.deloitte.com.
+ 
+This publication contains general information only and Deloitte is not, by means of this publication, rendering accounting, business, financial, investment, legal, tax, or other professional advice or services. This 
+publication is not a substitute for such professional advice or services, nor should it be used as a basis for any decision or action that may affect your business. Before making any decision or taking any action that 
+may affect your business, you should consult a qualified professional advisor. Deloitte shall not be responsible for any loss sustained by any person who relies on this publication.
+ 
+Copyright © 2025 Deloitte Development LLC. All rights reserved.
+deloitte.com/us/state-of-generative-ai

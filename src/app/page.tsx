@@ -237,6 +237,144 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 深度内容(2026-09-22 加):首页承载的 10 个查询全在"ai csv / ai for csv / csv analysis ai"这一簇,
+          位置 70-88 名 → 补足内容深度与答案前置,争取推进到前 3 页 */}
+      <section className="bg-zinc-50 border-t border-zinc-100 py-16">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold">
+            AI for CSV files: what it actually does
+          </h2>
+          <p className="mt-4 text-lg text-zinc-700">
+            An AI CSV tool does three things: it parses your file, it computes over the columns, and
+            it puts the answer in a sentence. Parsing and computing happen in your browser. Only the
+            question and the data the answer needs are sent to a model — and you can skip that step
+            entirely if you only want counts, null rates or duplicates.
+          </p>
+
+          <h3 className="mt-10 text-xl font-semibold">The four questions people actually arrive with</h3>
+          <div className="mt-4 grid gap-4 sm:grid-cols-2">
+            {[
+              {
+                q: "\u201cWhat is in this file?\u201d",
+                a: "Column names, types, row count, null rate per column, duplicate rows, min and max. This needs no model at all — it is arithmetic on the parsed file.",
+              },
+              {
+                q: "\u201cWhich rows matter?\u201d",
+                a: "Filtering and grouping. The model\u2019s only job is translating your sentence into a group-by you could have written yourself.",
+              },
+              {
+                q: "\u201cIs this data trustworthy?\u201d",
+                a: "Missing values, mixed types in one column, dates stored as text, trailing whitespace in keys. This is where a spreadsheet silently lies to you.",
+              },
+              {
+                q: "\u201cExplain it to someone else.\u201d",
+                a: "The one genuinely AI-shaped task: turning an aggregate into a paragraph a colleague can act on, with the numbers still attached.",
+              },
+            ].map((item) => (
+              <div key={item.q} className="rounded-xl border border-zinc-200 bg-white p-5">
+                <p className="font-semibold text-zinc-900">{item.q}</p>
+                <p className="mt-2 text-sm text-zinc-600">{item.a}</p>
+              </div>
+            ))}
+          </div>
+
+          <h3 className="mt-10 text-xl font-semibold">Analyse a CSV file with AI — three routes, honestly compared</h3>
+          <div className="mt-4 overflow-x-auto">
+            <table className="w-full border-collapse text-sm">
+              <thead>
+                <tr className="border-b border-zinc-300 text-left text-zinc-500">
+                  <th className="py-3 pr-4 font-medium">Route</th>
+                  <th className="py-3 pr-4 font-medium">You need</th>
+                  <th className="py-3 pr-4 font-medium">Fails when</th>
+                </tr>
+              </thead>
+              <tbody className="text-zinc-700">
+                <tr className="border-b border-zinc-200">
+                  <td className="py-3 pr-4 font-medium text-zinc-900">Spreadsheet + formulas</td>
+                  <td className="py-3 pr-4">The column names to already be clean</td>
+                  <td className="py-3 pr-4">Any column is text that should be a number, or the file is larger than the row limit</td>
+                </tr>
+                <tr className="border-b border-zinc-200">
+                  <td className="py-3 pr-4 font-medium text-zinc-900">Pivot table</td>
+                  <td className="py-3 pr-4">Knowing which two columns to cross</td>
+                  <td className="py-3 pr-4">You do not yet know what you are looking for — which is the usual case</td>
+                </tr>
+                <tr className="border-b border-zinc-200">
+                  <td className="py-3 pr-4 font-medium text-zinc-900">Script (pandas / R)</td>
+                  <td className="py-3 pr-4">The ability to write and debug it</td>
+                  <td className="py-3 pr-4">You need the answer once, today</td>
+                </tr>
+                <tr>
+                  <td className="py-3 pr-4 font-medium text-zinc-900">Ask in plain English</td>
+                  <td className="py-3 pr-4">Nothing — type the question</td>
+                  <td className="py-3 pr-4">The file has no header row, or one column mixes units (kg and lb in the same column)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-4 text-sm text-zinc-500">
+            None of these is the right answer for everything. The plain-English route is the fastest
+            way to find out which of the other three you actually needed.
+          </p>
+
+          <h3 className="mt-10 text-xl font-semibold">Two checks worth running before you trust any number</h3>
+          <ol className="mt-3 list-decimal space-y-3 pl-5 text-zinc-700">
+            <li>
+              <strong className="text-zinc-900">Look at the null rate per column first.</strong> A
+              column that is 40% empty will still produce a confident average, and that average is
+              answering a different question than the one you asked.
+            </li>
+            <li>
+              <strong className="text-zinc-900">Check for duplicate rows before you sum anything.</strong>{" "}
+              Exported reports frequently contain them, and they inflate totals invisibly.
+            </li>
+          </ol>
+          <p className="mt-6 text-zinc-700">
+            Both are free and neither needs a model:{" "}
+            <Link href="/tools/csv-analyzer" className="font-semibold text-blue-600 hover:text-blue-700">
+              open the CSV analyzer
+            </Link>{" "}
+            and the profile is the first thing it shows. If your file is a European export that came
+            in as a single column, the{" "}
+            <Link href="/tools/csv-delimiter-converter" className="font-semibold text-blue-600 hover:text-blue-700">
+              delimiter converter
+            </Link>{" "}
+            fixes that before analysis. And if it is simply too large to open,{" "}
+            <Link href="/tools/csv-splitter" className="font-semibold text-blue-600 hover:text-blue-700">
+              split it first
+            </Link>
+            .
+          </p>
+
+          <h3 className="mt-10 text-xl font-semibold">Frequently asked questions</h3>
+          <dl className="mt-4 space-y-5">
+            {[
+              {
+                q: "Is it safe to analyse a CSV with AI?",
+                a: "It depends on which half you use. Parsing, profiling and counting run in the browser and the file never leaves your machine. The plain-English question sends the question plus the data needed to answer it to a model. If your data is regulated or identifiable, use the profile half only, or strip the sensitive columns before asking.",
+              },
+              {
+                q: "Can an AI tool handle a CSV that is too big for Excel?",
+                a: "Excel stops at 1,048,576 rows and becomes unusable well before that. A browser tool is limited by your machine's memory rather than a hard row cap, but the practical move for a large file is to split it or aggregate it first — you rarely need every row to answer the question.",
+              },
+              {
+                q: "Does the file need a header row?",
+                a: "Yes, for anything useful. Without a header, the tool has to invent column names (field_1, field_2) and every question becomes harder to phrase. If your export has a title line above the header, delete that line first.",
+              },
+              {
+                q: "What if my CSV is semicolon-separated?",
+                a: "It will parse as a single column. That is a delimiter problem, not an AI problem — convert it to comma-separated first, then analyse it. The same applies to files with a byte-order mark glued to the first header.",
+              },
+            ].map((item) => (
+              <div key={item.q}>
+                <dt className="font-semibold text-zinc-900">{item.q}</dt>
+                <dd className="mt-1 text-zinc-600">{item.a}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </section>
+
       <CTA />
     </>
   );

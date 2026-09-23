@@ -60,6 +60,10 @@ const serviceJsonLd = {
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Stable ids and accessible labels on key controls" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "WebMCP declarative implementations" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Re-runnable verification report" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Document packs converted to searchable Markdown and structured tables" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Photo and file metadata removal (GPS, device, timestamp)" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Video and audio batch processing (cut, compress, extract, caption)" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Multilingual voiceover in English, Chinese or Arabic" } },
     ],
   },
 };
@@ -231,6 +235,63 @@ export default function AgentReadyPage() {
           re-run them and see the same result.
         </li>
       </ul>
+
+      <h2>Also from the same workshop: I wrap open-source tools</h2>
+      <p>
+        Half of what I ship starts life as a command-line project with an English README and no interface. The last
+        mile — a page your team can open, one button, a label in your own language — is the part I build. These four
+        come up most often in trading and manufacturing businesses, because they are the ones I need in my own.
+      </p>
+
+      <div className="not-prose my-6 space-y-4">
+        {[
+          {
+            name: "Document packs → searchable data",
+            give: "a folder of PDFs: drawings, quotations, manuals, packing lists, certificates.",
+            get: "clean Markdown plus structured tables (CSV/XLSX), and a private upload page your team can use without installing anything.",
+            why: "Built on the same converter that turns 20+ file formats into Markdown — the format every AI tool reads best.",
+          },
+          {
+            name: "Photos and files with the metadata removed",
+            give: "product, site or loading photos straight off a phone.",
+            get: "the same images with GPS, device and timestamp metadata stripped — safe to send to a customer or upload to a marketplace.",
+            why: "Phone photos carry the exact location of your factory or your customer's site.",
+          },
+          {
+            name: "Video and audio batch work",
+            give: "raw product or site videos, one or many.",
+            get: "clips cut to platform length, compressed for mobile, audio extracted, captions or a watermark applied — in a batch, not one at a time.",
+            why: "The same engine broadcasters use, wrapped so nobody on your team has to read its manual.",
+          },
+          {
+            name: "Multilingual voiceover",
+            give: "a product script, a slide deck, or catalogue text.",
+            get: "voiceover audio in English, Chinese or Arabic — for buyers who will not read a page of text.",
+            why: "No studio, no per-minute voice talent, no local model to install.",
+          },
+        ].map((c) => (
+          <div key={c.name} className="rounded-xl border border-slate-200 p-5">
+            <h3 className="font-semibold text-slate-900">{c.name}</h3>
+            <dl className="mt-2 space-y-1 text-sm text-slate-700">
+              <div>
+                <dt className="inline font-medium text-slate-900">You hand over: </dt>
+                <dd className="inline">{c.give}</dd>
+              </div>
+              <div>
+                <dt className="inline font-medium text-slate-900">You get: </dt>
+                <dd className="inline">{c.get}</dd>
+              </div>
+            </dl>
+            <p className="mt-2 text-sm text-slate-500">{c.why}</p>
+          </div>
+        ))}
+      </div>
+
+      <p className="text-sm text-slate-600">
+        <strong>What these cost:</strong> I do not publish prices, because scope decides — ten files or ten thousand,
+        one language or three. Send the files and the outcome you need and you get a fixed-scope quote before anything
+        starts. If a free tool already does the job, I will say so and point you at it.
+      </p>
 
       <h2>Verified on live sites, not mocked up</h2>
       <p>

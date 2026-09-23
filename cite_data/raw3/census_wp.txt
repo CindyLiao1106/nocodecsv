@@ -1,0 +1,141 @@
+An official website of the United States government
+
+Here’s how you know
+Income, Poverty and Health Insurance
+Join us Tuesday, Sept. 15 at 10 am ET for a live webinar announcing new Income, Poverty and Health Insurance estimates for the nation.
+Skip Header
+Partners
+Researchers
+Educators
+Survey Respondents
+News
+NAICS Codes
+Jobs
+About Us
+Contact Us
+Help
+Topics
+Data & Maps
+Surveys & Programs
+Resource Library
+Search data, events, resources, and more
+//
+Census.gov /
+Library /
+Census Working Papers /
+The Microstructure of AI Diffusion
+Skip Navigation
+Within Library
+About the Library
+America Counts: Stories
+Audio
+By the Numbers
+Fact Sheets
+Infographics & Visualizations
+Photos
+Publications
+References
+Spotlights
+Videos
+Working Papers
+The Microstructure of AI Diffusion: Evidence from Firms, Business Functions, and Worker Tasks
+April 2026
+Written by:
+KATHRYN BONNEY, CORY BREAUX, EMIN DINLERSOZ, LUCIA FOSTER, JOHN HALTIWANGER, AND ADITYA PANDE
+Working Paper Number: CES-26-25
+Abstract
+
+Using novel, nationally representative data from the 2026 AI supplement to the U.S. Census Bureau’s Business Trends and Outlook Survey (BTOS), we characterize AI diffusion across three interconnected layers: overall firm use, deployment across business functions, and worker-task use. This multi-layered approach provides a nuanced picture of business AI adoption. During the supplement reference period (Nov 2025-Jan 2026), 18% of firms used AI in a business function, rising to 32% on an employment-weighted basis; adoption is expected to reach 22% within six months. AI use is substantially higher in large firms and knowledge-intensive sectors, with use rates reaching 50%-60% (60%-70%, employment-weighted) for very large firms in the Information, Professional Services, and Finance sectors. Among adopting firms, the scope of use remains limited: 57% of users integrate AI in three or fewer business functions, most commonly Sales and Marketing (52%), Strategy and Business Development (45%), and IT (41%). In 23% (41%, employment-weighted) of firms, workers use AI in work-related tasks. Writing, document analysis, and information search are the leading Generative AI use in tasks, though 65% of firms limit use to three or fewer tasks. The evidence points to both top-down and bottom-up diffusion channels: worker task use sometimes occurs without formal firm-level adoption, and firm-level adoption sometimes occurs without worker task use. Most users (66%) rely on AI solely to augment tasks, while AI-related employment decreases are rare, occurring in only 2% of firms. Regression analysis shows a robust positive correlation between firm commercial performance and the breadth of AI integration, including functional deployment, task-level use, and operational investment. A distinct divergence emerges, however, with respect to labor outcomes. Functional breadth and operational investment are positively associated with employment decreases, whereas worker-task integration shows no significant link to headcount reduction once functional integration and operational investment are taken into account.
+
+The Microstructure of AI Diffusion: Evidence from Firms, Business Functions, and Worker Tasks [<1MB]
+Others in Series
+Working Paper
+Community Engagement and Public Safety
+April 2026
+Author FELIPE GONCALVES, ELISA JACOME, AND EMILY WEISBURST
+Working Paper Number CES-26-23
+Increased immigration enforcement can deter victim reporting, leading to more crime against vulnerable groups; a 10% drop in reporting raises offending by 7.9%.
+Working Paper
+Unemployment Insurance Extensions, Labor Market Concentration, ...
+April 2026
+Author DAVID N. WASSER
+Working Paper Number CES-26-24
+Unemployment insurance (UI) extensions slightly lengthen unemployment spells. The positive UI-earnings effect is attenuated at higher levels of concentration.
+Working Paper
+Allocating Misallocation
+April 2026
+Author G. JACOB BLACKWOOD, JOHN HALTIWANGER, AND ZOLTAN WOLF
+Working Paper Number CES-26-26
+We explore sources of misallocation in manufacturing using a decomposition of productivity dispersion into profitability margin and input mix components.
+
+Share
+
+Facebook
+X (Twitter)
+LinkedIn
+
+Related Information
+
+Center for Economic Studies (CES) Working Paper Series
+
+PUBLICATION
+
+Discussion Paper Series
+Page Last Revised - May 7, 2026
+
+Some content on this site is available in several different electronic formats. Some of the files may require a plug-in or additional software to view.
+
+✕
+Is this page helpful?
+
+ Yes  No
+Back to Header
+
+Receive Updates
+
+To sign up for updates please enter your email address.
+
+Enter your email address
+SUBSCRIBE
+
+Stay Current
+
+America Counts
+
+Director’s Blog
+
+Deputy Director’s Blog
+
+Random Samplings
+
+Research Matters
+
+Stay Connected
+
+Contact
+
+Support
+
+Jobs
+
+Follow
+
+Information Quality
+|
+Data Linkage Infrastructure
+|
+Data Protection and Privacy Policy
+|
+Accessibility
+|
+FOIA
+|
+Inspector General
+|
+No FEAR Act
+|
+U.S. Department of Commerce
+|
+USA.gov
+
+Measuring America's People and Economy

@@ -1,0 +1,91 @@
+Skip to main content
+
+An official website of the United States government
+
+Feedback or Suggestions? Email econ.btos@census.gov
+Subscribe to our Newsletter
+end of header
+New Supplemental AI data now available!
+//Census.gov > Data > Experimental Data Products > Business Trends and Outlook Survey > Business Trends and Outlook Survey Data
+Business Trends and Outlook SurveyUpdated September 10, 2026
+VISUALIZATIONSABOUT THE DATADOWNLOADS AND DOCUMENTATIONAPIMETHODOLOGYHELP
+KPI
+AI Supplement
+BTOS Key Performance Indicators
+
+Current Indexes measure the previous two weeks.
+Future Indexes measure business outlook for the next six months.
+
+Data as of September 06, 2026
+
+57.0 | -0.2
+Current Performance
+41.9 | -1.0 ↓
+Revenues
+47.9 | -0.2
+Employees
+46.6 | +0.0
+Hours
+69.4 | -0.7 ↓
+Input Prices
+55.4 | -0.3
+Future Performance
+52.0 | -0.3
+Future Demand
+51.5 | +0.5 ↑
+Future Employees
+50.1 | +0.2
+Future Hours
+77.0 | +0.7 ↑
+Fut. Input Prices
+
+Arrows indicate statistically significant changes at a 95 percent confidence level from the prior collection period.
+
+Key Indexes - National Average
+Estimate
+Demand
+Input Prices
+Performance
+From Nov. 2025, the AI usage question wording was revised.
+Please see the About the Data page for more information.
+AI Use - Selected Sectors
+Estimate
+Information
+Finance and Insurance
+Professional, Scientific, and Technical Services
+Educational Services
+Manufacturing
+Retail Trade
+Current AI Use (Last Two Weeks)
+Expected AI Use (Next Six Months)
+Current AI Use by State
+PR
+14.4%
+Puerto Rico: 14.4%
+Estimate
+16%
+20%
+24%
+28%
+
+(S) = Estimate suppressed due to quality concerns.
+
+Current AI Use by Firm Size
+1-19 Employees
+20-99 Employees
+100+ Employees
+1-4 Employees
+5-9 Employees
+10-19 Employees
+20-49 Employees
+50-99 Employees
+100-249 Employees
+250+ Employees
+Disclaimer
+
+The Census Bureau has reviewed this data product to ensure appropriate access, use, and disclosure avoidance protection of the confidential source data (Project No. P-7529868, Disclosure Review Board (DRB) approval number:  CBDRB-FY26-0278).
+
+CONNECT WITH US
+Information QualityData Linkage InfrastructureData Protection and Privacy PolicyAccessibilityFOIAInspector GeneralNo FEAR ActU.S. Department of CommerceUSA.gov
+
+Measuring America's People, Places, and Economy

@@ -1,0 +1,124 @@
+Sign In
+About  Newsroom  Careers 
+ 
+Insights
+Tools
+Expert Guidance
+Conferences
+Webinars
+AI Hub
+Talk to Us 
+
+or call +44 (0) 33 3060 4744
+
+Data & Analytics
+Overview
+Solutions
+Priorities
+Client Stories
+Events
+Data Quality: Best Practices for Accurate Insights
+
+Accessible, accurate, usable data is essential if you want your D&A function to produce business results.
+
+Download Research on Building an Effective Data Quality Program
+
+Learn the 12 actions CDAOs can take to improve data quality.
+
+Work Email
+Continue
+
+By clicking the "Continue" button, you are agreeing to the Gartner Terms of Use and Privacy Policy.
+
+Develop a balanced approach to data quality improvement
+
+Trusted, high-quality data is key to enabling a data-driven enterprise, yet many D&A and AI initiatives fail because of poor data quality. Generative AI will rapidly transform how technical professionals ensure data quality in their data environments. Download this research to learn:
+
+Use cases
+Data quality capabilities
+Benefits and impacts of large language models on data quality practices
+Improve D&A results and decrease costs with high-quality data
+
+Boost the value from your data and analytics program with a foundation of data quality. Follow these practices to set up an effective data quality program.
+
+Data Quality: What and Why?
+ 
+Scope the Data Quality Program
+ 
+Measuring Data Quality
+ 
+Data Quality Tools
+What is data quality and why is it important?
+
+Data quality refers to the usability and applicability of data used for an organization’s priority use cases — including AI and machine learning initiatives. Data quality is usually one of the goals of effective data management and data governance. Yet too often organizations treat it like an afterthought.
+
+Why is data quality important to the organization? In part because poor data quality costs organizations at least $12.9 million a year on average, according to Gartner research from 2020.
+
+A number of common challenges hinder organizations and make it difficult for them to address their data quality issues, such as:
+
+Growing regulatory requirements from government or industry. These include GDPR and CCPA, which restrict how organizations manage personal data and make them accountable for any personal data they hold.
+Inconsistency in data across sources. Named as the most challenging data quality problem, according to Gartner, is the result of having data stored and maintained in silos with significant overlaps, gaps or inconsistencies. If they are not connected, data standardization becomes much harder.
+Lack of resources. Organizations may have a data quality program in one department or in one data domain but cannot scale it due to a scarcity of skills, experience and resources.
+Lack of ownership. While business leaders agree that data quality matters, they do not view it as their responsibility, nor do they necessarily understand how data related to their domain relates to broader enterprise outcomes. Yet data quality is a business discipline. How business users enter data, use data and manage the data are the foundations of data quality. Ownership and collaboration among stakeholders are essential.
+
+The first two issues are related to data itself. The second two are related to data management. Data and analytics leaders can mitigate these challenges by establishing a modern data quality program that has a defined scope, establishes key processes for data quality measurement and leverages modern data quality technology tools.
+
+Attend a Conference
+
+Experience Data and Analytics conferences
+
+With exclusive insights from Gartner analysts on the latest trends, sessions curated for your role and unmatched peer networking, Gartner conferences help you accelerate your priorities.
+
+View Conference Calendar 
+21 – 22 Sep 2026
+
+Gartner Data & Analytics Summit
+
+Mumbai, India
+
+Learn More
+FAQ on data quality
+What is data quality?
+How do I measure and improve data quality?
+Why is data quality important to an organization?
+
+Drive stronger performance on your mission-critical priorities.
+
+Talk to Us
+    
+About Gartner
+Who We Are
+About Us
+Corporate Responsibility
+Investor Relations
+Newsroom
+What We Do
+Insights
+Conferences
+Consulting
+Get in Touch
+Contact
+Contact Us
+Become a Client
+Office Locations
+Technical Support
+Careers
+Why Gartner
+Search Careers
+Our Culture
+Careers Blog
+Latest Insights
+Resources
+Featured Insights
+Webinars
+Newsletter
+Client Stories
+POLICIES PRIVACY POLICY TERMS OF USE OMBUDS SITE MAP
+
+©2026 Gartner, Inc. and/or its affiliates. All rights reserved.
+
+We use cookies to improve your experience
+
+We use cookies to deliver the best possible experience on our website. To learn more, visit our Privacy Policy. By continuing to use this site, or closing this box, you consent to our use of cookies. Cookie Notice.
+Accept
+;

@@ -1,0 +1,326 @@
+Sign In
+About  Newsroom  Careers 
+ 
+Insights
+Tools
+Expert Guidance
+Conferences
+Webinars
+AI Hub
+Talk to Us 
+
+or call +44 (0) 33 3060 2561
+
+Newsroom
+Topics
+Media Contacts
+Media Resources
+Insights
+Archive
+
+Newsroom / Information Technology / Press Release
+
+Gartner Forecasts Worldwide AI Spending to Grow 47% in 2026
+
+STAMFORD, Conn., May 19, 2026
+
+$2.59 Trillion in AI Spending Dominated by Vendors and Hyperscalers, with Enterprises Yet to Flex Spending Potential
+
+Worldwide spending on AI is forecast to total $2.59 trillion in 2026, a 47% increase year-over-year, according to Gartner, Inc. a business and technology insights company.
+
+“Through the next several years, the need for capacity will make AI infrastructure, including AI-optimized IaaS, AI-optimized servers, AI network fabric, AI processing semiconductors and devices, the largest segment of the market, accounting for over 45% of spending, which will be driven by vendors,” said John-David Lovelock, Distinguished VP Analyst at Gartner. “Within this segment, spending on AI-optimized servers will triple over the next five years to become the largest subsegment, as cloud services providers expand capacity in anticipation of the workloads created by GenAI models and agentic workflows.”
+
+Enterprises will expand their use of both the GenAI models embedded in existing software applications and the new AI agents within multiple workflows. Model consumption will increase through multistep processes and integration into broad suites of tools as enterprises recognize the potential value of agentic automation. This dynamic means that the short-term outlook for AI models has been increased to 110% growth in 2026, adding $6 billion in spending for this year (see Table 1). 
+
+Table 1: Worldwide AI Spending by Market, 2025-2027 (Millions of U.S. Dollars)
+
+Market
+
+	
+
+2025
+
+	
+
+2026
+
+	
+
+2027
+
+
+
+
+AI Services
+
+	
+
+436,351
+
+	
+
+585,527
+
+	
+
+759,418
+
+
+
+
+AI Cybersecurity
+
+	
+
+25,920
+
+	
+
+51,347
+
+	
+
+85,997
+
+
+
+
+AI Software
+
+	
+
+282,897
+
+	
+
+453,209
+
+	
+
+638,431
+
+
+
+
+AI Models
+
+	
+
+15,494
+
+	
+
+32,604
+
+	
+
+59,161
+
+
+
+
+AI Platforms for Data Science and Machine Learning
+
+	
+
+21,292
+
+	
+
+29,928
+
+	
+
+42,639
+
+
+
+
+AI Application Development Platforms
+
+	
+
+6,587
+
+	
+
+8,416
+
+	
+
+10,922
+
+
+
+
+AI Data
+
+	
+
+826
+
+	
+
+3,126
+
+	
+
+6,480
+
+
+
+
+AI Infrastructure
+
+	
+
+975,581
+
+	
+
+1,431,509
+
+	
+
+1,890,310
+
+
+
+
+Total AI Spending
+
+	
+
+1,764,947
+
+	
+
+2,595,667
+
+	
+
+3,493,358
+
+Source: Gartner (May 2026)
+
+“Up to this point, AI spending has primarily been driven by technology companies and hyperscalers,” said Lovelock. “Enterprises have yet to really flex their spending potential. That is coming and 2026 will be the inflection year. Currently, organizations show limited appetite for using AI to drive disruptive enterprise change. Instead, they favor tactical AI initiatives with incremental improvements in efficiency and productivity.
+
+"For this reason, CIOs face challenges in proving the value from AI investments and demonstrate tangible business outcomes,” said Lovelock. “Aligning AI initiatives with strategic business objectives is the essential step for success. This incremental approach persists despite AI hype and valuations that reflect aspirations to transform the broader economy.”
+
+Gartner clients can read more in Forecast: AI Spending, Worldwide, 2025-2030, 1Q26.
+
+Gartner is the World Authority on AI
+
+Gartner is the indispensable partner to C-Level executives and technology providers as they implement AI strategies to achieve their mission-critical priorities. The independence and objectivity of Gartner insights provide clients with the confidence to make informed decisions and unlock the full potential of AI. Clients across the C-Level are using Gartner's proprietary AskGartner AI tool to determine how to leverage AI in their business. With more than 2,500 business and technology experts, 6,000 written insights, as well as more than 4,000 AI use cases and case studies, Gartner is the world authority on AI. More information can be found here.
+
+Gartner IT Symposium/Xpo
+
+The outlook on AIs will be presented during Gartner IT Symposium/Xpo, the world's most important conference for CIOs and other IT executives. Gartner analysts and attendees will explore how to become agents of change in their organizations and harness AI for successful digital transformation. Follow news and updates from the conferences on X and LinkedIn using #GartnerSYM, and on the Gartner Newsroom.
+
+Upcoming dates and locations for Gartner IT Symposium/Xpo include:
+
+September 14-16, 2026 | Gold Coast, Australia
+
+October 19-22, 2026 | Orlando, FL
+
+November 4-6, 2026 | Yokohama, Japan
+
+November 9-12, 2026 | Barcelona, Spain
+
+November 16-18, 2026 | Kochi, India
+
+About Gartner for High Tech Leaders and Providers
+
+Gartner for High Tech Leaders and Providers equips tech leaders and their teams with role-based best practices, industry insights and strategic views into emerging trends and market changes to achieve their mission-critical priorities and build the successful organizations of tomorrow. Additional information is available at www.gartner.com/en/industries/high-tech.
+
+Follow news and updates from Gartner for High Tech on X and LinkedIn using #GartnerHT. Visit the Gartner Newsroom for more information and insights.
+
+Media contact
+
+Matt LoDolce
+Gartner
+matt.lodolce@gartner.com
+
+Meghan Moran
+Gartner
+meghan.moran@gartner.com
+
+All Contacts
+     
+News Archive
+Latest releases
+
+ Announcement | Sep 14, 2026
+
+Gartner Reveals Top Technology Trends in Government
+
+Information Technology
+
+ Conference Highlight | Sep 14, 2026
+
+Gartner IT Symposium/Xpo 2026 APAC: Day 1 Highlights
+
+Information Technology
+
+ Announcement | Sep 10, 2026
+
+Gartner Survey Finds 93% of Audit Functions Use AI, but 60% Lack a Formal Strategy
+
+Audit and Risk
+
+About Gartner
+
+Gartner (NYSE: IT) delivers actionable, objective business and technology insights that drive smarter decisions and stronger performance on an organization’s mission-critical priorities. To learn more, visit gartner.com.
+
+About Us 
+Investor Relations 
+Related Resources
+ Article
+Mastering Agentic AI: Multimillion-Dollar ROI Lessons
+Read Now 
+ Article
+Deepfake Detection Market: From Emerging to Enterprise Essential
+Read Now 
+ Article
+CIO Planning for 2027: Close the AI Ambition Gap
+Read Now 
+ Article
+Digital Sovereignty: How I&O Leaders Protect Data and Operations
+Read Now 
+    
+About Gartner
+Who We Are
+About Us
+Corporate Responsibility
+Investor Relations
+Newsroom
+What We Do
+Insights
+Conferences
+Consulting
+Get in Touch
+Contact
+Contact Us
+Become a Client
+Office Locations
+Technical Support
+Careers
+Why Gartner
+Search Careers
+Our Culture
+Careers Blog
+Latest Insights
+Resources
+Featured Insights
+Webinars
+Newsletter
+Client Stories
+POLICIES PRIVACY POLICY TERMS OF USE OMBUDS SITE MAP
+
+©2026 Gartner, Inc. and/or its affiliates. All rights reserved.
+
+We use cookies to improve your experience
+
+We use cookies to deliver the best possible experience on our website. To learn more, visit our Privacy Policy. By continuing to use this site, or closing this box, you consent to our use of cookies. Cookie Notice.
+Accept
+;

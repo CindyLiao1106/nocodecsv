@@ -1,0 +1,239 @@
+Navigation
+Skip to Content
+An official website of the European Union
+How do you know?
+
+This site uses cookies. Visit our cookies policy page or click the link in any footer for more information and to change your preferences.
+
+Accept all cookies
+Accept only essential cookies
+Log in
+English
+Search by keyword
+Enter search term
+Search
+Statistics Explained
+Home
+Articles by theme
+Publications
+Statistics4beginners
+Glossary
+Help
+Main
+Statistical themes
+Science, technology, and digital society
+Digital economy and society
+Use of artificial intelligence in enterprises
+
+Data extracted in December 2025 
+
+Planned article update: December 2026
+
+Use of artificial intelligence in enterprises
+Print this page
+Skip to the content
+Contents
+Highlights
+Enterprises using AI technologies
+Types of AI technologies used
+Purpose of using AI software or systems
+Enterprises considering using AI software or systems
+Reasons for not using AI technologies
+Source data for tables and graphs
+Data sources
+Context
+Explore further
+Highlights
+
+In 2025, 19.95% of EU enterprises used AI technologies.
+
+In 2025, 55.03% of large EU enterprises used AI technologies.
+
+In 2025, AI was used the most by enterprises in the information and communication sector.
+
+Enterprises using AI technologies, 2024 and 2025
+</>
+EU
+DK
+FI
+SE
+BE
+LU
+NL
+AT
+DE
+EE
+SI
+MT
+LT
+ES
+IE
+FR
+SK
+CZ
+IT
+HR
+LV
+PT
+HU
+CY
+EL
+BG
+PL
+RO
+NO
+ME
+RS
+BA
+TR
+(% of enterprises)
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+20242025
+Note: 2025 break in time series for Netherlands (NL).
+Source: Eurostat (online data code: isoc_eb_ai)
+  Country codes 
+
+This article presents recent statistical data on the use of artificial intelligence (AI) technologies by EU enterprises. AI is developing quickly and can bring many benefits, such as safer and cleaner transport, more efficient manufacturing, cheaper and more sustainable energy, and better decision-making. AI refers to systems that use technologies such as text mining, computer vision, speech recognition, natural language generation and speech synthesis, machine learning or deep learning. These technologies can be used to gather and/or use data to predict, recommend or decide, with varying levels of autonomy, the best action to achieve specific goals. AI systems can be software-based (e.g. image recognition software, virtual assistants, speech and face recognition systems) or embedded in devices (e.g. autonomous robots, self-driving vehicles, drones).
+
+Enterprises using AI technologies
+
+In 2025, 19.95% of enterprises in the EU, with 10 or more employees and self-employed persons, used at least one of the following AI:
+
+technologies analysing written language (text mining)
+technologies converting spoken language into a machine-readable format (speech recognition)
+technologies generating written, spoken language or programming codes (natural language generation, speech synthesis)
+technologies generating pictures, videos, sound/audio
+technologies identifying objects or people based on images (image recognition, image processing)
+machine learning (e.g. deep learning) for data analysis
+technologies automating different workflows or assisting in decision-making (AI based software robotic process automation)
+technologies enabling machines to physically move by observing their surroundings and taking autonomous decisions.
+
+Compared with 2024, the use of AI technologies increased by 6.47 percentage points (pp) (Figure 1).
+
+As shown in Figure 1, large enterprises used AI more than small and medium enterprises. In 2025, 17% of small enterprises, 30.36% of medium enterprises and 55.03% of large enterprises used AI. This difference might be explained, for example, by the complexity of implementing AI technologies in an enterprise, economies of scale (i.e. enterprises with larger economies of scale can benefit more from AI) or costs (i.e. investment in AI may be more affordable for large enterprises).
+
+Figure 1: Enterprises using AI technologies by size class, EU, 2024 and 2025
+Source: Eurostat (isoc_eb_ai)
+
+Comparing enterprises using at least one AI technology among EU countries (Figure 2) shows that the share of enterprises using AI ranged between 5.21% and 42.03%. The highest share was recorded in Denmark (42.03%), followed by Finland (37.82%) and Sweden (35.04%), while the lowest shares were recorded in Romania (5.21%), Poland (8.36%) and Bulgaria (8.55%). In 2025, 26 EU countries recorded higher shares of enterprises using AI technologies compared with 2024. The highest increases were recorded in Denmark (14.45 pp), Finland (13.45 pp) and Lithuania (12.54 pp).
+
+Figure 2: Enterprises using AI technologies, 2024 and 2025
+Source: Eurostat (isoc_eb_ai)
+
+As shown in Figure 3, in some economic activities AI is used a lot more than in others. This might indicate that AI is more relevant for certain activities. In 2025, the information and communication sector (with 62.52%) and professional, scientific and technical service activities (with 40.43%) stood out with the highest share of enterprises that used AI. In all other economic activities, the share of enterprises using AI was below 25%. This ranged from 24.82% (real estate activities) to 10.79% (construction).
+
+Figure 3: Enterprises using AI technologies by economic activity, EU, 2025
+Source: Eurostat (isoc_eb_ain2)
+Types of AI technologies used
+
+EU enterprises used different types of AI technologies. As presented in Figure 4, there was no predominant AI technology. The AI technologies used slightly more often were AI technologies performing analysis of written language (i.e. text mining). In 2025, these AI technologies were used by 11.75% of enterprises. AI technologies generating pictures, videos, sound/audio and AI technologies generating written or spoken language or programming codes (natural language generation, speech synthesis) followed with 9.55% and 8.76% of enterprises. AI technologies converting spoken language into a machine-readable format (speech recognition), machine learning (e.g. deep learning) for data analysis, technologies automating different workflows or assisting in decision making and technologies identifying objects or persons based on images (image recognition, image processing) were each used by between 7.22% and 3.78% of enterprises. AI technologies enabling machines to physically move by observing their surroundings and taking autonomous decisions (e.g. self-driving vehicles) were used by 1.39% of enterprises.
+
+Although there was no predominant AI technology used by all enterprises, Figure 4 shows a different situation when looking at the size of the enterprises, in particular large enterprises, where AI technologies performing analysis of written language (text mining) were the most used technologies with 35.04%, followed by AI technologies generating written or spoken language or programming codes (31.68%). The least used AI technologies were those enabling physical movement of machines via autonomous decisions based on observation of surroundings (8.55%).
+
+Figure 4: Enterprises using AI technologies by type of AI technology and size class, EU, 2025
+Source: Eurostat (isoc_eb_ai)
+
+Table 1 presents the different types of AI technologies used in different economic activities. In the information and communication sector, where the highest share of enterprises using AI was recorded, the most used AI technologies were natural language generation and speech synthesis (42.23%), followed close by text mining (42.22%) and technologies generating pictures, videos, sound/audio (35.53%). In professional, scientific and technical service activities, text mining was the most used AI technology with 25.22% of enterprises, followed by technologies generating pictures, videos, sound/audio (18.72%) and natural language generation and speech synthesis (17.74%). In all other activities, the shares of enterprises using specific AI technologies ranged from less than 1% to 15.3%.
+
+Table 1: Enterprises using AI technologies by type of AI technology and economic activity, EU, 2025
+Source: Eurostat (isoc_eb_ain2)
+Purpose of using AI software or systems
+
+EU enterprises used AI software or systems for different purposes. In 2025, 34.70% of enterprises using AI technologies used these software or systems for marketing or sales and 31.05% for the organisation of business administration processes or management. AI software or systems for logistics were, with a share of 6.08% of enterprises using AI technologies, used the least (Figure 5).
+
+The purposes for which enterprises used AI software and systems differed depending on their size. The biggest difference between small and large enterprises was recorded for those that used AI software or systems for ICT security (47.51% large enterprises, 14.51% small enterprises), followed by those which used them for the organisation of business administration processes or management (43.38% large enterprises, 28.49% small enterprises) and those that used them for production processes (33.46% large enterprises, 19.02% small enterprises) (Figure 5).
+
+Figure 5: Enterprises using AI technologies by type of purpose and size class, EU, 2025
+Source: Eurostat (isoc_eb_ai)
+
+Enterprises used AI technologies for different purposes depending on the branch of the economy in which they were operating. In the manufacturing sector, AI software or systems were used mostly for marketing and sales (30.41%) and for organisation of business administration processes or management (27.05%), while AI software or systems were mostly used for ICT security in the electricity, gas, steam, air conditioning and water supply sector (32.02%). The main use for AI was research and development (R&D) or innovation activity in the information and communication sector (42.51%). Enterprises mainly used AI software or systems for marketing or sales in the accommodation sector (58.82%) and in the retail trade sector (48.18%) (Table 2).
+
+Table 2: Enterprises using AI technologies by type of purpose and economic activity, EU, 2025
+Source: Eurostat (isoc_eb_ain2)
+Enterprises considering using AI software or systems
+
+Among EU enterprises that did not use any of the AI technologies mentioned above in 2025, 14.21% had considered using of them. Among large enterprises, 36.54% had considered this, while this was true for 22.26% of medium-sized enterprises and 12.65% of small enterprises. Compared to 2024, the share of enterprises that did not use AI technologies but considered using one, increased by 2.02 pp (Figure 6).
+
+Figure 6: Enterprises that have ever considered using AI technologies by size class, EU, 2024 and 2025
+Source: Eurostat (isoc_eb_ai)
+
+Figure 7 presents enterprises that were not using AI technologies but had considered using one of the AI technologies mentioned above, by economic activity. The highest share of enterprises that had considered using AI technologies was in the information and communication sector (32.05%), followed by professional, scientific and technical activities (24.92%). The lowest share of enterprises that had considered using AI technologies was recorded in construction (9.74%), followed by transportation and storage (10.28%).
+
+Figure 7: Enterprises that have ever considered using AI technologies by economic activity, EU, 2025
+Source: Eurostat (isoc_eb_ain2)
+Reasons for not using AI technologies
+
+Enterprises decided not to use AI technologies for a variety of reasons. In 2025, among EU enterprises who had ever considered using AI technologies, the most common reason for not using AI technologies was the lack of relevant expertise (70.89%), followed by lack of clarity about the legal consequences (52.52%), and concerns regarding violation of data protection and privacy (48.83%). In contrast, the least common reason for not using AI among enterprises that had considered using AI technologies, was that these technologies were considered as not useful for enterprise (20.68%) (Figure 8).
+
+Figure 8: Enterprises that have ever considered using any of the AI technologies by reason for not using, EU, 2025
+Source: Eurostat (isoc_eb_ai)
+Source data for tables and graphs
+Enterprises using AI - tables and graphs 
+Data sources
+
+Source: Data presented in this article are based on the results of the 2024 EU survey on 'ICT usage and e-commerce in enterprises'. Statistics were obtained from the surveys conducted by National Statistical Authorities in the first months of 2025.
+
+Sample: In 2025, 157 000 of the 1.53 million enterprises in the EU were surveyed. Of the 1.53 million enterprises, approximately 83% were small enterprises, 14% medium and 3% large enterprises.
+
+Main concepts: The observation statistical unit is the enterprise, as defined in the Regulation (EC) No 696/1993 of 15 March 1993. The survey covered enterprises with at least 10 employees and self-employed persons. Enterprises are broken down by size: small enterprises (10-49 employees and self-employed persons), medium (50-249 employees and self-employed persons) and large (250 or more employees and self-employed persons). Economic activities correspond to the classification NACE Revision 2.The sectors covered are manufacturing, electricity, gas and steam, water supply, construction, wholesale and retail trades, repair of motor vehicles and motorcycles, transportation and storage, accommodation and food service activities, information and communication, real estate, professional, scientific and technical activities, administrative and support activities and repair of computers and communication equipment.
+
+Data: Unreliable data are included in the calculation of European aggregates. Data presented in this article may differ from the data in the database on account of updates made after the data extractions used for this article. Data in the database are organised according to the survey year.
+
+Context
+
+One objective of the European Commission’s 2024-2029 priorities is a new plan for Europe's sustainable prosperity and competitiveness. One of the objectives is boosting productivity with digital tech diffusion to strengthen EU’s competitiveness and become a leader in AI innovation. To increase productivity through diffusion of digital technologies, the European Commission will ensure access to supercomputing capacity for AI startups and industry via an AI continent action plan and boost new industrial uses of AI and improve public services with an apply AI strategy.
+
+The Digital Decade - Policy programme sets goals for the EU’s digital transformation of businesses. By 2030, three out of four EU companies should use cloud computing services, big data or artificial intelligence.
+
+Explore further
+Other articles
+Database
+Thematic section
+Publications
+Visualisation
+Methodology
+Legislation
+External links
+Selected datasets
+Categories: Science, technology, and digital societyDigital economy and societyDigital economy and society - enterprisesStatistical article
+The European Union, abbreviated as EU, is an economic and political ...
+An enterprise is an organisational unit producing goods or services which has a ...
+The term percentage point is used when comparing two different percentages. ...
+The Statistical classification of economic activities in the European ...
+This site is managed by Eurostat and is an official website of the European Union
+ISSN 2443-8219
+Need help?
+Contact us
+Accessibility
+About Statistics Explained - Eurostat
+Follow us
+Twitter
+Facebook
+Instagram
+LinkedIn
+Youtube
+RSS
+Discover more on europa.eu
+Contact the EU
+Call us 00 800 6 7 8 9 10 11
+Use other telephone options
+Write us via our contact form
+Meet us at one of the EU centres
+Social media
+Search for EU social media channels
+Legal
+Languages on our websites
+Privacy policy
+Legal notice
+Cookies
+EU institutions and bodies
+Search all EU institutions and bodies

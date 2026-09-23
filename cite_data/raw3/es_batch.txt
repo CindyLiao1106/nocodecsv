@@ -1,0 +1,287 @@
+##### Anaconda State of Data Science report data scientists time data preparation percent
+[1] Data Prep Still Dominates Data Scientists' Time, Survey Finds
+    https://www.hpcwire.com/bigdatawire/2020/07/06/data-prep-still-dominates-data-scientists-time-survey-finds/
+    https://www.hpcwire.com › bigdatawire › 2020 › 07 › 06 › data-prep-still-dominates-data-scientists-time-survey-finds › Data Prep Still Dominates Data Scientists' Time, Survey Finds 6 Jul 2020 ... In some surveys in the past, data prep tasks have occupied upwards of 70% to 80% of 
+[2] The AI Data Scientist - arXiv
+    https://arxiv.org/html/2508.18113v1
+    https://arxiv.org › html › 2508.18113v1 The AI Data Scientist - arXiv 25 Agu 2025 ... Recent surveys show that data wrangling, not modeling, still dominates the workday. Anaconda's 2023 “State of Data Science” survey (2,414 ...
+[3] Your Data Scientists Were Hired to Build Models. They're ...
+    https://amperity.com/blog/cost-of-poor-data-quality
+    https://amperity.com › blog › cost-of-poor-data-quality Your Data Scientists Were Hired to Build Models. They're ... 18 Mar 2026 ... Anaconda's State of Data Science survey found that data scientists spend roughly 45% of their time on data preparation tasks, with cleaning ...
+[4] 2020 State of Data Science - Anaconda
+    https://know.anaconda.com/rs/387-XNW-688/images/Anaconda-SODS-Report-2020-Final.pdf
+    https://know.anaconda.com › rs › 387-XNW-688 › images › Anaconda-SODS-Report-2020-Final.pdf 2020 State of Data Science - Anaconda are preparing students to help lead the next generation of data scientists. ... report that they can demonstrate business impact often or most of the 
+[5] Data Science Statistics By Best Solution, Easy Insights (2026)
+    https://scoop.market.us/data-science-statistics/
+    https://scoop.market.us › data-science-statistics › Data Science Statistics By Best Solution, Easy Insights (2026) The demand for data scientists has increased by 56% from 2020 to 2022. The average annual salary of a data scientist in the United States is $122,840. 65% of ...
+[6] The Data Science Death Trap: When Organizations Don't ...
+    https://medium.com/@brian-curry-research/the-data-science-death-trap-when-organizations-dont-understand-what-data-science-actually-takes-f5caba7ce837
+    Medium https://medium.com › @brian-curry-research › the-data-science-death-trap-when-organizations-dont-understand-what-data-science-actually-takes-f5caba7ce837 The Data Science Death Trap: When Organizations Don't ... 24 Jan 2026 ... Anaconda's State of Data Science survey found
+[7] Why Your Data Scientists Are Spending 80% of Their Time on ...
+    https://codygon.com/blog/why-your-data-scientists-are-spending-80-percent-of-their-time-on-the-wrong-things/
+    https://codygon.com › blog › why-your-data-scientists-are-spending-80-percent-of-their-time-on-the-wrong-things › Why Your Data Scientists Are Spending 80% of Their Time on ... 26 Okt 2025 ... 45% of their time on data preparation and cleaning; 20% on building dashboards and repo
+[8] Inside Production Data Science: Exploring the Main Tasks of ...
+    https://www.mdpi.com/2673-2688/5/2/43
+    https://www.mdpi.com › 2673-2688 › 5 › 2 › 43 Inside Production Data Science: Exploring the Main Tasks of ... 12 Jun 2024 ... Since less than 5% spent less than 16% of their time performing this task, this dominance was crucial to all data scientists. The tasks of data ...
+
+##### data scientists spend 80 percent of their time preparing data CrowdFlower survey original
+[1] Do data scientists spend 80% of their time cleaning ... - Lost Boy
+    https://blog.ldodds.com/2020/01/31/do-data-scientists-spend-80-of-their-time-cleaning-data-turns-out-no/
+    https://blog.ldodds.com › 2020 › 01 › 31 › do-data-scientists-spend-80-of-their-time-cleaning-data-turns-out-no › Do data scientists spend 80% of their time cleaning ... - Lost Boy 31 Jan 2020 ... What did the surveys say? · Crowdflower, 2015: “66.7% said cleaning and organizing 
+[2] Your Data Scientists Were Hired to Build Models. They're ...
+    https://amperity.com/blog/cost-of-poor-data-quality
+    https://amperity.com › blog › cost-of-poor-data-quality Your Data Scientists Were Hired to Build Models. They're ... 18 Mar 2026 ... Anaconda's State of Data Science survey found that data scientists spend roughly 45% of their time on data preparation tasks, with cleaning and ...
+[3] Cleaning Big Data: Most Time-Consuming, Least Enjoyable ...
+    https://www.forbes.com/sites/gilpress/2016/03/23/data-preparation-most-time-consuming-least-enjoyable-data-science-task-survey-says/
+    Forbes https://www.forbes.com › sites › gilpress › 2016 › 03 › 23 › data-preparation-most-time-consuming-least-enjoyable-data-science-task-survey-says › Cleaning Big Data: Most Time-Consuming, Least Enjoyable ... 23 Mar 2016 ... Data scientists spend 60% of their time on cleaning
+[4] Results of the CrowdFlower Data Science Report regarding ...
+    https://www.researchgate.net/figure/Results-of-the-CrowdFlower-Data-Science-Report-regarding-the-actual-time-workload-of-data_fig2_381399806
+    ResearchGate https://www.researchgate.net › figure › Results-of-the-CrowdFlower-Data-Science-Report-regarding-the-actual-time-workload-of-data_fig2_381399806 Results of the CrowdFlower Data Science Report regarding ... ... Despite advances in AI infrastructure, deploying machine 
+[5] 'Data scientists spend up to 80% of their time on data ... - Quora
+    https://www.quora.com/What-is-the-research-source-behind-the-statement-Data-scientists-spend-up-to-80-of-their-time-on-data-wrangling-munging
+    https://www.quora.com › What-is-the-research-source-behind-the-statement-Data-scientists-spend-up-to-80-of-their-time-on-data-wrangling-munging 'Data scientists spend up to 80% of their time on data ... - Quora 10 Des 2015 ... Survey's by Kaggle, CrowdFlower and a few others have
+[6] The Value of Data Catalogs for Data Scientists
+    https://enterprise-knowledge.com/the-value-of-data-catalogs-for-data-scientists/
+    https://enterprise-knowledge.com › the-value-of-data-catalogs-for-data-scientists › The Value of Data Catalogs for Data Scientists 30 Jun 2022 ... This rule states that data scientists spend around 80% of their time sourcing and cleaning data. And, only 20% of their time is left 
+[7] Your Data Isn't 80% of the Problem: Tracing a Myth | Ell Advisory
+    https://elladvisory.com/blog/data-readiness-ai-80-percent-myth
+    https://elladvisory.com › blog › data-readiness-ai-80-percent-myth Your Data Isn't 80% of the Problem: Tracing a Myth | Ell Advisory 3 Sep 2026 ... The "data scientists spend 80% of their time on data prep" figure traces to a CrowdFlower survey of about 80 people, published 2016.
+[8] How Do Data Scientists Really Feel about Their Work? - TDWI
+    https://tdwi.org/articles/2017/05/31/how-do-data-scientists-really-feel-about-their-work.aspx
+    https://tdwi.org › articles › 2017 › 05 › 31 › how-do-data-scientists-really-feel-about-their-work.aspx How Do Data Scientists Really Feel about Their Work? - TDWI 31 Mei 2017 ... According to a new survey, on average data scientists spend more than half their time (53 percent) d
+
+##### AI analytics market size billion CAGR forecast official report
+[1] Big Data Analytics Market Size, Value & Share Analysis [2034]
+    https://www.fortunebusinessinsights.com/big-data-analytics-market-106179
+    https://www.fortunebusinessinsights.com › big-data-analytics-market-106179 Big Data Analytics Market Size, Value & Share Analysis [2034] The market is projected to grow from USD 447.68 billion in 2026 to USD 1,176.57 billion by 2034, exhibiting a CAGR of 12.80% during the forecas
+[2] Generative AI in Analytics Market Size To Hit USD 12.45 Bn ...
+    https://www.precedenceresearch.com/generative-ai-in-analytics-market
+    https://www.precedenceresearch.com › generative-ai-in-analytics-market Generative AI in Analytics Market Size To Hit USD 12.45 Bn ... The global generative AI in analytics market size is estimated to hit around USD 1.20 billion by 2034 from USD 12.45 billion in 2024 with a CAGR o
+[3] Advanced Analytics Market Size, Growth Trends & Industry ...
+    https://www.mordorintelligence.com/industry-reports/advanced-analytics-market
+    https://www.mordorintelligence.com › industry-reports › advanced-analytics-market Advanced Analytics Market Size, Growth Trends & Industry ... 31 Jul 2026 ... The Advanced Analytics Market worth USD 69.52 billion in 2026 is growing at a CAGR of 20.82% to reach USD 178.93 billion 
+[4] Artificial Intelligence Market Research Reports
+    https://www.gminsights.com/industry-reports/artificial-intelligence/82
+    https://www.gminsights.com › industry-reports › artificial-intelligence › 82 Artificial Intelligence Market Research Reports AI in Life Science Analytics Market size was valued at USD 1.3 billion in 2023 and is expected to exhibit growth at a CAGR of 11.5% from 2024 to 2032.
+[5] Data Analytics Market Size, Share | Industry Analysis 2035
+    https://www.marketresearchfuture.com/reports/data-analytics-market-1689
+    https://www.marketresearchfuture.com › reports › data-analytics-market-1689 Data Analytics Market Size, Share | Industry Analysis 2035 1 Sep 2026 ... Data Analytics Market Size is Expected to Grow from USD 114.46 Billion to 1135.00 Billion by 2035, Reaching at a CAGR of 29.20% Du
+[6] AI In Life Science Analytics Market Size, Share Report, 2033
+    https://www.grandviewresearch.com/industry-analysis/artificial-intelligence-life-science-analytics-market-report
+    https://www.grandviewresearch.com › industry-analysis › artificial-intelligence-life-science-analytics-market-report AI In Life Science Analytics Market Size, Share Report, 2033 ... billion in 2026 to $4.8 billion by 2033, at a CAGR of 10.5 ... In addition, this segment is expect
+[7] Predictive Analytics Market Size, Share, Trends, Growth 2035
+    https://www.rootsanalysis.com/predictive-analytics-market
+    https://www.rootsanalysis.com › predictive-analytics-market Predictive Analytics Market Size, Share, Trends, Growth 2035 The predictive analytics market size is projected to grow from USD 20.24 billion in 2025 to USD 150.4 billion by 2035, representing a CAGR of 22.21% till ...
+[8] AI in Data Analytics Market Size, Share, Growth
+    https://market.us/report/ai-in-data-analytics-market/
+    https://market.us › report › ai-in-data-analytics-market › AI in Data Analytics Market Size, Share, Growth AI in Data Analytics Market is estimated to reach USD 236.1 billion by 2033, Riding on a Strong 29.0% CAGR throughout the forecast period.
+
+##### Deloitte analytics data-driven organization survey percent executives
+[1] Analytics and AI-driven enterprises thrive in the Age of With
+    https://www.deloitte.com/us/en/insights/topics/analytics/insight-driven-organization.html
+    https://www.deloitte.com › us › en › insights › topics › analytics › insight-driven-organization.html Analytics and AI-driven enterprises thrive in the Age of With 25 Jul 2019 ... The survey shows that 67 percent of those surveyed (who are senior managers or higher and interact w
+[2] Insight Driven Organisation (IDO) | Deloitte UK
+    https://www.deloitte.com/uk/en/services/consulting/services/insight-driven-organisations.html
+    https://www.deloitte.com › uk › en › services › consulting › services › insight-driven-organisations.html Insight Driven Organisation (IDO) | Deloitte UK We are honoured to be recognised as a Leader in Data and Analytics by Gartner, and as a Leader in Enterprise Insights Services
+[3] Deloitte Survey: Analytics and Data-driven Culture Help ...
+    https://www.prnewswire.com/news-releases/deloitte-survey-analytics-and-data-driven-culture-help-companies-outperform-business-goals-in-the-age-of-with-300889703.html
+    https://www.prnewswire.com › news-releases › deloitte-survey-analytics-and-data-driven-culture-help-companies-outperform-business-goals-in-the-age-of-with-300889703.html Deloitte Survey: Analytics and Data-driven Culture Help ... 25 Jul 2019 ... Based on the IDO Maturity Scale, t
+[4] 2026 Global Human Capital Trends | Deloitte Insights
+    https://www.deloitte.com/us/en/insights/topics/talent/human-capital-trends.html
+    https://www.deloitte.com › us › en › insights › topics › talent › human-capital-trends.html 2026 Global Human Capital Trends | Deloitte Insights 4 Mar 2026 ... Drawing on insights from a global survey of executives and workers, interviews with business and HR leaders, and other D
+[5] Artificial Intelligence & Data | Deloitte
+    https://www.deloitte.com/cz-sk/en/services/consulting/services/artificial-intelligence-and-data.html
+    https://www.deloitte.com › cz-sk › en › services › consulting › services › artificial-intelligence-and-data.html Artificial Intelligence & Data | Deloitte ... Survey, executives revealed that their organisation ... Existing analytics and BI alone cannot satisfy current business t
+[6] Deloitte Survey Finds Digital Maturity Is Critical To Business ...
+    https://www.linkedin.com/pulse/deloitte-survey-finds-digital-maturity-critical-business-bernard-marr
+    LinkedIn https://www.linkedin.com › pulse › deloitte-survey-finds-digital-maturity-critical-business-bernard-marr Deloitte Survey Finds Digital Maturity Is Critical To Business ... 4 Jun 2020 ... Findings from the Digital Transformation 2020 survey show that companies identified 
+[7] Chief Data Officer survey 2024 - Deloitte
+    https://www.deloitte.com/nl/en/services/consulting-risk/research/chief-data-officer-survey.html
+    https://www.deloitte.com › nl › en › services › consulting-risk › research › chief-data-officer-survey.html Chief Data Officer survey 2024 - Deloitte With the increasing importance of data in today's business world, how can Chief Data Officers navigate their expanding responsibil
+[8] Copyright © 2019 -Deloitte Analytics - GIOIN
+    https://www.gioin.it/wp-content/uploads/2019/05/20190415-GIOIN-Deloitte-Analytics.pdf
+    https://www.gioin.it › wp-content › uploads › 2019 › 05 › 20190415-GIOIN-Deloitte-Analytics.pdf Copyright © 2019 -Deloitte Analytics - GIOIN An Insight Driven Organization turns data and insights into action through successful analytics ... Chief Data sits on the executive commit
+
+##### IBM cost of poor data quality 3.1 trillion per year
+[1] compounding threat: The true cost of poor data quality - IBM
+    https://www.ibm.com/think/insights/cost-of-poor-data-quality
+    https://www.ibm.com › think › insights › cost-of-poor-data-quality compounding threat: The true cost of poor data quality - IBM 23 Jan 2026 ... And for good reason: over a quarter of organizations estimate they lose more than USD 5 million annually due to poor data quality, with 
+[2] Bad Data Costs the U.S. $3 Trillion Per Year - SAP Community
+    https://community.sap.com/t5/technology-blog-posts-by-sap/bad-data-costs-the-u-s-3-trillion-per-year/ba-p/13575387
+    SAP https://community.sap.com › t5 › technology-blog-posts-by-sap › bad-data-costs-the-u-s-3-trillion-per-year › ba-p › 13575387 Bad Data Costs the U.S. $3 Trillion Per Year - SAP Community 1 Sep 2023 ... It was a terrific visual (they've since taken it down) and, under veracity,
+[3] Bad Data Costs the U.S. $3 Trillion Per Year
+    https://hbr.org/2016/09/bad-data-costs-the-u-s-3-trillion-per-year
+    https://hbr.org › 2016 › 09 › bad-data-costs-the-u-s-3-trillion-per-year Bad Data Costs the U.S. $3 Trillion Per Year 22 Sep 2016 ... Consider this figure: $136 billion per year. That's the research firm IDC's estimate of the size of the big data market, worldwide, in 2016.
+[4] Drowning in Data for Want of Information: Is Data Minimization ...
+    https://www.idc.com/resource-center/blog/drowning-in-data-for-want-of-information-is-data-minimization-really-possible/
+    https://www.idc.com › resource-center › blog › drowning-in-data-for-want-of-information-is-data-minimization-really-possible › Drowning in Data for Want of Information: Is Data Minimization ... 11 Sep 2024 ... An IBM survey found that poor data quality costs the U.S. economy appr
+[5] The Cost of Incomplete Data: Businesses Lose $3 Trillion ...
+    https://enricher.io/blog/the-cost-of-incomplete-data
+    https://enricher.io › blog › the-cost-of-incomplete-data The Cost of Incomplete Data: Businesses Lose $3 Trillion ... 16 Des 2024 ... According to IBM's recent study in 2020, poor data quality costs businesses in the U.S. alone more than $3.1 trillion annually. Furthermore, a ...
+[6] What Is Data Quality? | IBM
+    https://www.ibm.com/think/topics/data-quality
+    https://www.ibm.com › think › topics › data-quality What Is Data Quality? | IBM According to a Gartner report, poor data quality costs organizations an average of USD 12.9 million each year 1. As a result, data quality tools have ...
+[7] Solving “Bad Data” -- A $3 Trillion-Per-Year Problem | TDWI
+    https://tdwi.org/articles/2022/07/21/diq-all-solving-bad-data.aspx
+    https://tdwi.org › articles › 2022 › 07 › 21 › diq-all-solving-bad-data.aspx Solving “Bad Data” -- A $3 Trillion-Per-Year Problem | TDWI 21 Jul 2022 ... A few years ago, IBM reported that businesses lost $3 trillion per year due to bad data. Today, Gartner estimates the yearly co
+[8] Poor Data Quality Costs $15M Annually: Hidden Business Risks
+    https://www.actian.com/blog/data-management/the-costly-consequences-of-poor-data-quality/
+    https://www.actian.com › blog › data-management › the-costly-consequences-of-poor-data-quality › Poor Data Quality Costs $15M Annually: Hidden Business Risks 23 Jun 2024 ... Poor data quality costs individual organizations an average of $15 million annually and impacts the US eco
+
+##### NewVantage Partners data and AI leadership executive survey percent data-driven
+[1] NewVantage Partners Releases 2022 Data And AI Executive ...
+    https://www.businesswire.com/news/home/20220103005036/en/NewVantage-Partners-Releases-2022-Data-And-AI-Executive-Survey
+    https://www.businesswire.com › news › home › 20220103005036 › en › NewVantage-Partners-Releases-2022-Data-And-AI-Executive-Survey NewVantage Partners Releases 2022 Data And AI Executive ... 3 Jan 2022 ... BOSTON--(BUSINESS WIRE)--NewVantage Partners, A Wavestone Company, strategi
+[2] 2025 AI and data leadership – Executive benchmark survey ...
+    https://www.dataiq.global/articles/2025-ai-and-data-leadership/
+    https://www.dataiq.global › articles › 2025-ai-and-data-leadership › 2025 AI and data leadership – Executive benchmark survey ... 10 Jan 2025 ... Data & AI leadership is in high demand. The percentage of organizations having appointed CDO/CDAO roles has risen from 12% in 2012 to 
+[3] DATA AND AI LEADERSHIP EXECUTIVE SURVEY 2022
+    https://static1.squarespace.com/static/62adf3ca029a6808a6c5be30/t/639dd575abfb5b335e33c887/1671288184089/Wavestone--+2022+Data+and+AI+Leadership--+Executive+Survey+Report.pdf
+    https://static1.squarespace.com › static › 62adf3ca029a6808a6c5be30 › t › 639dd575abfb5b335e33c887 › 1671288184089 › Wavestone--+2022+Data+and+AI+Leadership--+Executive+Survey+Report.pdf DATA AND AI LEADERSHIP EXECUTIVE SURVEY 2022 The central theme of NewVantage Partners 2022 Da
+[4] Big Data and AI Executive Survey 2019 - The Digital Insurer
+    https://www.the-digital-insurer.com/wp-content/uploads/2019/02/1418-Big-Data-Executive-Survey-2019-Findings-122718.pdf
+    https://www.the-digital-insurer.com › wp-content › uploads › 2019 › 02 › 1418-Big-Data-Executive-Survey-2019-Findings-122718.pdf Big Data and AI Executive Survey 2019 - The Digital Insurer Compared to, say, a decade ago, an impressive number of enterprises are data-driven today. 
+[5] 78 Percent of Data Projects Fail Due to People - Digital Chiefs
+    https://www.digital-chiefs.de/en/78-percent-of-data-projects-fail-due-to-people-not-technology/
+    https://www.digital-chiefs.de › en › 78-percent-of-data-projects-fail-due-to-people-not-technology › 78 Percent of Data Projects Fail Due to People - Digital Chiefs 25 Mar 2026 ... Only 37.8 percent have succeeded in building a data-driven organization. The gap between investment
+[6] DATA-DRIVEN TRANSFORMATION
+    https://iab.hu/wp-content/uploads/2019/05/NVP-Articles-2019-123018.pdf
+    https://iab.hu › wp-content › uploads › 2019 › 05 › NVP-Articles-2019-123018.pdf DATA-DRIVEN TRANSFORMATION We were encouraged by the response to the 2018. NewVantage Partners executive survey, in which 93% of respondents said their organizations were investing in AI ...
+[7] Execs Bullish on AI but Wary of Data Leadership
+    https://sloanreview.mit.edu/article/execs-bullish-on-ai-but-wary-of-data-leadership/
+    Massachusetts Institute of Technology https://sloanreview.mit.edu › article › execs-bullish-on-ai-but-wary-of-data-leadership › Execs Bullish on AI but Wary of Data Leadership 5 Mar 2021 ... Every year in December and January, NewVantage Partners (NVP) conducts a survey of data a
+[8] Randy Bean: The Data on the Chief of Data - Alation
+    https://www.alation.com/podcast/episodes/data-on-the-chief-of-data-randy-bean/
+    https://www.alation.com › podcast › episodes › data-on-the-chief-of-data-randy-bean › Randy Bean: The Data on the Chief of Data - Alation Case in point: In two years, we saw a dramatic dip in the people claiming to have a top-tier data culture from 35 to 15 percent. I see this as
+
+##### Gartner data and analytics spending forecast billion press release
+[1] Gartner Forecasts Worldwide IT Spending to Grow 10.8% in ...
+    https://www.gartner.com/en/newsroom/press-releases/2026-02-03-gartner-forecasts-worldwide-it-spending-to-grow-10-point-8-percent-in-2026-totaling-6-point-15-trillion-dollars
+    https://www.gartner.com › en › newsroom › press-releases › 2026-02-03-gartner-forecasts-worldwide-it-spending-to-grow-10-point-8-percent-in-2026-totaling-6-point-15-trillion-dollars Gartner Forecasts Worldwide IT Spending to Grow 10.8% in ... 3 Feb 2026 ... Worldwide IT spending 
+[2] Gartner Forecasts Worldwide IT Spending to Grow 14.2% in ...
+    https://www.gartner.com/en/newsroom/press-releases/2026-07-27-gartner-forecasts-worldwide-it-spending-to-grow-14-point-2-percent-in-2026-totaling-6-point-37-trillion
+    https://www.gartner.com › en › newsroom › press-releases › 2026-07-27-gartner-forecasts-worldwide-it-spending-to-grow-14-point-2-percent-in-2026-totaling-6-point-37-trillion Gartner Forecasts Worldwide IT Spending to Grow 14.2% in ... 27 Jul 2026 ... Worldwide IT spending is expe
+[3] Gartner Says Worldwide AI Spending Will Total $2.5 Trillion in ...
+    https://www.gartner.com/en/newsroom/press-releases/2026-1-15-gartner-says-worldwide-ai-spending-will-total-2-point-5-trillion-dollars-in-2026
+    https://www.gartner.com › en › newsroom › press-releases › 2026-1-15-gartner-says-worldwide-ai-spending-will-total-2-point-5-trillion-dollars-in-2026 Gartner Says Worldwide AI Spending Will Total $2.5 Trillion in ... 15 Jan 2026 ... Worldwide spending on AI is forecast to total $
+[4] Gartner Forecasts Worldwide IT Spending to Grow 9.8% in ...
+    https://www.gartner.com/en/newsroom/press-releases/2025-10-22-gartner-forecasts-worldwide-it-spending-to-grow-9-point-8-percent-in-2026-exceeding-6-trillion-dollars-for-the-first-time
+    https://www.gartner.com › en › newsroom › press-releases › 2025-10-22-gartner-forecasts-worldwide-it-spending-to-grow-9-point-8-percent-in-2026-exceeding-6-trillion-dollars-for-the-first-time Gartner Forecasts Worldwide IT Spending to Grow 9.8% in ... 22 Okt 2025 ... Worldwide IT
+[5] Big Data Analytics Market Size, Value & Share Analysis [2034]
+    https://www.fortunebusinessinsights.com/big-data-analytics-market-106179
+    https://www.fortunebusinessinsights.com › big-data-analytics-market-106179 Big Data Analytics Market Size, Value & Share Analysis [2034] The market is projected to grow from USD 447.68 billion in 2026 to USD 1,176.57 billion by 2034, exhibiting a CAGR of 12.80% during the forecas
+[6] APS Software Statistics 2026 - DecisionBrain
+    https://decisionbrain.com/aps-software-statistics-2026/
+    https://decisionbrain.com › aps-software-statistics-2026 › APS Software Statistics 2026 - DecisionBrain 8 Mei 2026 ... Gartner data via aggregator, 2025. ... Gartner press release, 7 April 2026. (Source Link); Gartner: Agentic-AI SCM software spending forecast ...
+[7] AI Spending Forecasts 2026: Gartner, IDC & Stanford
+    https://www.digitalapplied.com/blog/ai-spending-forecasts-2026-gartner-idc-stanford-compiled
+    https://www.digitalapplied.com › blog › ai-spending-forecasts-2026-gartner-idc-stanford-compiled AI Spending Forecasts 2026: Gartner, IDC & Stanford 12 Jun 2026 ... Here is the original read the press releases bury. A $2.59 trillion spending forecast reads like an unqualified boo
+[8] Gartner raises 2026 IT spending forecast on AI demand
+    https://www.cfodive.com/news/gartner-raises-2026-it-spending-forecast-ai-demand/826312/
+    https://www.cfodive.com › news › gartner-raises-2026-it-spending-forecast-ai-demand › 826312 › Gartner raises 2026 IT spending forecast on AI demand 28 Jul 2026 ... The latest projection represents a 14.2% increase from 2025 and an upward revision from Gartner's previous forecast
+
+##### text-to-SQL accuracy enterprise real data percent BIRD benchmark study
+[1] Text-to-SQL Accuracy: Enterprise Benchmark Reality vs ...
+    https://promethium.ai/guides/enterprise-text-to-sql-accuracy-benchmarks-2/
+    https://promethium.ai › guides › enterprise-text-to-sql-accuracy-benchmarks-2 › Text-to-SQL Accuracy: Enterprise Benchmark Reality vs ... 17 Des 2025 ... Research shows fine-tuning on business-specific query-SQL pairs achieves 95%+ accuracy, but this level goes beyond static trai
+[2] EntSQL: A Benchmark for Grounding Text-to-SQL in Long ...
+    https://arxiv.org/html/2606.03363v3
+    https://arxiv.org › html › 2606.03363v3 EntSQL: A Benchmark for Grounding Text-to-SQL in Long ... 14 Jul 2026 ... The best-performing evaluated system reaches only 15.9% when long-form documents are provided, indicating that enterprise long-context Text-to- ...
+[3] Text-to-SQL Benchmarks are Broken: An In-Depth Analysis of ...
+    https://www.vldb.org/cidrdb/papers/2026/p5-jin.pdf
+    https://www.vldb.org › cidrdb › papers › 2026 › p5-jin.pdf Text-to-SQL Benchmarks are Broken: An In-Depth Analysis of ... Among its 121 problems with open-sourced gold SQL queries, we identify an annotation error rate of 66.1%. These annotation errors cause severe misestimation o
+[4] https://bird-bench.github.io
+    https://bird-bench.github.io/
+    GitHub Pages https://bird-bench.github.io Bird SQL BIRD (BIg Bench for LaRge-scale Database Grounded Text-to-SQL Evaluation) represents a pioneering, cross-domain dataset that examines the impact of extensive ...
+[5] Your Data Model Is the Semantic Layer | MotherDuck
+    https://motherduck.com/blog/bird-bench-and-data-models/
+    https://motherduck.com › blog › bird-bench-and-data-models › Your Data Model Is the Semantic Layer | MotherDuck 6 Feb 2026 ... I ran 500 text-to-SQL questions against three frontier LLMs with zero context beyond the schema. 95% accuracy. No semantic layer required.
+[6] Text-to-SQL Evaluation: Beware of Public Benchmarks - Medium
+    https://medium.com/data-science-collective/text-to-sql-evaluation-beware-of-public-benchmarks-1c34f3849ad0
+    Medium https://medium.com › data-science-collective › text-to-sql-evaluation-beware-of-public-benchmarks-1c34f3849ad0 Text-to-SQL Evaluation: Beware of Public Benchmarks - Medium 29 Agu 2025 ... The moment you stop chasing benchmark scores and start measuring business value, your
+[7] Thumbnail for “Text to SQL at 95% Accuracy. Do You NEED a Semantic ...”
+    https://www.youtube.com/watch?v=j2G4PWCq10k
+    YouTube https://www.youtube.com › watch?v=j2G4PWCq10k Text to SQL at 95% Accuracy. Do You NEED a Semantic ... Thumbnail for “Text to SQL at 95% Accuracy. Do You NEED a Semantic ...” 12 Mar 2026 ... ... research on the Bird Bench SQL benchmark revealed that LLMs write SQL at 95% a
+[8] Snowflake Cortex Analyst: Evaluating Text-to-SQL Accuracy ...
+    https://www.snowflake.com/en/blog/engineering/cortex-analyst-text-to-sql-accuracy-bi/
+    https://www.snowflake.com › en › blog › engineering › cortex-analyst-text-to-sql-accuracy-bi › Snowflake Cortex Analyst: Evaluating Text-to-SQL Accuracy ... 29 Agu 2024 ... Accuracy of text-to-SQL systems has traditionally been evaluated using popular SQL benchmarks like Spider a
+
+##### McKinsey state of AI 2025 percent organizations using AI agents survey
+[1] The State of AI: Global Survey 2026 - McKinsey
+    https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+    https://www.mckinsey.com › capabilities › quantumblack › our-insights › the-state-of-ai The State of AI: Global Survey 2026 - McKinsey 25 Agu 2026 ... Forty percent of respondents from large organizations (those with annual revenues of more than $1 billion) report scaling AI agen
+[2] The State of AI: Global Survey 2025 - McKinsey
+    https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-2025
+    https://www.mckinsey.com › capabilities › quantumblack › our-insights › the-state-of-ai-2025 The State of AI: Global Survey 2025 - McKinsey 5 Nov 2025 ... High curiosity in AI agents: Sixty-two percent of survey respondents say their organizations are at least experimenting with 
+[3] McKinsey's State of AI 2025: 88% of orgs use AI, but few scale ...
+    https://www.linkedin.com/posts/reccopilot_the-state-of-ai-in-2025-agents-innovation-activity-7403803050404212736-PKSa
+    LinkedIn https://www.linkedin.com › posts › reccopilot_the-state-of-ai-in-2025-agents-innovation-activity-7403803050404212736-PKSa McKinsey's State of AI 2025: 88% of orgs use AI, but few scale ... 8 Des 2025 ... The newly published State of AI: Global Survey 2025 from McKinsey &
+[4] The State of Organizations 2026 - McKinsey
+    https://www.mckinsey.com/~/media/mckinsey/business%20functions/people%20and%20organizational%20performance/our%20insights/the%20state%20of%20organizations/2026/the-state-of-organizations-2026.pdf
+    https://www.mckinsey.com › ~ › media › mckinsey › business%20functions › people%20and%20organizational%20performance › our%20insights › the%20state%20of%20organizations › 2026 › the-state-of-organizations-2026.pdf The State of Organizations 2026 - McKinsey 5 “The state of AI in 2
+[5] McKinsey's State Of AI: The Scaling Gap Is Now CX's Problem
+    https://www.cxtoday.com/ai-automation-in-cx/mckinseys-state-of-ai-the-scaling-gap-is-now-cxs-problem/
+    https://www.cxtoday.com › ai-automation-in-cx › mckinseys-state-of-ai-the-scaling-gap-is-now-cxs-problem › McKinsey's State Of AI: The Scaling Gap Is Now CX's Problem 23 Feb 2026 ... ... AI in 2025 shows 88% AI adoption, rising AI agents ... McKinsey reports that “88% of survey r
+[6] Thumbnail for “McKinsey&Co State of AI 2025 -- Key Insights - YouTube”
+    https://www.youtube.com/watch?v=yIJJ6kvP3aY
+    YouTube https://www.youtube.com › watch?v=yIJJ6kvP3aY McKinsey&Co State of AI 2025 -- Key Insights - YouTube Thumbnail for “McKinsey&Co State of AI 2025 -- Key Insights - YouTube” 12 Des 2025 ... McKinsey has recently released their 2025 State of AI report — and the numbers are s
+[7] State of AI 2025: Agents & Innovation | PDF - Scribd
+    https://www.scribd.com/document/946043265/McKinsey-the-State-of-AI-in-2025
+    https://www.scribd.com › document › 946043265 › McKinsey-the-State-of-AI-in-2025 State of AI 2025: Agents & Innovation | PDF - Scribd In 2025, most organizations are still in the early stages of AI adoption, with two-thirds not yet scaling AI enterprise-wide. While there is signi
+[8] State of AI 2025: Adoption, ROI and Scale | PUNKU.AI
+    https://www.punku.ai/blog/state-of-ai-2024-enterprise-adoption
+    https://www.punku.ai › blog › state-of-ai-2024-enterprise-adoption State of AI 2025: Adoption, ROI and Scale | PUNKU.AI 10 Nov 2025 ... AI agents moved into production: 52% of executives say their organizations actively use AI agents, and 39% run more than 10 agents. The scale ..
+
+##### analytics adoption barriers skills gap percent survey report 2025
+[1] AI Labour Market Survey 2025 - GOV.UK
+    https://assets.publishing.service.gov.uk/media/6960ef384343a0da370869b7/AI_Labour_Market_Survey_2025_report.pdf
+    GOV.UK https://assets.publishing.service.gov.uk › media › 6960ef384343a0da370869b7 › AI_Labour_Market_Survey_2025_report.pdf AI Labour Market Survey 2025 - GOV.UK The skills gap is further exacerbated by the accelerating adoption ... Figure 22 above illustrates a 7 percentage poi
+[2] AI in the workplace: A report for 2025 - McKinsey
+    https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/superagency-in-the-workplace-empowering-people-to-unlock-ais-full-potential-at-work
+    https://www.mckinsey.com › capabilities › tech-and-ai › our-insights › superagency-in-the-workplace-empowering-people-to-unlock-ais-full-potential-at-work AI in the workplace: A report for 2025 - McKinsey 28 Jan 2025 ... Almost all companies invest in AI, but just 1 percent belie
+[3] AI Labour Market Survey 2025 report: executive summary
+    https://www.gov.uk/government/publications/ai-labour-market-survey-2025-report/ai-labour-market-survey-2025-report-executive-summary
+    GOV.UK https://www.gov.uk › government › publications › ai-labour-market-survey-2025-report › ai-labour-market-survey-2025-report-executive-summary AI Labour Market Survey 2025 report: executive summary 28 Jan 2026 ... The most significant gap is in understanding AI concepts and 
+[4] Future of Jobs Report 2025 - World Economic Forum
+    https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf
+    https://reports.weforum.org › docs › WEF_Future_of_Jobs_Report_2025.pdf Future of Jobs Report 2025 - World Economic Forum Central to the report is a unique dataset derived from an extensive survey of global employers. ... data and analysis complement the survey findings. This ...
+[5] Digital Progress and Trends Report 2025: Strengthening AI ...
+    https://openknowledge.worldbank.org/bitstreams/99474f35-6a0c-48c3-9104-7b693e04313e/download
+    https://openknowledge.worldbank.org › bitstreams › 99474f35-6a0c-48c3-9104-7b693e04313e › download Digital Progress and Trends Report 2025: Strengthening AI ... 20 Nov 2025 ... Significant gaps in the supply of digital and AI skills exist in lower-income countries (LICs), creatin
+[6] The Indonesian Digital Workforce Gaps in 2021–2025 - MDPI
+    https://www.mdpi.com/2071-1050/15/1/754
+    https://www.mdpi.com › 2071-1050 › 15 › 1 › 754 The Indonesian Digital Workforce Gaps in 2021–2025 - MDPI In addition, the availability of advanced or expert digital skills in Indonesia is less than one percent [40], whereas the availability of a digitally skilled ...
+[7] Workplace Learning Report 2025 - LinkedIn Business Solutions
+    https://business.linkedin.com/learn/resources/workplace-learning-report
+    LinkedIn https://business.linkedin.com › learn › resources › workplace-learning-report Workplace Learning Report 2025 - LinkedIn Business Solutions In a world of constant flux, organizations are only as adaptable as their people and their skills. Today nearly half of learning and
+[8] AICC-Baseline-Study-of-AI-Adoption,-Opportunity-and-Impact ...
+    https://www.aicc.co/__data/assets/pdf_file/0008/1754090/AICC-Baseline-Study-of-AI-Adoption,-Opportunity-and-Impact-in-Northern-Ireland-2025.pdf
+    https://www.aicc.co › __data › assets › pdf_file › 0008 › 1754090 › AICC-Baseline-Study-of-AI-Adoption,-Opportunity-and-Impact-in-Northern-Ireland-2025.pdf AICC-Baseline-Study-of-AI-Adoption,-Opportunity-and-Impact ... Disclaimer: This report has been prepared using desk-based re
+
+##### percentage of organizations using business intelligence analytics tools survey 2025 official
+[1] The State of AI+BI Analytics Global 2025 Report
+    https://software.strategy.com/survey
+    https://software.strategy.com › survey The State of AI+BI Analytics Global 2025 Report Key findings: · 43% of organizations are now using AI-powered analytics in production · 56% cite improved decision-making as their top goal—closely followed by ...
+[2] About The BI & Analytics Survey - BARC
+    https://barc.com/about-the-bi-analytics-survey/
+    https://barc.com › about-the-bi-analytics-survey › About The BI & Analytics Survey - BARC Business intelligence and analytics products are most commonly found in midsize and large organizations. 82% of the responses we received came from users in ...
+[3] Business Intelligence Statistics and Facts (2026)
+    https://scoop.market.us/business-intelligence-statistics/
+    https://scoop.market.us › business-intelligence-statistics › Business Intelligence Statistics and Facts (2026) By 2025, 70% of organizations will leverage real-time analytics for insights and decision-making, up from 40% in 2020. By 2023, organizations that promote data ...
+[4] Analytics and Business Intelligence Tools in the Industry 4.0
+    https://www.researchgate.net/publication/403902970_Analytics_and_Business_Intelligence_Tools_in_the_Industry_40_A_Survey
+    ResearchGate https://www.researchgate.net › publication › 403902970_Analytics_and_Business_Intelligence_Tools_in_the_Industry_40_A_Survey Analytics and Business Intelligence Tools in the Industry 4.0 Analytics and Business Intelligence Tools in the Industry 4.0: A Survey. October
+[5] Business Intelligence Best Practices: Your BI Strategy in ...
+    https://dotanalytics.ai/blog/business-intelligence-best-practices-maximize-your-bi-strategy-in-2025/
+    https://dotanalytics.ai › blog › business-intelligence-best-practices-maximize-your-bi-strategy-in-2025 › Business Intelligence Best Practices: Your BI Strategy in ... Organizations embracing Business Intelligence Best Practices can boost decision-making speed by up to 30% and en
+[6] Business Intelligence [BI] Market Size & Share | Growth, 2034
+    https://www.fortunebusinessinsights.com/business-intelligence-bi-market-103742
+    https://www.fortunebusinessinsights.com › business-intelligence-bi-market-103742 Business Intelligence [BI] Market Size & Share | Growth, 2034 North America held 31.00% of the global market in 2025. The cloud segment is projected to hold 50.55% of the market in 2026. The solution
+[7] Large Firms With at Least 20 Employees Biggest AI Users
+    https://www.census.gov/library/stories/2026/05/ai-use-businesses.html
+    https://www.census.gov › library › stories › 2026 › 05 › ai-use-businesses.html Large Firms With at Least 20 Employees Biggest AI Users The BTOS data (December 2025 to May 2026) show that overall AI usage hovered between 17% and 20% — and that between 20% and 23% of businesses ..
+[8] Business Intelligence (BI) Statistics For 2025–2026
+    https://www.datastackhub.com/insights/business-intelligence-statistics/
+    https://www.datastackhub.com › insights › business-intelligence-statistics › Business Intelligence (BI) Statistics For 2025–2026 More than 78% of global enterprises have implemented at least one BI or analytics platform by 2025. Cloud-based BI solutions now account for 65% ...
+
+ALLDONE

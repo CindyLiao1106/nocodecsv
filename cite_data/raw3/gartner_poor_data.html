@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Just a moment... | Gartner</title>
+<style>
+        body {
+            margin: 0;
+            font-family: "Graphik Web", Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #333;
+            background-color: #002856;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        * {
+            font-family: "Graphik Web", Arial, sans-serif;
+            -moz-font-feature-settings: "ss05";
+            -webkit-font-feature-settings: "ss05";
+            font-feature-settings: "ss05" on;
+            margin: 0;
+        }
+
+        a {
+            color: #0000d3;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 56px;
+            line-height: 60px;
+            font-weight: 700;
+            word-break: break-word;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 40px;
+            }
+            .backgroundText p {
+                font-size: 18px !important;
+            }
+        }
+
+        header {
+            padding-top: 30px;
+            height: 120px;
+            margin-bottom: 15px;
+            background-color: #FFFFFF;
+        }
+
+        .gartner-logo {
+            margin-left: 56px;
+        }
+
+        .logo {
+            height: auto;
+        }
+
+        .backgroundText {
+            color: #FFFFFF;
+            border: solid 1px #002856;
+            padding: 56px 56px;
+            border: 0;
+            font-size: 14px;
+            height: 80vh;
+        }
+
+        .backgroundText .description {
+            margin-bottom: 62px;
+        }
+
+        .backgroundText p {
+            font-size: 22px;
+            line-height: 34px;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        article {
+            margin-top: 110px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            font-size: 14px;
+            background-color: #FFFFFF;
+            align-self: flex-end;
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        code {
+            padding: 2px 4px;
+            font-size: 90%;
+            color: #c7254e;
+            background-color: #f9f2f4;
+            border-radius: 4px;
+            font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+        }
+    </style>
+<meta http-equiv="refresh" content="360"></head>
+<body>
+<header>
+<div class="gartner-logo">
+<a href="/en" class>
+<img class="logo img-responsive" width="116" height="27" alt src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI1LjIuMywgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAxMDgwIDYxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTA4MCA2MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojMDAyODU2O30KPC9zdHlsZT4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTEwNjQuNCwyNjMuOGwtMy4xLDM2LjZoLTE1Yy0yMy45LDAtMzYuMywxOS4xLTM2LjMsMzcuNXY4Mi43aC00Mi4yVjI2My44aDQwLjFsMC45LDE5LjYKCWM4LjQtMTMuNCwyMy4xLTE5LjYsNDEuMy0xOS42SDEwNjQuNHoiLz4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTc3MS4xLDQyMC42aC00Mi4zdi04Mi45YzAtMTcuNC0xLjYtMzkuMi0yNS45LTM5LjJjLTIzLjUsMC0zMi45LDE3LTMyLjksMzYuN3Y4NS4zaC00Mi4zVjI2My44SDY2N2wwLjksMjAKCWM4LjQtMTMuNCwyNC4xLTIzLjksNDcuMi0yMy45YzQyLjcsMCw1Ni4xLDMwLjUsNTYuMSw2Mi4xTDc3MS4xLDQyMC42eiIvPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNjA5LjIsMzg0bC0zLDM1LjdjLTkuOCwyLjYtMTkuOSwzLjktMzAuMSwzLjdjLTM5LjksMC01MS41LTE4LjMtNTEuNS01NS4xVjIxOS42SDU2N3Y0NC4yaDQyLjFsLTIuOSwzNi42SDU2NwoJVjM2NWMwLDE0LjgsNCwyMi43LDE5LjIsMjIuN0M1OTQsMzg3LjgsNjAxLjgsMzg2LjUsNjA5LjIsMzg0eiIvPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNTEwLjgsMjYzLjhsLTMuMywzNi42SDQ5NmMtMjMuOCwwLTM1LjcsMTkuMS0zNS43LDM3LjV2ODIuN0g0MThWMjYzLjhoNDBsMC44LDE5LjYKCWM4LjUtMTMuMywyMy4yLTE5LjYsNDEuNC0xOS42SDUxMC44eiIvPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjI2LjksNDAzLjJjLTI4LjcsMTUuNC01Ny40LDI0LjItOTUuMywyMy4xYy03MC4yLTIuMS0xMjAuOS00NS44LTEyMC45LTExOS40YzAtNzMuMyw1MS4yLTEyMC4yLDEyMS0xMjEuMwoJYzM1LjQtMC41LDY3LDguNCw5MS44LDMwLjNMMTkzLjYsMjQ2Yy0xNS4zLTEzLjEtMzcuOC0yMC43LTY0LjgtMTkuNWMtNDMuOSwyLTcwLjQsMzQtNzEsNzcuOGMtMC42LDQ3LjUsMjguNiw4MC4zLDc0LjIsODEuNQoJYzIxLjUsMC41LDM2LjgtMi4zLDUwLjEtOC4zVjMyOWgtNDcuNGwzLjItMzkuOWg4OC45TDIyNi45LDQwMy4yeiIvPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNOTQ4LjksMzU3LjJIODMyLjhjMy4zLDIwLDE5LjEsMzIuMSwzOC43LDMyLjdjMTkuMSwwLjUsMjkuNy01LjIsNDMuNy0xOS40bDI3LjYsMjAuOQoJYy0xOS42LDI0LjItNDMuMiwzMy03MC4xLDMzYy00Ny4yLDAtODIuNS0zMy04Mi41LTgyLjJTODI1LjQsMjYwLDg3MSwyNjBjNTAuMywwLDc3LjgsMzAuNSw3Ny44LDg0LjVMOTQ4LjksMzU3LjJ6IE05MDYuNSwzMjQuMwoJYy0xLjMtMTkuOC0xNi4xLTMyLjMtMzYuNi0zMS41Yy0yMC40LDAuOC0zNC4zLDE0LjItMzcuMSwzMS41SDkwNi41eiIvPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzkxLjMsMzE3Ljl2MTAyLjdoLTM3LjRsLTAuOS0xNS41Yy0xMS40LDE0LjItMzAsMTkuMy00OS4yLDE5LjNjLTI4LjgsMC01Ni0xNC4yLTU2LjYtNDcuMwoJYy0wLjgtNTIsNTguNi01NS43LDk1LjktNTUuN2g3LjV2LTIuMWMwLTE3LjItMTEuNC0yNi41LTMyLjgtMjYuNWMtMTUuNiwwLjEtMzAuNSw2LTQxLjksMTYuN2wtMjQuNC0yNC44CgljMTkuNi0xNi4zLDQ0LjQtMjUuMSw2OS44LTI0LjdDMzY5LjksMjYwLDM5MS4zLDI4Mi40LDM5MS4zLDMxNy45eiBNMzUwLjYsMzUyLjJoLTUuOWMtMjAsMC01NS4yLDEtNTUuMSwyMgoJYzAuMiwyOS42LDYxLDIwLjEsNjEtMTUuNUwzNTAuNiwzNTIuMnoiLz4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTEwMzEuNCw0MDIuM2MwLjMtOS41LDguMi0xNi45LDE3LjYtMTYuNmM5LjUsMC4zLDE2LjksOC4yLDE2LjYsMTcuNmMtMC4zLDkuMy03LjksMTYuNi0xNy4xLDE2LjYKCWMtOS41LDAtMTcuMS03LjctMTcuMS0xNy4xQzEwMzEuNCw0MDIuNywxMDMxLjQsNDAyLjUsMTAzMS40LDQwMi4zeiBNMTA0OC41LDQyMy41YzExLjYtMC4yLDIxLTkuNywyMC44LTIxLjQKCWMtMC4yLTExLjYtOS43LTIxLTIxLjQtMjAuOGMtMTEuNSwwLjItMjAuOCw5LjUtMjAuOCwyMWMtMC4xLDExLjYsOS4zLDIxLjEsMjAuOSwyMS4yQzEwNDguMiw0MjMuNSwxMDQ4LjQsNDIzLjUsMTA0OC41LDQyMy41CglMMTA0OC41LDQyMy41eiBNMTA0NCw0MDRoNC4zbDYuNCwxMC41aDQuMWwtNi44LTEwLjdjMy42LTAuNCw2LjItMi40LDYuMi02LjdjMC00LjgtMi44LTYuOS04LjYtNi45aC05LjJ2MjQuM2gzLjdMMTA0NCw0MDR6CgkgTTEwNDQsNDAwLjl2LTcuNWg1YzIuNiwwLDUuMywwLjUsNS4zLDMuNmMwLDMuNy0yLjgsNC01LjksNEwxMDQ0LDQwMC45eiIvPgo8L3N2Zz4K">
+</a>
+</div>
+</header>
+<div class="backgroundText">
+<h1>
+Gartner.com
+</h1>
+<div class="description">
+<p class="p-intro" style="color: rgb(6,196,176);">To ensure a secure connection and verify you're human, please complete the validation process, if prompted.
+<br>
+</p>
+</div>
+<div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt = {cFPWv: 'g',cH: 'S0h4CeoHNCtcH9F4DySxlNAhXBj43D5xA1HLJwmAf0g-1789426448-1.2.1.1-l1Z0jkBiGyzKBNiivpTbGYOQxsg7o3_KZd75G3S_T5UZX5gRvMYLShF3DrLin6U1',cITimeS: '1789426448',cRay: 'a3b2f8c6aeba6cfe',cTplB: '0',cTplC:1,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:"/en/newsroom/press-releases/2021-09-14-gartner-survey-reveals-cost-of-poor-data-quality-to-average-12-9-million-per-year?__cf_chl_tk=zwn_ShgcbCrD0PVGE7.5oTMxxI19dmJUDvCDr_hdCjU-1789426448-1.0.1.1-ApCDNfc0Q0sIi92LtKF2VPpq0f8g6K.8JJgCR1sDzmc",cvId: '3',cZone: 'www.gartner.com',fa:"/en/newsroom/press-releases/2021-09-14-gartner-survey-reveals-cost-of-poor-data-quality-to-average-12-9-million-per-year?__cf_chl_f_tk=zwn_ShgcbCrD0PVGE7.5oTMxxI19dmJUDvCDr_hdCjU-1789426448-1.0.1.1-ApCDNfc0Q0sIi92LtKF2VPpq0f8g6K.8JJgCR1sDzmc",md: 'x3mOogao8Cu_c0J90OMOY8DAQo6b9P2.H1YZqG2DhYs-1789426448-1.2.1.1-pwTSRGvg2SCt48uFC8N1K9Ih9QSdy5.nPjX9RX2B.1vPlghpWltk5G_P_Zyv.Amh3fliaS7zbatf03XBH5YPQE2pkC6yCaHp59fEKITf_CnjC2VYhLRRVvedZ2v3pnP2dGZ.eMfhC_Eu_HXgc__rpneBJRue01JvgengXLzRuOiIwcrCOwa0w_3_MGCgwfX5BzO1vvcZODvr8ekOlHdgN0rmDvj65eR9D9M2E13u_toYYid0mx5QZjk7aO8eZ9fpdeGPYnnUtUS9YDtR5EA3HS5Y1vT9tOdH22GCdlXJ5VqiilUe9tZcnvvYm050ElFCPfHiQ1Bk1qmDbnGqkjLFYcO8yxkwN4v4N_LUILmhIAAKxpfTrBMMcgPTUH_DRMXN_VXvoQhZqOSyDed53d_sr3Otvvpzqs.o_96hU.DuDhrw_amLIhKA3muJR15Yh3YdcW2ptb_PgRSbCKrShzUVilqtJ2i25_o24T4YO0Jp1_172I..IcDTclfzQ7Z.JUZOVOd6atyi0tvuA_2HS.4X.e5C_gqnPXAQLFgzRMoecYVkJAJu2hA17tyZhNvyvuF2zSghX7f5PgYWvawK0B034Rky52AcrerkmEOjO3TQEnPCytr5eRd3MEsw4VbHNAcRwmwONGgEURHJUZGFv7uyQp7bcWhAwq0OH_P4y_uI_4JlmJ22qYwCMif20.MVBAbjz_hWLsBe7fRI.A.gBLiSsK93xQmxhKd7K7TfWUfmiMSCIZd5IZRRFEg1Qzt2RjWyhnZ3pTxDCi0wevV1OyaPs2_UIcAwrYUv_l4HsEgCqCpzipkhENhQRLLm3dZhDJUHrFAqiYVlULaHRaXWGxBI_70lsqi5hTc0.OKbXPhSOcMm_MvESgPMfTruN41bUi0rE._ibv1h5XHv8tjOHLwQcomTyyBs9CbDehaL52.8ltlbWQXLgjpd_UVxCPBp5R_FzAHoCKT_2jG2dc6zJsrlvlMXC2qB6Jo7S3IHXxlmagBEsZX3HhrVcE8F7HrNIyDINBxXBP9vB4H7jx5M1gFpN.r3GQ7SrSLdsBUgcaklWXeKhqjetjiOqvUUezXt7ovReTXamO7c5VzSRnPrUWEenoK9.qmUy2IPdlQRj44wHiGUw.SUttKUahbzAS683avYaGvgo.4eFlpIMw49G8gMJ_LgVZyMzBCfSk1u3TcL40spWFrFP8r_LnzlBXKtKi0Rwauaeg8dC9HkW3pCS9a.FFWf1Cy9.5ER9tJFoLUMRHQSiJ7xq6vXROkIgWOvuSPEJBgIcXh7CEylhV3YV5A4GITRfVMP4G3Kz2PGGXmp_YjOITo1TUs3e7LOzS58n80D',mdrd: 'Yu3QhfGXtuuZf2UHdCcbvRmh9wT8AAhxXZl.Ozp2dMY-1789426448-1.2.1.1-lBw6TRpoiYT1yd7ES6IYauP3heLnD498dbvL_SE.9Xxpv4asmIr1iTq.6XUP.fSzi1GrX_b3mUF8LgQD9oiUgExmcIT8nq.cD9xSWFsZGHQzaFraYcVOx7BknwqbV8GWFg4CsaZuIo121VzFmBTLKmEJziEQfHWAzDcBUM5nDiGG0vBjAGDY8AAmc.50WMK.acE54KX0vCe6gTDxfcsy57ZuAaoyhikG4dXSzu5dcY2_R4KfRBebxgGtmZ5Jw6WZVuAgbFdsxREwTA3WvYx3qpRwxvl8PlMkbl2bbpf7FUmpfY0cbKBlvwGPK9lJkskXGu69ebvI0v6c4lS2jvZZ7A',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=a3b2f8c6aeba6cfe';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"/en/newsroom/press-releases/2021-09-14-gartner-survey-reveals-cost-of-poor-data-quality-to-average-12-9-million-per-year?__cf_chl_rt_tk=zwn_ShgcbCrD0PVGE7.5oTMxxI19dmJUDvCDr_hdCjU-1789426448-1.0.1.1-ApCDNfc0Q0sIi92LtKF2VPpq0f8g6K.8JJgCR1sDzmc"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>
+</div>
+<footer>
+<p>
+Ray ID: <code>a3b2f8c6aeba6cfe</code>
+</p>
+</footer>
+</body>
+</html>

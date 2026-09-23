@@ -1,0 +1,101 @@
+Skip to main content
+Who we are 
+What we do 
+Our Thinking 
+Careers 
+Search
+US - EN
+
+Select your location
+
+News
+21 Jan 2026
+DAVOS, Switzerland
+From Ambition to Activation: Organizations Stand at the Untapped Edge of AI’s Potential, Reveals Deloitte Survey
+Print
+
+Key takeaways
+
+AI is shifting from pilots and experimentation to enterprise scaling, as companies have broadened workforce access to AI by 50% in just one year—growing from fewer than 40% to around 60% of workers now equipped with sanctioned AI tools.
+Autonomous AI agents are racing into the enterprise, transforming AI from a source of information and insights into a system that can do real work with 85% of companies expecting to customize agents to fit the unique needs of their business.
+AI is delivering productivity for most, but business reimagination for few, with 34% of companies reporting they are using AI to “deeply transform” their business.
+Organizations have an eye on emerging AI innovation, with 58% of companies already using physical AI and 83% viewing sovereign AI as important to their strategic planning. 
+
+Why this matters
+The Deloitte AI Institute today unveiled the 2026 edition of its “State of AI in the Enterprise” report, revealing how organizations are currently engaging with AI and the impacts, changes and considerations this technology is introducing. “The State of AI in the Enterprise: The Untapped Edge,” is based on a survey of over 3,000 director to C-suite-level leaders with direct involvement in their companies’ AI initiatives. The report explores AI’s transformational potential and momentum, with critical actions for leaders to consider as they continue their AI journey.
+
+Key quotes
+“Across the enterprise, we’re seeing massive ambition around AI, with organizations starting to pivot from experimentation to integrating AI into the core of the business with a focus on scale and impact. As organizations look to unlock AI’s full value, leaders should enable enterprise value by consciously weaving AI into the fabric of their business workflows and through the better coupling of people and machine intelligence.”
+– Nitin Mittal, Deloitte Global AI leader
+
+“The organizations succeeding with AI aren’t just investing in automation and algorithms, they’re investing in their people. As AI continues to spark new ways of working, this dual focus – advancing both the capabilities of their talent and AI tools – empowers teams to embrace reimagined business models and sets the foundation for competitive advantage.” 
+– Jim Rowan, US head of AI, Deloitte
+
+Bridging the pilot-production gap
+Moving from pilot to production is a crucial step in capturing AI value, yet while AI experimentation is accelerating, Deloitte’s survey found that only 25% of respondents have moved 40% or more of their AI pilots into production. However, the pathway to value appears to be clear and achievable for those respondents, with 54% expecting to reach that level in the next three to six months. Organizations are faced with competing priorities: the need to run their core business with current technology while investing in the innovation required to compete in the future. Communicating a clear strategy can help reduce “pilot fatigue” and move AI deployments past experiment mode.
+
+Reimagining AI’s value beyond productivity
+AI’s real-world business impact is rising fast, with 25% of leaders reporting that AI is having a transformative effect on their companies—more than double from a year ago. Productivity gains are widespread, but only 30% of organizations are redesigning key processes around AI and 37% report only using AI at a surface level with little or no change to underlying business processes. Success with AI will likely hinge on achieving strategic differentiation and lasting competitive edge, which means using AI to reimagine what is possible for the business rather than optimizing what already exists.
+
+For Agentic AI, governance and growth go hand in hand
+Agentic AI is poised for growth with close to three-quarters of companies planning to deploy Agentic AI within two years. Yet only 21% of those companies report having a mature model for agent governance. Companies seeing the most success are taking a measured approach—starting with lower-risk use cases, building governance capabilities and scaling deliberately. In the AI era, governance is more than guardrails—it’s the catalyst for responsible growth.
+
+Physical AI and sovereign AI on the rise
+Resilience in the age of AI increasingly depends on sovereign AI readiness, and organizations are taking note. Today, 77% of companies now factor country of origin into their vendor selection and nearly 3 in 5 now build their AI stacks primarily with local vendors. Physical AI is rapidly becoming integral to operations worldwide, with manufacturing, logistics and defense leading the way globally. Adoption is projected to hit 80% within two years—setting the pace for the next wave of industrial automation.
+
+About “The State of AI in the Enterprise”
+The “State of AI in the Enterprise” has been running for seven years. This research builds on Deloitte’s previous “State of Generative AI in the Enterprise” quarterly reports, intended to track the fast-moving adoption of GenAI in the enterprise. This edition of the survey, conducted between August and September 2025, connected with 3,235 business and IT leaders across 24 countries and six industries: consumer; energy, resources and industrials; financial services; life sciences and health care; technology, media and telecom; and government and public services. 
+
+About Deloitte
+
+Deloitte provides industry-leading audit, consulting, tax and advisory services to many of the world’s most admired brands, including nearly 90% of the Fortune 500® and more than 9,000 U.S.-based private companies. At Deloitte, we strive to live our purpose of making an impact that matters for our people, clients, and communities. We bring together distinct talents, technologies, disciplines, and an ecosystem of alliances to help tackle today’s most complex business challenges and drive long-term progress. Deloitte is proud to be part of the largest global professional services network serving our clients in the markets that are most important to them. Bringing more than 180 years of service, our network of member firms spans more than 150 countries and territories. Learn how Deloitte’s approximately 470,000 people worldwide connect for impact at www.deloitte.com. 
+
+Press contact(s):
+
+Emily Rosenberg
+Public Relations
+Deloitte Services LP 
++1 617 449 5276
+erosenberg@deloitte.com
+
+Let's connect
+About Deloitte
+Contact us
+Submit RFP
+Newsroom
+View locations
+What we do
+Case studies
+Services
+Industries
+Alliances
+Our thinking
+Overview
+Deloitte Insights
+Dbriefs
+Careers
+Careers home
+Job Search 
+Alumni
+Follow us
+Terms of Use
+Privacy
+Data Privacy Framework
+Cookie Notice 
+Cookie Settings
+Legal information for Job Seekers
+Labor Condition Applications
+Do Not Sell or Share My Personal Information
+
+© 2026. See Terms of Use for more information.
+
+Deloitte refers to one or more of Deloitte Touche Tohmatsu Limited, a UK private company limited by guarantee ("DTTL"), its network of member firms, and their related entities. DTTL and each of its member firms are legally separate and independent entities. DTTL (also referred to as "Deloitte Global") does not provide services to clients. In the United States, Deloitte refers to one or more of the US member firms of DTTL, their related entities that operate using the "Deloitte" name in the United States and their respective affiliates. Certain services may not be available to attest clients under the rules and regulations of public accounting. Please see www.deloitte.com/about to learn more about our global network of member firms.
+
+Here’s how we use cookies
+Deloitte uses strictly necessary cookies and similar technologies to operate this website and to provide you with a more personalized user experience. In addition to strictly necessary cookies, Deloitte uses optional cookies to enhance and personalize your experience, analyze site usage and traffic sources to understand how visitors engage with our website, deliver relevant content or advertisements, and facilitate data sharing with analytics and advertising providers. When you arrived at this website, Deloitte may have placed strictly necessary cookies and optional analytics cookies on your device.
+
+By clicking "Accept all optional cookies", you agree to the placement of optional cookies on your device. You can manage your cookie preferences or withdraw your consent to the use of optional cookies at any time by clicking "Tailor your cookie preferences". If you disable and withdraw your consent to the use of optional analytics cookies, Deloitte will not continue to receive data from the optional analytics cookies placed when you arrived at the website. Depending on your selected cookie preferences, the full functionality or personalized user experience of this website may not be available.
+
+Learn more by visitingDeloitte's Cookie Notice.
+Accept all optional cookies Decline all optional cookies
+Tailor your cookie preferences
