@@ -65,6 +65,7 @@ export const POST_CLUSTERS: Record<string, Cluster> = {
   'visualize-sales-data-csv': 'ai',
   'opencode-go-review-cheap-ai-models': 'ai',
   'best-books-data-analysis-ai': 'ai',
+  'csv-too-large-for-ai': 'ai',
 
   // D. 文件操作
   'sort-csv-by-column': 'ops',
@@ -176,6 +177,7 @@ export const POST_TITLES: Record<string, string> = {
   'why-is-my-csv-larger-than-xlsx': 'Why a CSV Can Be Bigger Than XLSX',
   'csv-date-format-keeps-changing': 'Why CSV Dates Keep Changing',
   'csv-column-limit': 'How Many Columns Can a CSV Have?',
+  'csv-too-large-for-ai': 'Why Your CSV Is Too Large to Analyze',
 };
 
 /** 一句话简介(slug → 简介),用于枢纽页卡片与 SEO 摘要 */
@@ -254,6 +256,7 @@ export const POST_SUMMARIES: Record<string, string> = {
   'why-is-my-csv-larger-than-xlsx': "An XLSX is a ZIP archive and a CSV is raw text. Measured sizes for two datasets, the internal parts that explain the gap, and what gzip does to the comparison.",
   'csv-date-format-keeps-changing': "Why day and month swap on the way through a CSV, Microsoft's documented import behaviour, and a 10,000-row test showing 88.8% of the file affected.",
   'csv-column-limit': "The format sets no column count. Measured results for wide files: 10,000,000 columns parsed in 0.45s on one row, while a 30,000 by 3,000 table needed 6,273 MB to load at once.",
+  'csv-too-large-for-ai': "Documented upload limits are 512MB per file and about 50MB for CSV and spreadsheets. What that is in rows, measured across five CSV shapes, and the fixes that keep rows.",
 };
 
 /** 发布日期(slug → "YYYY-MM-DD"),用于 sitemap 与文章元数据 */
@@ -332,6 +335,7 @@ export const POST_DATES: Record<string, string> = {
   'why-is-my-csv-larger-than-xlsx': '2026-09-23',
   'csv-date-format-keeps-changing': '2026-09-23',
   'csv-column-limit': '2026-09-24',
+  'csv-too-large-for-ai': '2026-09-24',
 };
 
 /** 全站文章 slug 列表(顺序固定,用于轮转) */
