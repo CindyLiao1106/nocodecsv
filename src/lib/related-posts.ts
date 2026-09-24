@@ -44,6 +44,7 @@ export const POST_CLUSTERS: Record<string, Cluster> = {
   'csv-scientific-notation': 'clean',
   'quotes-in-csv-files': 'clean',
   'csv-date-format-keeps-changing': 'clean',
+  'csv-column-limit': 'clean',
 
   // C. AI 与分析
   'how-to-analyze-csv-with-ai-free': 'ai',
@@ -174,6 +175,7 @@ export const POST_TITLES: Record<string, string> = {
   'quotes-in-csv-files': 'Quotes in CSV Files',
   'why-is-my-csv-larger-than-xlsx': 'Why a CSV Can Be Bigger Than XLSX',
   'csv-date-format-keeps-changing': 'Why CSV Dates Keep Changing',
+  'csv-column-limit': 'How Many Columns Can a CSV Have?',
 };
 
 /** 一句话简介(slug → 简介),用于枢纽页卡片与 SEO 摘要 */
@@ -251,6 +253,7 @@ export const POST_SUMMARIES: Record<string, string> = {
   'quotes-in-csv-files': "RFC 4180's quoting rules in plain language, which fields need quotes, and what a naive split does to a row we wrote with a standard CSV writer.",
   'why-is-my-csv-larger-than-xlsx': "An XLSX is a ZIP archive and a CSV is raw text. Measured sizes for two datasets, the internal parts that explain the gap, and what gzip does to the comparison.",
   'csv-date-format-keeps-changing': "Why day and month swap on the way through a CSV, Microsoft's documented import behaviour, and a 10,000-row test showing 88.8% of the file affected.",
+  'csv-column-limit': "The format sets no column count. Measured results for wide files: 10,000,000 columns parsed in 0.45s on one row, while a 30,000 by 3,000 table needed 6,273 MB to load at once.",
 };
 
 /** 发布日期(slug → "YYYY-MM-DD"),用于 sitemap 与文章元数据 */
@@ -328,6 +331,7 @@ export const POST_DATES: Record<string, string> = {
   'quotes-in-csv-files': '2026-09-22',
   'why-is-my-csv-larger-than-xlsx': '2026-09-23',
   'csv-date-format-keeps-changing': '2026-09-23',
+  'csv-column-limit': '2026-09-24',
 };
 
 /** 全站文章 slug 列表(顺序固定,用于轮转) */
