@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "sonner";
@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     "free CSV analysis", "AI data insights", "chat with CSV",
     "nocode csv", "no code data analysis",
   ],
+  // Icons: app/icon.png + app/apple-icon.png are picked up by the App Router;
+  // the manifest carries the Android/PWA sizes (added 2026-09-27).
+  manifest: "/site.webmanifest",
   // C16: 摘要/预览控制 —— 允许完整摘要与大幅图片预览
   robots: {
     index: true,
@@ -50,6 +53,11 @@ export const metadata: Metadata = {
     description: "Upload CSV/Excel and ask questions in plain English. Free to start.",
     images: ["https://nocodecsv.com/og-image.png"],
   },
+};
+
+// Mobile browser chrome colour — matches the brand's deep navy (2026-09-27).
+export const viewport: Viewport = {
+  themeColor: "#0E1A2B",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
