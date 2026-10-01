@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "sonner";
+import { Analytics } from "@vercel/analytics/next";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { AdsenseScript } from "@/components/ads/adsense-script";
@@ -98,6 +99,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <Toaster position="top-center" richColors />
             {/* AdSense 脚本(自动广告模式下只需这一行;手动单元时再在各页放 <AdSense slot=.../>) */}
             <AdsenseScript />
+            {/* Vercel Web Analytics: 只在 Vercel 项目里启用后才会真正上报 */}
+            <Analytics />
             <script
               type="application/ld+json"
               dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
