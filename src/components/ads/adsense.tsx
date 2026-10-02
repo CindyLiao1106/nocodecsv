@@ -9,6 +9,13 @@ declare global {
   }
 }
 
+/**
+ * 真 AdSense 单元 ID = 10 位数字且【不以 0 开头】。
+ * 占位值("0000000001" 这类)会被拦掉 —— 否则页面会留一个空的 90px 广告洞,
+ * 看起来像坏掉的版面。与养老站 src/components/AdSlot.tsx 同款保护(2026-10-02 对齐)。
+ */
+const REAL_SLOT = /^[1-9]\d{9}$/;
+
 type AdSenseProps = {
   /** Ad unit slot ID from the AdSense dashboard (data-ad-slot) */
   slot: string;
@@ -40,16 +47,16 @@ export default function AdSense({
   const pushed = useRef(false);
 
   useEffect(() => {
-    if (!CLIENT || pushed.current) return;
+    if (!CLIENT || !REAL_SLOT.test(slot) || pushed.current) return;
     try {
       (window.adsbygoogle = window.adsbygoogle || []).push({});
       pushed.current = true;
     } catch {
       // AdSense throws on double-push or when blocked; never break the page.
     }
-  }, []);
+  }, [slot]);
 
-  if (!CLIENT) return null;
+  if (!CLIENT || !REAL_SLOT.test(slot)) return null;
 
   return (
     <div className={className}>
