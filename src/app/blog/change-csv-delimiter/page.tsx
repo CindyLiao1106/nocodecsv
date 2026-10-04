@@ -4,20 +4,25 @@ import { Button } from "@/components/ui/button";
 import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
-  title: "How to Change a CSV Delimiter (Semicolon to Comma)",
-  description: "CSV opens as one column? The file uses a different delimiter, usually semicolons. Fix it in Excel, Google Sheets, LibreOffice, or the terminal.",
+  // 2026-10-04 CTR 改:原题 "How to Change a CSV Delimiter (Semicolon to Comma)" 没写 Excel,
+  // 而 GSC 实测该页 90 天命中的词全是 Excel 导向的("change delimiter in excel" 排 7.8、
+  // "excel change csv delimiter" 排 5.3、"change csv delimiter excel" 排 10.8)。
+  // 把 Excel 放进标题前半段,和搜索词逐字对齐。
+  title: "How to Change a CSV Delimiter in Excel (Semicolon to Comma)",
+  description:
+    "CSV opening as one column? Excel reads the separator from Windows settings, so semicolon files arrive unsplit. Fix it in Excel or Sheets in 30 seconds.",
   keywords: ["change csv delimiter", "csv semicolon to comma", "open semicolon csv in excel", "csv delimiter not working", "semicolon separated values", "change delimiter in excel csv", "csv opens in one column"],
   alternates: { canonical: "https://nocodecsv.com/blog/change-csv-delimiter" },
   openGraph: {
     images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
-    title: "How to Change a CSV Delimiter: Semicolon to Comma and Back (2026) | NoCodeCSV",
-    description: "CSV opens as one column? The file uses a different delimiter, usually semicolons from a European locale. Four free fixes, no data loss.",
+    title: "How to Change a CSV Delimiter in Excel (Semicolon to Comma) | NoCodeCSV",
+    description: "Excel reads the separator from Windows settings, so semicolon CSVs arrive in one column. The 30-second fix, in Excel, Sheets or LibreOffice.",
     type: "article",
     url: "https://nocodecsv.com/blog/change-csv-delimiter",
     siteName: "NoCodeCSV",
     locale: "en_US",
     publishedTime: "2026-09-09",
-    modifiedTime: "2026-09-09",
+    modifiedTime: "2026-10-04",
     authors: ["NoCodeCSV Team"],
   },
   twitter: {
