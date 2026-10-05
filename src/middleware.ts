@@ -21,9 +21,18 @@ const isProtectedRoute = createRouteMatcher([
   "/api/paypal(.*)",
 ]);
 
+/**
+ * ⚠️ 例外(2026-10-05):/api/analyze-guest 是免注册通道,必须放行。
+ *
+ * 上面 "/api/analyze(.*)" 里的 (.*) 会把 "-guest" 也吃进去 —— 第一次上线实测
+ * 匿名调用拿到的是 307(被重定向去 sign-in),页面上的试用器等于没接上。
+ * 这里显式豁免,而不是把那条正则改窄(改窄容易误伤将来 /api/analyze/xxx 这类子路径)。
+ */
+const isGuestPreviewRoute = createRouteMatcher(["/api/analyze-guest(.*)"]);
+
 export default clerkMiddleware(
   async (auth, req) => {
-    if (isProtectedRoute(req)) {
+    if (isProtectedRoute(req) && !isGuestPreviewRoute(req)) {
       const { userId, redirectToSignIn } = await auth();
       if (!userId) {
         return redirectToSignIn({ returnBackUrl: req.url });
