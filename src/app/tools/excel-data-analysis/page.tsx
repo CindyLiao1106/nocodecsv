@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Upload, Check, ArrowRight } from "lucide-react";
 
+import { GuestAnalyzer } from "@/components/tools/guest-analyzer";
+
 export const metadata: Metadata = {
   title: "AI Excel Data Analysis Tool — Ask Questions, Get Charts",
   description: "Upload .xlsx or .xls files and analyze data with AI in plain English. No formulas, no pivot tables. Get instant charts and insights. Free to start.",
@@ -94,14 +96,20 @@ export default function ExcelAnalysisPage() {
             Upload any .xlsx or .xls file. Ask questions in plain English. AI handles formulas, pivot tables, and charts — instantly.
           </p>
           <div className="mt-8">
-            <Link href="/dashboard">
+            <Link href="#try-it">
               <Button size="lg" className="text-base px-8 gap-2">
                 <Upload className="h-5 w-5" /> Analyze Your Excel File — Free
               </Button>
             </Link>
+            <p className="mt-3 text-sm text-zinc-400">
+              No account needed — 2 free analyses a day, right on this page. No credit card.
+            </p>
           </div>
         </div>
       </section>
+
+      {/* 免注册试用器:同一套组件也吃 .xlsx/.xls(2026-10-05) */}
+      <GuestAnalyzer />
 
       {/* Use cases grid */}
       <section className="py-16 bg-white">

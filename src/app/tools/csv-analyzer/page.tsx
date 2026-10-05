@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Upload, MessageSquare, BarChart3, ArrowRight, Check } from "lucide-react";
 
 import { ToolAnimation } from "@/components/tools/tool-animation";
+import { GuestAnalyzer } from "@/components/tools/guest-analyzer";
 export const metadata: Metadata = {
   title: "Free AI CSV Analyzer — Analyse CSV & Chat With Your Data",
   description: "Analyse a CSV file with AI in plain English — ask questions, get charts, no SQL or Python. Works as an AI CSV analyser and a chat-with-CSV tool. Free to start.",
@@ -94,7 +95,7 @@ const jsonLd = {
           name: "What are the free limits?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Three analyses per day on the free tier, with no account needed for the first look. The Pro tier removes the daily cap; the pricing page lists what each tier includes.",
+            text: "Two analyses a day with no account at all — no email, no credit card, and nothing stored after your question is answered. A free account adds a third daily analysis, saved history and exports; the Pro tier removes the daily cap.",
           },
         },
       ],
@@ -134,15 +135,20 @@ export default function CsvAnalyzerPage() {
             Stop wrestling with Excel formulas and Python scripts. Upload your CSV, ask questions in plain English, and let AI do the heavy lifting.
           </p>
           <div className="mt-8">
-            <Link href="/dashboard">
+            <Link href="#try-it">
               <Button size="lg" className="text-base px-8 gap-2">
                 <Upload className="h-5 w-5" /> Upload Your CSV — Free
               </Button>
             </Link>
-            <p className="mt-3 text-sm text-zinc-400">No credit card. 3 free analyses every day.</p>
+            <p className="mt-3 text-sm text-zinc-400">
+              No account needed — 2 free analyses a day, right on this page. No credit card.
+            </p>
           </div>
         </div>
       </section>
+
+      {/* 免注册试用器:把「no account needed」从文案变成真功能(2026-10-05) */}
+      <GuestAnalyzer />
 
       {/* 产品动图(纯 canvas,零依赖) */}
       <ToolAnimation variant="analyzer" />
@@ -397,7 +403,7 @@ export default function CsvAnalyzerPage() {
             </div>
             <div>
               <h3 className="font-semibold text-lg mb-2">What are the free limits?</h3>
-              <p className="text-zinc-600">Three analyses per day on the free tier, with no account needed for the first look. The Pro tier removes the daily cap; the pricing page lists what each tier includes.</p>
+              <p className="text-zinc-600">Two analyses a day with no account at all — no email, no credit card, and nothing stored after your question is answered. A free account adds a third daily analysis, saved history and exports; the Pro tier removes the daily cap.</p>
             </div>
           <div className="mt-10 text-center">
             <Link href="/blog/how-to-analyze-csv-with-ai-free" className="text-blue-600 underline">
