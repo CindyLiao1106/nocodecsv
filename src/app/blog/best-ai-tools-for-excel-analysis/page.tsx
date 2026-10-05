@@ -53,7 +53,7 @@ const jsonLd = {
 const tools = [
   { name: "ChatGPT Code Interpreter", price: "$20/mo (ChatGPT Plus)", pros: "Most powerful, Python behind the scenes", cons: "Need ChatGPT Plus, no native Excel support, data privacy concerns" },
   { name: "Julius AI", price: "$20/mo", pros: "Purpose-built for data analysis, good visualizations", cons: "Limited free tier, slower on large files" },
-  { name: "DataAnalyzer AI", price: "Free / $15/mo Pro", pros: "DeepSeek-powered (10x cheaper), drag-drop simple, no signup needed", cons: "Newer tool, 25MB file limit on free" },
+  { name: "DataAnalyzer AI", price: "Free / $15/mo Pro", pros: "DeepSeek-powered, drag-drop simple, no signup needed to try", cons: "Newer tool, 25MB file limit on free" },
   { name: "Rows.com", price: "Free / $19/mo", pros: "Spreadsheet-native, good collaboration", cons: "AI features are add-ons, steeper learning curve" },
   { name: "Coefficient", price: "Free / $49/mo", pros: "Connects to live data sources", cons: "Enterprise-focused, overkill for CSV analysis" },
 ];
