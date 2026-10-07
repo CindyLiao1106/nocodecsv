@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
-  title: "Why Is My CSV Too Large to Analyze? The Real Limits",
+  title: "CSV Too Large for AI? The Real Upload Limits and Fixes",
   description:
-    "OpenAI's own upload limits are 512MB per file and about 50MB for CSV and spreadsheets. What that means in rows, which limit your export hits, and what to do before the next attempt.",
+    "OpenAI documents 512MB per file and about 50MB for CSV. What that means in rows, which limit your export hits, and how to shrink the file first.",
   keywords: [
     "chatgpt file too large",
     "csv file too large to analyze",
@@ -19,20 +19,20 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://nocodecsv.com/blog/csv-too-large-for-ai" },
   openGraph: {
-    title: "Why Is My CSV Too Large to Analyze? The Real Limits",
+    title: "CSV Too Large for AI? The Real Upload Limits and Fixes",
     description:
-      "512MB per file, about 50MB for CSV and spreadsheets as OpenAI documents it. We translated those limits into rows and cell counts so you can tell which one your export touched.",
+      "512MB per file, about 50MB for CSV — what those limits mean in rows and cell counts, and how to stay under them.",
     type: "article",
     url: "https://nocodecsv.com/blog/csv-too-large-for-ai",
     siteName: "NoCodeCSV",
     locale: "en_US",
     publishedTime: "2026-09-24",
-    modifiedTime: "2026-09-24",
+    modifiedTime: "2026-10-07",
     authors: ["NoCodeCSV Team"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Why Your CSV Is Too Large to Analyze",
+    title: "CSV Too Large for AI: The Real Limits",
     description:
       "The documented limits, what they are in rows, and the three ways to stay under them without dropping data.",
   },

@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
-  title: "Quotes in CSV Files: When You Need Them and How to Escape",
+  title: "CSV Quotes: When You Need Them and How to Escape Them",
   description:
-    "A field needs quotes only when it holds a comma, a double quote or a line break. RFC 4180's rules, the escaping rule, and why stripping every quote breaks files.",
+    "A field needs quotes only when it holds a comma, a double quote or a line break. RFC 4180's rules, the escape rule, and why removing quotes breaks files.",
   keywords: [
     "quotes in csv file",
     "double quotes in csv file",
@@ -19,20 +19,20 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://nocodecsv.com/blog/quotes-in-csv-files" },
   openGraph: {
-    title: "Quotes in CSV Files: When You Need Them and How to Escape",
+    title: "CSV Quotes: When You Need Them and How to Escape Them",
     description:
-      "RFC 4180's quoting rules in plain language, what we measured with a real CSV parser, and why bulk-removing quotes splits your rows.",
+      "RFC 4180's quoting rules in plain language, what a real CSV parser does, and why bulk-removing quotes splits your rows.",
     type: "article",
     url: "https://nocodecsv.com/blog/quotes-in-csv-files",
     siteName: "NoCodeCSV",
     locale: "en_US",
     publishedTime: "2026-09-22",
-    modifiedTime: "2026-09-22",
+    modifiedTime: "2026-10-07",
     authors: ["NoCodeCSV Team"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Quotes in CSV Files: When and How to Escape Them",
+    title: "CSV Quotes: When and How to Escape Them",
     description:
       "The three characters that force a field into quotes, the doubling rule for embedded quotes, and what a naive split actually does to your rows.",
   },

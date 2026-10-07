@@ -4,25 +4,25 @@ import { Button } from "@/components/ui/button";
 import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
-  title: "Excel Formula Generator AI: Plain English to Formula",
-  description: "Generate Excel formulas from plain English with a free AI formula generator. Step-by-step prompts and examples for VLOOKUP, IF, SUMIFS and more.",
+  title: "AI Excel Generator: Write Any Formula in Plain English",
+  description: "Describe what you need and get the Excel formula — VLOOKUP, XLOOKUP, IF, SUMIFS. Free AI Excel generator with copy-paste examples, no signup.",
   keywords: ["excel formula generator ai", "AI excel formula generator free", "generate excel formulas from text", "write vlookup with ai", "excel formula from description"],
   alternates: { canonical: "https://nocodecsv.com/blog/excel-formula-generator-ai" },
   openGraph: {
     images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
-    title: "Excel Formula Generator AI: Write Any Formula From Plain English (Free)",
-    description: "Generate Excel formulas from plain English with a free AI formula generator. Prompts and examples for VLOOKUP, IF, SUMIFS and more.",
+    title: "AI Excel Generator: Formulas From Plain English (Free)",
+    description: "Describe what you need and get the Excel formula — VLOOKUP, XLOOKUP, IF, SUMIFS. Free AI Excel generator with copy-paste examples.",
     type: "article",
     url: "https://nocodecsv.com/blog/excel-formula-generator-ai",
     siteName: "NoCodeCSV",
     locale: "en_US",
     publishedTime: "2026-08-30",
-    modifiedTime: "2026-08-30",
+    modifiedTime: "2026-10-07",
     authors: ["NoCodeCSV Team"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Excel Formula Generator AI: Write Any Formula From Plain English (Free)",
+    title: "AI Excel Generator: Plain English to Formula",
     description: "Generate Excel formulas from plain English with a free AI formula generator.",
   },
 };

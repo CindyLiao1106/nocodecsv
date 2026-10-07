@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
-  title: "Why Is My CSV File Larger Than XLSX? The Compression Gap",
+  title: "CSV vs XLSX: Why Your CSV File Is Larger Than Excel",
   description:
-    "XLSX is a ZIP archive of XML parts; CSV is raw text. We measured both from the same 50,000-row dataset, plus the gzip result that flips the comparison.",
+    "XLSX is a ZIP of XML parts; CSV is raw text. We measured both from one 50,000-row dataset, plus the gzip result that flips the comparison.",
   keywords: [
     "why is my csv file larger than xlsx",
     "why is csv file bigger than excel",
@@ -19,15 +19,15 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://nocodecsv.com/blog/why-is-my-csv-larger-than-xlsx" },
   openGraph: {
-    title: "Why Is My CSV File Larger Than XLSX? The Compression Gap",
+    title: "CSV vs XLSX: Why Your CSV File Is Larger Than Excel",
     description:
-      "Same rows, different size. What an XLSX file actually contains, the two measurements we ran today, and how to shrink a CSV that will not fit.",
+      "Same rows, different size. What an XLSX file actually contains, the two measurements we ran, and how to shrink a CSV that will not fit.",
     type: "article",
     url: "https://nocodecsv.com/blog/why-is-my-csv-larger-than-xlsx",
     siteName: "NoCodeCSV",
     locale: "en_US",
     publishedTime: "2026-09-23",
-    modifiedTime: "2026-09-23",
+    modifiedTime: "2026-10-07",
     authors: ["NoCodeCSV Team"],
   },
   twitter: {

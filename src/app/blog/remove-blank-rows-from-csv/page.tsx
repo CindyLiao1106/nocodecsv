@@ -4,25 +4,25 @@ import { Button } from "@/components/ui/button";
 import { RelatedPosts } from "@/components/blog/related-posts";
 
 export const metadata: Metadata = {
-  title: "Remove Blank Rows From CSV: 4 Free Methods",
-  description: "Blank rows break sorts, formulas, and imports. How to find and delete empty rows in Excel, Google Sheets, the terminal, and Python.",
+  title: "Remove Blank Rows From CSV: 4 Free Methods (No Upload)",
+  description: "Blank rows break sorts, formulas and imports. Delete empty rows in Excel, Google Sheets, the terminal or Python — four free methods, nothing to install.",
   keywords: ["remove blank rows from csv", "delete empty rows csv", "remove blank rows in excel csv", "how to delete blank rows in csv file", "remove empty rows from csv online", "csv has blank rows", "clean blank rows csv"],
   alternates: { canonical: "https://nocodecsv.com/blog/remove-blank-rows-from-csv" },
   openGraph: {
     images: [{ url: "https://nocodecsv.com/og-image.png", width: 1200, height: 630, alt: "NoCodeCSV" }],
-    title: "How to Remove Blank Rows From a CSV: 4 Free Methods (2026) | NoCodeCSV",
-    description: "Empty rows ruin sorts, break formulas, and crash imports. Four free ways to find and delete them, plus the rows that are blank only to the eye.",
+    title: "Remove Blank Rows From CSV: 4 Free Methods (2026)",
+    description: "Blank rows break sorts, formulas and imports. Four free ways to find and delete them, plus the rows that are blank only to the eye.",
     type: "article",
     url: "https://nocodecsv.com/blog/remove-blank-rows-from-csv",
     siteName: "NoCodeCSV",
     locale: "en_US",
     publishedTime: "2026-09-10",
-    modifiedTime: "2026-09-10",
+    modifiedTime: "2026-10-07",
     authors: ["NoCodeCSV Team"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "How to Remove Blank Rows From a CSV (2026)",
+    title: "How to Remove Blank Rows From a CSV",
     description: "Four free methods, and the blank rows that are not actually blank.",
   },
 };
