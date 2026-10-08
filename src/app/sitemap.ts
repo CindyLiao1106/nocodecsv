@@ -25,6 +25,7 @@ const UPDATED: Record<string, string> = {
   "/tools/csv-delimiter-converter": "2026-09-19",
   "/tools/csv-splitter": "2026-09-19",
   "/tools/json-csv-converter": "2026-09-19",
+  "/tools/csv-cleaner": "2026-10-08",
   "/tools/excel-data-analysis": "2026-10-05",
   "/tools/spreadsheet-charts": "2026-09-11",
   "/ai-analytics-statistics": "2026-09-20",
@@ -60,6 +61,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // SEO 工具页
     { url: `${BASE_URL}/tools/csv-analyzer`, lastModified: at("/tools/csv-analyzer", "2026-08-04"), changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: `${BASE_URL}/tools/csv-cleaner`, lastModified: at("/tools/csv-cleaner", "2026-08-04"), changeFrequency: "monthly" as const, priority: 0.8 },
     { url: `${BASE_URL}/tools/csv-delimiter-converter`, lastModified: at("/tools/csv-delimiter-converter", "2026-08-04"), changeFrequency: "monthly" as const, priority: 0.8 },
     { url: `${BASE_URL}/tools/csv-splitter`, lastModified: at("/tools/csv-splitter", "2026-08-04"), changeFrequency: "monthly" as const, priority: 0.8 },
     { url: `${BASE_URL}/tools/json-csv-converter`, lastModified: at("/tools/json-csv-converter", "2026-08-04"), changeFrequency: "monthly" as const, priority: 0.8 },

@@ -45,6 +45,7 @@ export const POST_CLUSTERS: Record<string, Cluster> = {
   'quotes-in-csv-files': 'clean',
   'csv-date-format-keeps-changing': 'clean',
   'csv-column-limit': 'clean',
+  'power-query-tutorial': 'clean',
 
   // C. AI 与分析
   'how-to-analyze-csv-with-ai-free': 'ai',
@@ -186,10 +187,12 @@ export const POST_TITLES: Record<string, string> = {
   'csv-date-format-keeps-changing': 'Why CSV Dates Keep Changing',
   'csv-column-limit': 'How Many Columns Can a CSV Have?',
   'csv-too-large-for-ai': 'Why Your CSV Is Too Large to Analyze',
+  'power-query-tutorial': 'Power Query Tutorial',
 };
 
 /** 一句话简介(slug → 简介),用于枢纽页卡片与 SEO 摘要 */
 export const POST_SUMMARIES: Record<string, string> = {
+  'power-query-tutorial': 'How to clean messy Excel data automatically with Power Query: trim vs clean, data types, remove blank rows and duplicates, unpivot, and one-click refresh without AI or add-ins.',
   'convert-csv-to-pdf': 'Turn a plain CSV file into a clean, printable PDF document without installing extra software.',
   'convert-csv-to-excel-without-excel': 'Convert a CSV file into a proper Excel workbook even when Excel is not installed.',
   'convert-excel-to-csv-free-online': 'Export an Excel workbook to CSV format online while keeping encoding and columns intact.',
@@ -273,6 +276,7 @@ export const POST_SUMMARIES: Record<string, string> = {
 
 /** 发布日期(slug → "YYYY-MM-DD"),用于 sitemap 与文章元数据 */
 export const POST_DATES: Record<string, string> = {
+  "power-query-tutorial": "2026-10-08",
   "ai-csv-analyzer": "2026-09-17",
   "analyze-csv-file-online": "2026-09-17",
   "ai-csv-generator": "2026-09-17",

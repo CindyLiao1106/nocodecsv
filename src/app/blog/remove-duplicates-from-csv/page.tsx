@@ -241,7 +241,10 @@ export default function BlogPost() {
       <div className="not-prose my-10 rounded-2xl bg-blue-600 p-8 text-center text-white">
         <h2 className="text-2xl font-bold mb-3">Check Your Cleaned CSV With AI — Free</h2>
         <p className="text-blue-100 mb-5">Upload your deduplicated file and ask &quot;how many unique records do I have?&quot; No signup needed.</p>
-        <Link href="/dashboard"><Button size="lg" variant="secondary" className="text-base px-8">Analyze Your CSV Free</Button></Link>
+        <div className="flex flex-wrap items-center justify-center gap-3">
+          <Link href="/tools/csv-cleaner"><Button size="lg" variant="secondary" className="text-base px-8">Clean the CSV Free</Button></Link>
+          <Link href="/dashboard"><Button size="lg" variant="secondary" className="text-base px-8">Analyze Your CSV Free</Button></Link>
+        </div>
       </div>
       <RelatedPosts slug="remove-duplicates-from-csv" />
     </article>

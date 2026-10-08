@@ -9,6 +9,7 @@
 - [Free AI CSV Analyzer](https://nocodecsv.com/tools/csv-analyzer): Free browser tool to upload a CSV file and analyze it with AI in plain English without SQL, Python, or Excel skills.
 - [Excel Data Analysis with AI](https://nocodecsv.com/tools/excel-data-analysis): Free tool for analyzing Excel files (.xlsx) using AI conversation — suitable for business users without technical background.
 - [Spreadsheet Charts with AI](https://nocodecsv.com/tools/spreadsheet-charts): Generates charts and visualizations from spreadsheet data using AI, supporting CSV and Excel inputs.
+- [CSV Cleaner](https://nocodecsv.com/tools/csv-cleaner): Free browser tool that cleans a messy CSV in one click — trims invisible spaces, removes empty rows and columns, removes duplicate rows, and tidies header names. Nothing is uploaded.
 
 ## Blog
 
@@ -57,6 +58,42 @@
 - [OpenCode Go Review](https://nocodecsv.com/blog/opencode-go-review-cheap-ai-models): A hands-on review of a cheap coding-model subscription, tested and priced honestly.
 - [CSV vs Excel](https://nocodecsv.com/blog/csv-vs-excel): A comparison of CSV and Excel formats, and which one to keep for your data.
 
+- [Convert Text to CSV](https://nocodecsv.com/blog/convert-text-to-csv): Turn tab, space or fixed-width text files into real CSV files without shifting a column.
+- [Convert CSV to Word](https://nocodecsv.com/blog/convert-csv-to-word): Get CSV data into a Word document as a real table, or one document per row, without broken columns.
+- [Convert JSON to Excel](https://nocodecsv.com/blog/convert-json-to-excel): Turn nested JSON objects, arrays and whole folders of files into one usable spreadsheet.
+- [Convert Excel to JSON](https://nocodecsv.com/blog/convert-excel-to-json): Read a workbook the JSON tools refuse, keep every sheet, and survive dates and long ID numbers.
+- [CSV Opens in One Column](https://nocodecsv.com/blog/csv-opens-in-one-column): Diagnose why a CSV landed in a single column and convert the delimiter or the encoding so the columns come back.
+- [CSV Scientific Notation in Excel](https://nocodecsv.com/blog/csv-scientific-notation): Why Excel shows long CSV values as 1.23E+15, what Microsoft documents about the 15-digit truncation, and the three fixes that keep the original digits.
+- [Quotes in CSV Files](https://nocodecsv.com/blog/quotes-in-csv-files): 
+- [Why CSV Dates Keep Changing](https://nocodecsv.com/blog/csv-date-format-keeps-changing): 
+- [How Many Columns Can a CSV Have?](https://nocodecsv.com/blog/csv-column-limit): 
+- [Power Query Tutorial](https://nocodecsv.com/blog/power-query-tutorial): How to clean messy Excel data automatically with Power Query: trim vs clean, data types, remove blank rows and duplicates, unpivot, and one-click refresh without AI or add-ins.
+- [AI for CSV Files](https://nocodecsv.com/blog/ai-for-csv-files): Eight practical things AI can do with a CSV file, from summarising to QA, with the limits of each one.
+- [AI CSV Generator](https://nocodecsv.com/blog/ai-csv-generator): Generate realistic sample and test CSV files from a prompt, complete with edge cases.
+- [Analyze a CSV File Online](https://nocodecsv.com/blog/analyze-csv-file-online): A four-step way to analyze a CSV in the browser: inspect the structure, spot dirty data, answer a question, chart it.
+- [AI CSV Analyzer](https://nocodecsv.com/blog/ai-csv-analyzer): Ask questions about a CSV in plain English and get numbers, summaries and charts back with no formulas.
+- [Best Books to Learn Data Analysis with AI](https://nocodecsv.com/blog/best-books-data-analysis-ai): A category-by-category buying guide to data analysis books: the five skill layers, a four-question filter for outdated books, and how to read with an AI tutor.
+- [Why Your CSV Is Too Large to Analyze](https://nocodecsv.com/blog/csv-too-large-for-ai): 
+- [CSV to SQL](https://nocodecsv.com/blog/csv-to-sql): Convert a CSV into SQL INSERT statements or load it with the database\'s own bulk loader.
+- [CSV to MySQL](https://nocodecsv.com/blog/csv-to-mysql): Load a CSV into a MySQL table with LOAD DATA, and fix the settings that quietly drop rows.
+- [Open a CSV Too Big for Excel](https://nocodecsv.com/blog/open-csv-file-too-big-for-excel): Fix an oversized CSV that Excel will not open: split it, read it without a grid, or move it to a database.
+- [Excel Slow With Large Data](https://nocodecsv.com/blog/excel-slow-with-large-data): Why Excel slows down with large data, a five-minute diagnostic, and the fixes ranked by effort.
+- [Cheap USB Drives & Portable SSDs Under $50 for CSV](https://nocodecsv.com/blog/best-cheap-usb-flash-drives-under-50): Budget storage for big CSV files: how much each price tier holds, why flash drives wear out under repeated large writes, USB 3.0 vs 3.2, and formatting exFAT.
+- [Wireless Keyboard & Mouse for Excel Under $30](https://nocodecsv.com/blog/best-wireless-keyboard-and-mouse-for-excel-under-30): A spreadsheet-focused buying guide to budget wireless keyboards and mice: why a numeric keypad decides your typing speed, scroll-wheel and tilt-wheel behavior, 2.4GHz versus Bluetooth, and what to skip under $30.
+- [Best Monitor for Spreadsheets: Pivot, Ultrawide or 27-inch?](https://nocodecsv.com/blog/best-monitor-for-spreadsheets): A spreadsheet-focused monitor guide: the row and column arithmetic that decides visible sheet area, why pivot doubles your rows and ultrawide only adds columns, what 4K scaling does to Excel, panel and stand details for long sessions, and using USB-C as a dock.
+- [Why a CSV Can Be Bigger Than XLSX](https://nocodecsv.com/blog/why-is-my-csv-larger-than-xlsx): 
+- [What Is WebMCP?](https://nocodecsv.com/blog/what-is-webmcp): What WebMCP is: the declarative and imperative APIs, how it differs from MCP, and the tool list we read back from a live site, including the file-input gap.
+- [llms.txt Explained](https://nocodecsv.com/blog/llms-txt-explained): What goes in an llms.txt file, real examples measured by size, the differences from robots.txt and sitemap.xml, and word counts from three of our own sites.
+- [Can AI Fill Out a Form?](https://nocodecsv.com/blog/can-ai-fill-out-a-form): Which HTML attributes turn a form into a tool an AI assistant can call, which field types become parameters, and the file-input gap measured on five live pages.
+- [AI Crawlers in robots.txt](https://nocodecsv.com/blog/robots-txt-ai-crawlers): The AI crawler tokens in robots.txt, what each vendor says it does, the RFC 9309 grouping rule, and the parser test we ran against our own live file.
+- [agent-tools.json Explained](https://nocodecsv.com/blog/agent-tools-json): What goes in agent-tools.json, how it differs from llms.txt and WebMCP, and the getTools() cross-check that found one entry an anonymous agent cannot reach.
+- [Can ChatGPT Analyze a CSV?](https://nocodecsv.com/blog/can-chatgpt-analyze-csv): A two-pass test of a chat model over a deliberately messy 14-row CSV: the totals matched Python, one row count did not, and the file cap changed the rest.
+- [WebMCP vs MCP](https://nocodecsv.com/blog/webmcp-vs-mcp): Where each one runs, the comparison table Chrome publishes, and the tool list we read back from a live site with getTools().
+- [Is Your Website Agent-Ready?](https://nocodecsv.com/blog/is-your-website-agent-ready): Seven checks for agent-readiness, the exact commands, and measured results from three live sites, including the two that are not there yet.
+- [GEO Checklist 2026](https://nocodecsv.com/blog/geo-checklist-2026): Ten concrete steps that make a page easy for AI assistants to cite and act on, each linked to the guide that implements it.
+- [How to Open a CSV File](https://nocodecsv.com/blog/how-to-open-a-csv-file): Open a CSV on Windows, Mac, Google Sheets, iPhone or Android, plus a 30-second triage for one-column, garbled and oversized files.
+- [How to Open a CSV in Python](https://nocodecsv.com/blog/open-csv-file-in-python): Read a CSV in Python with the built-in csv module or pandas.read_csv: delimiter, UTF-8 vs cp1252 encoding, and chunked reads for files too big to fit in memory.
+- [How to Open a CSV in Linux](https://nocodecsv.com/blog/open-csv-file-in-linux): Open a CSV on Linux from the terminal (less, head, column, csvkit, python) or LibreOffice, and why awk -F, misreads a quoted comma we tested.
 ## For AI agents
 
 - Machine-readable tool declarations: https://nocodecsv.com/agent-tools.json — each entry lists the tool's page, its inputs (with stable CSS selectors and accessible labels) and its expected output, so an agent can drive the tool reliably instead of guessing at the DOM.
