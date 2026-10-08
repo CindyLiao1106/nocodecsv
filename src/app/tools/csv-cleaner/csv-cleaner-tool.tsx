@@ -158,9 +158,8 @@ function cleanTable(
   }
 
   if (rules.quotes) {
-    rows = rows.map((row, rowIndex) =>
+    rows = rows.map((row) =>
       row.map((cell) => {
-        if (rowIndex === 0) return cell;
         const next = stripOneQuoteLayer(cell);
         if (next !== cell) stats.quotesStripped += 1;
         return next;
@@ -207,7 +206,7 @@ function cleanTable(
     const seen = new Set<string>();
     const kept: string[][] = [];
     for (const row of body) {
-      const key = row.join("\u0001");
+      const key = JSON.stringify(row); // 别用拼接当指纹:单元格含分隔符时会撞
       if (seen.has(key)) {
         stats.duplicateRowsRemoved += 1;
         continue;
@@ -237,6 +236,8 @@ function defaultRules(): Record<RuleId, boolean> {
 
 export function CsvCleanerTool() {
   const inputRef = useRef<HTMLInputElement | null>(null);
+  // 解析竞态守卫:快速连选两个文件时,丢弃旧文件迟到的回调
+  const parseIdRef = useRef(0);
 
   const [fileName, setFileName] = useState("");
   const [fileSize, setFileSize] = useState(0);
@@ -278,6 +279,8 @@ export function CsvCleanerTool() {
   }, [downloadText]);
 
   const handleFile = useCallback((file: File) => {
+    parseIdRef.current += 1;
+    const parseId = parseIdRef.current;
     setError("");
     setRowsIn([]);
 
@@ -294,6 +297,7 @@ export function CsvCleanerTool() {
       delimiter: "",
       skipEmptyLines: false,
       complete: (results) => {
+        if (parseId !== parseIdRef.current) return; // 旧文件的迟到回调,丢弃
         const data = results.data.map((row) => row.map(toText));
         if (data.length === 0) {
           setError("This file has no readable rows.");
