@@ -101,6 +101,8 @@ export const POST_CLUSTERS: Record<string, Cluster> = {
   'is-your-website-agent-ready': 'ai',
   'geo-checklist-2026': 'ai',
   'how-to-open-a-csv-file': 'basics',
+  'open-csv-file-in-python': 'basics',
+  'open-csv-file-in-linux': 'basics',
 };
 
 /** 文章标题(slug → 显示标题),用于内链锚文本 */
@@ -176,6 +178,8 @@ export const POST_TITLES: Record<string, string> = {
   'is-your-website-agent-ready': 'Is Your Website Agent-Ready?',
   'geo-checklist-2026': 'GEO Checklist 2026',
   'how-to-open-a-csv-file': 'How to Open a CSV File',
+  'open-csv-file-in-python': 'How to Open a CSV in Python',
+  'open-csv-file-in-linux': 'How to Open a CSV in Linux',
   'csv-scientific-notation': 'CSV Scientific Notation in Excel',
   'quotes-in-csv-files': 'Quotes in CSV Files',
   'why-is-my-csv-larger-than-xlsx': 'Why a CSV Can Be Bigger Than XLSX',
@@ -257,6 +261,8 @@ export const POST_SUMMARIES: Record<string, string> = {
   'is-your-website-agent-ready': 'Seven checks for agent-readiness, the exact commands, and measured results from three live sites, including the two that are not there yet.',
   'geo-checklist-2026': 'Ten concrete steps that make a page easy for AI assistants to cite and act on, each linked to the guide that implements it.',
   'how-to-open-a-csv-file': 'Open a CSV on Windows, Mac, Google Sheets, iPhone or Android, plus a 30-second triage for one-column, garbled and oversized files.',
+  'open-csv-file-in-python': 'Read a CSV in Python with the built-in csv module or pandas.read_csv: delimiter, UTF-8 vs cp1252 encoding, and chunked reads for files too big to fit in memory.',
+  'open-csv-file-in-linux': 'Open a CSV on Linux from the terminal (less, head, column, csvkit, python) or LibreOffice, and why awk -F, misreads a quoted comma we tested.',
   'csv-scientific-notation': 'Why Excel shows long CSV values as 1.23E+15, what Microsoft documents about the 15-digit truncation, and the three fixes that keep the original digits.',
   'quotes-in-csv-files': "RFC 4180's quoting rules in plain language, which fields need quotes, and what a naive split does to a row we wrote with a standard CSV writer.",
   'why-is-my-csv-larger-than-xlsx': "An XLSX is a ZIP archive and a CSV is raw text. Measured sizes for two datasets, the internal parts that explain the gap, and what gzip does to the comparison.",
@@ -344,6 +350,8 @@ export const POST_DATES: Record<string, string> = {
   'csv-too-large-for-ai': '2026-09-24',
   'geo-checklist-2026': '2026-10-05',
   'how-to-open-a-csv-file': '2026-10-05',
+  'open-csv-file-in-python': '2026-10-08',
+  'open-csv-file-in-linux': '2026-10-08',
 };
 
 /** 全站文章 slug 列表(顺序固定,用于轮转) */
