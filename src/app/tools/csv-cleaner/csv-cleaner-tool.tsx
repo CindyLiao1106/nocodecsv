@@ -4,6 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Papa from "papaparse";
 import {
   AlertCircle,
+  AlertTriangle,
   CheckCircle2,
   Download,
   RefreshCw,
@@ -197,14 +198,8 @@ function cleanTable(
       else stats.emptyColsRemoved += 1;
     }
     if (keep.length > 0 && keep.length !== width) {
-      const trimmedHeader = header.map((cell, index) => (keep.includes(index) ? cell : ""));
-      const reduced = body.map((row) => keep.map((index) => row[index] ?? ""));
-      const nextHeader = trimmedHeader.filter((_, index) => keep.includes(index));
-      const nextRows = [nextHeader, ...reduced];
-      header.length = 0;
-      header.push(...nextHeader);
-      body = reduced;
-      rows = nextRows;
+      header.splice(0, header.length, ...keep.map((index) => header[index] ?? ""));
+      body = body.map((row) => keep.map((index) => row[index] ?? ""));
     }
   }
 
@@ -223,8 +218,7 @@ function cleanTable(
     body = kept;
   }
 
-  const outRows: string[][] =
-    header.length > 0 ? [header, ...body] : body;
+  const outRows: string[][] = header.length > 0 ? [header, ...body] : body;
   stats.rowsOut = outRows.length;
   return { rows: outRows, stats };
 }
@@ -252,6 +246,7 @@ export function CsvCleanerTool() {
   const [rules, setRules] = useState<Record<RuleId, boolean>>(defaultRules);
   const [addBom, setAddBom] = useState(true);
   const [error, setError] = useState("");
+  const [parseWarnings, setParseWarnings] = useState<string[]>([]);
   const [downloadUrl, setDownloadUrl] = useState("");
 
   const result = useMemo(() => {
@@ -304,6 +299,19 @@ export function CsvCleanerTool() {
           setError("This file has no readable rows.");
           return;
         }
+        const problems = Array.from(
+          new Set(
+            results.errors
+              .filter(
+                (problem) =>
+                  problem.type === "Quotes" ||
+                  problem.type === "Delimiter" ||
+                  problem.type === "FieldMismatch"
+              )
+              .map((problem) => problem.code)
+          )
+        );
+        setParseWarnings(problems);
         setDelimiter(results.meta.delimiter || ",");
         setRowsIn(data);
       },
@@ -332,6 +340,7 @@ export function CsvCleanerTool() {
     setFileName("");
     setFileSize(0);
     setError("");
+    setParseWarnings([]);
     setRules(defaultRules());
     if (inputRef.current) inputRef.current.value = "";
   }, []);
@@ -434,6 +443,21 @@ export function CsvCleanerTool() {
               ))}
             </div>
           </fieldset>
+
+          {parseWarnings.length > 0 && (
+            <div className="rounded-xl border border-amber-300 bg-amber-50 p-4 text-sm text-amber-900">
+              <p className="flex items-center gap-2 font-semibold">
+                <AlertTriangle className="h-4 w-4 shrink-0" />
+                This file has CSV quoting problems
+              </p>
+              <p className="mt-2">
+                Unbalanced or doubled quotes ({parseWarnings.join(", ")}) make a CSV parser merge
+                several lines into a single cell. Some rows above may be missing, and one cell may
+                contain line breaks. Check the row count and the preview before you use the cleaned
+                file, or fix the quotes in the source and upload it again.
+              </p>
+            </div>
+          )}
 
           {stats && (
             <div className="rounded-xl border border-zinc-200 bg-white p-4">
